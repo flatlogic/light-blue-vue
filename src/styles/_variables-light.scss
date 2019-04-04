@@ -39,15 +39,15 @@ $black:    #000 !default;
 $gray-light: $gray-100 !default;
 
 $lime:     #8cbf26 !default;
-$red:      #db4a00 !default;
+$red:      #ff0115 !default;
 $red-dark: #d04f4f !default;
-$blue:     #2e74e3 !default;
-$green:    #25b932 !default;
-$orange:   #f0af03 !default;
+$blue:     #196EFF !default;
+$green: #2ada7a !default;
+$orange: #ffc107 !default;
 $pink:     #e671b8 !default;
 $purple:   #a700ae !default;
 $brown:    #a05000 !default;
-$teal:     #14d3d3 !default;
+$teal:     #7f49fa !default;
 
 $theme-colors: (
         primary: $blue,
@@ -57,7 +57,7 @@ $theme-colors: (
         warning: $orange,
         danger: $red,
         dark: $gray-700,
-        inverse: $gray-800,
+        inverse: $gray-100,
         gray: $gray-300,
         light: $gray-100,
         default: #e9ecef,
@@ -70,7 +70,7 @@ $theme-colors: (
 
 $link-color: #62c9ff;
 
-$text-color: #fff !default;
+$text-color: #444 !default;
 $body-color: $text-color;
 $text-muted: rgba($text-color, .7) !default;
 
@@ -82,9 +82,9 @@ $font-weight-base: $font-weight-thin !default;
 
 $addition-bg: rgba($white, .1) !default;
 
-$body-bg: #36455a !default;
-$body-bg-gradient-start: $body-bg 20%;
-$body-bg-gradient-end: #889caf;
+$body-bg: #e1e5e8 !default;
+$body-bg-gradient-start: $body-bg 10%;
+$body-bg-gradient-end: #9aacbf;
 $body-bg-light: lighten($body-bg, 3%);
 
 $headings-font-weight: 300;
@@ -117,8 +117,9 @@ $sidebar-item-active-color: #fff !default;
 
 // Widgets
 // -------------------------
-$widget-bg: rgba(0,0,0,.24);
-$widget-title-color: #fff;
+//$widget-bg: rgba(0,0,0,.24);
+$widget-bg: rgba(255,255,255,.33);
+$widget-title-color: $text-color;
 $widget-shadow: 0 23px 20px -20px rgba(darken($body-bg, 25%),0.1), 0 0 15px rgba(darken($body-bg, 25%),0.06);
 $widget-shadow-designated: -1px 0 8px rgba(0,0,0,.2);
 $widget-border-radius: .5rem;
@@ -158,11 +159,7 @@ $dropdown-border-radius: $widget-border-radius;
 //== Navs
 //
 $nav-tabs-active-link-hover-bg: $widget-bg !default;
-$nav-tabs-active-link-hover-color: $text-color !default;
-
-$nav-pills-link-active-color: transparentize($text-color, .7);
-$nav-pills-link-active-color: $text-color;
-$nav-pills-link-active-bg: $widget-bg;
+$nav-tabs-active-link-hover-color: $gray-700 !default;
 
 //== Forms
 //
@@ -227,10 +224,8 @@ $pagination-disabled-border:           transparent !default;
 $padding-small-vertical:    0.25rem !default;
 $padding-small-horizontal:  0.75rem !default;
 
-// == Cards
 $card-cap-bg:               transparent;
 $card-bg:                   $widget-bg;
-$card-border-width:         0;
 
 // Screens
 // -------------------------

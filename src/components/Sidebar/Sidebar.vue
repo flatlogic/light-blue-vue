@@ -17,6 +17,43 @@
       />
       <h5 class="navTitle">TEMPLATE</h5>
       <NavLink
+              :activeItem="activeItem"
+              header="Core"
+              link="/app/core"
+              iconName="flaticon-network"
+              index="core"
+              :childrenLinks="[
+          { header: 'Typography', link: '/app/core/typography' },
+          { header: 'Colors', link: '/app/core/colors' },
+          { header: 'Grid', link: '/app/core/grid' },
+        ]"
+      />
+      <NavLink
+              :activeItem="activeItem"
+              header="UI Elements"
+              link="/app/ui"
+              iconName="flaticon-layers"
+              index="ui"
+              :childrenLinks="[
+          { header: 'Alerts', link: '/app/ui/alerts' },
+          { header: 'Badge', link: '/app/ui/badge' },
+          { header: 'Buttons', link: '/app/ui/buttons' },
+          { header: 'Card', link: '/app/ui/card' },
+          { header: 'Carousel', link: '/app/ui/carousel' },
+          { header: 'Jumbotron', link: '/app/ui/jumbotron' },
+          { header: 'Icons', link: '/app/ui/icons' },
+          { header: 'List Groups', link: '/app/ui/list-groups' },
+          { header: 'Modal', link: '/app/ui/modal' },
+          { header: 'Nav', link: '/app/ui/nav' },
+          { header: 'Navbar', link: '/app/ui/navbar' },
+          { header: 'Notifications', link: '/app/ui/notifications' },
+          { header: 'Pagination', link: '/app/tables/dynamic' },
+          { header: 'Popovers & Tooltips', link: '/app/ui/popovers' },
+          { header: 'Progress', link: '/app/ui/progress' },
+          { header: 'Tabs & Accordion', link: '/app/ui/tabs' },
+        ]"
+      />
+      <NavLink
               header="Typography"
               link="/app/typography"
               iconName="flaticon-list"
