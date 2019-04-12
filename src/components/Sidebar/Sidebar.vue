@@ -66,24 +66,24 @@
         ]"
       />
       <NavLink
-              header="Typography"
-              link="/app/typography"
-              iconName="flaticon-list"
-              index="typography"
-              isHeader
+              :activeItem="activeItem"
+              header="Charts"
+              link="/app/charts"
+              iconName="flaticon-controls"
+              index="charts"
+              :childrenLinks="[
+          { header: 'Charts Overview', link: '/app/charts/overview' },
+          { header: 'Flot Charts', link: '/app/charts/flot' },
+          { header: 'Morris Charts', link: '/app/charts/morris' },
+          { header: 'Sparkline Charts', link: '/app/charts/sparkline' },
+          { header: 'Easy Pie Charts', link: '/app/charts/easy-pie' },
+        ]"
       />
       <NavLink
               header="Tables Basic"
               link="/app/tables"
               iconName="flaticon-equal-1"
               index="tables"
-              isHeader
-      />
-      <NavLink
-              header="Notifications"
-              link="/app/notifications"
-              iconName="flaticon-star"
-              index="notifications"
               isHeader
       />
       <NavLink

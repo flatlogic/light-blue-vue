@@ -90,7 +90,7 @@ export default {
           backgroundColor: 'transparent',
           labelBoxBorderColor: 'none',
         },
-        colors: ['#a7beff', '#ace5d1', '#ffd7de'],
+        colors: ['#6792ff', '#6ae5ba', '#ff7796'],
       });
     },
   },

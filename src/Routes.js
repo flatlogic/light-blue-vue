@@ -27,11 +27,16 @@ import TabsPage from '@/pages/Ui/Tabs/Tabs';
 import FormElementsPage from '@/pages/Forms/Elements/Elements';
 import FormValidationPage from '@/pages/Forms/Validation/Validation';
 import FormWizardPage from '@/pages/Forms/Wizard/Wizard';
+// Charts
+import ChartsPage from '@/pages/Charts/Charts';
+import FlotPage from '@/pages/Charts/Flot/Flot';
+import MorrisPage from '@/pages/Charts/Morris/Morris';
+import SparklinePage from '@/pages/Charts/Sparkline/Sparkline';
+import EasyPiePage from '@/pages/Charts/EasyPie/EasyPie';
 
 import Tables from '@/pages/Tables/Tables';
 import Notifications from '@/pages/Notifications/Notifications';
 import Maps from '@/pages/Maps/Maps';
-import Charts from '@/pages/Charts/Charts';
 import Dashboard from '@/pages/Dashboard/Dashboard';
 import Login from '@/pages/Login/Login';
 import ErrorPage from '@/pages/Error/Error';
@@ -169,9 +174,35 @@ export default new Router({
           name: 'FormWizardPage',
           component: FormWizardPage,
         },
+        // Charts
+        {
+          path: 'charts/overview',
+          name: 'ChartsPage',
+          component: ChartsPage,
+        },
+        {
+          path: 'charts/flot',
+          name: 'FlotPage',
+          component: FlotPage,
+        },
+        {
+          path: 'charts/morris',
+          name: 'MorrisPage',
+          component: MorrisPage,
+        },
+        {
+          path: 'charts/sparkline',
+          name: 'SparklinePage',
+          component: SparklinePage,
+        },
+        {
+          path: 'charts/easy-pie',
+          name: 'EasyPiePage',
+          component: EasyPiePage,
+        },
         {
           path: 'tables',
-          name: 'Typography',
+          name: 'Tables',
           component: Tables,
         },
         {
@@ -183,11 +214,6 @@ export default new Router({
           path: 'components/maps',
           name: 'Maps',
           component: Maps,
-        },
-        {
-          path: 'components/charts',
-          name: 'Charts',
-          component: Charts,
         },
       ],
     },
