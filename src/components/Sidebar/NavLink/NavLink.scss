@@ -26,6 +26,7 @@
     padding-left: 50px;
     line-height: 35px;
     border-top: 1px solid $sidebar-item-border-color;
+    border-radius: $border-radius;
 
     > i {
       margin-right: 7px;
@@ -37,7 +38,7 @@
     }
 
     &:hover {
-      font-weight: $font-weight-semi-bold;
+      background-color: $addition-bg;
     }
   }
 
@@ -69,7 +70,7 @@
 }
 
 .nav-link-nested > a {
-  line-height: 40px !important;
+  line-height: 32px !important;
 }
 
 .headerLabel {
@@ -95,6 +96,6 @@
 a.router-link-active {
   &,
   &:hover {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-bold !important;
   }
 }

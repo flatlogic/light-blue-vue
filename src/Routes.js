@@ -23,6 +23,10 @@ import NotificationsPage from '@/pages/Ui/Notifications/Notifications';
 import PopoversPage from '@/pages/Ui/Popovers/Popovers';
 import ProgressPage from '@/pages/Ui/Progress/Progress';
 import TabsPage from '@/pages/Ui/Tabs/Tabs';
+// Forms
+import FormElementsPage from '@/pages/Forms/Elements/Elements';
+import FormValidationPage from '@/pages/Forms/Validation/Validation';
+import FormWizardPage from '@/pages/Forms/Wizard/Wizard';
 
 import Tables from '@/pages/Tables/Tables';
 import Notifications from '@/pages/Notifications/Notifications';
@@ -148,6 +152,22 @@ export default new Router({
           path: 'ui/tabs',
           name: 'TabsPage',
           component: TabsPage,
+        },
+        // forms
+        {
+          path: 'forms/elements',
+          name: 'FormElementsPage',
+          component: FormElementsPage,
+        },
+        {
+          path: 'forms/validation',
+          name: 'FormValidationPage',
+          component: FormValidationPage,
+        },
+        {
+          path: 'forms/wizard',
+          name: 'FormWizardPage',
+          component: FormWizardPage,
         },
         {
           path: 'tables',

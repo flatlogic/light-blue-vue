@@ -31,7 +31,7 @@
       </b-col>
       <b-col md='6' xs='12'>
         <Widget
-          title="<h5> Size <span class='fw-semi-bold'>Variants</span>/h5>"
+          title="<h5> Size <span class='fw-semi-bold'>Variants</span></h5>"
           close collapse customHeader
         >
           <div>

@@ -12,7 +12,7 @@ $fa-font-path: '../fonts/font-awesome' !default;
 /*
  * Fonts
  * ======================================================================== */
-$font-size-initial:       13px; // reset default browser value from 16px to 14px
+$font-size-initial:       14px; // reset default browser value from 16px to 14px
 $font-size-base:          1rem !default;
 $font-size-lg:            1.25rem !default;
 $font-size-sm:            0.875rem !default;
@@ -152,7 +152,7 @@ $navbar-link-disabled-bg: transparent !default;
 
 // Dropdowns
 $dropdown-item-padding-y: 0.5rem;
-$dropdown-link-color: $text-color;
+//$dropdown-link-color: $text-color;
 $dropdown-border-radius: $widget-border-radius;
 
 //== Navs
@@ -195,8 +195,8 @@ $progress-box-shadow: none;
 $alert-transparent: 0.25;
 
 // Buttons
-$input-btn-padding-y:       0.375rem !default;
-$input-btn-padding-x:       1rem !default;
+$input-btn-padding-y:       0.5rem !default;
+$input-btn-padding-x:       .75rem !default;
 
 $btn-default-bg: $addition-bg !default;
 $btn-default-border: $addition-bg !default;

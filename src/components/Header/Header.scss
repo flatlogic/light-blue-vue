@@ -15,6 +15,7 @@
   }
 
   :global(.dropdown-item) {
+    color: $text-color;
 
     .avatar {
       margin-top: 0;
@@ -35,7 +36,6 @@
 }
 
 .input-group-text {
-  padding-right: 0;
   padding-left: .85rem;
   color: $gray-600;
 }

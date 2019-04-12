@@ -54,6 +54,18 @@
         ]"
       />
       <NavLink
+              :activeItem="activeItem"
+              header="Forms"
+              link="/app/forms"
+              iconName="flaticon-list"
+              index="forms"
+              :childrenLinks="[
+          { header: 'Form Elements', link: '/app/forms/elements' },
+          { header: 'Form Validation', link: '/app/forms/validation' },
+          { header: 'Forms Wizard', link: '/app/forms/wizard' },
+        ]"
+      />
+      <NavLink
               header="Typography"
               link="/app/typography"
               iconName="flaticon-list"
