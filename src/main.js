@@ -11,6 +11,8 @@ import trumbowyg from 'vue-trumbowyg';
 import mavonEditor from 'mavon-editor';
 import { VueMaskDirective } from 'v-mask';
 import VueSlider from 'vue-slider-component';
+import VeeValidate from 'vee-validate';
+import VueFormWizard from 'vue-form-wizard';
 
 import store from './store';
 import router from './Routes';
@@ -32,7 +34,9 @@ Vue.use(VueTextareaAutosize);
 Vue.use(trumbowyg);
 Vue.use(mavonEditor);
 Vue.directive('mask', VueMaskDirective);
-Vue.component('VueSlider', VueSlider)
+Vue.component('VueSlider', VueSlider);
+Vue.use(VeeValidate, { fieldsBagName: 'fieldsbag' });
+Vue.use(VueFormWizard);
 
 Vue.config.productionTip = false;
 

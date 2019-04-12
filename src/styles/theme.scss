@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700');
 
 @import '../../node_modules/bootstrap/scss/functions';
-@import 'variables';
+@import 'variables-light';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import '../../node_modules/glyphicons-halflings/scss/glyphicons-halflings';
 @import '../../node_modules/font-awesome/css/font-awesome.css';
@@ -21,6 +21,7 @@
 @import "../../node_modules/mavon-editor/dist/css/index.css";
 @import "../../node_modules/vue-slider-component/theme/default.css";
 @import "../../node_modules/vue2-dropzone/dist/vue2Dropzone.min.css";
+@import "../../node_modules/vue-form-wizard/dist/vue-form-wizard.min.css";
 @import 'mixins';
 @import 'base';
 @import 'overrides';

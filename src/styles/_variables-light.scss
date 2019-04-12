@@ -12,7 +12,7 @@ $fa-font-path: '../fonts/font-awesome' !default;
 /*
  * Fonts
  * ======================================================================== */
-$font-size-initial:       13px; // reset default browser value from 16px to 14px
+$font-size-initial:       14px; // reset default browser value from 16px to 14px
 $font-size-base:          1rem !default;
 $font-size-lg:            1.25rem !default;
 $font-size-sm:            0.875rem !default;
@@ -161,6 +161,10 @@ $dropdown-border-radius: $widget-border-radius;
 $nav-tabs-active-link-hover-bg: $widget-bg !default;
 $nav-tabs-active-link-hover-color: $gray-700 !default;
 
+$nav-pills-link-active-color: transparentize($text-color, .7);
+$nav-pills-link-active-color: $text-color;
+$nav-pills-link-active-bg: $widget-bg;
+
 //== Forms
 //
 $input-focus-border-color: #4d90fe !default; //webkit focus color
@@ -192,8 +196,8 @@ $progress-box-shadow: none;
 $alert-transparent: 0.25;
 
 // Buttons
-$input-btn-padding-y:       0.375rem !default;
-$input-btn-padding-x:       1rem !default;
+$input-btn-padding-y:       0.5rem !default;
+$input-btn-padding-x:       .75rem !default;
 
 $btn-default-bg: $addition-bg !default;
 $btn-default-border: $addition-bg !default;
@@ -224,8 +228,10 @@ $pagination-disabled-border:           transparent !default;
 $padding-small-vertical:    0.25rem !default;
 $padding-small-horizontal:  0.75rem !default;
 
+// == Cards
 $card-cap-bg:               transparent;
 $card-bg:                   $widget-bg;
+$card-border-width:         0;
 
 // Screens
 // -------------------------
