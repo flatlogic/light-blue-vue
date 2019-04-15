@@ -166,7 +166,7 @@ export default {
         xkey: 'y',
         ykeys: ['a', 'b'],
         labels: ['Users A', 'Series B'],
-        lineColors: ['#8fe5d4', '#ffd7de'],
+        lineColors: ['#4ce5b5', '#ff435b'],
         lineWidth: 0,
       });
     },

@@ -62,11 +62,11 @@
           <b-row>
             <b-col xs='3'>
               <span class="widget-icon">
-                <i class="fi flaticon-like text-primary" />
+                <i class="fi flaticon-like" />
               </span>
             </b-col>
             <b-col xs='9'>
-              <div class="text-muted">
+              <div>
                 <h6 class="no-margin">TOTAL PROGRESS</h6>
                 <p class="h2 no-margin fw-normal">43,32%</p>
               </div>
