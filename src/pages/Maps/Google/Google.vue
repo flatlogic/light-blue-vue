@@ -2,7 +2,7 @@
   <div>
     <b-breadcrumb>
       <b-breadcrumb-item>YOU ARE HERE</b-breadcrumb-item>
-      <b-breadcrumb-item active>Maps</b-breadcrumb-item>
+      <b-breadcrumb-item active>Google Maps</b-breadcrumb-item>
     </b-breadcrumb>
     <h1 class="page-title">
       Google <span class="fw-semi-bold">Maps</span>
@@ -37,4 +37,4 @@
   };
 </script>
 
-<style src="./Maps.scss" lang="scss" scoped />
+<style src="./Google.scss" lang="scss" scoped />

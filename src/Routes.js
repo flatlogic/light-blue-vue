@@ -39,11 +39,18 @@ import GridPagePage from '@/pages/Grid/Grid';
 import TablesBasicPage from '@/pages/Tables/Basic/Basic';
 import TablesDynamicPage from '@/pages/Tables/Dynamic/Dynamic';
 
-import Notifications from '@/pages/Notifications/Notifications';
-import Maps from '@/pages/Maps/Maps';
 import Dashboard from '@/pages/Dashboard/Dashboard';
 import Login from '@/pages/Login/Login';
 import ErrorPage from '@/pages/Error/Error';
+// Maps
+import GoogleMapPage from '@/pages/Maps/Google/Google';
+import VectorMapPage from '@/pages/Maps/Vector/Vector';
+// Extra
+import CalendarPage from '@/pages/Extra/Calendar/Calendar';
+import InvoicePage from '@/pages/Extra/Invoice/Invoice';
+import SearchPage from '@/pages/Extra/Search/Search';
+import TimelinePage from '@/pages/Extra/Timeline/Timeline';
+import GalleryPage from '@/pages/Extra/Gallery/Gallery';
 
 Vue.use(Router);
 
@@ -221,15 +228,42 @@ export default new Router({
           name: 'TablesDynamicPage',
           component: TablesDynamicPage,
         },
+        // maps pages
         {
-          path: 'notifications',
-          name: 'Notifications',
-          component: Notifications,
+          path: 'maps/google',
+          name: 'GoogleMapPage',
+          component: GoogleMapPage,
         },
         {
-          path: 'components/maps',
-          name: 'Maps',
-          component: Maps,
+          path: 'maps/vector',
+          name: 'VectorMapPage',
+          component: VectorMapPage,
+        },
+        // extra pages
+        {
+          path: 'extra/calendar',
+          name: 'CalendarPage',
+          component: CalendarPage,
+        },
+        {
+          path: 'extra/invoice',
+          name: 'InvoicePage',
+          component: InvoicePage,
+        },
+        {
+          path: 'extra/search',
+          name: 'SearchPage',
+          component: SearchPage,
+        },
+        {
+          path: 'extra/time-line',
+          name: 'TimelinePage',
+          component: TimelinePage,
+        },
+        {
+          path: 'extra/gallery',
+          name: 'GalleryPage',
+          component: GalleryPage,
         },
       ],
     },

@@ -100,14 +100,29 @@
       />
       <NavLink
               :activeItem="activeItem"
-              header="Components"
-              link="/app/components"
-              iconName="flaticon-network"
-              index="components"
+              header="Maps"
+              link="/app/maps"
+              iconName="flaticon-map-location"
+              index="maps"
               :childrenLinks="[
-          { header: 'Charts', link: '/app/components/charts' },
-          { header: 'Icons', link: '/app/components/icons' },
-          { header: 'Maps', link: '/app/components/maps' },
+          { header: 'Google Maps', link: '/app/maps/google' },
+          { header: 'Vector Maps', link: '/app/maps/vector' },
+        ]"
+      />
+      <NavLink
+              :activeItem="activeItem"
+              header="Extra"
+              link="/app/extra"
+              iconName="flaticon-star"
+              index="extra"
+              :childrenLinks="[
+          { header: 'Calendar', link: '/app/extra/calendar' },
+          { header: 'Invoice', link: '/app/extra/invoice' },
+          { header: 'Login Page', link: '/login' },
+          { header: 'Error Page', link: '/error' },
+          { header: 'Gallery', link: '/app/extra/gallery' },
+          { header: 'Search Result', link: '/app/extra/search' },
+          { header: 'Time Line', link: '/app/extra/time-line' },
         ]"
       />
     </ul>
