@@ -80,11 +80,23 @@
         ]"
       />
       <NavLink
-              header="Tables Basic"
+              :activeItem="activeItem"
+              header="Grid"
+              link="/app/grid"
+              iconName="flaticon-menu-4"
+              index="grid"
+              isHeader
+      />
+      <NavLink
+              :activeItem="activeItem"
+              header="Tables"
               link="/app/tables"
               iconName="flaticon-equal-1"
               index="tables"
-              isHeader
+              :childrenLinks="[
+          { header: 'Tables Basic', link: '/app/tables/basic' },
+          { header: 'Tables Dynamic', link: '/app/tables/dynamic' },
+        ]"
       />
       <NavLink
               :activeItem="activeItem"

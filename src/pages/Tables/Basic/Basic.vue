@@ -50,10 +50,10 @@
                       </small>
                     </p>
                   </td>
-                  <td class="text-semi-muted">
+                  <td class="text-muted">
                     {{parseDate(row.date)}}
                   </td>
-                  <td class="text-semi-muted">
+                  <td class="text-muted">
                     {{row.size}}
                   </td>
                   <td class="width-150">
@@ -444,7 +444,7 @@ export default {
       tableStyles: [
         {
           id: 1,
-          picture: require('../../assets/tables/1.jpg'), // eslint-disable-line global-require
+          picture: require('../../../assets/tables/1.jpg'), // eslint-disable-line global-require
           description: 'Palo Alto',
           info: {
             type: 'JPEG',
@@ -459,7 +459,7 @@ export default {
         },
         {
           id: 2,
-          picture: require('../../assets/tables/2.jpg'), // eslint-disable-line global-require
+          picture: require('../../../assets/tables/2.jpg'), // eslint-disable-line global-require
           description: 'The Sky',
           info: {
             type: 'PSD',
@@ -474,7 +474,7 @@ export default {
         },
         {
           id: 3,
-          picture: require('../../assets/tables/3.jpg'), // eslint-disable-line global-require
+          picture: require('../../../assets/tables/3.jpg'), // eslint-disable-line global-require
           description: 'Down the road',
           label: {
             colorClass: 'danger',
@@ -493,7 +493,7 @@ export default {
         },
         {
           id: 4,
-          picture: require('../../assets/tables/4.jpg'), // eslint-disable-line global-require
+          picture: require('../../../assets/tables/4.jpg'), // eslint-disable-line global-require
           description: 'The Edge',
           info: {
             type: 'PNG',
@@ -508,7 +508,7 @@ export default {
         },
         {
           id: 5,
-          picture: require('../../assets/tables/5.jpg'), // eslint-disable-line global-require
+          picture: require('../../../assets/tables/5.jpg'), // eslint-disable-line global-require
           description: 'Fortress',
           info: {
             type: 'JPEG',
@@ -568,4 +568,4 @@ export default {
 };
 </script>
 
-<style src="./Tables.scss" lang="scss" scoped />
+<style src="./Basic.scss" lang="scss" scoped />

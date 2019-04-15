@@ -33,8 +33,12 @@ import FlotPage from '@/pages/Charts/Flot/Flot';
 import MorrisPage from '@/pages/Charts/Morris/Morris';
 import SparklinePage from '@/pages/Charts/Sparkline/Sparkline';
 import EasyPiePage from '@/pages/Charts/EasyPie/EasyPie';
+// Grid
+import GridPagePage from '@/pages/Grid/Grid';
+// Tables
+import TablesBasicPage from '@/pages/Tables/Basic/Basic';
+import TablesDynamicPage from '@/pages/Tables/Dynamic/Dynamic';
 
-import Tables from '@/pages/Tables/Tables';
 import Notifications from '@/pages/Notifications/Notifications';
 import Maps from '@/pages/Maps/Maps';
 import Dashboard from '@/pages/Dashboard/Dashboard';
@@ -200,10 +204,22 @@ export default new Router({
           name: 'EasyPiePage',
           component: EasyPiePage,
         },
+        // grid page
         {
-          path: 'tables',
-          name: 'Tables',
-          component: Tables,
+          path: 'grid',
+          name: 'GridPage',
+          component: GridPagePage,
+        },
+        // tables pages
+        {
+          path: 'tables/basic',
+          name: 'TablesBasicPage',
+          component: TablesBasicPage,
+        },
+        {
+          path: 'tables/dynamic',
+          name: 'TablesDynamicPage',
+          component: TablesDynamicPage,
         },
         {
           path: 'notifications',
