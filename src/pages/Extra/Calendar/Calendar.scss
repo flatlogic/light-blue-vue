@@ -21,8 +21,12 @@
       color: $text-color;
     }
 
-    .fc-today {
-      background-color: #fff1b8;
+    .fc-unthemed td.fc-today {
+      background: none;
+    }
+
+    .fc-unthemed td.fc-day.fc-today {
+      background-color: rgba(255, 241, 184, 0.46);
     }
 
     a.fc-event {
@@ -50,8 +54,7 @@
         font-size: $font-size-mini;
         cursor: pointer;
         border-radius: $border-radius;
-        background-color: $white;
-        border: 1px solid #ccc;
+        background-color: $widget-bg;
         box-shadow: $widget-shadow;
       }
     }

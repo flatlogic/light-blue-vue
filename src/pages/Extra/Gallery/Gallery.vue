@@ -1,5 +1,10 @@
 <template>
   <div class="gallery-page">
+    <b-breadcrumb>
+      <b-breadcrumb-item>YOU ARE HERE</b-breadcrumb-item>
+      <b-breadcrumb-item active>Pictures Gallery</b-breadcrumb-item>
+    </b-breadcrumb>
+    <h1 class="page-title">Gallery - <span class="fw-semi-bold">Sortable Pictures</span></h1>
     <div class="d-flex justify-content-between align-items-center">
       <b-button-group class="mb-lg">
         <b-button variant="default" @click="changeCategory(null)"

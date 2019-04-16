@@ -168,3 +168,43 @@ table > thead > tr > th {
   border: 1px dashed $gray-600;
   margin: -1px -1px calc(#{$grid-gutter-width} - 1px) -1px;
 }
+
+/*         Post Links           */
+
+.post-links {
+  margin-bottom: 0;
+  font-size: $font-size-sm;
+  padding-left: 0;
+
+  @include clearfix();
+
+  > li {
+    float: left;
+    list-style: none;
+
+    + li {
+      &::before {
+        color: #999;
+        content: '\25cf';
+        padding: 0 8px;
+      }
+    }
+
+    > a {
+      text-decoration: none;
+      color: $text-muted;
+
+      &:hover {
+        color: $text-muted;
+      }
+    }
+  }
+
+  &.no-separator > li + li {
+    margin-left: 12px;
+
+    &::before {
+      content: normal;
+    }
+  }
+}

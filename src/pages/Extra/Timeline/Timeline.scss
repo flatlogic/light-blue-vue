@@ -130,7 +130,7 @@
 }
 
 .event {
-  background: $white;
+  background: $widget-bg;
   border-radius: $border-radius;
   padding: 20px 20px 0;
   position: relative;
@@ -147,7 +147,7 @@
       width: 0;
       position: absolute;
       border: 10px solid rgba(0, 0, 0, 0);
-      border-right-color: $white;
+      border-right-color: $widget-bg;
       top: 15px;
     }
   }
@@ -162,7 +162,7 @@
     padding: 10px 20px;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    background-color: #fafafa;
+    background-color: $addition-bg;
 
     @include clearfix();
 
@@ -185,7 +185,7 @@
         right: auto;
         left: 100%;
         border-right-color: rgba(0, 0, 0, 0);
-        border-left-color: $white;
+        border-left-color: $widget-bg;
       }
     }
   }

@@ -3,12 +3,12 @@
 .search-page {
   .searchResultCategories {
     > li > a {
-      color: $gray-600;
+      color: $text-muted;
       font-weight: $font-weight-normal;
 
       &:hover {
-        color: $gray-700;
-        background-color: $gray-400;
+        color: $text-color;
+        background-color: $addition-bg;
       }
     }
   }
@@ -19,7 +19,7 @@
 
   .searchResultItem {
     padding: 20px;
-    background-color: $white;
+    background-color: $widget-bg;
     border-radius: $border-radius;
     box-shadow: $widget-shadow;
 

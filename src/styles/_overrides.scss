@@ -186,11 +186,6 @@ small {
   }
 }
 
-.btn-secondary {
-  border-color: $gray-400;
-  color: $gray-800;
-}
-
 .btn-success,
 .btn-info,
 .btn-warning {
@@ -516,12 +511,6 @@ h6,
 
 .popover-content {
   padding: 20px;
-}
-
-// Modal
-
-.modal-body {
-  background: $gray-200;
 }
 
 // Navs
