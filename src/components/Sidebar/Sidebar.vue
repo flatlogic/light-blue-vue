@@ -15,6 +15,43 @@
               index="dashboard"
               isHeader
       />
+      <NavLink
+              :activeItem="activeItem"
+              header="Sing Package"
+              link="/app/package"
+              iconName="flaticon-database-1"
+              index="package"
+              label="new"
+              isHeader
+      />
+      <NavLink
+              :activeItem="activeItem"
+              header="Profile"
+              link="/app/profile"
+              iconName="flaticon-user"
+              index="profile"
+              isHeader
+      />
+      <NavLink
+              :activeItem="activeItem"
+              header="Email"
+              link="/app/email"
+              iconName="flaticon-paper-plane"
+              index="email"
+              badge="9"
+              isHeader
+      />
+      <NavLink
+              :activeItem="activeItem"
+              header="E-commerce"
+              link="/app/ecommerce"
+              iconName="flaticon-diamond"
+              index="ecommerce"
+              :childrenLinks="[
+          { header: 'Products Grid', link: '/app/ecommerce/products' },
+          { header: 'Product Page', link: '/app/ecommerce/product' },
+        ]"
+      />
       <h5 class="navTitle">TEMPLATE</h5>
       <NavLink
               :activeItem="activeItem"

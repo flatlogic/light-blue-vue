@@ -3,6 +3,16 @@ import Router from 'vue-router';
 
 import Layout from '@/components/Layout/Layout';
 
+import Dashboard from '@/pages/Dashboard/Dashboard';
+// Profile
+import ProfilePage from '@/pages/Profile/Profile';
+// Package
+import PackagePage from '@/pages/Package/Package';
+// Email
+import EmailPage from '@/pages/Email/Email';
+// Ecommerce
+import ProductsPage from '@/pages/Ecommerce/ProductsGrid/ProductsGrid';
+import ProductPage from '@/pages/Ecommerce/ProductPage/ProductPage';
 // Core
 import TypographyPage from '@/pages/Core/Typography/Typography';
 import ColorsPage from '@/pages/Core/Colors/Colors';
@@ -38,10 +48,6 @@ import GridPagePage from '@/pages/Grid/Grid';
 // Tables
 import TablesBasicPage from '@/pages/Tables/Basic/Basic';
 import TablesDynamicPage from '@/pages/Tables/Dynamic/Dynamic';
-
-import Dashboard from '@/pages/Dashboard/Dashboard';
-import Login from '@/pages/Login/Login';
-import ErrorPage from '@/pages/Error/Error';
 // Maps
 import GoogleMapPage from '@/pages/Maps/Google/Google';
 import VectorMapPage from '@/pages/Maps/Vector/Vector';
@@ -51,6 +57,9 @@ import InvoicePage from '@/pages/Extra/Invoice/Invoice';
 import SearchPage from '@/pages/Extra/Search/Search';
 import TimelinePage from '@/pages/Extra/Timeline/Timeline';
 import GalleryPage from '@/pages/Extra/Gallery/Gallery';
+// Other
+import Login from '@/pages/Login/Login';
+import ErrorPage from '@/pages/Error/Error';
 
 Vue.use(Router);
 
@@ -76,6 +85,35 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: Dashboard,
+        },
+        // package page
+        {
+          path: 'package',
+          name: 'PackagePage',
+          component: PackagePage,
+        },
+        // profile page
+        {
+          path: 'profile',
+          name: 'ProfilePage',
+          component: ProfilePage,
+        },
+        // email page
+        {
+          path: 'email',
+          name: 'EmailPage',
+          component: EmailPage,
+        },
+        // ecommerce pages
+        {
+          path: 'ecommerce/products',
+          name: 'ProductsPage',
+          component: ProductsPage,
+        },
+        {
+          path: 'ecommerce/product',
+          name: 'ProductPage',
+          component: ProductPage,
         },
         // core pages
         {
