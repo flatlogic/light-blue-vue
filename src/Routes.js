@@ -3,7 +3,11 @@ import Router from 'vue-router';
 
 import Layout from '@/components/Layout/Layout';
 
-import Dashboard from '@/pages/Dashboard/Dashboard';
+// Dashboards
+import VisitsDashboard from '@/pages/Visits/Visits';
+import AnalyticsDashboard from '@/pages/Analytics/Analytics';
+import WidgetsPage from '@/pages/Widgets/Widgets';
+
 // Profile
 import ProfilePage from '@/pages/Profile/Profile';
 // Package
@@ -82,9 +86,19 @@ export default new Router({
       component: Layout,
       children: [
         {
-          path: 'dashboard',
-          name: 'Dashboard',
-          component: Dashboard,
+          path: 'dashboard/visits',
+          name: 'VisitsDashboard',
+          component: VisitsDashboard,
+        },
+        {
+          path: 'dashboard/analytics',
+          name: 'AnalyticsDashboard',
+          component: AnalyticsDashboard,
+        },
+        {
+          path: 'dashboard/widgets',
+          name: 'WidgetsPage',
+          component: WidgetsPage,
         },
         // package page
         {

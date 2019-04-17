@@ -217,6 +217,10 @@ small {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
+.btn-transparent {
+  background-image: none;
+}
+
 .btn {
   font-family: $font-family-sans-serif;
 

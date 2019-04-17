@@ -365,7 +365,7 @@ const todos = [
 ];
 
 export default {
-  name: 'Dashboard',
+  name: 'Visits',
   components: {
     Widget,
     Map,
@@ -457,4 +457,4 @@ export default {
 };
 </script>
 
-<style src="./Dashboard.scss" lang="scss" />
+<style src="./Visits.scss" lang="scss" />

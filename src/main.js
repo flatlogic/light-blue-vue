@@ -14,6 +14,7 @@ import VueSlider from 'vue-slider-component';
 import VeeValidate from 'vee-validate';
 import VueFormWizard from 'vue-form-wizard';
 import { ClientTable } from 'vue-tables-2';
+import Trend from 'vuetrend';
 
 import store from './store';
 import router from './Routes';
@@ -40,6 +41,7 @@ Vue.use(VeeValidate, { fieldsBagName: 'fieldsbag' });
 Vue.use(VueFormWizard);
 
 Vue.use(ClientTable, { theme: 'bootstrap4' });
+Vue.use(Trend);
 
 Vue.config.productionTip = false;
 

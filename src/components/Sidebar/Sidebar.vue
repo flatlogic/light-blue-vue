@@ -13,11 +13,15 @@
               link="/app/dashboard"
               iconName="flaticon-home"
               index="dashboard"
-              isHeader
+              :childrenLinks="[
+          { header: 'Visits', link: '/app/dashboard/visits' },
+          { header: 'Analytics', link: '/app/dashboard/analytics' },
+          { header: 'Widgets', link: '/app/dashboard/widgets' },
+        ]"
       />
       <NavLink
               :activeItem="activeItem"
-              header="Sing Package"
+              header="The Package"
               link="/app/package"
               iconName="flaticon-database-1"
               index="package"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="page-title">Sing - <span class="fw-semi-bold">Package</span>&nbsp;
+    <h2 class="page-title">Light Blue - <span class="fw-semi-bold">Package</span>&nbsp;
       <small>More than 2000 man-hours already invested!</small>
     </h2>
     <p class="lead">Over 8,000 developers worldwide chose our bootstrap admin templates to build their
@@ -32,7 +32,7 @@
             manager are under the hood.</p>
           <a
             class="btn btn-default btn-lg btn-block"
-            href="https://demo.flatlogic.com/sing-app-react/#/app/main/analytics"
+            href="https://demo.flatlogic.com/light-blue-react/#/app/main/analytics"
           >
             Go to Demo
           </a>
@@ -63,40 +63,7 @@
             works out of the box! <br /><br /></p>
           <a
             class="btn btn-default btn-lg btn-block"
-            href="http://demo.flatlogic.com/sing-app/angular/"
-          >
-            Go to Demo
-          </a>
-        </Widget>
-      </b-col>
-      <b-col lg="5" md="6">
-        <Widget
-          title="<h6>AngularJS 1.X Version</h6>"
-          settings collapse close customHeader
-        >
-          <img class="rounded pull-left mb-1 mr-3 image"
-            src="../../assets/angular-logo.svg" width="80" alt="" />
-          <h3>AngularJS Version</h3>
-          <p class="text-muted">We don’t know about you but we’re very
-            excited that it’s finally here!
-            Our brand new Light Blue Angular version.</p>
-          <p><strong>Angular 1.0</strong> have so many opportunities in
-            comparison to HTML. It lets you
-            extend HTML vocabulary.
-            And as a result your application can be very expressive and readable.
-            <strong>Directives</strong> can hide complex DOM structure,
-            CSS. They can let you invent new
-            HTML syntax, specific to your application.
-            We strongly believe that there’s nothing better
-            than arranging an outstanding end-user experience.</p>
-          <p><a href="https://reactjs.org/" rel="nofollow noopener noreferrer" target="_blank">Angular</a>
-            should be definitely
-            among your top considerations when choosing the right framework.</p>
-          <p>Angular version makes it possible by letting responsive, fast-loading and
-            seamlessly-navigating application.</p>
-          <a
-            class="btn btn-default btn-lg btn-block"
-            href="http://demo.flatlogic.com/sing-app/angularjs/"
+            href="https://demo.flatlogic.com/4.0.1/angular/#/app/dashboard"
           >
             Go to Demo
           </a>
@@ -128,7 +95,7 @@
             schemes which you can easily switch based on your choice.</p>
           <a
             class="btn btn-default btn-lg btn-block"
-            href="http://demo.flatlogic.com/sing-app/html-bs4/"
+            href="https://demo.flatlogic.com/4.0.1/dark/"
           >
             Go to Demo
           </a>
@@ -153,7 +120,7 @@
           <p>Creating Vue JS version is a main
             priority of <a href="https://flatlogic.com">Flatlogic</a> for next months,
             so seed version will ready really soon! <br /><br /><br /><br /><br /></p>
-          <a class="btn btn-transparent btn-lg btn-block disabled" href="#">Coming Soon!</a>
+          <a class="btn btn-transparent btn-lg btn-block disabled" href="#">You are here!</a>
         </Widget>
       </b-col>
     </b-row>

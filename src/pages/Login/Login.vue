@@ -78,13 +78,13 @@ export default {
 
       if (username.length !== 0 && password.length !== 0) {
         window.localStorage.setItem('authenticated', true);
-        this.$router.push('/app/dashboard');
+        this.$router.push('/app/dashboard/visits');
       }
     },
   },
   created() {
     if (window.localStorage.getItem('authenticated') === 'true') {
-      this.$router.push('/app/dashboard');
+      this.$router.push('/app/dashboard/visits');
     }
   },
 };
