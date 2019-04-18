@@ -12,7 +12,7 @@
     border: 1px solid #ccc;
     border-radius: $border-radius;
     font-size: $font-size-sm;
-    color: $text-color;
+    color: $gray-700;
   }
 
   .areaLegend,
@@ -30,7 +30,7 @@
     box-sizing: content-box;
     border: 1px solid #ccc;
     background-color: #fff;
-    color: $text-color;
+    color: $gray-700;
     line-height: 20px;
     text-align: center;
     border-radius: $border-radius;
@@ -77,7 +77,7 @@
       color: $text-color;
 
       &:hover {
-        background-color: $gray-200;
+        background-color: $addition-bg;
         color: $text-color;
       }
     }
@@ -86,7 +86,7 @@
       &,
       &:hover {
         background-color: $white;
-        color: $text-color;
+        color: $gray-700;
         font-weight: $font-weight-bold;
       }
     }

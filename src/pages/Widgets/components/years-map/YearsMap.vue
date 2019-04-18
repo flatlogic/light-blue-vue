@@ -2,7 +2,7 @@
   <div class="years-map">
     <div class="mapael" id="mapael" ref="map">
       <div class="stats">
-        <h6 class="text-gray-dark">YEARLY <span class="fw-semi-bold">DISTRIBUTIONS</span></h6>
+        <h6>YEARLY <span class="fw-semi-bold">DISTRIBUTIONS</span></h6>
         <span class="pull-left mr-xs">
           <small><span class="circle bg-warning text-gray-dark">
             <i class="fa fa-plus" /></span></small>
@@ -19,12 +19,6 @@
       </div>
     </div>
     <b-nav class="map-controls" pills fill>
-      <b-nav-item :active="this.activeYear === 2012" @click="changeYear(2012)">
-        2012
-      </b-nav-item>
-      <b-nav-item :active="this.activeYear === 2013" @click="changeYear(2013)">
-        2013
-      </b-nav-item>
       <b-nav-item :active="this.activeYear === 2014" @click="changeYear(2014)">
         2014
       </b-nav-item>
@@ -36,6 +30,12 @@
       </b-nav-item>
       <b-nav-item :active="this.activeYear === 2017" @click="changeYear(2017)">
         2017
+      </b-nav-item>
+      <b-nav-item :active="this.activeYear === 2018" @click="changeYear(2018)">
+        2018
+      </b-nav-item>
+      <b-nav-item :active="this.activeYear === 2019" @click="changeYear(2019)">
+        2019
       </b-nav-item>
     </b-nav>
   </div>
@@ -55,7 +55,7 @@ export default {
   name: 'YearsMap',
   data() {
     return {
-      activeYear: 2012,
+      activeYear: 2018,
     };
   },
   methods: {
@@ -146,7 +146,7 @@ export default {
       const height = 394;
       $map.css('height', height);
       if ($map.parents('.widget')[0]) {
-        $map.find('.map').css('height', parseInt($map.parents('.widget').css('height'), 10) - 35);
+        $map.find('.map').css('height', parseInt($map.parents('.widget').css('height'), 10) - 42);
       }
       $map.mapael(data);
       $map.trigger('zoom', { level: 6, latitude: 59.599254, longitude: 8.863224 });

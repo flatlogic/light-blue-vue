@@ -593,20 +593,18 @@
             </div>
           </div>
           <footer class="bg-addition bt">
-            <div class="input-group input-group-sm">
-              <input type="text" class="form-control" placeholder="Your message" />
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-default">
-                  Send
-                </button>
-              </span>
-            </div>
+            <b-input-group size="sm">
+              <b-form-input id="search-field" type="text" placeholder="Your message"></b-form-input>
+              <b-input-group-append>
+                <b-btn variant="default">Send</b-btn>
+              </b-input-group-append>
+            </b-input-group>
           </footer>
         </Widget>
       </b-col>
       <b-col lg='4' xs='12'>
         <Widget class="bg-gray-dark text-white">
-          <!--<RealtimeTraffic />-->
+          <RealtimeTraffic />
         </Widget>
       </b-col>
     </b-row>
@@ -656,7 +654,7 @@
       </b-col>
       <b-col lg='3' xs='12'>
         <Widget class="widget-chart-changes" close refresh bodyClass="mt-0">
-          <!--<ChangesChart />-->
+          <ChangesChart />
         </Widget>
       </b-col>
       <b-col lg='3' xs='12'>
@@ -757,6 +755,8 @@ import LiveTile from './components/live-tile/LiveTile';
 import FlotCharts from './components/flot-charts/FlotCharts';
 import Nasdaq from './components/nasdaq/Nasdaq';
 import YearsMap from './components/years-map/YearsMap';
+import RealtimeTraffic from "./components/realtime-traffic/RealtimeTraffic";
+import ChangesChart from "./components/changes-chart/ChangesChart";
 
 export default {
   name: 'Widgets',
@@ -767,6 +767,8 @@ export default {
     Skycon,
     Nasdaq,
     YearsMap,
+    RealtimeTraffic,
+    ChangesChart
   },
 };
 </script>
