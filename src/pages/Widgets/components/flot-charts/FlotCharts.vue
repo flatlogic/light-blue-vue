@@ -26,7 +26,7 @@
           <div class="chart-stats">
             <p class="text-muted fs-mini mt-xs">
               <i class="fa fa-map-marker fa-5x pull-left" />
-              <span class="fw-semi-bold text-gray-dark">Jess:</span>
+              <span class="fw-semi-bold">Jess:</span>
                 Seems like statically it&apos;s getting impossible
                 to achieve any sort of results in nearest future. The
                 only thing we can hope for is pressing one of these two buttons:
@@ -36,7 +36,7 @@
               <b-button variant="default" size="xs">Reject</b-button>
             </div>
           </div>
-          <div class="chart bg-body-light">
+          <div class="chart">
             <div ref="chartFirst" :style="{ height: '200px' }"/>
           </div>
         </Widget>
@@ -86,7 +86,7 @@
               </div>
             </div>
           </div>
-          <div class="chart bg-body-light">
+          <div class="chart">
             <div ref="chartSecond" :style="{ height: '200px' }"/>
           </div>
         </Widget>
@@ -113,7 +113,7 @@ export default {
         series: {
           lines: {
             show: true,
-            lineWidth: 1,
+            lineWidth: 1.5,
             fill: false,
             fillColor: { colors: [{ opacity: 0.001 }, { opacity: 0.5 }] },
           },
@@ -167,13 +167,13 @@ export default {
   },
   mounted() {
     $.plot($(this.$refs.chartFirst), this.generateRandomData([{
-      label: 'Visitors', color: '#777',
+      label: 'Visitors', color: '#65bb67',
     }, {
       label: 'Charts', color: '#dd5826',
     }]), this.flotOptions);
 
     $.plot($(this.$refs.chartSecond), this.generateRandomData([{
-      label: 'Controllers', color: '#777',
+      label: 'Controllers', color: '#4fb9b1',
     }, {
       label: 'Scopes', color: '#f0b518',
     }]), this.flotOptions);

@@ -60,6 +60,10 @@
   &:global.bg-transparent {
     box-shadow: none;
   }
+
+  &:global.fullscreened {
+    background: opacify($widget-bg, .6);
+  }
 }
 
 .widgetBody {

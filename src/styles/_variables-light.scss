@@ -153,7 +153,7 @@ $navbar-link-disabled-bg: transparent !default;
 
 // Dropdowns
 $dropdown-item-padding-y: 0.5rem;
-$dropdown-link-color: $text-color;
+//$dropdown-link-color: $text-color;
 $dropdown-border-radius: $widget-border-radius;
 
 //== Navs
@@ -232,6 +232,10 @@ $padding-small-horizontal:  0.75rem !default;
 $card-cap-bg:               transparent;
 $card-bg:                   $widget-bg;
 $card-border-width:         0;
+
+// == Modals
+
+$modal-content-color: $gray-700;
 
 // Screens
 // -------------------------
