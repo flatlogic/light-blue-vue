@@ -188,7 +188,7 @@
       <b-col lg='4' xs='12'>
         <Widget refresh close bodyClass="mt-0">
           <div class="widget-top-overflow widget-padding-md clearfix bg-warning text-white">
-            <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Next Generation</span> Admin
+            <h3 class="mt-lg mb-lg">Light Blue - <span class="fw-semi-bold">Next Generation</span> Admin
               Dashboard
               Template</h3>
             <ul class="tags text-white pull-right">
@@ -200,7 +200,7 @@
               <img class="rounded-circle" src='../../assets/people/a4.jpg' alt="..." />
             </span>
             <h6 class="m-b-1 fw-normal text-white">Jeremy &nbsp;
-              <small class="text-white text-light">@sing</small>
+              <small class="text-white text-light">@light-blue</small>
             </h6>
             <p class="fs-mini text-muted">
               <time>25 mins</time>
@@ -212,7 +212,7 @@
             and listen. Colors, sounds,
             thoughts, ideas.
           </p>
-          <footer class="bg-body-light">
+          <footer class="bg-addition">
             <ul class="post-links">
               <li><a href="#">1 hour</a></li>
               <li>
@@ -273,12 +273,12 @@
               and listen. Colors, sounds,
               thoughts, ideas. </p>
           </div>
-          <footer class="bg-body-light">
+          <footer class="bg-addition">
             <ul class="post-links no-separator">
               <li><a href="#"><span class="text-danger">
                 <i class="fa fa-heart" /> 427
               </span></a></li>
-              <li><a href="#"><i class="glyphicon glyphicon-comment" /> 98</a></li>
+              <li><a href="#"><i class="la la-comment" /> 98</a></li>
             </ul>
           </footer>
         </Widget>
@@ -297,7 +297,7 @@
               </p>
             </div>
             <div class="widget-middle-overflow widget-padding-md clearfix bg-danger text-white">
-              <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Next Generation</span> Admin
+              <h3 class="mt-lg mb-lg">Light Blue - <span class="fw-semi-bold">Next Generation</span> Admin
                 Dashboard
                 Template</h3>
               <ul class="tags text-white pull-right">
@@ -309,7 +309,7 @@
               a sec and listen. Colors, sounds,
               thoughts, ideas. </p>
           </div>
-          <footer class="bg-body-light">
+          <footer class="bg-addition">
             <ul class="post-links">
               <li><a href="#">1 hour</a></li>
               <li>
@@ -592,7 +592,7 @@
               </ul>
             </div>
           </div>
-          <footer class="bg-body-light bt">
+          <footer class="bg-addition bt">
             <div class="input-group input-group-sm">
               <input type="text" class="form-control" placeholder="Your message" />
               <span class="input-group-btn">
@@ -721,7 +721,7 @@
               <div class="text-center">
                 <i class="fa fa-child text-warning fa-5x" />
               </div>
-              <h3 class="fw-normal">Sing Web App</h3>
+              <h3 class="fw-normal">Light Blue Web App</h3>
               <div class="widget-footer-bottom">
                 <div class="mb-sm">Cutting-edge tech and design delivered</div>
                 <p>
