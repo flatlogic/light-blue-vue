@@ -1,3 +1,3 @@
 module.exports = {
-    baseUrl: '/light-blue-vue-admin/'
+    baseUrl: '/light-blue-vue/dark/'
 }

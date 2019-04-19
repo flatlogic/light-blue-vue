@@ -8,8 +8,14 @@
                         <i class="la la-cog"></i>
                     </div>
                 </div>
-                <h6>Configuration</h6>
+                <h6>Theme</h6>
             </header>
+            <a href="#" class="theme-preview active">
+                <img src="../../assets/dark-theme.png" alt="Dark Theme" class="img-thumbnail">
+            </a>
+            <a href="https://flatlogic.github.io/light-blue-vue/white" class="theme-preview">
+                <img src="../../assets/white-theme.png" alt="White Theme" class="img-thumbnail">
+            </a>
             <div class="widget-body mt-3">
                 <div class="mt-4">
                     <a href="https://flatlogic.com/admin-dashboards/light-blue-vue/"
@@ -17,12 +23,6 @@
                     role="button"
                     class="btn btn-warning btn-rounded-f btn-block fs-mini text-white">
                         Purchase
-                    </a>
-                    <a href="https://flatlogic.com/admin-dashboards/light-blue-vue/"
-                       target="_blank"
-                       role="button"
-                       class="btn btn-danger btn-rounded-f btn-block fs-mini text-white">
-                        Go FULL Version
                     </a>
                     <a href="https://flatlogic.com/admin-dashboards/light-blue-vue/"
                     target="_blank"
@@ -53,10 +53,10 @@
                     </span>
                     <div class="d-flexjustify-content-center text-light mt-2 h2 mb-0">
                         <a target="_blank"
-                        href="https://twitter.com/intent/tweet?text=Amazing%20admin%20dashboard%20template%20built%20with%20%23VueJS%20and%20%23Bootstrap%204!&url=https://flatlogic.com/admin-dashboards/light-blue-vue-lite/demo&via=flatlogic">
+                        href="https://twitter.com/intent/tweet?text=Amazing%20admin%20dashboard%20template%20built%20with%20%23VueJS%20and%20%23Bootstrap%204!&url=https://flatlogic.com/admin-dashboards/light-blue-vue/demo&via=flatlogic">
                             <i class="fa fa-twitter mx-3"></i>
                         </a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://flatlogic.com/admin-dashboards/light-blue-vue-lite/demo"
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://flatlogic.com/admin-dashboards/light-blue-vue/demo"
                         target="_blank">
                             <i class="fa fa-facebook mx-3"></i>
                         </a>
