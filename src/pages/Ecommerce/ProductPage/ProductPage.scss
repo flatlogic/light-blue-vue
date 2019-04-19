@@ -23,7 +23,7 @@
     text-align: center;
     margin-bottom: $spacer * 2;
     font-weight: $font-weight-normal;
-    color: theme-color('dark');
+    color: $text-color;
   
     @include media-breakpoint-down(sm) {
       font-size: 1.4rem;
