@@ -30,6 +30,13 @@
     height: 150px;
   }
 
+  cursor: pointer;
+  transition: $transition-base;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
   .label {
     position: absolute;
     left: 0;
@@ -91,7 +98,6 @@
   margin-top: $spacer;
   letter-spacing: 0.1px;
   font-weight: $font-weight-normal;
-  color: theme-color('dark');
 }
 
 .productsCardDescription {

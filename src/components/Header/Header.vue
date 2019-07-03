@@ -14,11 +14,17 @@
         </b-nav-form>
         <b-nav-item-dropdown right extra-menu-classes="py-0">
           <template slot="button-content">
-            <span class="avatar thumb-sm float-left mr-2">
-              <img class="rounded-circle" src="../../assets/people/a5.jpg" alt="..." />
-            </span>
-            <span class="d-md-down-none d-lg-inline">Philip <span class="fw-semi-bold">Smith</span></span>
-            <span class="ml-2 circle bg-warning text-white fw-bold d-md-down-none d-lg-inline-block">13</span>
+          <span class="avatar rounded-circle thumb-sm float-left mr-2">
+            <img
+                v-if="user.avatar || user.email === 'admin@flatlogic.com'"
+                class="rounded-circle"
+                :src="user.avatar || avatarImage"
+                alt="..."
+            />
+            <span v-else>{{firstUserLetter}}</span>
+          </span>
+            <span class="small">{{user.name || user.email || "Philip smith"}}</span>
+            <span class="ml-1 circle bg-warning text-white fw-bold">13</span>
           </template>
           <notifications />
         </b-nav-item-dropdown>
@@ -63,7 +69,7 @@
             Inbox &nbsp;&nbsp;<b-badge variant="danger" pill class="animated bounceIn">9</b-badge>
           </b-dropdown-item>
           <b-dropdown-divider />
-          <b-dropdown-item-button @click="logout">
+          <b-dropdown-item-button @click="logoutUser">
             <i class="la la-sign-out" /> Log Out
           </b-dropdown-item-button>
         </b-nav-item-dropdown>
@@ -95,7 +101,7 @@
             See all tickets <i class="fa fa-arrow-right ml-1"></i>
           </b-dropdown-item-button>
         </b-nav-item-dropdown>
-        <b-nav-item class="d-md-down-none" @click="logout">
+        <b-nav-item class="d-md-down-none" @click="logoutUser">
           <i class="la la-power-off px-2" />
         </b-nav-item>
         <b-nav-item class="d-md-none" @click="switchSidebarMethod" >
@@ -107,19 +113,29 @@
 
 <script>
 import { mapState, mapActions } from 'vuex';
+import avatarImage from '@/assets/people/a5.jpg';
 import Notifications from '@/components/Notifications/Notifications';
 
 export default {
-  name: 'Headed',
+  name: 'Header',
   components: { Notifications },
+  data() {
+    return {
+      avatarImage,
+      user: JSON.parse(localStorage.getItem('user') || {}),
+      showNavbarAlert: true
+    }
+  },
   computed: {
     ...mapState('layout', {
       sidebarClose: state => state.sidebarClose,
       sidebarStatic: state => state.sidebarStatic,
     }),
+    firstUserLetter() { return (this.user.name || this.user.email || "P")[0].toUpperCase(); }
   },
   methods: {
     ...mapActions('layout', ['toggleSidebar', 'toggleChat', 'switchSidebar', 'changeSidebarActive']),
+    ...mapActions('auth', ['logoutUser']),
     switchSidebarMethod() {
       if (!this.sidebarClose) {
         this.switchSidebar(true);
@@ -131,19 +147,7 @@ export default {
         this.changeSidebarActive(paths.join('/'));
       }
     },
-    logout() {
-      window.localStorage.setItem('authenticated', false);
-      this.$router.push('/login');
-    },
   },
-  created() {
-
-  },
-  data() {
-    return {
-      showNavbarAlert: true
-    }
-  }
 };
 </script>
 

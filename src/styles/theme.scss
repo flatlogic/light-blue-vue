@@ -23,10 +23,11 @@
 @import "../../node_modules/vue2-dropzone/dist/vue2Dropzone.min.css";
 @import "../../node_modules/vue-form-wizard/dist/vue-form-wizard.min.css";
 @import '../../node_modules/jvectormap/jquery-jvectormap.css';
-@import "../../node_modules/slick-carousel/slick/slick.css";
 @import '../../node_modules/metrojs/release/MetroJs.Full/MetroJs.css';
+@import '../../node_modules/v-toaster/dist/v-toaster.css';
 @import 'mixins';
 @import 'base';
+@import 'auth';
 @import 'overrides';
 @import 'general';
 @import 'utils';

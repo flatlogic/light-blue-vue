@@ -23,6 +23,16 @@
   }
 }
 
+.input-group-no-border .form-control.input-transparent {
+  border: 1px solid transparentize($widget-bg, 0.15);
+  border-left: none;
+}
+
+.input-group-no-border .form-control.input-transparent:focus {
+  background-color: $widget-bg;
+
+}
+
 .progress-bar {
   @include box-shadow(none);
 }
@@ -277,6 +287,10 @@ small {
   vertical-align: baseline;
   opacity: .8;
   font-size: 85%;
+}
+
+.dropdown-toggle-no-caret:after {
+  content: none;
 }
 
 .nav-item.dropdown {
@@ -1094,4 +1108,36 @@ ul.messenger-theme-air {
 
 .vue-form-wizard .wizard-nav-pills > li > a {
   position: static !important;
+}
+
+///// V Toaster /////
+div.v-toaster {
+  top: 10px;
+}
+
+///// Vue Input Tag /////
+.vue-input-tag-wrapper {
+  appearance: none;
+  height: max-content;
+
+  .input-tag {
+    border-radius: $border-radius;
+    background-color: $purple;
+    color: white;
+    border-color: darken($purple, 10%);
+
+    .remove:before {
+      content: " ×" !important;
+      color: white;
+    }
+  }
+
+  .input-tag,
+  .new-tag {
+    margin: 2px;
+  }
+
+  .new-tag {
+    color: white;
+  }
 }

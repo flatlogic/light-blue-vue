@@ -4,8 +4,8 @@ import Router from 'vue-router';
 import Layout from '@/components/Layout/Layout';
 
 // Dashboards
-import VisitsDashboard from '@/pages/Visits/Visits';
-import AnalyticsDashboard from '@/pages/Analytics/Analytics';
+import VisitsPage from '@/pages/Visits/Visits';
+import AnalyticsPage from '@/pages/Analytics/Analytics';
 import WidgetsPage from '@/pages/Widgets/Widgets';
 
 // Profile
@@ -15,6 +15,8 @@ import PackagePage from '@/pages/Package/Package';
 // Email
 import EmailPage from '@/pages/Email/Email';
 // Ecommerce
+import ProductsManagement from '@/pages/Ecommerce/Management/Management';
+import ProductEdit from '@/pages/Ecommerce/Management/components/ProductEdit/ProductEdit';
 import ProductsPage from '@/pages/Ecommerce/ProductsGrid/ProductsGrid';
 import ProductPage from '@/pages/Ecommerce/ProductPage/ProductPage';
 // Core
@@ -63,17 +65,25 @@ import TimelinePage from '@/pages/Extra/Timeline/Timeline';
 import GalleryPage from '@/pages/Extra/Gallery/Gallery';
 // Other
 import Login from '@/pages/Login/Login';
+import Register from '@/pages/Register/Register';
 import ErrorPage from '@/pages/Error/Error';
+
+import { isAuthenticated } from './mixins/auth';
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'hash',
   routes: [
+    {path: '/', redirect: '/app/main/analytics'},
     {
       path: '/login',
       name: 'Login',
       component: Login,
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register,
     },
     {
       path: '/error',
@@ -84,19 +94,23 @@ export default new Router({
       path: '/app',
       name: 'Layout',
       component: Layout,
+      beforeEnter: (to, from, next) => {
+        let token = localStorage.getItem('token');
+        isAuthenticated(token) ? next() : next({path: '/login'});
+      },
       children: [
         {
-          path: 'dashboard/visits',
-          name: 'VisitsDashboard',
-          component: VisitsDashboard,
+          path: 'main/analytics',
+          name: 'AnalyticsPage',
+          component: AnalyticsPage,
         },
         {
-          path: 'dashboard/analytics',
-          name: 'AnalyticsDashboard',
-          component: AnalyticsDashboard,
+          path: 'main/visits',
+          name: 'VisitsPage',
+          component: VisitsPage,
         },
         {
-          path: 'dashboard/widgets',
+          path: 'main/widgets',
           name: 'WidgetsPage',
           component: WidgetsPage,
         },
@@ -120,6 +134,21 @@ export default new Router({
         },
         // ecommerce pages
         {
+          path: 'ecommerce/management',
+          name: 'ProductsManagement',
+          component: ProductsManagement,
+        },
+        {
+          path: 'ecommerce/management/:id',
+          name: 'ProductEdit',
+          component: ProductEdit,
+        },
+        {
+          path: 'ecommerce/management/create',
+          name: 'ProductCreate',
+          component: ProductEdit,
+        },
+        {
           path: 'ecommerce/products',
           name: 'ProductsPage',
           component: ProductsPage,
@@ -127,6 +156,11 @@ export default new Router({
         {
           path: 'ecommerce/product',
           name: 'ProductPage',
+          component: ProductPage,
+        },
+        {
+          path: 'ecommerce/product/:id',
+          name: 'DefiniteProductPage',
           component: ProductPage,
         },
         // core pages

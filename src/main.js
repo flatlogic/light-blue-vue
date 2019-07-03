@@ -15,10 +15,21 @@ import VeeValidate from 'vee-validate';
 import VueFormWizard from 'vue-form-wizard';
 import { ClientTable } from 'vue-tables-2';
 import Trend from 'vuetrend';
+import axios from 'axios';
+import Toaster from 'v-toaster';
 
 import store from './store';
 import router from './Routes';
 import App from './App';
+import { AuthMixin } from './mixins/auth';
+import config from './config';
+
+axios.defaults.baseURL = config.baseURLApi;
+axios.defaults.headers.common['Content-Type'] = "application/json";
+const token = localStorage.getItem('token');
+if (token) {
+    axios.defaults.headers.common['Authorization'] = "Bearer " + token;
+}
 
 Vue.use(BootstrapVue);
 
@@ -42,6 +53,9 @@ Vue.use(VueFormWizard);
 
 Vue.use(ClientTable, { theme: 'bootstrap4' });
 Vue.use(Trend);
+
+Vue.mixin(AuthMixin);
+Vue.use(Toaster, {timeout: 5000});
 
 Vue.config.productionTip = false;
 

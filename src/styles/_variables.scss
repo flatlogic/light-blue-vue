@@ -106,7 +106,7 @@ $border-radius-sm:       0.25rem !default;
 //== Sidebar
 //
 
-$sidebar-width: 160px;
+$sidebar-width: 200px;
 $sidebar-transition-time: 0.3s !default;
 
 $sidebar-color: $text-color !default;
@@ -121,7 +121,7 @@ $widget-bg: rgba(0,0,0,.24);
 $widget-title-color: #fff;
 $widget-shadow: 0 23px 20px -20px rgba(darken($body-bg, 25%),0.1), 0 0 15px rgba(darken($body-bg, 25%),0.06);
 $widget-shadow-designated: -1px 0 8px rgba(0,0,0,.2);
-$widget-border-radius: .5rem;
+$widget-border-radius: 10px;
 $widget-padding-vertical: 1rem !default;
 $widget-padding-horizontal: 1.5rem !default;
 

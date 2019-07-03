@@ -71,7 +71,8 @@
     </div>
     <div v-if="customControls" v-html="customControls" class="widgetControls widget-controls" />
     <div :class="`widgetBody widget-body ${bodyClass}`">
-      <slot></slot>
+      <Loader v-if="fetchingData" :class="'widget-loader'" :size="40"></Loader>
+      <slot v-else></slot>
     </div>
   </section>
 </template>
@@ -79,6 +80,7 @@
 <script>
 import $ from 'jquery';
 import 'imports-loader?window.jQuery=jquery,this=>window!widgster'; // eslint-disable-line
+import Loader from '../Loader/Loader';
 
 export default {
   name: 'Widget',
@@ -98,7 +100,9 @@ export default {
     bodyClass: { default: '' },
     options: { default: () => ({}) },
     dataWidgster: { type: Object, default: () => ({}) },
+    fetchingData: {type: Boolean, default: false}
   },
+  components: { Loader },
   computed: {
     randomId() {
       return Math.floor(Math.random() * 100);
