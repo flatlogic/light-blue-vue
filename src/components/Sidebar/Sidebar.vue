@@ -14,8 +14,8 @@
               iconName="flaticon-home"
               index="main"
               :childrenLinks="[
-          { header: 'Analytics', link: '/app/main/analytics' },
           { header: 'Visits', link: '/app/main/visits' },
+          { header: 'Analytics', link: '/app/main/analytics' },
           { header: 'Widgets', link: '/app/main/widgets' },
         ]"
       />

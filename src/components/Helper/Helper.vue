@@ -13,7 +13,7 @@
             <a href="#" class="theme-preview active">
                 <img src="../../assets/dark-theme.png" alt="Dark Theme" class="img-thumbnail">
             </a>
-            <a href="https://flatlogic.github.io/light-blue-vue/white" class="theme-preview">
+            <a href="https://demo.flatlogic.com/light-blue-vue/white" class="theme-preview">
                 <img src="../../assets/white-theme.png" alt="White Theme" class="img-thumbnail">
             </a>
             <div class="widget-body mt-3">

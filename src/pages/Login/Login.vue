@@ -38,8 +38,11 @@
                      placeholder="Password"/>
             </b-input-group>
           </b-form-group>
-          <div class="bg-widget-transparent auth-widget-footer">
+          <div class="bg-widget auth-widget-footer">
             <b-button type="submit" variant="danger" class="auth-btn" size="sm">
+              <span class="auth-btn-circle">
+                <i class="la la-caret-right"></i>
+              </span>
               {{this.isFetching ? 'Loading...' : 'Login'}}
             </b-button>
             <p class="widget-auth-info mt-4">
