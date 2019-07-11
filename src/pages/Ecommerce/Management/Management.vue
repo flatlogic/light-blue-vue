@@ -13,8 +13,8 @@
           show dismissible
       >
         This page is only available in <a class="text-white font-weight-bold" rel="noreferrer noopener"
-                                          href="https://flatlogic.com/admin-dashboards/sing-app-vue-nodejs"
-                                          target="_blank">Sing App Vue with Node.js</a> integration!
+                                          href="https://flatlogic.com/admin-dashboards/light-blue-vue-nodejs"
+                                          target="_blank">Light Blue Vue with Node.js</a> integration!
       </b-alert>
     </div>
     <Widget title="List of Products" collapse close :fetchingData="isReceiving">
