@@ -13,7 +13,7 @@
           show dismissible
       >
         This page is only available in <a class="text-white font-weight-bold" rel="noreferrer noopener"
-                                          href="https://flatlogic.com/admin-dashboards/light-blue-vue-nodejs"
+                                          href="https://flatlogic.com/admin-dashboards/light-blue-vue-node-js"
                                           target="_blank">Light Blue Vue with Node.js</a> integration!
       </b-alert>
     </div>
