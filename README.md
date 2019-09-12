@@ -61,6 +61,11 @@ Run development server
 yarn run serve
 ```
 
+### If you use app with backend support, please use
+```
+yarn run serve:backend
+```
+
 ## Support
 For any additional information please refer to [Flatlogic homepage](https://flatlogic.com).
 
