@@ -1,6 +1,6 @@
 import axios from "axios";
 import config from "../config";
-import mock from "../pages/Analytics/mock";
+import mock from "../pages/Dashboard/mock";
 
 export default {
   namespaced: true,

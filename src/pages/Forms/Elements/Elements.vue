@@ -378,7 +378,7 @@
                   Wysiwyg
                   <span class="help-block">With bottom toolbar appended</span>
                 </div>
-                <trumbowyg  id="wysiwyg-textarea" v-model="wygContent"></trumbowyg>
+                <ckeditor :editor="wygEditor" v-model="wygContent"></ckeditor>
                 <div class="btn-toolbar float-right mt-sm">
                   <b-button variant="danger">Save</b-button>
                   <b-button variant="default">Clear</b-button>
@@ -907,51 +907,108 @@
     </b-row>
     <b-row>
       <b-col xs="12">
-        <Widget title="<h6>Sliders & Range Inputs</h6>"
+        <Widget title="<h6>Sliders</h6>"
           customHeader settingsInverse close refresh>
           <b-row>
             <b-col lg="4">
               <h4>Color Options</h4>
-              <p>A highly customized slider component built with pure Vue.js:</p>
+              <p>Light Blue extends Vue Bootstrap Slider and provides different color options:</p>
               <b-form>
                 <div class="mb-sm">
-                  <vue-slider v-model="sliderValue1"></vue-slider>
+                  <b-form-slider
+                    :value='14'
+                    :max='20'
+                  />
                 </div>
-                <div class="mb-sm">
-                  <vue-slider class="slider-danger" v-model="sliderValue2"></vue-slider>
+                <div class="slider-danger mb-sm">
+                  <b-form-slider
+                    :value='18'
+                    :max='20'
+                  />
                 </div>
-                <div class="mb-sm">
-                  <vue-slider class="slider-warning" v-model="sliderValue3"></vue-slider>
+                <div class="slider-warning mb-sm">
+                 <b-form-slider
+                    :value='7'
+                    :max='20'
+                  />
                 </div>
-                <div class="mb-sm">
-                  <vue-slider class="slider-success" v-model="sliderValue4"></vue-slider>
+                <div class="slider-success mb-sm">
+                  <b-form-slider
+                    :value='11'
+                    :max='20'
+                  />
                 </div>
-                <div class="mb-sm">
-                  <vue-slider class="slider-info" v-model="sliderValue5"></vue-slider>
+                <div class="slider-inverse mb-sm">
+                  <b-form-slider
+                    :value='4'
+                    :max='20'
+                  />
                 </div>
               </b-form>
             </b-col>
             <b-col lg="4">
-              <h4>Range & Adsorb</h4>
-              <p>Range selector, with an ability to select an interval.
-                When <code>adsorb</code> is set to <code>true</code>, the slider automatically adsorbs to the nearest value:</p>
-              <vue-slider
-                      class="slider-danger mb-2"
-                      v-model="sliderValue6"
-              ></vue-slider>
-              <vue-slider
-                      v-model="sliderValue7"
-                      class="slider-success"
-                      :adsorb="true"
-                      :marks="sliderMarks"
-                      :included="true"
-              ></vue-slider>
+              <h4>Slider Orientation</h4>
+              <p>
+                Vertical orientation is also possible. Simply changing <strong>
+                orientation </strong>
+                attribute does the thing.
+              </p>
+              <b-row>
+                <b-col md="8">
+                  <span class="">
+                    <b-form-slider
+                      :value='14'
+                      :max='20'
+                      orientation="vertical"
+                    />
+                  </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="slider-inverse">
+                    <b-form-slider
+                      :value='18'
+                      :max='20'
+                      orientation="vertical"
+                    />
+                  </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="">
+                    <b-form-slider
+                      :value='7'
+                      :max='20'
+                      orientation="vertical"
+                    />
+                  </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="slider-inverse">
+                    <b-form-slider
+                      :value='11'
+                      :max='20'
+                      orientation="vertical"
+                    />
+                  </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="">
+                    <b-form-slider
+                      :value='4'
+                      :max='20'
+                      orientation="vertical"
+                    />
+                  </span>
+                </b-col>
+              </b-row>
             </b-col>
             <b-col lg="4">
-              <h4>Built-in range element</h4>
-              <p>Elements of type <code>range</code> let the user specify a numeric value which must be no
-                less than a given value, and no more than another given value</p>
-              <b-form-input type="range"></b-form-input>
+              <h4>Range Selector</h4>
+              <p>Range selector, options specified via <strong>value</strong>
+                attribute as
+                an array. Price range selector:</p>
+              <span class="slider-warning">
+                <b-form-slider
+                  :max="2000"
+                  :value="[200, 1547]" range
+                />
+                &nbsp;
+              </span>
             </b-col>
           </b-row>
         </Widget>
@@ -1082,17 +1139,20 @@
 import Vue from 'vue';
 import vSelect from 'vue-select';
 import DatePicker from 'vue2-datepicker';
+import { bFormSlider } from 'vue-bootstrap-slider';
 import vueDropzone from 'vue2-dropzone';
 import { Chrome } from 'vue-color';
 import Widget from '@/components/Widget/Widget';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export default {
   name: 'FormElements',
   components: {
-    Widget, vSelect, DatePicker, vueDropzone, Chrome,
+    Widget, vSelect, DatePicker, bFormSlider, vueDropzone, Chrome,
   },
   data() {
     return {
+      wygEditor: ClassicEditor,
       typesDropdown: 'Type one',
       wygContent: '',
       mdContent: '',
@@ -1116,14 +1176,6 @@ export default {
       },
       isPickerActive: false,
       textAreaContent: '',
-      sliderValue1: 20,
-      sliderValue2: 40,
-      sliderValue3: 60,
-      sliderValue4: 50,
-      sliderValue5: 30,
-      sliderValue6: [10, 45],
-      sliderValue7: 30,
-      sliderMarks: [0, 10, 30, 60, 100]
     };
   },
   methods: {

@@ -1,17 +1,6 @@
 @import '../../../styles/app';
 
 .forms-elements {
-  .trumbowyg-box {
-    margin: 0;
-    border-radius: $input-border-radius;
-    background-color: $input-bg;
-    color: $input-color;
-  
-    .trumbowyg-editor,
-    .trumbowyg-textarea {
-      min-height: 150px !important;
-    }
-  }
   
   .v-note-wrapper {
     border-radius: $input-border-radius;

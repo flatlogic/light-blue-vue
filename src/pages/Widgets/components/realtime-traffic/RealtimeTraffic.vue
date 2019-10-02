@@ -19,53 +19,66 @@
     </a>
     <p class="value4">2h 56m</p>
     <br />
-    <div class="mt-xlg chart-overflow-bottom">
-      <area-chart class="area-chart" height="100"
-                  :options="{legend: false, scales: {yAxes: [{display: false}], xAxes: [{display: false}]}}"
-                  :chart-data="dataCollection"/>
-    </div>
+    <div ref="chart" class="mt-xlg chart-overflow-bottom" :style="{ height: '130px' }"
+    />
   </div>
 </template>
 
 <script>
-
-import AreaChart from "../../../Visits/components/AreaChart/AreaChart";
+import Rickshaw from 'rickshaw';
 
 export default {
   name: 'RealtimeTraffic',
-  components: {
-    AreaChart
-  },
   methods: {
-    fillData () {
-      this.dataCollection = {
-        labels: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt()],
-        datasets: [
-          {
-            label: 'Data One',
-            borderColor: '#ef4039',
-            fill: false,
-            data: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt()]
-          }, {
-            label: 'Data Two',
-            backgroundColor: '#25353d',
-            borderColor: 'transparent',
-            data: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt()]
-          }
-        ]
+    initChart() {
+      const seriesData = [[], []];
+      const random = new Rickshaw.Fixtures.RandomData(30);
+
+      for (let i = 0; i < 30; i += 1) {
+        random.addData(seriesData);
       }
+      this.graph = new Rickshaw.Graph({
+        element: this.$refs.chart,
+        height: 130,
+        realtime: true,
+        series: [
+          {
+            color: '#343434', // 'gray-dark'
+            data: seriesData[0],
+            name: 'Uploads',
+          }, {
+            color: '#666', // gray,
+            data: seriesData[1],
+            name: 'Downloads',
+          },
+        ],
+      });
+      const hoverDetail = new Rickshaw.Graph.HoverDetail({
+        graph: this.graph,
+        xFormatter: x => new Date(x * 1000).toString(),
+      });
+
+      hoverDetail.show();
+
+      setInterval(() => {
+        random.removeData(seriesData);
+        random.addData(seriesData);
+        this.graph.update();
+      }, 1000);
+
+      this.graph.render();
     },
-    getRandomInt () {
-      return Math.floor(Math.random() * (50 - 5 + 1)) + 5
-    }
+    onResizeRickshaw() {
+      this.graph.configure({ height: 130 });
+      this.graph.render();
+    },
   },
-  data() {
-    return {
-      dataCollection: null,
-    };
+  mounted() {
+    this.initChart();
+    window.addEventListener('resize', this.onResizeRickshaw);
   },
-  mounted () {
-    this.fillData();
-  }
+  destroyed() {
+    window.removeEventListener('resize', this.onResizeRickshaw);
+  },
 };
 </script>

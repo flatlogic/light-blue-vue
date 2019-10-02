@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard-page">
+  <div class="visits-page">
     <h1 class="page-title">Dashboard &nbsp;
       <small>
         <small>The Lucky One</small>
@@ -30,10 +30,7 @@
             </div>
             <div class="col-md-3 col-12 text-center">
               <span class="status rounded rounded-lg bg-widget">
-                <span><animated-number :value="75"
-                                       :round="true"
-                                       :duration="1000"
-                                       :delay="1500" />%</span>
+                <span><AnimatedNumber :value="75" v-bind="animateNumberOptions"></AnimatedNumber>%</span>
               </span>
             </div>
           </div>
@@ -45,10 +42,7 @@
             </div>
             <div class="col-md-3 col-12 text-center">
               <span class="status rounded rounded-lg bg-widget">
-                <span><animated-number :value="84"
-                                       :round="true"
-                                       :duration="1000"
-                                       :delay="1500" />%</span>
+                <span><AnimatedNumber :value="84" v-bind="animateNumberOptions"></AnimatedNumber>%</span>
               </span>
             </div>
           </div>
@@ -60,10 +54,7 @@
             </div>
             <div class="col-md-3 col-12 text-center">
               <span class="status rounded rounded-lg bg-widget">
-                <span><animated-number :value="92"
-                                       :round="true"
-                                       :duration="1000"
-                                       :delay="1500" />%</span>
+                <span><AnimatedNumber :value="92" v-bind="animateNumberOptions"></AnimatedNumber>%</span>
               </span>
             </div>
           </div>
@@ -318,8 +309,7 @@
         <Widget
           title="<h6>Calendar</h6" bodyClass="p-0"
           settings close customHeader>
-          <v-calendar class="v-calendar" :attributes='calendarAttributes'>
-          </v-calendar>
+          <Calendar />
           <div class="list-group fs-mini">
             <a href="#" class="list-group-item text-ellipsis">
               <span class="badge badge-pill badge-warning float-right">6:45</span>
@@ -340,47 +330,27 @@
 import Vue from 'vue';
 import Widget from '@/components/Widget/Widget';
 import Map from './components/Map/Map';
-import AnimatedNumber from "animated-number-vue";
+import Calendar from './components/Calendar/Calendar';
 import AreaChart from './components/AreaChart/AreaChart';
-
-const todos = [
-  {
-    description: 'Take Sebastian to basketball practice.',
-    isComplete: false,
-    dates: { weekdays: 6, weeklyInterval: 2 }, // Every other Friday
-    color: '#ff8080',       // Red
-  },
-  {
-    description: 'German courses',
-    isComplete: false,
-    dates: new Date(),
-    color: '#64a4ff',       // Red
-  },
-  {
-    description: 'Constitution Day',
-    isComplete: false,
-    dates: new Date(Date.now() + 6*24*60*60*1000), // in 6 days
-    color: '#6ae696',       // Red
-  },
-];
+import AnimatedNumber from "animated-number-vue";
 
 export default {
   name: 'Visits',
   components: {
-    Widget,
-    Map,
-    AnimatedNumber,
-    AreaChart
+    Widget, Map, Calendar, AreaChart, AnimatedNumber
   },
   data() {
     return {
+      animateNumberOptions: {
+        duration: 2000,
+        easing: 'easeInQuad',
+        formatValue(value) {
+          return value.toFixed(0);
+        }
+      },
       checkedArr: [false, false, false],
       dataCollection: null,
-      todos
     };
-  },
-  mounted () {
-    this.fillData();
   },
   methods: {
     checkTable(id) {
@@ -429,31 +399,9 @@ export default {
       return Math.floor(Math.random() * (50 - 5 + 1)) + 5
     }
   },
-  computed: {
-    calendarAttributes() {
-      return [
-        // Today attribute
-        {
-          contentStyle: {
-            fontWeight: '700',
-            fontSize: '.9rem',
-          },
-          dates: new Date(),
-        },
-        // Attributes for todos
-        ...this.todos.map(todo => ({
-          dates: todo.dates,
-          dot: {
-            backgroundColor: todo.color,
-            opacity: todo.isComplete ? 0.3 : 1,
-          },
-          popover: {
-            label: todo.description,
-          },
-        })),
-      ];
-    },
-  }
+  mounted () {
+    this.fillData();
+  },
 };
 </script>
 

@@ -1,22 +1,21 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import 'expose-loader?jQuery!jquery' // eslint-disable-line
-import 'expose-loader?$!jquery' // eslint-disable-line
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
-import VCalendar from 'v-calendar';
 import * as VueGoogleMaps from 'vue2-google-maps';
+import VueTouch from 'vue-touch';
+import Trend from 'vuetrend';
+import { ClientTable } from 'vue-tables-2';
 import VueTextareaAutosize from 'vue-textarea-autosize';
-import trumbowyg from 'vue-trumbowyg';
 import mavonEditor from 'mavon-editor';
 import { VueMaskDirective } from 'v-mask';
-import VueSlider from 'vue-slider-component';
 import VeeValidate from 'vee-validate';
 import VueFormWizard from 'vue-form-wizard';
-import { ClientTable } from 'vue-tables-2';
-import Trend from 'vuetrend';
 import axios from 'axios';
-import Toaster from 'v-toaster';
+import Toasted from 'vue-toasted';
+import VCalendar from 'v-calendar';
+import VueApexCharts from 'vue-apexcharts';
+import CKEditor from '@ckeditor/ckeditor5-vue';
 
 import store from './store';
 import router from './Routes';
@@ -32,30 +31,26 @@ if (token) {
 }
 
 Vue.use(BootstrapVue);
-
+Vue.use(VCalendar, {
+  firstDayOfWeek: 2
+});
+Vue.use(VueTouch);
+Vue.use(Trend);
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyB7OXmzfQYua_1LEhRdqsoYzyJOPh9hGLg',
   },
 });
-
-Vue.use(VCalendar, {
-  firstDayOfWeek: 2,  // Monday
-});
-
+Vue.use(ClientTable, { theme: 'bootstrap4' });
 Vue.use(VueTextareaAutosize);
-Vue.use(trumbowyg);
+Vue.use(CKEditor);
 Vue.use(mavonEditor);
+Vue.component('apexchart', VueApexCharts);
 Vue.directive('mask', VueMaskDirective);
-Vue.component('VueSlider', VueSlider);
 Vue.use(VeeValidate, { fieldsBagName: 'fieldsbag' });
 Vue.use(VueFormWizard);
-
-Vue.use(ClientTable, { theme: 'bootstrap4' });
-Vue.use(Trend);
-
 Vue.mixin(AuthMixin);
-Vue.use(Toaster, {timeout: 5000});
+Vue.use(Toasted, {duration: 10000});
 
 Vue.config.productionTip = false;
 

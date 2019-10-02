@@ -1,0 +1,39 @@
+@import '../../../../styles/app';
+
+/*
+ * Vue calendar
+ */
+
+.vc-container {
+  border: none;
+  font-family: $font-family-base;
+  color: $text-color;
+  background: $widget-bg;
+  border-radius: 0;
+
+  .vc-header {
+    padding: $widget-padding-vertical $widget-padding-horizontal 0;
+
+    .vc-title {
+      color: $text-color;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  .vc-weekday {
+    font-weight: $font-weight-normal;
+    color: $text-muted;
+  }
+
+  .vc-day-popover-row-content {
+    display: block;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: darken($white, 20%);
+      }
+    }
+  }
+}

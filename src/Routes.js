@@ -2,15 +2,28 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Layout from '@/components/Layout/Layout';
-
-// Dashboards
+// Core
+import TypographyPage from '@/pages/Core/Typography/Typography';
+import ColorsPage from '@/pages/Core/Colors/Colors';
+import CoreGridPage from '@/pages/Core/Grid/Grid';
+// Tables
+import TablesBasicPage from '@/pages/Tables/Basic/Basic';
+import TablesDynamicPage from '@/pages/Tables/Dynamic/Dynamic';
+// Maps
+import GoogleMapPage from '@/pages/Maps/Google/Google';
+import AmchartsMapPage from '@/pages/Maps/Amcharts/Amcharts';
+// Main
 import VisitsPage from '@/pages/Visits/Visits';
-import AnalyticsPage from '@/pages/Analytics/Analytics';
+import AnalyticsPage from '@/pages/Dashboard/Dashboard';
 import WidgetsPage from '@/pages/Widgets/Widgets';
+// Charts
+import ChartsPage from '@/pages/Charts/Charts';
+import ApexPage from '@/pages/Charts/Apex/Apex';
+import EchartsPage from '@/pages/Charts/Echarts/Echarts';
+import HighchartsPage from '@/pages/Charts/Highcharts/Highcharts';
 
-// Profile
 import ProfilePage from '@/pages/Profile/Profile';
-// Package
+// Profile
 import PackagePage from '@/pages/Package/Package';
 // Email
 import EmailPage from '@/pages/Email/Email';
@@ -19,10 +32,21 @@ import ProductsManagement from '@/pages/Ecommerce/Management/Management';
 import ProductEdit from '@/pages/Ecommerce/Management/components/ProductEdit/ProductEdit';
 import ProductsPage from '@/pages/Ecommerce/ProductsGrid/ProductsGrid';
 import ProductPage from '@/pages/Ecommerce/ProductPage/ProductPage';
-// Core
-import TypographyPage from '@/pages/Core/Typography/Typography';
-import ColorsPage from '@/pages/Core/Colors/Colors';
-import CoreGridPage from '@/pages/Core/Grid/Grid';
+// Grid
+import GridPagePage from '@/pages/Grid/Grid';
+// Forms
+import FormElementsPage from '@/pages/Forms/Elements/Elements';
+import FormValidationPage from '@/pages/Forms/Validation/Validation';
+import FormWizardPage from '@/pages/Forms/Wizard/Wizard';
+// Extra
+import CalendarPage from '@/pages/Extra/Calendar/Calendar';
+import InvoicePage from '@/pages/Extra/Invoice/Invoice';
+import SearchPage from '@/pages/Extra/Search/Search';
+import TimelinePage from '@/pages/Extra/Timeline/Timeline';
+import GalleryPage from '@/pages/Extra/Gallery/Gallery';
+import Login from '@/pages/Login/Login';
+import Register from '@/pages/Register/Register';
+import ErrorPage from '@/pages/Error/Error';
 // Ui
 import AlertsPage from '@/pages/Ui/Alerts/Alerts';
 import BadgePage from '@/pages/Ui/Badge/Badge';
@@ -39,34 +63,6 @@ import NotificationsPage from '@/pages/Ui/Notifications/Notifications';
 import PopoversPage from '@/pages/Ui/Popovers/Popovers';
 import ProgressPage from '@/pages/Ui/Progress/Progress';
 import TabsPage from '@/pages/Ui/Tabs/Tabs';
-// Forms
-import FormElementsPage from '@/pages/Forms/Elements/Elements';
-import FormValidationPage from '@/pages/Forms/Validation/Validation';
-import FormWizardPage from '@/pages/Forms/Wizard/Wizard';
-// Charts
-import ChartsPage from '@/pages/Charts/Charts';
-import FlotPage from '@/pages/Charts/Flot/Flot';
-import MorrisPage from '@/pages/Charts/Morris/Morris';
-import SparklinePage from '@/pages/Charts/Sparkline/Sparkline';
-import EasyPiePage from '@/pages/Charts/EasyPie/EasyPie';
-// Grid
-import GridPagePage from '@/pages/Grid/Grid';
-// Tables
-import TablesBasicPage from '@/pages/Tables/Basic/Basic';
-import TablesDynamicPage from '@/pages/Tables/Dynamic/Dynamic';
-// Maps
-import GoogleMapPage from '@/pages/Maps/Google/Google';
-import VectorMapPage from '@/pages/Maps/Vector/Vector';
-// Extra
-import CalendarPage from '@/pages/Extra/Calendar/Calendar';
-import InvoicePage from '@/pages/Extra/Invoice/Invoice';
-import SearchPage from '@/pages/Extra/Search/Search';
-import TimelinePage from '@/pages/Extra/Timeline/Timeline';
-import GalleryPage from '@/pages/Extra/Gallery/Gallery';
-// Other
-import Login from '@/pages/Login/Login';
-import Register from '@/pages/Register/Register';
-import ErrorPage from '@/pages/Error/Error';
 
 import { isAuthenticated } from './mixins/auth';
 
@@ -99,6 +95,7 @@ export default new Router({
         isAuthenticated(token) ? next() : next({path: '/login'});
       },
       children: [
+        // main pages
         {
           path: 'main/analytics',
           name: 'AnalyticsPage',
@@ -278,24 +275,19 @@ export default new Router({
           component: ChartsPage,
         },
         {
-          path: 'charts/flot',
-          name: 'FlotPage',
-          component: FlotPage,
+          path: 'charts/apex',
+          name: 'ApexPage',
+          component: ApexPage,
         },
         {
-          path: 'charts/morris',
-          name: 'MorrisPage',
-          component: MorrisPage,
+          path: 'charts/echarts',
+          name: 'EchartsPage',
+          component: EchartsPage,
         },
         {
-          path: 'charts/sparkline',
-          name: 'SparklinePage',
-          component: SparklinePage,
-        },
-        {
-          path: 'charts/easy-pie',
-          name: 'EasyPiePage',
-          component: EasyPiePage,
+          path: 'charts/highcharts',
+          name: 'HighchartsPage',
+          component: HighchartsPage,
         },
         // grid page
         {
@@ -321,9 +313,9 @@ export default new Router({
           component: GoogleMapPage,
         },
         {
-          path: 'maps/vector',
-          name: 'VectorMapPage',
-          component: VectorMapPage,
+          path: 'maps/amcharts',
+          name: 'AmchartsMapPage',
+          component: AmchartsMapPage,
         },
         // extra pages
         {

@@ -1,9 +1,8 @@
 <template>
-  <Sparklines :data="data" :options="options" />
+  <Sparklines :data="data" type="line" :width="width" :height="height" :options="options" />
 </template>
 
 <script>
-import $ from 'jquery';
 import Sparklines from '@/components/Sparklines/Sparklines';
 
 export default {
@@ -11,24 +10,37 @@ export default {
   components: { Sparklines },
   data() {
     return {
-      data: [4, 6, 5, 7, 5],
+      data: [{
+        data: [4, 6, 5, 7, 5],
+      }],
+      width: '100%',
+      height: 70,
       options: {
-        type: 'line',
-        width: '99%',
-        height: '60',
-        lineColor: '#ff515b',
-        fillColor: 'transparent',
-        spotRadius: 5,
-        spotColor: '#ff515b',
-        valueSpots: { '0:': '#ff515b' },
-        highlightSpotColor: '#fff',
-        highlightLineColor: '#f8f9fa',
-        minSpotColor: '#ff515b',
-        maxSpotColor: '#ff515b',
-        tooltipFormat: new $
-          .SPFormatClass('<span style="color: white">&#9679;</span> {{prefix}}{{y}}{{suffix}}'),
-        chartRangeMin: Math.min.apply(null, this.data) - 1,
-      },
+        stroke: {
+          width: 1
+        },
+        markers: {
+          size: 4,
+          colors: '#f85000',
+          shape: "circle",
+          strokeWidth: 0,
+          hover: {
+            size: 5,
+            colors: '#fff',
+          }
+        },
+        colors: [
+          '#f85000'
+        ],
+        grid: {
+          padding: {
+            left: 10,
+            right: 10,
+            top: 10,
+            bottom: 10
+          }
+        }
+      }
     };
   },
 };
