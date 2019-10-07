@@ -54,12 +54,6 @@ export default {
           color: 'white'
         }
       },
-      grid: {
-        row: {
-          colors: ['#f3f3f3', 'transparent'],
-          opacity: 0.5
-        },
-      },
       xaxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
         labels: {
@@ -77,7 +71,8 @@ export default {
       },
       tooltip: {
         theme: 'dark'
-      }
+      },
+      colors: ['#2e74e3']
     }
   },
   area: {
@@ -110,7 +105,7 @@ export default {
       tooltip: {
         theme: 'dark'
       },
-      colors: ['#008FFB', '#00E396', '#CED4DC'],
+      colors: ['#2e74e3', '#25b932', '#c1ccd3'],
       dataLabels: {
         enabled: false
       },
@@ -154,6 +149,7 @@ export default {
       data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
     }],
     options: {
+      colors: ['#2e74e3'],
       chart: {
         height: 350,
         type: 'bar',
@@ -269,7 +265,7 @@ export default {
       chart: {
         stacked: true
       },
-      colors: ['#008FFB', '#FF4560'],
+      colors: ['#2e74e3', '#e671b8'],
       plotOptions: {
         bar: {
           horizontal: true,
@@ -363,6 +359,7 @@ export default {
       dataLabels: {
         enabled: false
       },
+      colors: ['#2e74e3', '#25b932', '#f0af03'],
       stroke: {
         width: [1, 1, 4]
       },
@@ -388,17 +385,17 @@ export default {
         },
         axisBorder: {
           show: true,
-          color: '#008FFB'
+          color: '#2e74e3'
         },
         labels: {
           style: {
-            color: '#008FFB',
+            color: '#2e74e3',
           }
         },
         title: {
           text: "Income (thousand crores)",
           style: {
-            color: '#008FFB',
+            color: '#2e74e3',
           }
         },
         tooltip: {
@@ -414,17 +411,17 @@ export default {
           },
           axisBorder: {
             show: true,
-            color: '#00E396'
+            color: '#25b932'
           },
           labels: {
             style: {
-              color: '#00E396',
+              color: '#25b932',
             }
           },
           title: {
             text: "Operating Cashflow (thousand crores)",
             style: {
-              color: '#00E396',
+              color: '#25b932',
             }
           },
         },
@@ -436,17 +433,17 @@ export default {
           },
           axisBorder: {
             show: true,
-            color: '#FEB019'
+            color: '#f0af03'
           },
           labels: {
             style: {
-              color: '#FEB019',
+              color: '#f0af03',
             },
           },
           title: {
             text: "Revenue (thousand crores)",
             style: {
-              color: '#FEB019',
+              color: '#f0af03',
             }
           }
         },
@@ -491,7 +488,8 @@ export default {
             position: 'bottom',
           }
         }
-      }]
+      }],
+      colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae'],
     }
   },
   donut: {
@@ -515,68 +513,34 @@ export default {
             position: 'bottom',
           }
         }
-      }]
+      }],
+      colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae'],
     }
   },
   radial: {
     series: [76, 67, 61, 90],
     options: {
-      tooltip: {
-        theme: 'dark'
+      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+      title: {
+        text: 'Basic Radial Chart',
+        style: {
+          color: 'white'
+        }
       },
+      colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00'],
       plotOptions: {
         radialBar: {
-          offsetY: -10,
-          startAngle: 0,
-          endAngle: 270,
-          hollow: {
-            margin: 5,
-            size: '30%',
-            background: 'transparent',
-            image: undefined,
-          },
           dataLabels: {
-            name: {
-              show: false,
-
-            },
             value: {
-              show: false,
+              color: '#fff'
             }
+          },
+          track: {
+            background: '#000000',
+            opacity: 0.24
           }
         }
-      },
-      colors: ['#1ab7ea', '#0084ff', '#39539E', '#0077B5'],
-      labels: ['Vimeo', 'Messenger', 'Facebook', 'LinkedIn'],
-      legend: {
-        show: true,
-        floating: true,
-        fontSize: '16px',
-        position: 'left',
-        offsetX: 40,
-        offsetY: 50,
-        labels: {
-          useSeriesColors: true,
-          colors: ['#fff']
-        },
-        markers: {
-          size: 0
-        },
-        formatter: function (seriesName, opts) {
-          return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex]
-        },
-        itemMargin: {
-          horizontal: 1,
-        }
-      },
-      responsive: [{
-        breakpoint: 480,
-        options: {
-          legend: {
-            show: false
-          }
-        }
-      }]
+      }
     }
   },
   heatmap: {
@@ -676,25 +640,25 @@ export default {
               from: -30,
               to: 5,
               name: 'low',
-              color: '#00A100'
+              color: '#25b932'
             },
               {
                 from: 6,
                 to: 20,
                 name: 'medium',
-                color: '#128FD9'
+                color: '#2e74e3'
               },
               {
                 from: 21,
                 to: 45,
                 name: 'high',
-                color: '#FFB200'
+                color: '#f0af03'
               },
               {
                 from: 46,
                 to: 55,
                 name: 'extreme',
-                color: '#FF0000'
+                color: '#db4a00'
               }
             ]
           }

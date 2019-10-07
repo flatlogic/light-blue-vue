@@ -44,6 +44,10 @@ function generateVectorData() {
 
 export default {
   line: {
+    credits: {
+      enabled: false
+    },
+    colors: ['#2e74e3'],
     chart: {
       zoomType: 'x',
       backgroundColor: 'transparent'
@@ -129,6 +133,9 @@ export default {
     }]
   },
   pie: {
+    credits: {
+      enabled: false
+    },
     chart: {
       type: 'variablepie',
       backgroundColor: 'transparent'
@@ -158,6 +165,7 @@ export default {
         'Area (square km): <b>{point.y}</b><br/>' +
         'Population density (people per square km): <b>{point.z}</b><br/>'
     },
+    colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae', '#3c484f', '#14d3d3'],
     series: [{
       minPointSize: 10,
       innerSize: '20%',
@@ -195,6 +203,10 @@ export default {
     }]
   },
   column3D: {
+    credits: {
+      enabled: false
+    },
+    colors: ['#db4a00'],
     chart: {
       backgroundColor: 'transparent',
       type: 'column',
@@ -258,6 +270,9 @@ export default {
     }]
   },
   sunburst: {
+    credits: {
+      enabled: false
+    },
     chart: {
       height: '100%',
       backgroundColor: 'transparent'
@@ -284,6 +299,7 @@ export default {
         color: '#fff'
       }
     },
+    colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae', '#3c484f', '#14d3d3'],
     series: [{
       type: "sunburst",
       data: sunburstData,
@@ -335,6 +351,10 @@ export default {
     chart: {
       backgroundColor: 'transparent'
     },
+    credits: {
+      enabled: false
+    },
+    colors: ['#495057'],
     title: {
       text: 'Highcharts Vector plot',
       style: {
@@ -391,6 +411,10 @@ export default {
     chart: {
       backgroundColor: 'transparent'
     },
+    credits: {
+      enabled: false
+    },
+    colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae', '#3c484f', '#14d3d3'],
     exporting: {
       buttons: {
         contextButton: {

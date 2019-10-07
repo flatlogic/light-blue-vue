@@ -139,6 +139,8 @@ table > thead > tr > th {
 
 /* --------- Stats Row --------- */
 .stats-row {
+  display: flex;
+  align-items: center;
   margin-bottom: 1.25rem;
 }
 

@@ -311,6 +311,9 @@ export default {
           height: 120,
           backgroundColor: 'transparent'
         },
+        credits: {
+          enabled: false
+        },
         title: false,
         plotOptions: {
           pie: {
