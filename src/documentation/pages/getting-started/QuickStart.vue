@@ -24,7 +24,7 @@
           <li><code>yarn lint</code>: to check the source code for syntax errors and potential issues</li>
         </ul>
       </Widget>
-      <p>For more instruction please refer to Sing App Vue readme.md.</p>
+      <p>For more instruction please refer to Light Blue Vue readme.md.</p>
     </b-col>
   </b-row>
 </template>

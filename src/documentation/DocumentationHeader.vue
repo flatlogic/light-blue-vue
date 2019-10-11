@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable="lg" class="header d-print-none">
     <b-navbar-brand href="/#/documentation" class="px-4">
-      <span class="fw-semi-bold d-sm-down-none">Sing App Vue</span> &nbsp; Documentation
+      <span class="fw-semi-bold d-sm-down-none">Light Blue Vue</span> &nbsp; Documentation
     </b-navbar-brand>
     <b-navbar-nav class="ml-auto d-md-down-none">
       <b-nav-item href="https://twitter.com/flatlogic" class="mr-1">
@@ -29,7 +29,7 @@
           Live Preview
         </b-button>
       </b-nav-item>
-      <b-nav-item href="https://flatlogic.com/admin-dashboards/sing-app-vue" target="_blank" class="mr-4">
+      <b-nav-item href="https://flatlogic.com/admin-dashboards/light-blue-vue" target="_blank" class="mr-4">
         <b-button variant="warning" class="text-gray fw-semi-bold">
           Buy Now
         </b-button>

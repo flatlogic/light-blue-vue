@@ -18,7 +18,7 @@
       <b-tabs nav-class="bg-transparent" class="mb-5">
         <b-tab title="Example" active>
           <b-navbar toggleable="lg">
-            <b-navbar-brand href="#">Sing</b-navbar-brand>
+            <b-navbar-brand href="#">Light Blue</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
               <b-navbar-nav class="ml-auto">
@@ -52,7 +52,7 @@
     data() {
       return {
         navbarCode: '<b-navbar toggleable="lg">\n' +
-          '  <b-navbar-brand href="#">Sing</b-navbar-brand>\n' +
+          '  <b-navbar-brand href="#">Light Blue</b-navbar-brand>\n' +
           '  <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>\n' +
           '  <b-collapse id="nav-collapse" is-nav>\n' +
           '    <b-navbar-nav class="ml-auto">\n' +

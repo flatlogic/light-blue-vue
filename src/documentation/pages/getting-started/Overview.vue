@@ -4,22 +4,22 @@
       <Widget id="Overview">
         <h1>Overview</h1>
         <p class="lead">
-          Sing App Vue is an admin dashboard template built with Vue 2.5.17. Sing App goes beyond usual admin
+          Light Blue Vue is an admin dashboard template built with Vue 2.5.17. Light Blue goes beyond usual admin
           templates and provides you entire intuitive programming framework. Server Side Rendering and Node.js backend
-          will even further speed up your development. You can use Sing App Vue to build any type of web
+          will even further speed up your development. You can use Light Blue Vue to build any type of web
           applications
           like SAAS, CMS, financial dashboards, project management tools, etc.
         </p>
         <p class="lead">
           Moreover, there is a version of <a rel="noreferrer noopener"
-                                             href="https://flatlogic.com/admin-dashboards/sing-app-vue-nodejs"
-                                             target="_blank">Sing App Vue with Node.js</a>, enhanced with working
+                                             href="https://flatlogic.com/admin-dashboards/light-blue-vue-nodejs"
+                                             target="_blank">Light Blue Vue with Node.js</a>, enhanced with working
           node.js
           backend with authentication, login strategies and basic CRUD functions. Please refer to <a
             href="https://github.com/flatlogic/nodejs-backend" rel="noopener noreferrer" target="_blank">backend
           documentation</a> for details
         </p>
-        <img class="img-responsive w-100 border" src="../../../assets/documentation/sing-screenshot.jpg" alt="screenshot"/>
+        <img class="img-responsive w-100 border" src="../../../assets/documentation/light-screenshot.png" alt="screenshot"/>
         <router-link to="/app">Live demo</router-link>
       </Widget>
       <Widget id="Features">
