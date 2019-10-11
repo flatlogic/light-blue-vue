@@ -17,12 +17,16 @@ import VCalendar from 'v-calendar';
 import VueApexCharts from 'vue-apexcharts';
 import CKEditor from '@ckeditor/ckeditor5-vue';
 import bFormSlider from 'vue-bootstrap-slider';
+import { component as VueCodeHighlight } from 'vue-code-highlight';
 
 import store from './store';
 import router from './Routes';
 import App from './App';
+import layoutMixin from './mixins/layout';
 import { AuthMixin } from './mixins/auth';
 import config from './config';
+import Widget from './components/Widget/Widget';
+import Scrollspy from './documentation/pages/ScrollSpyComponent';
 
 axios.defaults.baseURL = config.baseURLApi;
 axios.defaults.headers.common['Content-Type'] = "application/json";
@@ -37,6 +41,9 @@ Vue.use(VCalendar, {
 });
 Vue.use(VueTouch);
 Vue.use(Trend);
+Vue.component('vue-code-highlight', VueCodeHighlight);
+Vue.component('Widget', Widget);
+Vue.component('Scrollspy', Scrollspy);
 Vue.use(bFormSlider);
 Vue.use(VueGoogleMaps, {
   load: {
@@ -51,6 +58,7 @@ Vue.component('apexchart', VueApexCharts);
 Vue.directive('mask', VueMaskDirective);
 Vue.use(VeeValidate, { fieldsBagName: 'fieldsbag' });
 Vue.use(VueFormWizard);
+Vue.mixin(layoutMixin);
 Vue.mixin(AuthMixin);
 Vue.use(Toasted, {duration: 10000});
 
