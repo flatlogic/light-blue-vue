@@ -1,13 +1,16 @@
 const path = require('path');
 
 module.exports = {
+  // publicPath: 'light-blue-vue/dark/',
   productionSourceMap: false,
-  configureWebpack: {
-    resolve: {
-      alias: {
-        // this is an workaround of jquery requirement for the vue-bootstrap-slide library
-        "jquery": path.join(__dirname, "./jqueryStub.js")
-      }
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+      const terserWebpackPlugin = config.optimization.minimizer[0];
+      const terserOptions = terserWebpackPlugin.options.terserOptions;
+      terserOptions.mangle = {
+        reserved: ['$super']
+      };
     }
+    config.resolve.alias["jquery"] = path.join(__dirname, "./jqueryStub.js");
   }
 };
