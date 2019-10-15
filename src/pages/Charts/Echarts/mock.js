@@ -1,3 +1,6 @@
+import config from '../../../config';
+const colors = config.chartColors;
+
 var scatterData = [[0, 0, 5], [0, 1, 1], [0, 2, 0], [0, 3, 0], [0, 4, 0], [0, 5, 0], [0, 6, 0], [0, 7, 0], [0, 8, 0], [0, 9, 0], [0, 10, 0], [0, 11, 2], [0, 12, 4], [0, 13, 1], [0, 14, 1], [0, 15, 3], [0, 16, 4], [0, 17, 6], [0, 18, 4], [0, 19, 4], [0, 20, 3], [0, 21, 3], [0, 22, 2], [0, 23, 5], [1, 0, 7], [1, 1, 0], [1, 2, 0], [1, 3, 0], [1, 4, 0], [1, 5, 0], [1, 6, 0], [1, 7, 0], [1, 8, 0], [1, 9, 0], [1, 10, 5], [1, 11, 2], [1, 12, 2], [1, 13, 6], [1, 14, 9], [1, 15, 11], [1, 16, 6], [1, 17, 7], [1, 18, 8], [1, 19, 12], [1, 20, 5], [1, 21, 5], [1, 22, 7], [1, 23, 2], [2, 0, 1], [2, 1, 1], [2, 2, 0], [2, 3, 0], [2, 4, 0], [2, 5, 0], [2, 6, 0], [2, 7, 0], [2, 8, 0], [2, 9, 0], [2, 10, 3], [2, 11, 2], [2, 12, 1], [2, 13, 9], [2, 14, 8], [2, 15, 10], [2, 16, 6], [2, 17, 5], [2, 18, 5], [2, 19, 5], [2, 20, 7], [2, 21, 4], [2, 22, 2], [2, 23, 4], [3, 0, 7], [3, 1, 3], [3, 2, 0], [3, 3, 0], [3, 4, 0], [3, 5, 0], [3, 6, 0], [3, 7, 0], [3, 8, 1], [3, 9, 0], [3, 10, 5], [3, 11, 4], [3, 12, 7], [3, 13, 14], [3, 14, 13], [3, 15, 12], [3, 16, 9], [3, 17, 5], [3, 18, 5], [3, 19, 10], [3, 20, 6], [3, 21, 4], [3, 22, 4], [3, 23, 1], [4, 0, 1], [4, 1, 3], [4, 2, 0], [4, 3, 0], [4, 4, 0], [4, 5, 1], [4, 6, 0], [4, 7, 0], [4, 8, 0], [4, 9, 2], [4, 10, 4], [4, 11, 4], [4, 12, 2], [4, 13, 4], [4, 14, 4], [4, 15, 14], [4, 16, 12], [4, 17, 1], [4, 18, 8], [4, 19, 5], [4, 20, 3], [4, 21, 7], [4, 22, 3], [4, 23, 0], [5, 0, 2], [5, 1, 1], [5, 2, 0], [5, 3, 3], [5, 4, 0], [5, 5, 0], [5, 6, 0], [5, 7, 0], [5, 8, 2], [5, 9, 0], [5, 10, 4], [5, 11, 1], [5, 12, 5], [5, 13, 10], [5, 14, 5], [5, 15, 7], [5, 16, 11], [5, 17, 6], [5, 18, 0], [5, 19, 5], [5, 20, 3], [5, 21, 4], [5, 22, 2], [5, 23, 0], [6, 0, 1], [6, 1, 0], [6, 2, 0], [6, 3, 0], [6, 4, 0], [6, 5, 0], [6, 6, 0], [6, 7, 0], [6, 8, 0], [6, 9, 0], [6, 10, 1], [6, 11, 0], [6, 12, 2], [6, 13, 1], [6, 14, 3], [6, 15, 4], [6, 16, 0], [6, 17, 0], [6, 18, 0], [6, 19, 0], [6, 20, 1], [6, 21, 2], [6, 22, 2], [6, 23, 6]];
 var scatterHours = ['12a', '1a', '2a', '3a', '4a', '5a', '6a',
   '7a', '8a', '9a', '10a', '11a',
@@ -7,7 +10,11 @@ var scatterDays = ['Saturday', 'Friday', 'Thursday',
   'Wednesday', 'Tuesday', 'Monday', 'Sunday'];
 export default {
   bar: {
-    legend: {},
+    legend: {
+      textStyle: {
+        color: colors.textColor
+      }
+    },
     tooltip: {},
     dataset: {
       source: [
@@ -18,10 +25,29 @@ export default {
         ['Walnut Brownie', ...randomize()]
       ]
     },
-    xAxis: {type: 'category'},
-    yAxis: {},
+    xAxis: {
+      type: 'category',
+      axisLabel: {
+        color: colors.textColor
+      },
+      axisLine: {
+        lineStyle: {
+          color: colors.textColor
+        }
+      }
+    },
+    yAxis: {
+      axisLabel: {
+        color: colors.textColor
+      },
+      axisLine: {
+        lineStyle: {
+          color: colors.textColor
+        }
+      }
+    },
     series: [{type: 'bar'}, {type: 'bar'}, {type: 'bar'}],
-    color: ['#2e74e3', '#25b932', '#db4a00', '#3c484f', ]
+    color: [colors.blue, colors.green, colors.red, colors.dark, ]
   },
   pie: {
     tooltip: {
@@ -33,7 +59,7 @@ export default {
       left: 'left',
       data: ['Direct interview', 'Email marketing', 'Alliance advertising', 'Video ad', 'Search engine'],
       textStyle: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     series: [
@@ -42,7 +68,7 @@ export default {
         type: 'pie',
         radius: '55%',
         center: ['50%', '60%'],
-        color: ["#2e74e3", "#db4a00", "#ff7d47", "#25b932", "#a700ae"],
+        color: [colors.blue, colors.red, colors.orange, colors.green, colors.purple],
         data: [
           {value: 335, name: 'Direct interview'},
           {value: 310, name: 'Email marketing'},
@@ -64,7 +90,7 @@ export default {
     legend: {
       data: ['line'],
       textStyle: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     polar: {
@@ -80,22 +106,22 @@ export default {
       type: 'value',
       startAngle: 0,
       axisLabel: {
-        color: '#fff'
+        color: colors.textColor
       },
       axisLine: {
         lineStyle: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
     radiusAxis: {
       min: 0,
       axisLabel: {
-        color: '#fff'
+        color: colors.textColor
       },
       axisLine: {
         lineStyle: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
@@ -106,7 +132,7 @@ export default {
         type: 'line',
         showSymbol: false,
         data: polarData(),
-        color: ["#db4a00"]
+        color: [colors.red]
       }
     ],
     animationDuration: 2000
@@ -118,7 +144,7 @@ export default {
     legend: {
       data: ['Step Start', 'Step Middle', 'Step End'],
       textStyle: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     grid: {
@@ -136,22 +162,22 @@ export default {
       type: 'category',
       data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
       axisLabel: {
-        color: '#fff'
+        color: colors.textColor
       },
       axisLine: {
         lineStyle: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
     yAxis: {
       type: 'value',
       axisLabel: {
-        color: '#fff'
+        color: colors.textColor
       },
       axisLine: {
         lineStyle: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
@@ -161,21 +187,21 @@ export default {
         type: 'line',
         step: 'start',
         data: [120, 132, 101, 134, 90, 230, 210],
-        color: ["#2e74e3"]
+        color: [colors.blue]
       },
       {
         name: 'Step Middle',
         type: 'line',
         step: 'middle',
         data: [220, 282, 201, 234, 290, 430, 410],
-        color: ["#db4a00"]
+        color: [colors.red]
       },
       {
         name: 'Step End',
         type: 'line',
         step: 'end',
         data: [450, 432, 401, 454, 590, 530, 510],
-        color: ["#ff7d47"]
+        color: [colors.orange]
       }
     ]
   },
@@ -184,14 +210,14 @@ export default {
       text: 'Punch Card of Github',
       link: 'https://github.com/pissang/echarts-next/graphs/punch-card',
       textStyle: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     legend: {
       data: ['Punch Card'],
       left: 'right',
       textStyle: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     tooltip: {
@@ -213,18 +239,18 @@ export default {
       splitLine: {
         show: true,
         lineStyle: {
-          color: '#999',
+          color: colors.textColor,
           type: 'dashed'
         }
       },
       axisLine: {
         show: false,
         lineStyle: {
-          color: '#fff'
+          color: colors.textColor
         }
       },
       axisLabel: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     yAxis: {
@@ -233,15 +259,15 @@ export default {
       axisLine: {
         show: false,
         lineStyle: {
-          color: '#fff'
+          color: colors.textColor
         }
       },
       axisLabel: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     series: [{
-      color: ["#db4a00"],
+      color: [colors.red],
       name: 'Punch Card',
       type: 'scatter',
       symbolSize: function (val) {
@@ -270,18 +296,18 @@ export default {
         name: 'Business indicator',
         type: 'gauge',
         axisLabel: {
-          color: '#fff'
+          color: colors.textColor
         },
         detail: {
           formatter: '{value}%'
         },
         title: {
-          color: '#fff'
+          color: colors.textColor
         },
         data: [{value: 64, name: 'Rate'}],
         axisLine: {
           lineStyle: {
-            color: [[0.2,'#68ca66'], [0.8,'#2e74e3'], [1,'#db4a00']],
+            color: [[0.2,colors.green], [0.8,colors.blue], [1,colors.red]],
           }
         },
       }

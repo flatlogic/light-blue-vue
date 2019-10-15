@@ -1,3 +1,6 @@
+import config from '../../../config';
+const colors = config.chartColors;
+
 var generateDayWiseTimeSeries = function (baseval, count, yrange) {
   var i = 0;
   var series = [];
@@ -51,28 +54,28 @@ export default {
         text: 'Product Trends by Month',
         align: 'left',
         style: {
-          color: 'white'
+          color: colors.textColor
         }
       },
       xaxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
         labels: {
           style: {
-            colors: '#fff'
+            colors: colors.textColor
           }
         }
       },
       yaxis: {
         labels: {
           style: {
-            color: '#fff'
+            color: colors.textColor
           }
         }
       },
       tooltip: {
         theme: 'dark'
       },
-      colors: ['#2e74e3']
+      colors: [colors.blue]
     }
   },
   area: {
@@ -105,7 +108,7 @@ export default {
       tooltip: {
         theme: 'dark'
       },
-      colors: ['#2e74e3', '#25b932', '#c1ccd3'],
+      colors: [colors.blue, colors.green, colors.gray],
       dataLabels: {
         enabled: false
       },
@@ -123,21 +126,21 @@ export default {
         position: 'top',
         horizontalAlign: 'left',
         labels: {
-          colors: ['#fff']
+          colors: [colors.textColor]
         }
       },
       xaxis: {
         type: 'datetime',
         labels: {
           style: {
-            colors: '#fff'
+            colors: colors.textColor
           }
         }
       },
       yaxis: {
         labels: {
           style: {
-            color: '#fff'
+            color: colors.textColor
           }
         }
       }
@@ -149,7 +152,7 @@ export default {
       data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
     }],
     options: {
-      colors: ['#2e74e3'],
+      colors: [colors.blue],
       chart: {
         height: 350,
         type: 'bar',
@@ -172,7 +175,7 @@ export default {
         offsetY: -20,
         style: {
           fontSize: '12px',
-          colors: ["#fff"]
+          colors: [colors.textColor]
         }
       },
 
@@ -181,7 +184,7 @@ export default {
         position: 'top',
         labels: {
           style: {
-            colors: '#fff',
+            colors: colors.textColor,
             offsetY: -18,
           }
         },
@@ -194,13 +197,6 @@ export default {
         crosshairs: {
           fill: {
             type: 'gradient',
-            gradient: {
-              colorFrom: '#D8E3F0',
-              colorTo: '#BED1E6',
-              stops: [0, 100],
-              opacityFrom: 0.4,
-              opacityTo: 0.5,
-            }
           }
         },
         tooltip: {
@@ -242,7 +238,7 @@ export default {
         offsetY: 320,
         align: 'center',
         style: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     }
@@ -265,7 +261,7 @@ export default {
       chart: {
         stacked: true
       },
-      colors: ['#2e74e3', '#e671b8'],
+      colors: [colors.blue, colors.pink],
       plotOptions: {
         bar: {
           horizontal: true,
@@ -278,12 +274,12 @@ export default {
       },
       legend: {
         labels: {
-          colors: ['#fff']
+          colors: [colors.textColor]
         }
       },
       stroke: {
         width: 1,
-        colors: ["#fff"]
+        colors: [colors.textColor]
       },
 
       grid: {
@@ -296,12 +292,12 @@ export default {
         max: 5,
         title: {
           style: {
-            color: 'white'
+            color: colors.textColor
           }
         },
         labels: {
           style: {
-            color: '#fff'
+            color: colors.textColor
           }
         }
       },
@@ -322,7 +318,7 @@ export default {
       title: {
         text: 'Mauritius population pyramid 2011',
         style: {
-          color: 'white'
+          color: colors.textColor
         }
       },
       xaxis: {
@@ -335,7 +331,7 @@ export default {
             return Math.abs(Math.round(val)) + "%"
           },
           style: {
-            colors: '#fff'
+            colors: colors.textColor
           }
         }
       },
@@ -359,7 +355,7 @@ export default {
       dataLabels: {
         enabled: false
       },
-      colors: ['#2e74e3', '#25b932', '#f0af03'],
+      colors: [colors.blue, colors.green, colors.orange],
       stroke: {
         width: [1, 1, 4]
       },
@@ -368,14 +364,14 @@ export default {
         align: 'left',
         offsetX: 110,
         style: {
-          color: 'white'
+          color: colors.textColor
         }
       },
       xaxis: {
         categories: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
         labels: {
           style: {
-            colors: '#fff'
+            colors: colors.textColor
           }
         }
       },
@@ -385,17 +381,17 @@ export default {
         },
         axisBorder: {
           show: true,
-          color: '#2e74e3'
+          color: colors.blue
         },
         labels: {
           style: {
-            color: '#2e74e3',
+            color: colors.blue,
           }
         },
         title: {
           text: "Income (thousand crores)",
           style: {
-            color: '#2e74e3',
+            color: colors.blue,
           }
         },
         tooltip: {
@@ -411,17 +407,17 @@ export default {
           },
           axisBorder: {
             show: true,
-            color: '#25b932'
+            color: colors.green
           },
           labels: {
             style: {
-              color: '#25b932',
+              color: colors.green,
             }
           },
           title: {
             text: "Operating Cashflow (thousand crores)",
             style: {
-              color: '#25b932',
+              color: colors.green,
             }
           },
         },
@@ -433,17 +429,17 @@ export default {
           },
           axisBorder: {
             show: true,
-            color: '#f0af03'
+            color: colors.orange
           },
           labels: {
             style: {
-              color: '#f0af03',
+              color: colors.orange,
             },
           },
           title: {
             text: "Revenue (thousand crores)",
             style: {
-              color: '#f0af03',
+              color: colors.orange,
             }
           }
         },
@@ -461,7 +457,7 @@ export default {
         horizontalAlign: 'left',
         offsetX: 40,
         labels: {
-          colors: ['#fff']
+          colors: [colors.textColor]
         }
       }
     }
@@ -474,7 +470,7 @@ export default {
       },
       legend: {
         labels: {
-          colors: ['#fff']
+          colors: [colors.textColor]
         }
       },
       labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
@@ -489,7 +485,7 @@ export default {
           }
         }
       }],
-      colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae'],
+      colors: [colors.blue, colors.green, colors.orange, colors.red, colors.purple],
     }
   },
   donut: {
@@ -500,7 +496,7 @@ export default {
       },
       legend: {
         labels: {
-          colors: ['#fff']
+          colors: [colors.textColor]
         }
       },
       responsive: [{
@@ -514,7 +510,7 @@ export default {
           }
         }
       }],
-      colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae'],
+      colors: [colors.blue, colors.green, colors.orange, colors.red, colors.purple],
     }
   },
   radial: {
@@ -524,15 +520,15 @@ export default {
       title: {
         text: 'Basic Radial Chart',
         style: {
-          color: 'white'
+          color: colors.textColor
         }
       },
-      colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00'],
+      colors: [colors.blue, colors.green, colors.orange, colors.red],
       plotOptions: {
         radialBar: {
           dataLabels: {
             value: {
-              color: '#fff'
+              color: colors.textColor
             }
           },
           track: {
@@ -614,20 +610,20 @@ export default {
       },
       legend: {
         labels: {
-          colors: ['#fff']
+          colors: [colors.textColor]
         }
       },
       xaxis: {
         labels: {
           style: {
-            colors: '#fff'
+            colors: colors.textColor
           }
         }
       },
       yaxis: {
         labels: {
           style: {
-            color: '#fff'
+            color: colors.textColor
           }
         }
       },
@@ -640,25 +636,25 @@ export default {
               from: -30,
               to: 5,
               name: 'low',
-              color: '#25b932'
+              color: colors.green
             },
               {
                 from: 6,
                 to: 20,
                 name: 'medium',
-                color: '#2e74e3'
+                color: colors.blue
               },
               {
                 from: 21,
                 to: 45,
                 name: 'high',
-                color: '#f0af03'
+                color: colors.orange
               },
               {
                 from: 46,
                 to: 55,
                 name: 'extreme',
-                color: '#db4a00'
+                color: colors.red
               }
             ]
           }
@@ -671,7 +667,7 @@ export default {
       title: {
         text: 'HeatMap Chart with Color Range',
         style: {
-          color: 'white'
+          color: colors.textColor
         }
       }
     }

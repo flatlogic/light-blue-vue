@@ -10,10 +10,10 @@
                 </div>
                 <h6>Theme</h6>
             </header>
-            <a href="#" class="theme-preview active">
+            <a :href="theme === 'light' ? 'https://demo.flatlogic.com/light-blue-vue/dark' : '#'" class="theme-preview" :class="{active: theme !== 'light'}">
                 <img src="../../assets/dark-theme.png" alt="Dark Theme" class="img-thumbnail">
             </a>
-            <a href="https://demo.flatlogic.com/light-blue-vue/white" class="theme-preview">
+            <a :href="theme !== 'light' ? 'https://demo.flatlogic.com/light-blue-vue/light' : '#'" class="theme-preview" :class="{active: theme === 'light'}">
                 <img src="../../assets/white-theme.png" alt="White Theme" class="img-thumbnail">
             </a>
             <div class="widget-body mt-3">
@@ -68,10 +68,13 @@
 </template>
 
 <script>
+  import config from '../../config';
+
 export default {
     name: 'Helper',
     data() {
         return {
+            theme: config.theme,
             opened: false,
         }
     },

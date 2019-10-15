@@ -1,3 +1,6 @@
+import config from '../../../config';
+const colors = config.chartColors;
+
 import Highcharts from 'highcharts';
 import usdeur from './usdeur';
 import sunburstData from './sunburstData';
@@ -47,7 +50,7 @@ export default {
     credits: {
       enabled: false
     },
-    colors: ['#2e74e3'],
+    colors: [colors.blue],
     chart: {
       zoomType: 'x',
       backgroundColor: 'transparent'
@@ -55,13 +58,13 @@ export default {
     title: {
       text: 'USD to EUR exchange rate over time',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     exporting: {
       buttons: {
         contextButton: {
-          symbolStroke: '#fff',
+          symbolStroke: colors.textColor,
           theme: {
             fill: 'transparent'
           }
@@ -72,14 +75,14 @@ export default {
       text: document.ontouchstart === undefined ?
         'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     xAxis: {
       type: 'datetime',
       labels: {
         style: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
@@ -87,12 +90,12 @@ export default {
       title: {
         text: 'Exchange rate',
         style: {
-          color: '#fff'
+          color: colors.textColor
         }
       },
       labels: {
         style: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
@@ -143,7 +146,7 @@ export default {
     exporting: {
       buttons: {
         contextButton: {
-          symbolStroke: '#fff',
+          symbolStroke: colors.textColor,
           theme: {
             fill: 'transparent'
           }
@@ -156,7 +159,7 @@ export default {
     title: {
       text: 'Countries compared by population density and total area.',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     tooltip: {
@@ -165,7 +168,7 @@ export default {
         'Area (square km): <b>{point.y}</b><br/>' +
         'Population density (people per square km): <b>{point.z}</b><br/>'
     },
-    colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae', '#3c484f', '#14d3d3'],
+    colors: [colors.blue, colors.green, colors.orange, colors.red, colors.purple, colors.dark, colors.teal],
     series: [{
       minPointSize: 10,
       innerSize: '20%',
@@ -206,7 +209,7 @@ export default {
     credits: {
       enabled: false
     },
-    colors: ['#db4a00'],
+    colors: [colors.red],
     chart: {
       backgroundColor: 'transparent',
       type: 'column',
@@ -220,7 +223,7 @@ export default {
     exporting: {
       buttons: {
         contextButton: {
-          symbolStroke: '#fff',
+          symbolStroke: colors.textColor,
           theme: {
             fill: 'transparent'
           }
@@ -230,18 +233,18 @@ export default {
     title: {
       text: '3D chart with null values',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     legend: {
       itemStyle: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     subtitle: {
       text: 'Notice the difference between a 0 value and a null point',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     plotOptions: {
@@ -255,7 +258,7 @@ export default {
         skew3d: true,
         style: {
           fontSize: '16px',
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
@@ -280,7 +283,7 @@ export default {
     exporting: {
       buttons: {
         contextButton: {
-          symbolStroke: '#fff',
+          symbolStroke: colors.textColor,
           theme: {
             fill: 'transparent'
           }
@@ -290,16 +293,16 @@ export default {
     title: {
       text: 'World population 2017',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     subtitle: {
       text: 'Source <href="https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)">Wikipedia</a>',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
-    colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae', '#3c484f', '#14d3d3'],
+    colors: [colors.blue, colors.green, colors.orange, colors.red, colors.purple, colors.dark, colors.teal],
     series: [{
       type: "sunburst",
       data: sunburstData,
@@ -354,17 +357,16 @@ export default {
     credits: {
       enabled: false
     },
-    colors: ['#495057'],
     title: {
       text: 'Highcharts Vector plot',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     exporting: {
       buttons: {
         contextButton: {
-          symbolStroke: '#fff',
+          symbolStroke: colors.textColor,
           theme: {
             fill: 'transparent'
           }
@@ -377,7 +379,7 @@ export default {
       gridLineWidth: 1,
       labels: {
         style: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
@@ -386,24 +388,24 @@ export default {
       max: 100,
       title: {
         style: {
-          color: '#fff'
+          color: colors.textColor
         }
       },
       labels: {
         style: {
-          color: '#fff'
+          color: colors.textColor
         }
       }
     },
     legend: {
       itemStyle: {
-        color: '#fff'
+        color: colors.textColor
       }
     },
     series: [{
       type: 'vector',
       name: 'Sample vector field',
-      color: '#fff',
+      color: colors.textColor,
       data: generateVectorData()
     }]
   },
@@ -414,11 +416,11 @@ export default {
     credits: {
       enabled: false
     },
-    colors: ['#2e74e3', '#25b932', '#f0af03', '#db4a00', '#a700ae', '#3c484f', '#14d3d3'],
+    colors: [colors.blue, colors.green, colors.orange, colors.red, colors.purple, colors.dark, colors.teal],
     exporting: {
       buttons: {
         contextButton: {
-          symbolStroke: '#fff',
+          symbolStroke: colors.textColor,
           theme: {
             fill: 'transparent'
           }
@@ -433,7 +435,7 @@ export default {
     title: {
       text: 'Wordcloud of Lorem Ipsum',
       style: {
-        color: '#fff'
+        color: colors.textColor
       }
     }
   }
