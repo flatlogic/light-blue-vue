@@ -1,7 +1,9 @@
 const path = require('path');
+let publicPath = process.env.NODE_ENV !== 'production' ? '/' :
+  process.env.VUE_APP_THEME === 'light' ? 'light-blue-vue/white/' : 'light-blue-vue/dark/';
 
 module.exports = {
-  // publicPath: 'light-blue-vue/dark/',
+  publicPath,
   productionSourceMap: false,
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {
