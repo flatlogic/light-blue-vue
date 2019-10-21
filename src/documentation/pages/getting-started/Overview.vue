@@ -12,7 +12,7 @@
         </p>
         <p class="lead">
           Moreover, there is a version of <a rel="noreferrer noopener"
-                                             href="https://flatlogic.com/admin-dashboards/light-blue-vue-nodejs"
+                                             href="https://flatlogic.com/templates/light-blue-vue-nodejs"
                                              target="_blank">Light Blue Vue with Node.js</a>, enhanced with working
           node.js
           backend with authentication, login strategies and basic CRUD functions. Please refer to <a

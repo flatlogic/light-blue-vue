@@ -29,7 +29,7 @@
           Live Preview
         </b-button>
       </b-nav-item>
-      <b-nav-item href="https://flatlogic.com/admin-dashboards/light-blue-vue" target="_blank" class="mr-4">
+      <b-nav-item href="https://flatlogic.com/templates/light-blue-vue" target="_blank" class="mr-4">
         <b-button variant="warning" class="text-gray fw-semi-bold">
           Buy Now
         </b-button>
