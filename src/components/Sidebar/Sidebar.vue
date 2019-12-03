@@ -40,6 +40,7 @@
               iconName="flaticon-database-1"
               index="package"
               label="new"
+              labelColor="success"
               isHeader
       />
       <NavLink
@@ -186,13 +187,13 @@
     <ul class="sidebarLabels d-sm-down-none">
       <li>
         <a href="#">
-          <i class="fa fa-circle text-warning mr-2" />
+          <i class="fa fa-circle text-success mr-2" />
           <span class="labelName">My Recent</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <i class="fa fa-circle text-gray mr-2" />
+          <i class="fa fa-circle text-primary mr-2" />
           <span class="labelName">Starred</span>
         </a>
       </li>
@@ -239,7 +240,7 @@ export default {
           title: 'Sales Report',
           value: 15,
           footer: 'Calculating x-axis bias... 65%',
-          color: 'info',
+          color: 'primary',
         },
         {
           id: 1,

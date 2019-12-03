@@ -118,7 +118,7 @@
   }
 
   .old {
-    color: $border-color;
+    color: $text-muted;
     position: relative;
     margin-right: $spacer;
 
@@ -129,7 +129,7 @@
       left: 0;
       bottom: 0;
       transform: translateY(-10px);
-      background-color: $border-color;
+      background-color: $text-muted;
       position: absolute;
     }
 

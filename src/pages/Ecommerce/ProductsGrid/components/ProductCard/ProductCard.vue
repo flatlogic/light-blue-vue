@@ -5,7 +5,7 @@
       <div
         v-if="label"
         :class="{label: true, 'bg-danger': label === 'Sale',
-          'bg-success': label !== 'Sale'}">
+          'bg-primary': label !== 'Sale'}">
         {{label}}
       </div>
       <button class="star" @click="toggleFavourite()">

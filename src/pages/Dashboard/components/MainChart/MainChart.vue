@@ -26,6 +26,7 @@
 <script>
 import Widget from '@/components/Widget/Widget';
 import { Chart } from 'highcharts-vue';
+import Highcharts from 'highcharts';
 
 export default {
   name: 'MainChart',
@@ -51,7 +52,7 @@ export default {
           }
         },
         yAxis: {
-          gridLineColor: 'rgba(227,227,227,0.46)',
+          gridLineColor: '#040620',
           title: false,
           labels: {
             style: {
@@ -109,23 +110,28 @@ export default {
           {
             name: 'Light Blue',
             data: data[0],
-            color: '#E2E1FF',
+            color: '#F45722',
             type: 'areaspline',
-            fillOpacity: 0.5,
-            lineWidth: 0
+            fillColor: {
+              linearGradient: [0, 0, 0, 220],
+              stops: [
+                [0, '#F45722'],
+                [1, Highcharts.Color("#F45722").setOpacity(0).get('rgba')]
+              ]
+            }
           },
           {
             type: 'spline',
             name: 'RNS App',
             data: data[1],
-            color: '#3abf94',
+            color: '#58D777',
             dashStyle: 'Dash'
           },
           {
             type: 'spline',
             name: 'Sing App',
             data: data[2],
-            color: '#ffc247'
+            color: '#1870DC'
           }
         ]
       }

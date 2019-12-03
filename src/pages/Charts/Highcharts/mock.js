@@ -1,5 +1,5 @@
 import config from '../../../config';
-const colors = config.chartColors;
+const colors = config.colors;
 
 import Highcharts from 'highcharts';
 import usdeur from './usdeur';

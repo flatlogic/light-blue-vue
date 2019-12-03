@@ -10,7 +10,7 @@
             {{errorMessage}}
           </b-alert>
           <b-form-group label="Email" label-for="email">
-            <b-input-group class="input-group-no-border">
+            <b-input-group>
               <b-input-group-text slot="prepend"><i class="la la-user text-white"></i></b-input-group-text>
               <input id="email"
                      ref="email"
@@ -21,7 +21,7 @@
             </b-input-group>
           </b-form-group>
           <b-form-group label="Password" label-for="password">
-            <b-input-group class="input-group-no-border">
+            <b-input-group>
               <b-input-group-text slot="prepend"><i class="la la-lock text-white"></i></b-input-group-text>
               <input id="password"
                      ref="password"
@@ -32,7 +32,7 @@
             </b-input-group>
           </b-form-group>
           <b-form-group label="Confirm Password" label-for="confirmPassword">
-            <b-input-group class="input-group-no-border">
+            <b-input-group>
               <b-input-group-text slot="prepend"><i class="la la-lock text-white"></i></b-input-group-text>
               <input id="confirmPassword"
                      @blur="checkPassword"

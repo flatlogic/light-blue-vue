@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <div class="forms-elements">
     <ol class="breadcrumb">
       <li class="breadcrumb-item">YOU ARE HERE</li>
@@ -180,7 +180,7 @@
                   <b-col md="8">
                     <b-input-group>
                       <b-form-input id="actions-field" type="text"></b-form-input>
-                      <b-input-group-append>
+                      <template v-slot:append>
                         <b-dropdown text="Action" variant="success">
                           <b-dropdown-item href="#">Action</b-dropdown-item>
                           <b-dropdown-item href="#">Another action</b-dropdown-item>
@@ -188,7 +188,7 @@
                           <b-dropdown-divider />
                           <b-dropdown-item href="#">Separated link</b-dropdown-item>
                         </b-dropdown>
-                      </b-input-group-append>
+                      </template>
                     </b-input-group>
                   </b-col>
                 </b-row>
@@ -773,7 +773,7 @@
                   checkbox inputs into beautiful iOS 7 style switches in
                   just few simple steps.
                 </p>
-                <b-form-group class="display-inline-block checkbox-ios">
+                <b-form-group class="display-inline-block checkbox-ios mr-3">
                   <label for="checkbox-ios1" class="switch  form-control-label">
                     <input type="checkbox" id="checkbox-ios1"
                       class="ios form-check-input" value="off">

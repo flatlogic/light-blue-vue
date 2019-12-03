@@ -39,15 +39,17 @@ $black:    #000 !default;
 $gray-light: $gray-100 !default;
 
 $lime:     #8cbf26 !default;
-$red:      #db4a00 !default;
+$red:      #F45722 !default;
 $red-dark: #d04f4f !default;
-$blue:     #2e74e3 !default;
-$green:    #25b932 !default;
+$blue:     #1870DC !default;
+$green:    #58D777 !default;
 $orange:   #f0af03 !default;
 $pink:     #e671b8 !default;
-$purple:   #a700ae !default;
+$purple:   #474D84 !default;
 $brown:    #a05000 !default;
 $teal:     #14d3d3 !default;
+$dark:     #040620 !default;
+$violet:   #333867 !default;
 
 $theme-colors: (
         primary: $blue,
@@ -56,11 +58,11 @@ $theme-colors: (
         info: $teal,
         warning: $orange,
         danger: $red,
-        dark: $gray-700,
+        dark: $dark,
         inverse: $gray-800,
         gray: $gray-300,
         light: $gray-100,
-        default: #e9ecef,
+        default: $purple,
         primary-light: #dee4ee,
         success-light: #ecfaec,
         info-light: #f2fafa,
@@ -68,10 +70,11 @@ $theme-colors: (
         danger-light: #fff2ef,
 );
 
-$link-color: #62c9ff;
+$link-color: $blue;
 
-$text-color: #fff !default;
+$text-color: rgba(#F4F4F5, .9) !default;
 $body-color: $text-color;
+$border-color: $dark !default;
 $text-muted: rgba($text-color, .7) !default;
 
 $font-weight-bold: 700 !default;
@@ -82,10 +85,11 @@ $font-weight-base: $font-weight-thin !default;
 
 $addition-bg: rgba($white, .1) !default;
 
-$body-bg: #36455a !default;
-$body-bg-gradient-start: $body-bg 20%;
-$body-bg-gradient-end: #889caf;
+$body-bg: $violet !default;
+$body-bg-gradient-start: $violet;
+$body-bg-gradient-end: #17193B;
 $body-bg-light: lighten($body-bg, 3%);
+$default-bg: radial-gradient(farthest-side ellipse at 10% 0, $body-bg-gradient-start, $body-bg-gradient-end);
 
 $headings-font-weight: 300;
 
@@ -154,6 +158,7 @@ $navbar-link-disabled-bg: transparent !default;
 $dropdown-item-padding-y: 0.5rem;
 //$dropdown-link-color: $text-color;
 $dropdown-border-radius: $widget-border-radius;
+$dropdown-divider-bg: $dark;
 
 //== Navs
 //
@@ -167,6 +172,8 @@ $nav-pills-link-active-bg: $widget-bg;
 //== Forms
 //
 $input-focus-border-color: #4d90fe !default; //webkit focus color
+$input-bg: $dark !default;
+$input-border-width: 0 !default;
 
 //*  Popover  */
 $popover-bg: #ebeff1 !default;
@@ -178,6 +185,9 @@ $badge-font-weight: 700;
 $badge-font-size: 0.875em;
 $badge-padding-y: 0.4em;
 $badge-padding-x: 0.4em;
+
+// Jumbotron
+$jumbotron-bg: $widget-bg;
 
 // Breadcrumbs
 
@@ -276,6 +286,7 @@ $screen-lg-height: 670px !default;
 
   $text-color: #444 !global;
   $body-color: $text-color !global;
+  $border-color: $gray-300 !default;
   $text-muted: rgba($text-color, .7) !global;
 
   //== Sidebar
@@ -306,6 +317,14 @@ $screen-lg-height: 670px !default;
   $nav-pills-link-active-color: transparentize($text-color, .7) !global;
   $nav-pills-link-active-color: $text-color !global;
   $nav-pills-link-active-bg: $widget-bg !global;
+
+  //== Forms
+  //
+  $input-bg: $white !default;
+  $input-border-width: 1 !default;
+
+  // Jumbotron
+  $jumbotron-bg: $gray-200;
 
   // Breadcrumbs
   $breadcrumb-divider-color: $text-muted !global;

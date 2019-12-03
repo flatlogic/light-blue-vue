@@ -44,9 +44,9 @@
             the <code>&lt;b-modal&gt;</code>. Then, use the
             normal grid system classes as you would anywhere else.
           </p>
-          <div class="bg-light p-3">
+          <div class="bg-dark p-3">
             <b-button variant="primary" v-b-modal.launch>Launch</b-button>
-            <pre class="bg-light border-0 w-100 h-100">
+            <pre class="bg-dark border-0 w-100 h-100">
               <code class="text-danger">{{'&lt;b-container fluid&gt;'}}</code>
               <code class="text-success">{{'  &lt;b-row&gt;'}}</code>
               <code class="text-info">{{'    &lt;b-col md="4"&gt;'}}</code>

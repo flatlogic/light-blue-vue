@@ -21,7 +21,7 @@ export default {
         },
         markers: {
           size: 4,
-          colors: '#f85000',
+          colors: '#58D777',
           shape: "circle",
           strokeWidth: 0,
           hover: {
@@ -30,7 +30,7 @@ export default {
           }
         },
         colors: [
-          '#f85000'
+          '#58D777'
         ],
         grid: {
           padding: {

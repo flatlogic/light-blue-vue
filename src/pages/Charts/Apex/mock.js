@@ -1,5 +1,5 @@
 import config from '../../../config';
-const colors = config.chartColors;
+const colors = config.colors;
 
 var generateDayWiseTimeSeries = function (baseval, count, yrange) {
   var i = 0;

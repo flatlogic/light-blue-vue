@@ -43,7 +43,7 @@
                     This Period
                   </small>
                   <small class="mr-lg d-flex align-items-center">
-                    <span class="circle bg-warning text-warning mr-xs" style="font-size: 4px;">
+                    <span class="circle bg-primary text-warning mr-xs" style="font-size: 4px;">
                       .
                     </span>
                     Last Period
@@ -320,6 +320,7 @@ export default {
             dataLabels: {
               enabled: false
             },
+            borderColor: null,
             showInLegend: true,
             innerSize: 80,
             size: 100,
@@ -332,7 +333,7 @@ export default {
             }
           }
         },
-        colors: ['#ffc247', '#f55d5d', '#9964e3'],
+        colors: ['#1870DC', '#F45722', '#474D84'],
         legend: {
           align: 'right',
           verticalAlign: 'middle',

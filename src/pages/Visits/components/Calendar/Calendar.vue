@@ -41,7 +41,7 @@ export default {
       },
       {
         key: 2,
-        dot: 'orange',
+        dot: 'blue',
         dates: new Date(year, month, 5),
         popover: {
           title: 'Stop world water pollution',

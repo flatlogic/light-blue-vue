@@ -113,7 +113,6 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
     display: inline-block;
     width: 0.7em;
     height: 0.7em;
-    border: 0.15em solid $white;
 
     @include border-radius(50%);
 
@@ -143,7 +142,6 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
   }
 }
 
-@include bg-variant('.bg-dark', $text-color);
 @include bg-variant('.bg-widget', $widget-bg);
 
 
@@ -218,9 +216,9 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 .bg-gray,
 .bg-gray-transparent,
 .bg-transparent,
-.bg-primary,
-.bg-success,
 .bg-warning,
+.bg-success,
+.bg-primary,
 .bg-danger,
 .bg-info {
   @include transition(background-color 0.15s ease-in-out);
@@ -241,6 +239,7 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 @include text-emphasis-variant('.text-semi-muted', $gray-600);
 @include text-emphasis-variant('.text-gray-darker', $gray-900);
 @include text-emphasis-variant('.text-gray-lighter', $gray-200);
+@include text-emphasis-variant('.text-color', $text-color);
 
 .text-ellipsis {
   display: block;
@@ -466,31 +465,6 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 
   .input-transparent:not(:first-child) {
     padding-left: 0;
-  }
-}
-
-.input-no-border {
-  border: none;
-
-  @include transition(background-color ease-in-out 0.15s);
-
-  &:focus {
-    background-color: $gray-100;
-  }
-}
-
-.input-group-no-border {
-  @extend .input-group-transparent;
-
-  .form-control,
-  .input-group-addon {
-    @extend .input-no-border;
-  }
-
-  .form-control:focus,
-  .form-control:focus + .input-group-addon,
-  &.focus .input-group-addon {
-    @extend .input-no-border:focus;
   }
 }
 

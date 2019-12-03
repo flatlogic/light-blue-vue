@@ -1,6 +1,6 @@
 import Highcharts from 'highcharts';
 import config from '../../config';
-const colors = config.chartColors;
+const colors = config.colors;
 
 let columnColors = [colors.blue, colors.green, colors.orange, colors.red, colors.purple, colors.dark, colors.teal, colors.pink];
 let lineColors = [colors.blue, colors.green, colors.orange];

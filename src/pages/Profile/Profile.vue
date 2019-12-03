@@ -63,7 +63,7 @@
                 </div>
               </div>
               <p>
-                <a href="#" class="badge badge-warning rounded-0"> UI/UX </a>
+                <a href="#" class="badge bg-primary rounded-0"> UI/UX </a>
                 <a href="#" class="badge badge-danger rounded-0 ml-2"> Web Design </a>
                 <a href="#" class="badge badge-default rounded-0 ml-2"> Mobile Apps </a>
               </p>

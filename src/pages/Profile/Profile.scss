@@ -5,22 +5,10 @@
 }
 
 .profileContacts {
-  @include list-unstyled();
-
-  display: inline-block;
   text-align: left;
 
   > li {
     margin-bottom: $spacer / 2;
-  }
-
-  > li > a {
-    color: lighten($text-color, 30%);
-    text-decoration: none;
-
-    @include hover-focus {
-      color: $text-color;
-    }
   }
 }
 
@@ -46,6 +34,7 @@
   position: relative;
   margin-bottom: $spacer;
   box-shadow: $widget-shadow;
+  overflow: hidden;
 }
 
 .eventTitle {
@@ -80,6 +69,7 @@
   background-color: $addition-bg;
   margin: 20px -20px 0;
   padding: 10px 20px;
+
 }
 
 .eventTimestamp {

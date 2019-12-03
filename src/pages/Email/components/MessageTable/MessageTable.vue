@@ -1,6 +1,11 @@
 <template>
-  <div class="col-lg-9 col-xl-10 col-xs-12">
-    <Pagination v-if="openedMessage === null && !compose" />
+  <div class="col-lg-9 col-xl-10 col-xs-12 d-flex flex-column">
+    <b-pagination v-if="openedMessage === null && !compose"
+                  v-model="currentPage"
+                  :total-rows="rows"
+                  :per-page="perPage"
+                  class="ml-auto"
+    ></b-pagination>
     <b-button v-else variant="default" class="mb" @click="openMessage(null)">
       <i class="fa fa-angle-left fa-lg" />
     </b-button>
@@ -82,7 +87,6 @@
 import Vue from 'vue';
 
 import Widget from '@/components/Widget/Widget';
-import Pagination from '../Pagination/Pagination';
 import MessageTableHeader from '../MessageTableHeader/MessageTableHeader';
 import Message from '../Message/Message';
 import Compose from '../Compose/Compose';
@@ -92,7 +96,7 @@ import mock from '../../mock';
 export default {
   name: 'MessageTable',
   components: {
-    Widget, Pagination, MessageTableHeader, Message, Compose,
+    Widget, MessageTableHeader, Message, Compose,
   },
   props: ['filter', 'openedMessage', 'openMessage', 'composeData', 'changeCompose', 'compose'],
   data() {
@@ -100,6 +104,9 @@ export default {
       messages: mock,
       checkedIds: [],
       searchString: '',
+      currentPage: 1,
+      perPage: 10,
+      rows: 96
     };
   },
   methods: {

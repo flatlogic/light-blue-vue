@@ -108,7 +108,7 @@
                 <b-row class="flex-nowrap">
                   <b-col xs="3">
                     <span class="widget-icon">
-                      <i class="fi flaticon-shuffle"/>
+                      <i class="fi flaticon-shuffle text-color"/>
                     </span>
                   </b-col>
                   <b-col xs="9">
@@ -163,7 +163,7 @@
     <b-row>
       <b-col lg='4' xs='12'>
         <Widget refresh close bodyClass="mt-0">
-          <div class="widget-top-overflow widget-padding-md clearfix bg-warning text-white">
+          <div class="widget-top-overflow widget-padding-md clearfix bg-primary text-white">
             <h3 class="mt-lg mb-lg">Light Blue - <span class="fw-semi-bold">Next Generation</span> Admin
               Dashboard
               Template</h3>
@@ -343,7 +343,7 @@
                 </div>
                 <div class="col-3 col-md-2 p-0">
                   <h6 class="m-0">WED</h6>
-                  <Skycon class="mt-1" icon="CLEAR_DAY" color="#f0b518"
+                  <Skycon class="mt-1" icon="CLEAR_DAY" color="rgba(244, 244, 245, 0.9)"
                     :options="{ width: '28', height: '28' }" />
                   <p class="m-0 fw-semi-bold">28&deg;</p>
                 </div>
@@ -401,7 +401,7 @@
                   <p class="text-white fw-normal d-inline-block mb">SUNDAY</p>
                 </div>
                 <div class="col-5">
-                  <Skycon class="mt-3" icon="PARTLY_CLOUDY_DAY" color="#64bd63"
+                  <Skycon class="mt-3" icon="PARTLY_CLOUDY_DAY" color="#58D777"
                     :options="{ width: '60', height: '60' }" />
                   <p class="fw-normal fs-sm text-muted">WINDY</p>
                 </div>
@@ -471,13 +471,13 @@
                 <span class="pull-right m-0 fw-semi-bold">CPU</span>
                 <span class="fs-mini">60% / 37°C / 3.3 Ghz</span>
               </div>
-              <b-progress variant="primary" class="bg-gray-lighter progress-xs"
+              <b-progress variant="primary" class="progress-xs"
                 :value="60" :max="100" />
               <div class="clearfix fs-mini mt">
                 <span class="pull-right m-0 fw-semi-bold">Mem</span>
                 <span class="fs-mini">29% / 4GB (16 GB)</span>
               </div>
-              <b-progress variant="warning" class="bg-gray-lighter progress-xs"
+              <b-progress variant="primary" class="progress-xs"
                 :value="29" :max="100" />
               <div class="clearfix fs-mini mt">
                 <span class="pull-right m-0 fw-semi-bold">LAN</span>
@@ -485,13 +485,13 @@
                   class="fa fa-caret-up"
                 /></span>
               </div>
-              <b-progress variant="danger" class="bg-gray-lighter progress-xs"
+              <b-progress variant="primary" class="progress-xs"
                 :value="48" :max="100" />
               <div class="clearfix fs-mini mt">
                 <span class="pull-right m-0 fw-semi-bold">Access</span>
                 <span class="fs-mini">17 Mb/s <i class="fa fa-caret-up" /> &nbsp; (+18%)</span>
               </div>
-              <b-progress variant="success" class="bg-gray-lighter progress-xs"
+              <b-progress variant="primary" class="progress-xs"
                 :value="64" :max="100" />
             </Widget>
           </b-col>
@@ -576,7 +576,7 @@
         </Widget>
       </b-col>
       <b-col lg='4' xs='12'>
-        <Widget class="bg-gray-dark text-white">
+        <Widget>
           <RealtimeTraffic />
         </Widget>
       </b-col>
@@ -674,11 +674,11 @@
         <transition name="flip" mode="out-in">
           <div v-if="flipFirstGroup" key="first">
             <Widget
-                class="widget-padding-lg widget-md bg-gray-dark text-white"
+                class="widget-padding-lg widget-md text-white"
                 bodyClass="widget-body-container"
             >
               <div class="text-center">
-                <i class="fa fa-child text-warning fa-5x"/>
+                <i class="fa fa-child text-success fa-5x"/>
               </div>
               <h3 class="fw-normal">Sing Web App</h3>
               <div class="widget-footer-bottom">
@@ -698,7 +698,7 @@
               <div class="widget-footer-bottom">
                 <div class="mb-sm">Cutting-edge tech and design delivered</div>
                 <p>
-                  <button class="btn btn-gray btn-block">Join now!</button>
+                  <button class="btn btn-default btn-block">Join now!</button>
                 </p>
               </div>
             </Widget>

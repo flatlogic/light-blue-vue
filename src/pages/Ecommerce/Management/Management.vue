@@ -18,7 +18,7 @@
       </b-alert>
     </div>
     <Widget title="List of Products" collapse close :fetchingData="isReceiving">
-      <b-button variant="success" @click="createNewProduct()" class="mb-3">Create Product</b-button>
+      <b-button variant="primary" @click="createNewProduct()" class="mb-3">Create Product</b-button>
       <v-client-table :data="products" :columns="columnsDatatable" :options="optionsDatatable">
         <div slot="img" slot-scope="props">
           <img :src="props.row.img" alt="..." class="image" title="image"/>
@@ -31,9 +31,12 @@
         <div slot="rating" slot-scope="props">
           <Rating :rating="parseFloat(props.row.rating)"></Rating>
         </div>
+        <div slot="price" slot-scope="props">
+          <span class="text-success">{{props.row.price}}</span>
+        </div>
         <template slot="api" slot-scope="props">
           <b-button-toolbar>
-            <b-button variant="info" size="xs" @click="$router.push('/app/ecommerce/management/' + props.row.id)">
+            <b-button variant="primary" size="xs" @click="$router.push('/app/ecommerce/management/' + props.row.id)">
               <span class="d-none d-md-inline-block">Edit</span>
               <span class="d-md-none"><i class='la la-edit'></i></span>
             </b-button>

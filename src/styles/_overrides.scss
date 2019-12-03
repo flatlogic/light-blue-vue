@@ -23,16 +23,6 @@
   }
 }
 
-.input-group-no-border .form-control.input-transparent {
-  border: 1px solid transparentize($widget-bg, 0.15);
-  border-left: none;
-}
-
-.input-group-no-border .form-control.input-transparent:focus {
-  background-color: $widget-bg;
-
-}
-
 .progress-bar {
   @include box-shadow(none);
 }
@@ -40,6 +30,7 @@
 .progress {
   height: $spacer * 1.3;
   margin-bottom: $spacer / 2;
+  background: theme-color("dark");
 }
 
 .progress-sm {
@@ -48,6 +39,14 @@
 
 .progress-xs {
   height: 5px;
+}
+
+.input-group {
+  .input-group-append, .input-group-prepend {
+    .btn {
+      border: none;
+    }
+  }
 }
 
 .form-control {
@@ -59,15 +58,6 @@
   &:focus {
     box-shadow: none;
   }
-
-  &.no-border {
-    border: none;
-    background-color: darken($input-bg, 5%);
-
-    &:focus {
-      background-color: darken($input-bg, 7%);
-    }
-  }
 }
 
 legend {
@@ -78,7 +68,7 @@ legend {
   line-height: inherit;
   color: $text-muted;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $border-color;
   font-size: 15px;
   font-weight: $font-weight-normal;
 }
@@ -119,7 +109,7 @@ legend {
 
 .badge-success,
 .badge-info,
-.badge-warning,
+.bg-primary,
 .badge-danger {
   color: $white;
 }
@@ -182,10 +172,6 @@ small {
 
 ///////// Buttons //////////
 
-.btn {
-  background-image: linear-gradient(to right, #ffffff26, #fff0);
-}
-
 [class*="btn-outline"] {
   background-image: none;
 }
@@ -198,11 +184,13 @@ small {
 
 .btn-success,
 .btn-info,
-.btn-warning {
-  color: $white;
+.btn-warning,
+.btn-dark,
+.btn-default {
+  color: $text-color;
 
   &:hover {
-    color: $white;
+    color: $text-color;
   }
 }
 
@@ -212,8 +200,7 @@ small {
 }
 
 .btn-default {
-  border-color: $gray-400;
-  color: $gray-800;
+  border: none;
 }
 
 .btn-xs {
@@ -221,14 +208,6 @@ small {
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
-}
-
-.btn-secondary.active {
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-
-.btn-transparent {
-  background-image: none;
 }
 
 .btn {
@@ -430,7 +409,7 @@ small {
 ///////// Glyphicons //////////
 
 .glyphicon {
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 ///////// Font Awesome //////////
@@ -625,9 +604,10 @@ h6,
 
 code {
   font-size: 85%;
-  background-color: theme-color('danger-light');
-  color: $pink;
-  padding: 0;
+  background-color: rgba($primary, .3);
+  border-radius: $border-radius-sm;
+  color: $success;
+  padding: $spacer / 10;
 }
 
 pre {
@@ -682,7 +662,7 @@ pre {
 
 .circle {
   .fa {
-    vertical-align: middle;
+    vertical-align: baseline;
   }
 }
 
@@ -986,4 +966,50 @@ $slider-handle-size: 26px;
 //////// Mavon Editor ////////
 .v-note-wrapper {
   z-index: 50;
+}
+
+
+////// Awesome Bootstrap checkbox ///////
+.abc-checkbox,
+.abc-radio {
+  label:before {
+    background: theme-color('dark');
+    border: none;
+  }
+
+  label:after {
+    color: $text-color;
+  }
+}
+
+
+////// CK Editor ///////
+.ck.ck-toolbar {
+  background: theme-color("default");
+  border-width: $input-border-width;
+}
+
+.ck.ck-button {
+  color: $text-color;
+}
+
+.ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover {
+  background: rgba(0,0,0,0.2);
+}
+
+.ck.ck-button.ck-on, a.ck.ck-button.ck-on {
+  background: rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
+}
+
+.ck.ck-editor__main > .ck-editor__editable {
+  background: $input-bg;
+  border-width: $input-border-width;
+}
+
+.ck.ck-toolbar__separator {
+  display: none;
 }

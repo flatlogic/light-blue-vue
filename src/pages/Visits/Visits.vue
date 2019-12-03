@@ -19,14 +19,14 @@
         >
           <p>Status: <strong>Live</strong></p>
           <p>
-            <span class="circle bg-warning text-white"><i class="fa fa-map-marker" /></span> &nbsp;
+            <span class="circle bg-primary text-white"><i class="fa fa-map-marker" /></span> &nbsp;
             146 Countries, 2759 Cities
           </p>
           <div class="row progress-stats">
             <div class="col-md-9 col-12">
               <h6 class="name">Foreign Visits</h6>
               <p class="description deemphasize mb-xs">Some Cool Text</p>
-              <b-progress variant="primary" :value="60" :max="100" class="bg-white progress-xs" />
+              <b-progress variant="primary" :value="60" :max="100" class="progress-xs" />
             </div>
             <div class="col-md-3 col-12 text-center">
               <span class="status rounded rounded-lg bg-widget">
@@ -38,7 +38,7 @@
             <div class="col-md-9 col-12">
               <h6 class="name">Local Visits</h6>
               <p class="description deemphasize mb-xs">P. to C. Conversion</p>
-              <b-progress variant="danger" :value="39" :max="100" class="bg-white progress-xs" />
+              <b-progress variant="danger" :value="39" :max="100" class="progress-xs" />
             </div>
             <div class="col-md-3 col-12 text-center">
               <span class="status rounded rounded-lg bg-widget">
@@ -50,7 +50,7 @@
             <div class="col-md-9 col-12">
               <h6 class="name">Sound Frequencies</h6>
               <p class="description deemphasize mb-xs">Average Bitrate</p>
-              <b-progress variant="success" :value="80" :max="100" class="bg-white progress-xs" />
+              <b-progress variant="success" :value="80" :max="100" class="progress-xs" />
             </div>
             <div class="col-md-3 col-12 text-center">
               <span class="status rounded rounded-lg bg-widget">
@@ -61,14 +61,14 @@
           <h6 class="fw-semi-bold mt">Map Distributions</h6>
           <p>Tracking: <strong>Active</strong></p>
           <p>
-            <span class="circle bg-warning text-white"><i class="fa fa-cog" /></span>
+            <span class="circle bg-primary text-white"><i class="fa fa-cog" /></span>
             &nbsp; 391 elements installed, 84 sets
           </p>
           <b-input-group class="mt">
             <b-form-input />
             <b-input-group-append>
               <b-btn variant="default">
-                <i class="fa fa-search text-gray" />
+                <i class="fa fa-search" />
               </b-btn>
             </b-input-group-append>
           </b-input-group>
@@ -96,10 +96,10 @@
             </div>
           </div>
           <b-progress variant="success" :value="60"
-            :max="100" class="bg-gray-lighter progress-xs" />
+            :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-warning text-white">
+              <span class="circle bg-primary text-white">
                 <i class="fa fa-chevron-up" />
               </span>
             </small>
@@ -128,10 +128,10 @@
             </div>
           </div>
           <b-progress variant="danger"
-            :value="60" :max="100" class="bg-gray-lighter progress-xs" />
+            :value="60" :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-warning text-white">
+              <span class="circle bg-primary text-white">
                 <i class="fa fa-chevron-down" />
               </span>
             </small>
@@ -160,10 +160,10 @@
             </div>
           </div>
           <b-progress variant="primary" :value="60"
-            :max="100" class="bg-gray-lighter progress-xs" />
+            :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-warning text-white">
+              <span class="circle bg-primary text-white">
                 <i class="fa fa-plus" />
               </span>
             </small>
@@ -208,7 +208,7 @@
               <a class="list-group-item" href="#">
                 <span class="thumb-sm float-left mr">
                   <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="..." />
-                  <i class="status status-bottom bg-warning" />
+                  <i class="status status-bottom bg-primary" />
                 </span>
                 <div>
                   <h6 class="m-0">Livia Walsh</h6>
@@ -312,7 +312,7 @@
           <Calendar />
           <div class="list-group fs-mini">
             <a href="#" class="list-group-item text-ellipsis">
-              <span class="badge badge-pill badge-warning float-right">6:45</span>
+              <span class="badge badge-pill bg-primary float-right">6:45</span>
               Weed out the flower bed
             </a>
             <a href="#" class="list-group-item text-ellipsis">
@@ -383,12 +383,12 @@ export default {
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: '#f87979',
+            backgroundColor: '#1870DC',
             borderColor: 'transparent',
             data: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt()]
           }, {
             label: 'Data Two',
-            backgroundColor: '#7c87f8',
+            backgroundColor: '#F45722',
             borderColor: 'transparent',
             data: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt()]
           }

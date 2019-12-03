@@ -4,7 +4,7 @@
     <div class="stats">
       <h6>YEARLY <span class="fw-semi-bold">DISTRIBUTIONS</span></h6>
       <span class="pull-left mr-xs">
-          <small><span class="circle bg-warning text-gray-dark">
+          <small><span class="circle bg-success">
             <i class="fa fa-plus"/></span></small>
         </span>
       <p class="h4 m-0">
@@ -84,10 +84,10 @@ export default {
     map.zoomControl.dy = -30;
     map.zoomControl.layout = 'horizontal';
 
-    map.zoomControl.minusButton.background.fill = am4core.color("#fff");
-    map.zoomControl.plusButton.background.fill = am4core.color("#fff");
-    map.zoomControl.minusButton.background.stroke = am4core.color("#ccc");
-    map.zoomControl.plusButton.background.stroke = am4core.color("#ccc");
+    map.zoomControl.minusButton.background.fill = am4core.color("#C7D0FF");
+    map.zoomControl.plusButton.background.fill = am4core.color("#C7D0FF");
+    map.zoomControl.minusButton.background.stroke = null;
+    map.zoomControl.plusButton.background.stroke = null;
     map.zoomControl.plusButton.background.cornerRadius(16,16,16,16);
     map.zoomControl.minusButton.background.cornerRadius(16,16,16,16);
     map.zoomControl.plusButton.dx = 5;
@@ -98,17 +98,18 @@ export default {
 
     let polygonTemplate = this.polygonSeries.mapPolygons.template;
     polygonTemplate.tooltipHTML = "{tooltip}";
-    polygonTemplate.fill = am4core.color("#eee");
-    polygonTemplate.stroke = am4core.color("#666");
-    polygonTemplate.strokeWidth = 0.1;
+    polygonTemplate.fill = am4core.color("#474D84");
+    polygonTemplate.fillOpacity = 1;
+    polygonTemplate.stroke = am4core.color("#6979C9");
+    // polygonTemplate.strokeWidth = ;
     let hs = polygonTemplate.states.create("hover");
-    hs.properties.fill = am4core.color("#999");
+    hs.properties.fillOpacity = 0.5;
 
     this.polygonSeries.heatRules.push({
       "property": "fill",
       "target": polygonTemplate,
-      "min": am4core.color("#eee"),
-      "max": am4core.color("#aaa")
+      "min": am4core.color("#474D84"),
+      "max": am4core.color("#6979C9")
     });
 
     this.map = map;

@@ -21,7 +21,7 @@
           </div>
           <div
               class="external-event"
-              data-event='{ "classNames": ["bg-warning", "text-white"], "title": "Open windows" }'
+              data-event='{ "classNames": ["bg-primary", "text-white"], "title": "Open windows" }'
           >
             <i class="fa fa-circle fa-fw text-warning ml-xs mr-xs"></i>
             Open windows

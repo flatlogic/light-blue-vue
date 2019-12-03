@@ -104,7 +104,7 @@ export default {
         {
           id: 1,
           state: 'Warning',
-          usage: ['badge-warning', 'bg-warning'],
+          usage: ['bg-primary', 'bg-primary'],
         },
         {
           id: 2,

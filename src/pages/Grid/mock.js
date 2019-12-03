@@ -82,7 +82,7 @@ export default {
         name: 'Jenny Wilington',
         comment: 'just now',
         type: 'success',
-        extraClass: 'animated fadeInDown bg-warning-light'
+        extraClass: 'animated fadeInDown bg-primary-light'
       },
       {
         img: '/images/people/a1.jpg',
@@ -115,7 +115,7 @@ export default {
     },
     news: [
       {
-        extraClass: 'animated fadeInDown bg-warning-light',
+        extraClass: 'animated fadeInDown bg-primary-light',
         background: 'warning',
         icon: 'lock',
         title: 'Just now! Check update time',

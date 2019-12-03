@@ -55,12 +55,12 @@ export default {
     map.zoomControl.align = 'left';
     map.zoomControl.valign = 'bottom';
     map.zoomControl.dy = -20;
-    map.zoomControl.minusButton.background.fill = am4core.color("#000");
+    map.zoomControl.minusButton.background.fill = am4core.color("#C7D0FF");
     map.zoomControl.minusButton.background.fillOpacity = 0.24;
-    map.zoomControl.minusButton.background.stroke = am4core.color("#ccc");
-    map.zoomControl.plusButton.background.fill = am4core.color("#000");
+    map.zoomControl.minusButton.background.stroke = null;
+    map.zoomControl.plusButton.background.fill = am4core.color("#C7D0FF");
     map.zoomControl.plusButton.background.fillOpacity = 0.24;
-    map.zoomControl.plusButton.background.stroke = am4core.color("#ccc");
+    map.zoomControl.plusButton.background.stroke = null;
     map.zoomControl.plusButton.label.fill = am4core.color("#fff");
     map.zoomControl.plusButton.label.fontWeight = 600;
     map.zoomControl.plusButton.label.fontSize = 16;
@@ -74,12 +74,13 @@ export default {
 
     let polygonTemplate = polygonSeries.mapPolygons.template;
     polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.fill = am4core.color("#fff");
-    polygonTemplate.fillOpacity = 0.2;
+    polygonTemplate.fill = am4core.color("#474D84");
+    polygonTemplate.fillOpacity = 1;
     let hs = polygonTemplate.states.create("hover");
     hs.properties.fillOpacity = 0.5;
 
-    polygonTemplate.strokeOpacity = 0.4;
+    polygonTemplate.stroke = am4core.color("#6979C9");
+    polygonTemplate.strokeOpacity = 1;
 
     let citySeries = map.series.push(new am4maps.MapImageSeries());
     citySeries.data = cities;
@@ -90,7 +91,7 @@ export default {
     city.propertyFields.latitude = "latitude";
     city.propertyFields.longitude = "longitude";
     let circle = city.createChild(am4core.Circle);
-    circle.fill = am4core.color("#ffc247");
+    circle.fill = am4core.color("#C7D0FF");
     circle.stroke = am4core.color("#ffffff");
     circle.strokeWidth = 0;
     let circleHoverState = circle.states.create("hover");

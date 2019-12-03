@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="md" class="header d-print-none">
+  <b-navbar toggleable="md" class="app-header d-print-none">
     <b-navbar-nav class="navbar-nav-mobile ml-auto">
         <b-nav-text class="mr-3">
           <b-alert class="header-alert animated bounceIn delay-2s" dismissible v-model="showNavbarAlert">
@@ -12,7 +12,7 @@
             <b-input class="input-transparent" id="search-input" placeholder="Search Dashboard" />
           </b-input-group>
         </b-nav-form>
-        <b-nav-item-dropdown right extra-menu-classes="py-0">
+        <b-nav-item-dropdown right menu-class="py-0">
           <template slot="button-content">
           <span class="avatar rounded-circle thumb-sm float-left mr-2">
             <img
@@ -24,7 +24,7 @@
             <span v-else>{{firstUserLetter}}</span>
           </span>
             <span class="small">{{user.name || user.email || "Philip smith"}}</span>
-            <span class="ml-1 circle bg-warning text-white fw-bold">13</span>
+            <span class="mx-2 circle bg-primary text-white fs-sm fw-bold">13</span>
           </template>
           <notifications />
         </b-nav-item-dropdown>
@@ -82,7 +82,7 @@
             <span class="fs-sm">Check out this awesome ticket</span>
           </b-dropdown-item>
           <b-dropdown-item>
-            <span class="badge badge-warning mr-2"><i class="fa fa-question-circle"></i></span>
+            <span class="badge bg-primary mr-2"><i class="fa fa-question-circle"></i></span>
             <span class="fs-sm">Finish 2019 annual report</span>
           </b-dropdown-item>
           <b-dropdown-item>
@@ -151,4 +151,4 @@ export default {
 };
 </script>
 
-<style src="./Header.scss" lang="scss" scoped />
+<style src="./Header.scss" lang="scss" />

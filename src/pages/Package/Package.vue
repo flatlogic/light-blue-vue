@@ -31,7 +31,7 @@
             <a href="https://webpack.js.org/">Webpack</a> Module Bundler and Yarn as a package
             manager are under the hood.</p>
           <a
-            class="btn btn-default btn-lg btn-block"
+            class="btn btn-dark btn-lg btn-block"
             href="https://demo.flatlogic.com/light-blue-react/#/app/main/analytics"
           >
             Go to Demo
@@ -62,7 +62,7 @@
             so everything
             works out of the box! <br /><br /></p>
           <a
-            class="btn btn-default btn-lg btn-block"
+            class="btn btn-dark btn-lg btn-block"
             href="https://demo.flatlogic.com/4.0.1/angular/#/app/dashboard"
           >
             Go to Demo
@@ -94,7 +94,7 @@
           <p>Moreover, this version comes with three different color
             schemes which you can easily switch based on your choice.</p>
           <a
-            class="btn btn-default btn-lg btn-block"
+            class="btn btn-dark btn-lg btn-block"
             href="https://demo.flatlogic.com/4.0.1/dark/"
           >
             Go to Demo

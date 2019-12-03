@@ -24,15 +24,15 @@
           settings close customHeader
         >
           <div class="chart-stats">
-            <p class="text-muted fs-mini mt-xs">
-              <i class="fa fa-map-marker fa-5x pull-left" />
-              <span class="fw-semi-bold">Jess:</span>
+            <p class="fs-mini mt-xs">
+              <i class="fa fa-map-marker fa-5x pull-left text-primary" />
+              <span class="fw-semi-bold text-muted">Jess:</span>
                 Seems like statically it&apos;s getting impossible
                 to achieve any sort of results in nearest future. The
                 only thing we can hope for is pressing one of these two buttons:
               </p>
             <div class="btn-toolbar">
-              <b-button variant="success" size="xs">Accept</b-button>
+              <b-button variant="primary" size="xs">Accept</b-button>
               <b-button variant="default" size="xs">Reject</b-button>
             </div>
           </div>
@@ -113,6 +113,9 @@ export default {
       exporting: {
         enabled: false
       },
+      credits: {
+        enabled: false
+      },
       plotOptions: {
         series: {
           lineWidth: 1,
@@ -144,17 +147,17 @@ export default {
       chart_one: {
         ...options,
         series: this.generateRandomData([{
-          name: 'Visitors', color: '#777',
+          name: 'Visitors', color: '#1870DC',
         }, {
-          name: 'Charts', color: '#dd5826',
+          name: 'Charts', color: '#F45722',
         }])
       } ,
       chart_two: {
         ...options,
         series: this.generateRandomData([{
-          name: 'Controllers', color: '#777',
+          name: 'Controllers', color: '#58D777',
         }, {
-          name: 'Scopes', color: '#f0b518',
+          name: 'Scopes', color: '#1870DC',
         }])
       }
     };

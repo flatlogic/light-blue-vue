@@ -16,7 +16,7 @@
             and align content. It’s built with flexbox and is fully responsive. Below is an
             example and an in-depth look at how the grid comes together.
           </p>
-          <div class="bg-light p-3">
+          <div class="bg-dark p-3">
             <b-row class="mb-lg">
               <b-col xs='4'>
                 <div class="py-4 bg-primary text-center text-white">
@@ -34,7 +34,7 @@
                 </div>
               </b-col>
             </b-row>
-            <pre class="bg-light border-0 w-100 h-100">
+            <pre class="bg-dark border-0 w-100 h-100">
               <code class="text-danger">{{ '&lt;b-container&gt;' }}</code>
               <code class="text-success">{{'  &lt;b-row&gt;'}}</code>
               <code class="text-info">{{'    &lt;b-col xs="4"&gt;'}}</code>
@@ -62,7 +62,7 @@
             from xs to xl. Add any number of unit-less classes for each breakpoint you
             need and every column will be the same width.
           </p>
-          <div class="bg-light p-3">
+          <div class="bg-dark p-3">
             <b-row class="mb-lg">
               <b-col>
                 <div class="py-4 bg-primary text-center text-white">
@@ -75,7 +75,7 @@
                 </div>
               </b-col>
             </b-row>
-            <pre class="bg-light border-0 w-100 h-100">
+            <pre class="bg-dark border-0 w-100 h-100">
               <code class="text-danger">{{'&lt;b-container&gt;'}}</code>
               <code class="text-success">{{'  &lt;b-row&gt;'}}</code>
               <code class="text-info">{{'    &lt;b-col&gt;'}}</code>
@@ -177,7 +177,7 @@
           close collapse customHeader
         >
           <p>Use flexbox alignment utilities to vertically and horizontally align columns.</p>
-          <div class="bg-light p-3">
+          <div class="bg-dark p-3">
             <b-row class="mb-lg" :style="{ height: '150px' }">
               <b-col class="align-self-start">
                 <div class="py-4 bg-primary text-center text-white">
@@ -195,7 +195,7 @@
                 </div>
               </b-col>
             </b-row>
-            <pre class="bg-light border-0 w-100 h-100">
+            <pre class="bg-dark border-0 w-100 h-100">
               <code class="text-danger">{{'&lt;b-container&gt;'}}</code>
               <code class="text-success">{{'  &lt;b-row&gt;'}}</code>
               <code class="text-info">{{'    &lt;b-col class="align-self-start"&gt;'}}</code>
@@ -219,7 +219,7 @@
           close collapse customHeader
         >
           <p>Use flexbox alignment utilities to vertically and horizontally align columns.</p>
-          <div class="bg-light p-3">
+          <div class="bg-dark p-3">
             <b-row class="mb-lg justify-content-end">
               <div class="col-3">
                 <div class="py-4 bg-primary text-center text-white">
@@ -261,7 +261,7 @@
                 </div>
               </div>
             </b-row>
-            <pre class="bg-light border-0 w-100 h-100">
+            <pre class="bg-dark border-0 w-100 h-100">
               <code class="text-danger">{{'&lt;b-container>'}}</code>
               <code class="text-success">{{'  &lt;b-row class="justify-content-end"&gt;'}}</code>
               <code class="text-info">{{'    &lt;b-col&gt;'}}</code>

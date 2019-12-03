@@ -2,9 +2,9 @@
   <div>
     <h4 class="mb-lg">Recent <span class="fw-semi-bold">Update</span></h4>
     <h6>Node.js <span class="fw-semi-bold">4.0.1 distribution</span></h6>
-    <b-progress class="bg-gray-lighter progress-xs" variant="danger" :value="77" :max="100" />
+    <b-progress class="progress-xs" variant="danger" :value="77" :max="100" />
     <p class="mt-sm mb fs-mini ">
-      <small><span class="circle bg-warning text-gray-dark"><i
+      <small><span class="circle bg-primary"><i
         class="glyphicon glyphicon-chevron-up"
       /></span></small>
       <strong class="px-1">17% higher</strong>
@@ -43,11 +43,11 @@ export default {
         realtime: true,
         series: [
           {
-            color: '#343434', // 'gray-dark'
+            color: '#1870DC',
             data: seriesData[0],
             name: 'Uploads',
           }, {
-            color: '#666', // gray,
+            color: '#58D777',
             data: seriesData[1],
             name: 'Downloads',
           },

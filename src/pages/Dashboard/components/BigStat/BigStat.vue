@@ -22,7 +22,7 @@
             <div class="d-flex align-items-start">
               <h6>+{{registrations.value}}</h6>
               <i
-                :class="`la la-arrow-right ml-sm text-${registrations.profit ? 'success' : 'danger'}
+                :class="`la la-lg la-arrow-right ml-sm text-${registrations.profit ? 'success' : 'danger'}
                 rotate-${registrations.profit ? '315' : '45'}`"
               />
             </div>
@@ -32,7 +32,7 @@
             <div class="d-flex align-items-start">
               <h6>{{bounce.value}}%</h6>
               <i
-                :class="`la la-arrow-right ml-sm text-${bounce.profit ? 'success' : 'danger'}
+                :class="`la la-lg la-arrow-right ml-sm text-${bounce.profit ? 'success' : 'danger'}
                 rotate-${bounce.profit ? '315' : '45'}`"
               />
             </div>

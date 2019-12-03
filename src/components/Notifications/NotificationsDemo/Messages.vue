@@ -1,6 +1,6 @@
 <template>
   <b-list-group class="listGroup thin-scroll">
-    <b-list-group-item class="listGroupItem bg-warning-light">
+    <b-list-group-item class="listGroupItem bg-primary-light">
       <span class="notificationIcon thumb-sm">
         <img class="rounded-circle" src="../../../assets/people/a2.jpg" alt="..." />
         <i class="status status-bottom bg-success" />
@@ -23,7 +23,7 @@
     <b-list-group-item class="listGroupItem">
       <span class="notificationIcon thumb-sm">
         <img class="rounded-circle" src="../../../assets/people/a1.jpg" alt="..." />
-        <i class="status status-bottom bg-warning" />
+        <i class="status status-bottom bg-primary" />
       </span>
       <time class="text-link help float-right">9 min ago</time>
       <h6 class="m-0 mb-1">Livia Walsh</h6>
