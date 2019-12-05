@@ -53,16 +53,16 @@ $violet:   #333867 !default;
 
 $theme-colors: (
         primary: $blue,
-        secondary: $gray-700,
+        secondary: rgba(#F4F4F5, .9),
         success: $green,
         info: $teal,
         warning: $orange,
         danger: $red,
         dark: $dark,
-        inverse: $gray-800,
+        inverse: #30314e,
         gray: $gray-300,
         light: $gray-100,
-        default: $purple,
+        default: #595d78,
         primary-light: #dee4ee,
         success-light: #ecfaec,
         info-light: #f2fafa,
@@ -246,10 +246,35 @@ $card-border-width:         0;
 
 $modal-content-color: $gray-700;
 
+// == Code
+$pre-color: $text-color !default;
+$pre-bg: $dark !default;
+$pre-border: transparent !default;
+
+// == Location Selector
+$location-selector-bg: $dark !default;
+$location-selector-border: transparent !default;
+$location-selector-bit-bg: rgba(255, 255, 255, 0.2) !default;
+
 // Screens
 // -------------------------
 
 $screen-lg-height: 670px !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @mixin variables-light() {
   // Color system
@@ -343,6 +368,17 @@ $screen-lg-height: 670px !default;
 
   // == Cards
   $card-bg: $widget-bg !global;
+
+
+  // == Code
+  $pre-color: $gray-900 !global;
+  $pre-bg: $gray-100 !global;
+  $pre-border: $gray-400 !global;
+
+  // == Location Selector
+  $location-selector-bg: $white !default;
+  $location-selector-border: #bbb !default;
+  $location-selector-bit-bg: $gray-300 !default;
 }
 
 @if ($app-theme == 'light') {

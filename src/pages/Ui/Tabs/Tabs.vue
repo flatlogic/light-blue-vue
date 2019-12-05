@@ -24,7 +24,7 @@
               Everyone knows what is lore ipsum - it is easy to understand if
               text is lore ipsum.
             </p>
-            <b-button variant="danger">Check</b-button>
+            <b-button variant="danger" class="mr-2">Check</b-button>
             <b-button variant="default">Dance</b-button>
           </b-tab>
           <b-tab title="Works">
@@ -56,7 +56,7 @@
               Everyone knows what is lore ipsum - it is easy to understand if
               text is lore ipsum.
             </p>
-            <b-button variant="danger">Check</b-button>
+            <b-button variant="danger" class="mr-2">Check</b-button>
             <b-button variant="default">Dance</b-button>
           </b-tab>
           <b-tab title="Works">

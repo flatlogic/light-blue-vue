@@ -17,14 +17,14 @@
               Semantically distinguishable beauty.
             </p>
             <p class="text-left">
-              <b-button variant="default" class="width-100 mb-xs mr-xs">Default</b-button>
-              <b-button variant="primary" class="width-100 mb-xs mr-xs">Primary</b-button>
-              <b-button variant="info" class="width-100 mb-xs mr-xs">Info</b-button>
-              <b-button variant="success" class="width-100 mb-xs mr-xs">Success</b-button>
-              <b-button variant="warning" class="width-100 mb-xs mr-xs">Warning</b-button>
-              <b-button variant="danger" class="width-100 mb-xs mr-xs">Danger</b-button>
-              <b-button variant="gray" class="width-100 mb-xs mr-xs">Gray</b-button>
-              <b-button variant="inverse" class="width-100 mb-xs mr-xs">Inverse</b-button>
+              <b-button variant="default" class="width-100 mb-2 mr-2">Default</b-button>
+              <b-button variant="primary" class="width-100 mb-2 mr-2">Primary</b-button>
+              <b-button variant="info" class="width-100 mb-2 mr-2">Info</b-button>
+              <b-button variant="success" class="width-100 mb-2 mr-2">Success</b-button>
+              <b-button variant="warning" class="width-100 mb-2 mr-2">Warning</b-button>
+              <b-button variant="danger" class="width-100 mb-2 mr-2">Danger</b-button>
+              <b-button variant="gray" class="width-100 mb-2 mr-2">Gray</b-button>
+              <b-button variant="inverse" class="width-100 mb-2 mr-2">Inverse</b-button>
             </p>
           </div>
         </Widget>
@@ -41,10 +41,10 @@
               from tiny 10px button to large one.
             </p>
             <p>
-              <b-button variant="default" size="lg" class="mb-xs mr-xs">Large button</b-button>
-              <b-button variant="primary" class="mb-xs mr-xs">Default button</b-button>
-              <b-button variant="info" size="sm" class="mb-xs mr-xs">Small button</b-button>
-              <b-button variant="success" size="xs" class="mb-xs mr-xs">Tiny button</b-button>
+              <b-button variant="default" size="lg" class="mb-2 mr-2">Large button</b-button>
+              <b-button variant="primary" class="mb-2 mr-2">Default button</b-button>
+              <b-button variant="info" size="sm" class="mb-2 mr-2">Small button</b-button>
+              <b-button variant="success" size="xs" class="mb-2 mr-2">Tiny button</b-button>
             </p>
           </div>
         </Widget>
@@ -62,14 +62,14 @@
               background images and colors on any button.
             </p>
             <p>
-              <b-button variant="outline-default" class="width-100 mb-xs mr-xs">Default</b-button>
-              <b-button variant="outline-primary" class="width-100 mb-xs mr-xs">Primary</b-button>
-              <b-button variant="outline-info" class="width-100 mb-xs mr-xs">Info</b-button>
-              <b-button variant="outline-success" class="width-100 mb-xs mr-xs">Success</b-button>
-              <b-button variant="outline-warning" class="width-100 mb-xs mr-xs">Warning</b-button>
-              <b-button variant="outline-danger" class="width-100 mb-xs mr-xs">Danger</b-button>
-              <b-button variant="outline-gray" class="width-100 mb-xs mr-xs">Gray</b-button>
-              <b-button variant="outline-inverse" class="width-100 mb-xs mr-xs">Inverse</b-button>
+              <b-button variant="outline-default" class="width-100 mb-2 mr-2">Default</b-button>
+              <b-button variant="outline-primary" class="width-100 mb-2 mr-2">Primary</b-button>
+              <b-button variant="outline-info" class="width-100 mb-2 mr-2">Info</b-button>
+              <b-button variant="outline-success" class="width-100 mb-2 mr-2">Success</b-button>
+              <b-button variant="outline-warning" class="width-100 mb-2 mr-2">Warning</b-button>
+              <b-button variant="outline-danger" class="width-100 mb-2 mr-2">Danger</b-button>
+              <b-button variant="outline-gray" class="width-100 mb-2 mr-2">Gray</b-button>
+              <b-button variant="outline-inverse" class="width-100 mb-2 mr-2">Inverse</b-button>
             </p>
           </div>
         </Widget>
@@ -86,28 +86,28 @@
               <code>.btn-rounded</code> or <code>.btn-rounded-f</code>.
             </p>
             <p>
-              <b-button variant="default" class="btn-rounded-f width-100 mb-xs mr-xs">
+              <b-button variant="default" class="btn-rounded-f width-100 mb-2 mr-2">
                 Default
               </b-button>
-              <b-button variant="primary" class="btn-rounded-f width-100 mb-xs mr-xs">
+              <b-button variant="primary" class="btn-rounded-f width-100 mb-2 mr-2">
                 Primary
               </b-button>
-              <b-button variant="info" class="btn-rounded-f width-100 mb-xs mr-xs">
+              <b-button variant="info" class="btn-rounded-f width-100 mb-2 mr-2">
                 Info
               </b-button>
-              <b-button variant="success" class="btn-rounded-f width-100 mb-xs mr-xs">
+              <b-button variant="success" class="btn-rounded-f width-100 mb-2 mr-2">
                 Success
               </b-button>
-              <b-button variant="outline-warning" class="btn-rounded width-100 mb-xs mr-xs">
+              <b-button variant="outline-warning" class="btn-rounded width-100 mb-2 mr-2">
                 Warning
               </b-button>
-              <b-button variant="outline-danger" class="btn-rounded width-100 mb-xs mr-xs">
+              <b-button variant="outline-danger" class="btn-rounded width-100 mb-2 mr-2">
                 Danger
               </b-button>
-              <b-button variant="outline-gray" class="btn-rounded width-100 mb-xs mr-xs">
+              <b-button variant="outline-gray" class="btn-rounded width-100 mb-2 mr-2">
                 Gray
               </b-button>
-              <b-button variant="outline-inverse" class="btn-rounded width-100 mb-xs mr-xs">
+              <b-button variant="outline-inverse" class="btn-rounded width-100 mb-2 mr-2">
                 Inverse
               </b-button>
             </p>
@@ -147,12 +147,12 @@
               Add the <code>disabled</code> to <code>&lt;Button&gt;</code> component.
             </p>
             <p>
-              <b-button variant="primary" disabled class="mr-xs">Primary button</b-button>
-              <b-button variant="default" disabled class="mr-xs">Button</b-button>
+              <b-button variant="primary" disabled class="mr-2">Primary button</b-button>
+              <b-button variant="default" disabled class="mr-2">Button</b-button>
             </p>
             <p>
-              <b-button variant="success" size="sm" disabled class="mr-xs">Primary Link</b-button>
-              <b-button variant="default" size="sm" disabled class="mr-xs">Link</b-button>
+              <b-button variant="success" size="sm" disabled class="mr-2">Primary Link</b-button>
+              <b-button variant="default" size="sm" disabled class="mr-2">Link</b-button>
             </p>
           </div>
         </Widget>
@@ -169,24 +169,24 @@
               Add on optional JavaScript radio and checkbox
               style behavior with Bootstrap buttons plugin.
             </p>
-            <b-button-group class="mb-xs">
+            <b-button-group class="mb-2">
               <b-button variant="default">Left</b-button>
               <b-button variant="default">Middle</b-button>
               <b-button variant="default">Right</b-button>
             </b-button-group>
-            <b-button-toolbar class="mb-xs">
-              <b-button-group class="mr-2">
-                <b-button variant="default">1</b-button>
+            <b-button-toolbar class="mb-2">
+              <b-button-group>
+                <b-button variant="default" class="ml-0">1</b-button>
                 <b-button variant="default">2</b-button>
                 <b-button variant="default">3</b-button>
                 <b-button variant="default">4</b-button>
               </b-button-group>
-              <b-button-group class="mr-2">
+              <b-button-group>
                 <b-button variant="default">5</b-button>
                 <b-button variant="default">6</b-button>
                 <b-button variant="default">7</b-button>
               </b-button-group>
-              <b-button-group class="mr-2">
+              <b-button-group>
                 <b-button variant="default">8</b-button>
               </b-button-group>
             </b-button-toolbar>
@@ -206,8 +206,8 @@
               Both solid & segmented dropdown options available.
             </p>
 
-            <div class="mb-xs">
-              <b-dropdown variant="danger" text="One">
+            <div class="mb-2">
+              <b-dropdown variant="danger" text="One" class="mr-2">
                 <b-dropdown-item>Action</b-dropdown-item>
                 <b-dropdown-item>Another action</b-dropdown-item>
                 <b-dropdown-item>Something else here</b-dropdown-item>
@@ -223,8 +223,8 @@
                 <b-dropdown-item>Separated link</b-dropdown-item>
               </b-dropdown>
             </div>
-            <div class="mb-xs">
-              <b-dropdown variant="primary" split text="Primary">
+            <div class="mb-2">
+              <b-dropdown variant="primary" split text="Primary" class="mr-2">
                 <b-dropdown-item>Action</b-dropdown-item>
                 <b-dropdown-item>Another action</b-dropdown-item>
                 <b-dropdown-item>Something else here</b-dropdown-item>
@@ -261,7 +261,7 @@
                 of checkboxes for checkbox style toggling on
                 btn-group.
               </p>
-              <div class="mb-xs">
+              <div class="mb-2">
                 <b-button-group>
                   <b-button
                     variant="default" @click="changeCheckbox('checkboxOne', 0)"
@@ -277,7 +277,7 @@
                   >Right way</b-button>
                 </b-button-group>
               </div>
-              <div class="mb-xs">
+              <div class="mb-2">
                 <b-button-group>
                   <b-button
                     variant="default" size="sm" @click="changeCheckbox('checkboxTwo', 0)"
@@ -302,7 +302,7 @@
                 Use <code>ButtonGroup</code> to a group of radio
                 inputs for radio style toggling on btn-group.
               </p>
-              <div class="mb-xs">
+              <div class="mb-2">
                 <b-button-group>
                   <b-button
                     variant="default" @click="changeRadio('radioOne', 0)"
@@ -318,7 +318,7 @@
                   >Right way</b-button>
                 </b-button-group>
               </div>
-              <div class="mb-xs">
+              <div class="mb-2">
                 <b-button-group>
                   <b-button
                     variant="default" size="sm" @click="changeRadio('radioTwo', 0)"
@@ -342,31 +342,31 @@
                 button groups for a toolbar, navigation, or prepended form inputs.
                 Let your buttons shine!
               </p>
-              <div class="text-center mb-sm">
-                <b-button variant="default" class="width-100 mr-xs">
-                  <i class="glyphicon glyphicon-tree-conifer text-success mr-xs mb-xs" />
+              <div class="mb-sm">
+                <b-button variant="default" class="width-100 mr-2">
+                  <i class="glyphicon glyphicon-tree-conifer text-success mr-2 mb-2" />
                   Forest
                 </b-button>
-                <b-button variant="default" class="width-100 mr-xs">
-                  <i class="fa fa-check text-danger mr-xs mb-xs" />
+                <b-button variant="default" class="width-100 mr-2">
+                  <i class="fa fa-check text-danger mr-2 mb-2" />
                   Submit
                 </b-button>
-                <b-button variant="default" class="width-100 mr-xs">
-                  <i class="fa fa-facebook text-primary mr-xs mb-xs" />
+                <b-button variant="default" class="width-100 mr-2">
+                  <i class="fa fa-facebook text-primary mr-2 mb-2" />
                   Login
                 </b-button>
               </div>
-              <div class="text-center">
-                <b-button variant="inverse" class="width-100 mr-xs">
-                  <i class="fa fa-exclamation text-warning mr-xs mb-xs" />
+              <div>
+                <b-button variant="inverse" class="width-100 mr-2">
+                  <i class="fa fa-exclamation text-warning mr-2 mb-2" />
                   Error
                 </b-button>
-                <b-button variant="inverse" class="width-100 mr-xs">
-                  <i class="glyphicon glyphicon-globe text-info mr-xs mb-xs" />
+                <b-button variant="inverse" class="width-100 mr-2">
+                  <i class="glyphicon glyphicon-globe text-info mr-2 mb-2" />
                   <span class="text-info">Globe</span>
                 </b-button>
-                <b-button variant="inverse" class="width-100 mr-xs">
-                  <span class="circle bg-white mr-xs">
+                <b-button variant="inverse" class="width-100 mr-2">
+                  <span class="circle bg-white mr-2">
                     <i class="fa fa-map-marker text-gray" />
                   </span>
                   Map

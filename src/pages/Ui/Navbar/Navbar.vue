@@ -26,7 +26,7 @@
               them to be printed by adding <code>.d-print</code>
             to the <code>.navbar</code>. See the display utility class.</li>
           </ul>
-          <b-navbar class="mt px-2" toggleable="md" type="light" variant="light">
+          <b-navbar class="mt px-2" toggleable="md" type="light" variant="default">
             <b-navbar-brand href="#">Navbar</b-navbar-brand>
             <b-navbar-toggle class="ml-auto" target="nav_collapse1"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse1">
@@ -78,7 +78,7 @@
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
-          <b-navbar class="mt px-2" toggleable="md" type="light" variant="light">
+          <b-navbar class="mt px-2" toggleable="md" type="dark" variant="success">
             <b-navbar-brand href="#">Navbar</b-navbar-brand>
             <b-navbar-toggle class="ml-auto" target="nav_collapse4"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse4">

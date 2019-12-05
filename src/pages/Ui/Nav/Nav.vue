@@ -15,7 +15,7 @@
             from the base .nav class to the active and disabled states. Swap
             modifier classes to switch between each style.
           </p>
-          <div class="bg-light p-3">
+          <div class="p-3">
             <b-nav>
               <b-nav-item href="#">
                 Link
@@ -30,7 +30,7 @@
                 Disabled Link
               </b-nav-item>
             </b-nav>
-            <pre class="bg-light border-0 w-100 h-100">
+            <pre class="border-0 w-100 h-100">
               <code class="text-danger">{{'&lt;b-nav&gt;'}}</code>
               <code class="text-info">{{'  &lt;b-nav-item href="#"&gt;'}}</code>
               <code>{{'    Link'}}</code>
@@ -48,7 +48,7 @@
             </pre>
           </div>
           <h5 class="mt">With dropdown</h5>
-          <b-nav class="bg-light p-2">
+          <b-nav class="p-2">
             <b-nav-item href="#">
               Link
             </b-nav-item>
@@ -79,7 +79,7 @@
             tabbed interface. Use them to create tabbable regions with our tab
             JavaScript plugin.
           </p>
-          <div class="bg-light p-3">
+          <div class="p-3">
             <b-nav tabs>
               <b-nav-item href="#" active>
                 Link
@@ -94,7 +94,7 @@
                 Disabled Link
               </b-nav-item>
             </b-nav>
-            <pre class="bg-light border-0 w-100 h-100">
+            <pre class="border-0 w-100 h-100">
               <code class="text-danger">{{'&lt;b-nav tabs&gt;'}}</code>
               <code class="text-info">{{'  &lt;b-nav-item href="#"&gt;'}}</code>
               <code>{{'    Link'}}</code>
@@ -112,7 +112,7 @@
             </pre>
           </div>
           <p class="mt">Do the same thing with the <code>pills</code> property.</p>
-          <div class="bg-light p-3">
+          <div class="p-3">
             <b-nav pills>
               <b-nav-item href="#" active>
                 Link

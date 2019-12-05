@@ -60,7 +60,7 @@
                 <h3 class="text-success">h3. Heading</h3>
                 <h4 class="text-primary">h4. Heading</h4>
                 <h5 class="text-info">h5. Heading</h5>
-                <h6 class="text-inverse">h6. Heading</h6>
+                <h6 class="text-secondary">h6. Heading</h6>
               </b-col>
             </b-row>
           </div>
