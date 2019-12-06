@@ -55,6 +55,7 @@ export default {
     map.zoomControl.align = 'left';
     map.zoomControl.valign = 'bottom';
     map.zoomControl.dy = -20;
+
     map.zoomControl.minusButton.background.fill = am4core.color("#C7D0FF");
     map.zoomControl.minusButton.background.fillOpacity = 0.24;
     map.zoomControl.minusButton.background.stroke = null;

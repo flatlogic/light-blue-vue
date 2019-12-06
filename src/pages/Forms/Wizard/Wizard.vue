@@ -21,7 +21,7 @@
           @on-loading="updateProgress(1, 1)"
         >
           <b-progress class="progress-xs" variant="primary" :value="progress" :max="4" />
-          <b-button slot="prev" variant="primary">
+          <b-button slot="prev" variant="default">
             <i class="fa fa-caret-left" /> Previous
           </b-button>
           <b-button slot="next" variant="primary">

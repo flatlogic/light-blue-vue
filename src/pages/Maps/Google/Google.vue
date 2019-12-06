@@ -17,6 +17,7 @@
                   :center="{lat: -37.813179, lng: 144.950259}"
                   :zoom="12"
                   style="width: 100%; height: 60vh"
+                  :options="options"
           >
             <GmapMarker
                     :position="{lat: -37.813179, lng: 144.950259}"
@@ -33,6 +34,21 @@
 
   export default {
     name: 'Maps',
+    data() {
+      return {
+        options: {},
+      }
+    },
+    created() {
+      this.$gmapApiPromiseLazy().then(() => {
+        this.options = {
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DEFAULT
+          }
+        }
+      })
+    },
     components: { Widget }
   };
 </script>

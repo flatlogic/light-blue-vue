@@ -169,8 +169,8 @@
             @close="closePrompt"
             :showLoader="false"
           >
-            <ul class="news-list stretchable">
-              <li v-for="item in gridData.news" :key="item.title" :class="item.extraClass">
+            <ul class="news-list list-group">
+              <li v-for="item in gridData.news" :key="item.title" :class="item.extraClass" class="list-group-item">
                 <span class="icon text-white" :class="'bg-'+item.background">
                   <i class="fa" :class="'fa-'+item.icon"></i>
                 </span>
@@ -218,30 +218,26 @@
             </div>
           </Widget>
 
-          <Widget ref="jumbotronWidget"
-          class="bg-gray"
-          bodyClass="p-0"
-        >
-          <div class="jumbotron handle bg-gray text-white mb-0">
-            <div class="container">
-              <h1>Draggable story!</h1>
-              <p class="lead">
-                <em>Build</em> your own
-                interfaces! Sit back and relax.
-              </p>
-              <p class="text-center">
-                <a class="btn btn-danger btn-lg" control="fullscreen" @click="$refs.jumbotronWidget.changeState($event, 'fullscreen')">
-                  Fullscreen me! &nbsp;
-                  <i class="fa fa-check"></i>
+          <Widget ref="jumbotronWidget" class="p-0">
+            <div class="jumbotron handle text-white mb-0">
+              <div class="container">
+                <h1>Draggable story!</h1>
+                <p class="lead">
+                  <em>Build</em> your own
+                  interfaces! Sit back and relax.
+                </p>
+                <p class="text-center">
+                  <a class="btn btn-danger btn-lg" control="fullscreen" @click="$refs.jumbotronWidget.changeState($event, 'fullscreen')">
+                    Fullscreen me! &nbsp;
+                    <i class="fa fa-check"></i>
+                  </a>
+                </p>
+                <a class="btn btn-danger btn-lg" control="restore" @click="$refs.jumbotronWidget.changeState($event, 'default')">
+                  Want to go back?
                 </a>
-              </p>
-              <a class="btn btn-danger btn-lg" control="restore" @click="$refs.jumbotronWidget.changeState($event, 'default')">
-                Want to go back?
-              </a>
+              </div>
             </div>
-          </div>
-
-        </Widget>
+          </Widget>
         </draggable>
       </b-col>
     </b-row>

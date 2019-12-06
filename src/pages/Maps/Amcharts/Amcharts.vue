@@ -43,18 +43,33 @@
       map.zoomControl = new am4maps.ZoomControl();
       map.zoomControl.align = 'left';
       map.zoomControl.valign = 'top';
-      map.zoomControl.minusButton.background.fill = am4core.color("#a3aeb7");
-      map.zoomControl.plusButton.background.fill = am4core.color("#a3aeb7");
-      let plusButtonHoverState = map.zoomControl.plusButton.background.states.create("hover");
-      plusButtonHoverState.properties.fill = am4core.color("#798892");
-      let minusButtonHoverState = map.zoomControl.minusButton.background.states.create("hover");
-      minusButtonHoverState.properties.fill = am4core.color("#798892");
 
-      let polygonTemplate = polygonSeries.mapPolygons.template;
-      polygonTemplate.tooltipText = "{name}";
-      polygonTemplate.fill = am4core.color("#798892");
-      let hs = polygonTemplate.states.create("hover");
-      hs.properties.fill = am4core.color("#29323a");
+      map.zoomControl.minusButton.background.fill = am4core.color("#C7D0FF");
+      map.zoomControl.minusButton.background.fillOpacity = 0.24;
+      map.zoomControl.minusButton.background.stroke = null;
+      map.zoomControl.plusButton.background.fill = am4core.color("#C7D0FF");
+      map.zoomControl.plusButton.background.fillOpacity = 0.24;
+      map.zoomControl.plusButton.background.stroke = null;
+      map.zoomControl.plusButton.label.fill = am4core.color("#fff");
+      map.zoomControl.plusButton.label.fontWeight = 600;
+      map.zoomControl.plusButton.label.fontSize = 16;
+      map.zoomControl.minusButton.label.fill = am4core.color("#fff");
+      map.zoomControl.minusButton.label.fontWeight = 600;
+      map.zoomControl.minusButton.label.fontSize = 16;
+      let plusButtonHoverState = map.zoomControl.plusButton.background.states.create("hover");
+      plusButtonHoverState.properties.fillOpacity = 0.24;
+      let minusButtonHoverState = map.zoomControl.minusButton.background.states.create("hover");
+      minusButtonHoverState.properties.fillOpacity = 0.24;
+
+    let polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.tooltipText = "{name}";
+    polygonTemplate.fill = am4core.color("#474D84");
+    polygonTemplate.fillOpacity = 1;
+    let hs = polygonTemplate.states.create("hover");
+    hs.properties.fillOpacity = 0.5;
+
+    polygonTemplate.stroke = am4core.color("#6979C9");
+    polygonTemplate.strokeOpacity = 1;
 
       let placeSeries = map.series.push(new am4maps.MapImageSeries());
       let place = placeSeries.mapImages.template;
@@ -62,10 +77,10 @@
       place.propertyFields.latitude = "latitude";
       place.propertyFields.longitude = "longitude";
       let circle = place.createChild(am4core.Circle);
-      circle.radius = 5;
-      circle.fill = am4core.color("#f55d5d");
+      circle.radius = 4;
+      circle.fill = am4core.color("#C7D0FF");
       circle.stroke = am4core.color("#ffffff");
-      circle.strokeWidth = 2;
+      circle.strokeWidth = 0;
       placeSeries.data = places;
       circle.tooltipText = '{name}';
 

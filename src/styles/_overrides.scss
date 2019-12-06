@@ -260,14 +260,15 @@ small {
 }
 
 .dropdown-toggle::after {
-  font-family: LineAwesome;
-  content: "\F110";
+  font-family: 'Line Awesome Free';
+  content: "\F107";
   border: none;
   width: auto;
   height: auto;
   vertical-align: baseline;
   opacity: .8;
   font-size: 85%;
+  font-weight: $font-weight-semi-bold;
 }
 
 .dropdown-toggle-no-caret:after {
@@ -325,63 +326,45 @@ small {
   border-radius: 50px;
 }
 
-.alert-success {
-  background: theme-color('success');
-  color: $white;
+@mixin alert($color) {
+  background: theme-color($color);
+  color: $text-color;
 
   &.alert-transparent {
-    color: theme-color('success');
-    background: rgba(theme-color('success'), $alert-transparent);
+    color: theme-color($color);
+    background: rgba(theme-color($color), $alert-transparent);
   }
 
   .btn:not(.btn-default) {
-    background: rgba($white, 0.8);
-    color: theme-color('success');
+    background: rgba($text-color, 0.8);
+    color: theme-color($color);
   }
+}
+
+.alert-success {
+  @include alert('success');
 }
 
 .alert-info {
-  background: theme-color('info');
-  color: $white;
-
-  &.alert-transparent {
-    color: theme-color('info');
-    background: rgba(theme-color('info'), $alert-transparent);
-  }
-
-  .btn:not(.btn-default) {
-    background: rgba($white, 0.8);
-    color: theme-color('info');
-  }
+  @include alert('info');
 }
 
 .alert-warning {
-  background: theme-color('warning');
-  color: $white;
-
-  &.alert-transparent {
-    color: theme-color('warning');
-    background: rgba(theme-color('warning'), $alert-transparent);
-  }
-
-  .btn:not(.btn-default) {
-    background: rgba($white, 0.8);
-    color: theme-color('warning');
-  }
+  @include alert('warning');
 }
 
 .alert-danger {
-  background: theme-color('danger');
-  color: $white;
+  @include alert('danger');
+}
 
-  &.alert-transparent {
-    color: theme-color('danger');
-    background: rgba(theme-color('danger'), $alert-transparent);
-  }
+.alert-default {
+  @include alert('default');
+}
 
-  .btn:not(.btn-default) {
-    background: rgba($white, 0.8);
-    color: theme-color('danger');
+///////// Jumbotron //////////
+.widget {
+  .jumbotron {
+    background: transparent;
   }
 }
 
@@ -1031,5 +1014,17 @@ $slider-handle-size: 26px;
   border: none;
   .apexcharts-menu-item:hover {
     background: rgba(255,255,255, 0.1);
+  }
+}
+
+
+////////// Google Maps ///////////
+.gm-style {
+  img {
+    vertical-align: unset;
+  }
+
+  label {
+    margin-bottom: 0;
   }
 }

@@ -174,7 +174,7 @@ export default {
             title: 'Long Event',
             start: new Date(y, m, d + 5),
             end: new Date(y, m, d + 7),
-            textColor: '#555',
+            textColor: '#fff',
             description: 'This conference should be worse visiting',
           },
           {
@@ -182,7 +182,7 @@ export default {
             title: 'Blah Blah Car',
             start: new Date(y, m, d - 3, 16, 0),
             allDay: false,
-            textColor: '#555',
+            textColor: '#fff',
             description: 'Agree with this guy on arrival time',
           },
           {

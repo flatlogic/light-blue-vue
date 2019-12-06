@@ -13,7 +13,7 @@
 
   > li {
     padding: 10px;
-    border-top: 1px solid #e7e7e7;
+    border-top: 1px solid $dark;
     list-style: none;
 
     @include clearfix();
@@ -120,7 +120,7 @@
     width: 8px;
     content: ' ';
     margin-left: -4px;
-    background-color: $white;
+    background-color: $widget-bg;
 
     @include media-breakpoint-up(lg) {
       left: 50%;

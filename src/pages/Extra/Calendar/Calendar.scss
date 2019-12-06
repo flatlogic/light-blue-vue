@@ -8,12 +8,12 @@
     .fc-event {
       border: none;
       padding: 2px;
-      background-color: $gray-200;
+      background-color: $default;
       color: $text-color;
     }
 
-    .fc-today {
-      background-color: #fff1b8;
+    .fc-day-grid .fc-today {
+      background-color: rgba($default, .6);
     }
 
     .fc-content {
