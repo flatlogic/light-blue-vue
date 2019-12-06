@@ -703,12 +703,12 @@ pre {
 .dropzone.vue-dropzone {
   border: 2px dashed $widget-bg;
   font-family: $font-family-base;
-  background-color: $addition-bg;
+  background-color: transparent;
   border-radius: $widget-border-radius;
   color: $text-color;
 
   &:hover {
-    background-color: transparentize($addition-bg, .1);
+    background-color: rgba(0,0,0,0.1);
   }
 }
 
@@ -802,7 +802,7 @@ $slider-handle-size: 26px;
     position: absolute;
     width: $slider-handle-size;
     height: $slider-handle-size;
-    background: $white;
+    background: $default;
     border: 0 solid transparent;
 
     @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 3px rgba(0, 0, 0, 5));
@@ -818,6 +818,11 @@ $slider-handle-size: 26px;
     &.triangle {
       background: transparent none;
     }
+  }
+
+  .slider-track {
+    background-image: none;
+    background-color: $dark;
   }
 
   &.slider-horizontal {
@@ -933,7 +938,7 @@ $slider-handle-size: 26px;
 }
 
 .slider-inverse .slider .slider-selection {
-  background: $gray-700; // $gray;
+  background: theme-color('inverse'); // $gray;
 }
 
 .slider-track {
@@ -984,6 +989,9 @@ $slider-handle-size: 26px;
   }
 }
 
+@include checkbox-variant('.abc-checkbox-default', theme-color('default'));
+@include radio-variant('.abc-radio-default', theme-color('default'));
+
 
 ////// CK Editor ///////
 .ck.ck-toolbar {
@@ -1014,4 +1022,14 @@ $slider-handle-size: 26px;
 
 .ck.ck-toolbar__separator {
   display: none;
+}
+
+
+////////// ApexCharts ///////////
+.apexcharts-menu {
+  background: $dark;
+  border: none;
+  .apexcharts-menu-item:hover {
+    background: rgba(255,255,255, 0.1);
+  }
 }

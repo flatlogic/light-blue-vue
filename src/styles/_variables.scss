@@ -50,6 +50,7 @@ $brown:    #a05000 !default;
 $teal:     #14d3d3 !default;
 $dark:     #040620 !default;
 $violet:   #333867 !default;
+$default:  #595d78 !default;
 
 $theme-colors: (
         primary: $blue,
@@ -62,7 +63,7 @@ $theme-colors: (
         inverse: #30314e,
         gray: $gray-300,
         light: $gray-100,
-        default: #595d78,
+        default: $default,
         primary-light: #dee4ee,
         success-light: #ecfaec,
         info-light: #f2fafa,
@@ -174,6 +175,7 @@ $nav-pills-link-active-bg: $widget-bg;
 $input-focus-border-color: #4d90fe !default; //webkit focus color
 $input-bg: $dark !default;
 $input-border-width: 0 !default;
+$input-group-addon-bg: $default !default;
 
 //*  Popover  */
 $popover-bg: #ebeff1 !default;
@@ -289,6 +291,7 @@ $screen-lg-height: 670px !default;
   $purple: #a700ae !global;
   $brown: #a05000 !global;
   $teal: #7f49fa !global;
+  $default: #e9ecef !default;
 
   $theme-colors: (
           primary: $blue,
@@ -301,7 +304,7 @@ $screen-lg-height: 670px !default;
           inverse: $gray-100,
           gray: $gray-300,
           light: $gray-100,
-          default: #e9ecef,
+          default: $default,
           primary-light: #dee4ee,
           success-light: #ecfaec,
           info-light: #f2fafa,
@@ -347,6 +350,7 @@ $screen-lg-height: 670px !default;
   //
   $input-bg: $white !default;
   $input-border-width: 1 !default;
+  $input-group-addon-bg: $gray-200 !default;
 
   // Jumbotron
   $jumbotron-bg: $gray-200;

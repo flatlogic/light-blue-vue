@@ -11,7 +11,9 @@ const colors = process.env.VUE_APP_THEME === 'light' ? {
   teal: '#7f49fa',
   pink: '#e671b8',
   gray: '#d6dee5',
-  textColor: '#444'
+  default: '#e9ecef',
+  textColor: '#444',
+  gridLineColor: '#444'
 } : {
   blue: '#1870DC',
   green: '#58D777',
@@ -22,7 +24,9 @@ const colors = process.env.VUE_APP_THEME === 'light' ? {
   teal: '#14d3d3',
   pink: '#e671b8',
   gray: '#d6dee5',
-  textColor: '#F4F4F5',
+  default: '#595d78',
+  textColor: '#e0e0e1',
+  gridLineColor: '#040620'
 };
 
 export default {

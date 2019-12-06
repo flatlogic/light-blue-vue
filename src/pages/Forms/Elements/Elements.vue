@@ -258,8 +258,8 @@
                 </b-row>
               </b-form-group>
               <b-form-group class="form-action">
-                <b-button variant="inverse" type="submit" class="mr-xs">Save Changes</b-button>
-                <b-button variant="default">Cancel</b-button>
+                <b-button variant="primary" type="submit" class="mr-xs">Save Changes</b-button>
+                <b-button variant="inverse">Cancel</b-button>
               </b-form-group>
             </b-form>
           </b-form-group>
@@ -316,7 +316,7 @@
             </b-form-group>
             <b-form-group>
               <b-input-group class="input-group-transparent" size="lg">
-                <b-input-group-text class="text-warning" slot="prepend">
+                <b-input-group-text class="text-white" slot="prepend">
                   <i class="la la-star" />
                 </b-input-group-text>
                 <b-form-input class="input-transparent" type="text" placeholder="Username" size="16" />
@@ -350,7 +350,7 @@
                 :label-cols="3"
                 breakpoint="md"
               >
-                <b-form-textarea class="input-transparent" :rows="3" id="default-textarea" v-model="textAreaContent"/>
+                <b-form-textarea :rows="3" id="default-textarea" v-model="textAreaContent"/>
             </b-form-group>
             <b-form-group
 
@@ -362,7 +362,7 @@
               >
                 <textarea-autosize
                   placeholder="Try to add few new lines..."
-                  class="form-control input-transparent"
+                  class="form-control"
                   :min-height="75"
                   id="autosize-textarea"
                 />
@@ -563,7 +563,7 @@
                   javascript.
                   Let your checkboxes shine!
                 </p>
-                <b-form-group class="abc-checkbox">
+                <b-form-group class="abc-checkbox abc-checkbox-default">
                   <input
                     type="checkbox"
                     id="checkbox-default"
@@ -798,24 +798,26 @@
         <Widget title="<h6>Pickers</h6>" customHeader close refresh settingsInverse>
           <b-form>
             <legend>Date & Time</legend>
-            <b-form-group>
-              <b-row>
-                <b-col xs="6">
-                  <label for="datetimepicker">Datepicker</label>
+            <b-row>
+              <b-col md="6" xs="12">
+                <b-form-group>
+                  <label for="datetimepicker" class="mr-3">Datepicker</label>
                   <DatePicker lang="en" :placeholder="datepickerText"
-                    input-class="form-control" @change="selectDate">
-                    <i class="glyphicon glyphicon-th" slot="calendar-icon" />
+                              input-class="form-control" @change="selectDate" id="datetimepicker">
+                    <i class="glyphicon glyphicon-th" slot="calendar-icon"/>
                   </DatePicker>
-                </b-col>
-                <b-col xs="6">
-                  <label for="datetimepicker">With time</label>
+                </b-form-group>
+              </b-col>
+              <b-col md="6" xs="12">
+                <b-form-group>
+                  <label for="datetimepicker_withtime" class="mr-3">With time</label>
                   <DatePicker lang="en" type="datetime" :placeholder="datetimepickerText"
-                    input-class="form-control" @change="selectDatetime">
-                    <i class="la la-clock-o" slot="calendar-icon" />
+                              input-class="form-control" @change="selectDatetime" id="datetimepicker_withtime">
+                    <i class="la la-clock-o" slot="calendar-icon"/>
                   </DatePicker>
-                </b-col>
-              </b-row>
-            </b-form-group>
+                </b-form-group>
+              </b-col>
+            </b-row>
           </b-form>
           <b-form>
             <legend>Colors</legend>
