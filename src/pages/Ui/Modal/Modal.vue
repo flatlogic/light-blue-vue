@@ -76,10 +76,10 @@
       </b-col>
     </b-row>
 
-    <b-modal id="demo" title="Modal title" body-class="bg-white">
+    <b-modal id="demo" title="Modal title">
         ...
     </b-modal>
-    <b-modal id="long" title="Long content" body-class="bg-white">
+    <b-modal id="long" title="Long content">
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
@@ -131,18 +131,18 @@
         versions of Lorem Ipsum.
       </p>
     </b-modal>
-    <b-modal id="large" size="lg" body-class="bg-white" title="Large modal">
+    <b-modal id="large" size="lg" title="Large modal">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. In, illum harum?
       Quidem, quisquam, natus repellat debitis veniam quia facilis magni tempora
       cupiditate odio vitae? Eligendi nisi consequuntur vero tenetur nemo!
     </b-modal>
 
-    <b-modal id="small" size="sm" body-class="bg-white" title="Small modal">
+    <b-modal id="small" size="sm" title="Small modal">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. In, illum harum?
       Quidem, quisquam, natus repellat debitis veniam quia facilis magni tempora
       cupiditate odio vitae? Eligendi nisi consequuntur vero tenetur nemo!
     </b-modal>
-    <b-modal id="launch" body-class="bg-white text-white" title="Modal">
+    <b-modal id="launch" title="Modal">
       <b-container fluid>
         <b-row>
           <b-col md='4'>

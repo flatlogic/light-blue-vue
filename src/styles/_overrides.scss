@@ -81,7 +81,7 @@ legend {
   font-size: $font-size-sm;
 
   .close {
-    color: #fff;
+    color: $text-color;
   }
 }
 
@@ -311,7 +311,7 @@ small {
     font-size: 18px;
     text-shadow: none;
     opacity: 1;
-    color: #fff;
+    color: $text-color;
     outline: none;
     padding: 0;
     position: static;
@@ -499,6 +499,14 @@ h6,
   .popover-header,
   .popover-body {
     color: $gray-700;
+  }
+}
+
+// Modals
+// -------------------------------------------------
+.modal {
+  .modal-footer, .modal-header {
+    border-width: $input-border-width;
   }
 }
 

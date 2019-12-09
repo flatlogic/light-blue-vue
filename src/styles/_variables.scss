@@ -248,7 +248,9 @@ $card-border-width:         0;
 
 // == Modals
 
-$modal-content-color: $gray-700;
+//$modal-content-color: $gray-700;
+$modal-content-bg: darken($default, 20%) !default;
+$close-color: $text-color !default;
 
 // == Code
 $pre-color: $text-color !default;
