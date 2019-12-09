@@ -112,5 +112,11 @@
 .sidebar-collapse {
   @media (min-width: breakpoint-min('md')) {
     display: block !important;
+
+    @media print {
+      display: none !important;
+    }
   }
+
+
 }

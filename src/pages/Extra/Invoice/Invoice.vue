@@ -143,7 +143,7 @@
                   <span class="fw-semi-bold">Bob Smith</span>
                 </p>
                 <b-button-toolbar class="mt-lg justify-content-end d-print-none">
-                  <b-button onClick={this.printInvoice} variant="inverse" class="mr-2">
+                  <b-button @click="printInvoice()" variant="inverse" class="mr-2">
                     <i class="fa fa-print" />
                     &nbsp;&nbsp;
                     Print
@@ -170,6 +170,11 @@ import Widget from '@/components/Widget/Widget';
 export default {
   name: 'InvoicePage',
   components: { Widget },
+  methods: {
+    printInvoice() {
+      window.print();
+    }
+  }
 };
 </script>
 
