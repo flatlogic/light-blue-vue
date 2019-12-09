@@ -655,30 +655,38 @@ pre {
 .v-select {
   .open-indicator:before {
     border-width: 1px 1px 0 0;
+    border-color: $text-color;
     width: 5px;
     height: 5px;
+    color: $text-color;
   }
 
   .dropdown-toggle .clear {
     font-weight: $font-weight-thin;
     font-size: 18px;
+    color: $text-color;
   }
 
   li > a {
-    color: $input-color !important;
+    color: $text-color !important;
   }
 
   .selected-tag {
-    color: $input-color;
+    color: $text-color;
   }
 
   .dropdown-toggle {
     border-color: $input-border-color;
+    border-width: $input-border-width;
     background-color: $input-bg;
 
     &:after {
       content: none;
     }
+  }
+
+  .dropdown-menu {
+    background: $dropdown-bg;
   }
 }
 

@@ -157,9 +157,11 @@ $navbar-link-disabled-bg: transparent !default;
 
 // Dropdowns
 $dropdown-item-padding-y: 0.5rem;
-//$dropdown-link-color: $text-color;
+$dropdown-link-color: $text-color;
 $dropdown-border-radius: $widget-border-radius;
-$dropdown-divider-bg: $dark;
+$dropdown-divider-bg: $text-color;
+$dropdown-bg: rgba(0, 0, 0, .8);
+$dropdown-link-hover-bg: $text-color;
 
 //== Navs
 //
