@@ -12,7 +12,7 @@
       color: $text-color;
     }
 
-    .fc-day-grid .fc-today {
+    .fc-day-grid .fc-today, .fc-time-grid .fc-today {
       background-color: rgba($default, .6);
     }
 
@@ -34,6 +34,10 @@
         box-shadow: $widget-shadow;
       }
     }
+  }
+
+  .fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
+    border-color: $text-color;
   }
 }
 
