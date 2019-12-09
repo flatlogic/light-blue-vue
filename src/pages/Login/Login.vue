@@ -5,7 +5,7 @@
         <p class="widget-auth-info">
           Use your email to sign in.
         </p>
-        <b-alert class="alert-sm text-center mt-2 widget-middle-overflow rounded-0" variant="secondary" show>
+        <b-alert class="alert-sm text-center mt-2 widget-middle-overflow rounded-0" variant="default" show>
           This is a real app with Node.js backend - use
           <br/>
           <span class="font-weight-bold">"admin@flatlogic.com / password"</span>
