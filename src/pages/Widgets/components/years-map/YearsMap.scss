@@ -21,37 +21,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    border-top: 1px solid #bbb;
+    border-top: $input-border-width solid $input-border-color;
     background-color: $gray-light;
-    border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
 
-    > .nav-item > .nav-link {
-      border-radius: 0;
-      padding: 0.7143rem 0;
-      color: theme-color('inverse');
-
-      &:hover {
-        color: theme-color('inverse');
-        background-color: $gray-300;
-      }
-    }
-
-    > .nav-item > .nav-link.active {
-      &,
-      &:hover {
-        background-color: $white;
-        color: $gray-700;
-        font-weight: $font-weight-bold;
-      }
-    }
-
-    > .nav-item:first-child > a {
-      border-bottom-left-radius: $border-radius;
-    }
-
-    > .nav-item:last-child > a {
-      border-bottom-right-radius: $border-radius;
+    .btn:first-child, .btn:last-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
   }
 }

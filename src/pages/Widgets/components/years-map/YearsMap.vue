@@ -11,26 +11,14 @@
         <strong>17% last year</strong>
       </p>
     </div>
-    <b-nav class="map-controls" pills fill>
-      <b-nav-item :active="this.activeYear === 2014" @click="changeYear(2014)">
-        2014
-      </b-nav-item>
-      <b-nav-item :active="this.activeYear === 2015" @click="changeYear(2015)">
-        2015
-      </b-nav-item>
-      <b-nav-item :active="this.activeYear === 2016" @click="changeYear(2016)">
-        2016
-      </b-nav-item>
-      <b-nav-item :active="this.activeYear === 2017" @click="changeYear(2017)">
-        2017
-      </b-nav-item>
-      <b-nav-item :active="this.activeYear === 2018" @click="changeYear(2018)">
-        2018
-      </b-nav-item>
-      <b-nav-item :active="this.activeYear === 2019" @click="changeYear(2019)">
-        2019
-      </b-nav-item>
-    </b-nav>
+    <b-button-group class="map-controls">
+      <b-button variant="default" @click="changeYear(2014)" :class="{'active': this.activeYear===2014}">2014</b-button>
+      <b-button variant="default" @click="changeYear(2015)" :class="{'active': this.activeYear===2015}">2015</b-button>
+      <b-button variant="default" @click="changeYear(2016)" :class="{'active': this.activeYear===2016}">2016</b-button>
+      <b-button variant="default" @click="changeYear(2017)" :class="{'active': this.activeYear===2017}">2017</b-button>
+      <b-button variant="default" @click="changeYear(2018)" :class="{'active': this.activeYear===2018}">2018</b-button>
+      <b-button variant="default" @click="changeYear(2019)" :class="{'active': this.activeYear===2019}">2019</b-button>
+    </b-button-group>
   </div>
 </template>
 
