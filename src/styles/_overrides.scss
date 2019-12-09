@@ -962,8 +962,57 @@ $slider-handle-size: 26px;
 
 
 //////// Mavon Editor ////////
-.v-note-wrapper {
+.v-note-wrapper.markdown-body {
+  background: $dark;
   z-index: 50;
+
+  .v-note-op {
+    background: $default !important;
+    border-width: $input-border-width;
+
+    .v-left-item, .v-right-item {
+      .op-icon-divider {
+        border-color: $dark;
+      }
+
+      .op-icon {
+        &:hover {
+          background: darken($default, 5%);
+        }
+
+        &.selected {
+          background: darken($default, 10%);
+        }
+
+        &,
+        &:hover,
+        &.selected {
+          color: $text-color;
+        }
+
+        .popup-dropdown {
+          background: $dropdown-bg;
+          border-width: $input-border-width;
+
+          .dropdown-item {
+            color: $dropdown-link-color;
+
+            &:hover {
+              color: $dropdown-link-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content-input-wrapper, .content-input-wrapper .content-input, .v-show-content {
+    background: $dark !important;
+  }
+
+  pre, textarea {
+    background: $dark;
+  }
 }
 
 
