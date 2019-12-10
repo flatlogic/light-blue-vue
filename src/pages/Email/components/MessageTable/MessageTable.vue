@@ -6,9 +6,11 @@
                   :per-page="perPage"
                   class="ml-auto"
     ></b-pagination>
-    <b-button v-else variant="default" class="mb" @click="openMessage(null)">
-      <i class="fa fa-angle-left fa-lg" />
+    <span v-else>
+      <b-button variant="default" class="mb" @click="openMessage(null)">
+      <i class="fa fa-angle-left fa-lg"/>
     </b-button>
+    </span>
     <Widget v-if="openedMessage === null && !compose">
         <MessageTableHeader
           :search="search"
@@ -60,7 +62,7 @@
                   @click="starItem(message.id)"
                 >
                     <span v-if="message.starred" class="messageStarred">
-                      <i class="fa fa-star" />
+                      <i class="fa fa-star text-white" />
                     </span>
                     <span v-else><i class="fa fa-star-o" /></span>
                 </td>

@@ -47,7 +47,7 @@ export default {
       activeButtonId: 0,
       mainButtons: [
         {
-          id: 0, title: 'Inbox', notifications: 2, filter: null,
+          id: 0, title: 'Inbox', notifications: 2, lable: 'primary', filter: null,
         },
         { id: 1, title: 'Starred', filter: 'starred' },
         { id: 2, title: 'Sent Mail', filter: 'sent' },
@@ -58,8 +58,8 @@ export default {
       ],
       quickViewButtons: [
         { id: 0, title: 'Work', colour: 'danger' },
-        { id: 1, title: 'Private', colour: 'white' },
-        { id: 2, title: 'Saved', colour: '' },
+        { id: 1, title: 'Private', colour: 'primary' },
+        { id: 2, title: 'Saved', colour: 'primary' },
       ],
     };
   },
