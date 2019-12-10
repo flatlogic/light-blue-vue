@@ -47,12 +47,14 @@
                     v-if="data.children && data.children.length"
                     @click="store.toggleOpen(data)"
                   >
-                    <span class="bg-default border circle mr-sm">{{data.open ? '-' : '+'}}</span>
+                    <span class="bg-default border circle mr-sm">
+                      <i :class="['la', data.open ? 'la-minus' : 'la-plus']"></i>
+                    </span>
                   </div>
                   <span  :class="{ 'px-4 py-3 border list-element d-flex': true,
                     'no-child': !data.children.length }">
                     <div class="drag bg-default px-4 py-3">
-                      <i class="fa fa-bars"></i>
+                      <i class="la la-lg la-bars"></i>
                     </div>
                     <span class="ml">{{data.text}}</span>
                   </span>
@@ -71,12 +73,14 @@
                     v-if="data.children && data.children.length"
                     @click="store.toggleOpen(data)"
                   >
-                    <span class="bg-default border circle mr-sm">{{data.open ? '-' : '+'}}</span>
+                    <span class="bg-default border circle mr-sm">
+                      <i :class="['la', data.open ? 'la-minus' : 'la-plus']"></i>
+                    </span>
                   </div>
                   <span  :class="{ 'px-4 py-3 border list-element d-flex': true,
                     'no-child': !data.children.length }">
                     <div class="drag bg-default px-4 py-3">
-                      <i class="fa fa-bars"></i>
+                      <i class="la la-lg la-bars"></i>
                     </div>
                     <span class="ml">{{data.text}}</span>
                   </span>

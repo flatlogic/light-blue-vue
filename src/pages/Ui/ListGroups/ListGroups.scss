@@ -6,6 +6,8 @@
 
     .drag {
       margin: -1rem 0 -1rem -1.5rem;
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
 
       &:hover {
         cursor: move;
