@@ -43,11 +43,11 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 .circle,
 .rounded,
 .circle-o {
-  display: inline-block;
-  width: #{$line-height-base}em;
-  height: #{$line-height-base}em;
-  line-height: #{$line-height-base}em;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $spacer * 1.5;
+  height: $spacer * 1.5;
 }
 
 .circle,
