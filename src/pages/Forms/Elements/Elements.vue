@@ -325,7 +325,7 @@
             <b-form-group>
               <b-input-group size="sm">
                 <b-form-input type="text" placeholder="City" />
-                <b-input-group-text slot="append" class="bg-transparent text-muted">
+                <b-input-group-text slot="append" class="bg-danger text-muted">
                   <i class="la la-code-fork" />
                 </b-input-group-text>
               </b-input-group>

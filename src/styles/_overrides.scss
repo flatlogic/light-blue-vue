@@ -1017,6 +1017,11 @@ $slider-handle-size: 26px;
   pre, textarea {
     background: $dark;
   }
+
+  .v-note-panel .v-note-edit.divarea-wrapper.scroll-style::-webkit-scrollbar {
+    width: 2px;
+    background-color: $gray-300;
+  }
 }
 
 
