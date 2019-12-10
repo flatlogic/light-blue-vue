@@ -47,6 +47,9 @@ export default {
     let map = am4core.create(this.$refs.map, am4maps.MapChart);
     map.geodata = am4geodata_usaHigh;
     map.projection = new am4maps.projections.AlbersUsa();
+    map.chartContainer.wheelable = false;
+    map.seriesContainer.draggable = false;
+    map.seriesContainer.resizable = false;
     let polygonSeries = map.series.push(new am4maps.MapPolygonSeries());
     polygonSeries.useGeodata = true;
     map.homeZoomLevel = 1.2;

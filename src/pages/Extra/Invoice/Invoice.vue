@@ -62,9 +62,9 @@
                     <tr>
                       <th>#</th>
                       <th>Item</th>
-                      <th class="hidden-sm-down d-print-none">Description</th>
+                      <th class="d-md-down d-print-none">Description</th>
                       <th>Quantity</th>
-                      <th class="hidden-sm-down d-print-none">Price per Unit</th>
+                      <th class="d-md-down d-print-none">Price per Unit</th>
                       <th>Total</th>
                     </tr>
                   </thead>
@@ -72,40 +72,40 @@
                     <tr>
                       <td>1</td>
                       <td>Brand-new 27 monitor</td>
-                      <td class="hidden-sm-down d-print-none">
+                      <td class="d-md-down d-print-none">
                         2,560x1,440-pixel (WQHD) resolution supported!
                       </td>
                       <td>2</td>
-                      <td class="hidden-sm-down d-print-none">700</td>
+                      <td class="d-md-down d-print-none">700</td>
                       <td>1,400.00</td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>Domain: okendoken.com</td>
-                      <td class="hidden-sm-down d-print-none">6-month registration</td>
+                      <td class="d-md-down d-print-none">6-month registration</td>
                       <td>1</td>
-                      <td class="hidden-sm-down d-print-none">10.99</td>
+                      <td class="d-md-down d-print-none">10.99</td>
                       <td>21.88</td>
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>Atlas Shrugged</td>
-                      <td class="hidden-sm-down d-print-none">
+                      <td class="d-md-down d-print-none">
                         Novel by Ayn Rand, first published in 1957 in the United States
                       </td>
                       <td>5</td>
-                      <td class="hidden-sm-down d-print-none">35</td>
+                      <td class="d-md-down d-print-none">35</td>
                       <td>175.00</td>
                     </tr>
                     <tr>
                       <td>4</td>
                       <td>New Song by Dr. Pre</td>
-                      <td class="hidden-sm-down d-print-none">
+                      <td class="d-md-down d-print-none">
                         Lyrics: praesent blandit augue non sapien ornare
                         imperdiet
                       </td>
                       <td>1</td>
-                      <td class="hidden-sm-down d-print-none">2</td>
+                      <td class="d-md-down d-print-none">2</td>
                       <td>2.00</td>
                     </tr>
                   </tbody>
