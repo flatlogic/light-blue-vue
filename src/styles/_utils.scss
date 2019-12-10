@@ -46,8 +46,8 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: $spacer * 1.5;
-  height: $spacer * 1.5;
+  width: #{$line-height-base}em;
+  height: #{$line-height-base}em;
 }
 
 .circle,

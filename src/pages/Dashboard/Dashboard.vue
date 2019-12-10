@@ -53,12 +53,12 @@
                 <b-progress class="mb-xs" style="height: 5px"
                   variant="success" :value="performance.sdk.this_period_pct" :max="100" />
                 <b-progress class="mb" style="height: 5px"
-                  variant="warning" :value="performance.sdk.last_period_pct" :max="100" />
+                  variant="primary" :value="performance.sdk.last_period_pct" :max="100" />
                 <h6>Integration</h6>
                 <b-progress class="mb-xs" style="height: 5px"
                   variant="success" :value="performance.integration.this_period_pct" :max="100" />
                 <b-progress style="height: 5px"
-                  variant="warning" :value="performance.integration.last_period_pct" :max="100" />
+                  variant="primary" :value="performance.integration.last_period_pct" :max="100" />
               </Widget>
             </div>
           </b-col>
@@ -70,7 +70,7 @@
                   <div style="width: calc(100% - 150px)">
                     <trend
                       :data="getRandomData()"
-                      :gradient="['#ffc247']"
+                      :gradient="[appConfig.colors.red]"
                       :height="30"
                       smooth />
                   </div>
@@ -80,7 +80,7 @@
                   <div style="width: calc(100% - 150px)">
                     <trend
                       :data="getRandomData()"
-                      :gradient="['#9964e3']"
+                      :gradient="[appConfig.colors.blue]"
                       :height="30"
                       smooth />
                   </div>
@@ -90,7 +90,7 @@
                   <div style="width: calc(100% - 150px)">
                     <trend
                       :data="getRandomData()"
-                      :gradient="['#3abf94']"
+                      :gradient="[appConfig.colors.green]"
                       :height="30"
                       smooth />
                   </div>
