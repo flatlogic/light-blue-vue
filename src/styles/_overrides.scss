@@ -186,7 +186,8 @@ small {
 .btn-info,
 .btn-warning,
 .btn-dark,
-.btn-default {
+.btn-default,
+.btn-gray {
 
   &,
   &:hover,
@@ -194,11 +195,6 @@ small {
   &:disabled {
     color: $text-color;
   }
-}
-
-.btn-gray {
-  border-color: $gray-400;
-  color: $gray-700;
 }
 
 .btn-default {
