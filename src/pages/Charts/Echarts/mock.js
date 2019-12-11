@@ -69,20 +69,16 @@ export default {
         radius: '55%',
         center: ['50%', '60%'],
         color: [colors.blue, colors.red, colors.orange, colors.green, colors.purple],
+        label: {
+          show: false
+        },
         data: [
           {value: 335, name: 'Direct interview'},
           {value: 310, name: 'Email marketing'},
           {value: 234, name: 'Alliance advertising'},
           {value: 135, name: 'Video ad'},
           {value: 1548, name: 'Search engine'}
-        ],
-        itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
+        ]
       }
     ]
   },

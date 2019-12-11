@@ -128,11 +128,8 @@ export default {
         curve: 'smooth'
       },
       fill: {
-        type: 'gradient',
-        gradient: {
-          opacityFrom: 0.6,
-          opacityTo: 0.8,
-        }
+        type: 'solid',
+        opacity: 1,
       },
       legend: {
         position: 'top',
