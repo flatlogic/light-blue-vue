@@ -101,5 +101,6 @@ a.router-link-active {
   &,
   &:hover {
     font-weight: $font-weight-bold !important;
+    color: $header-color;
   }
 }

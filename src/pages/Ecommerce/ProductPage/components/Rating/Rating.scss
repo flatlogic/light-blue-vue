@@ -4,11 +4,13 @@
   display: flex;
   font-size: $font-size-lg;
   font-weight: $font-weight-semi-bold;
-  color: theme-color('white');
+  color: $text-color;
   align-items: center;
 
-  svg {
-    margin: -2px 0 0 10px;
+  .la {
+    color: $header-color;
+    margin-left: 5px;
+    font-size: $font-size-lg;
   }
 }
 

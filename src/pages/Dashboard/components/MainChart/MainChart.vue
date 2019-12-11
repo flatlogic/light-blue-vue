@@ -33,7 +33,18 @@ export default {
   components: { Widget, highcharts: Chart },
   data() {
     return {
-      chartOptions: {
+      ticks: ['Dec 19', 'Dec 25', 'Dec 31', 'Jan 10', 'Jan 14',
+        'Jan 20', 'Jan 27', 'Jan 30', 'Feb 2', 'Feb 8', 'Feb 15',
+        'Feb 22', 'Feb 28', 'Mar 7', 'Mar 17']
+    };
+  },
+  props: {
+    data: {default: []},
+    isReceiving: {type: Boolean, default: false},
+  },
+  computed: {
+    chartOptions() {
+      return {
         credits: {
           enabled: false
         },
@@ -48,7 +59,7 @@ export default {
         legend: {
           verticalAlign: 'top',
           itemStyle: {
-            color: '#fff'
+            color: this.appConfig.colors.textColor
           }
         },
         yAxis: {
@@ -56,7 +67,7 @@ export default {
           title: false,
           labels: {
             style: {
-              color: '#fff'
+              color: this.appConfig.colors.textColor
             }
           },
         },
@@ -65,7 +76,7 @@ export default {
           labels: {
             overflow: 'justify',
             style: {
-              color: '#fff'
+              color: this.appConfig.colors.textColor
             }
           },
         },
@@ -87,17 +98,8 @@ export default {
             }
           },
         }
-      },
-      ticks: ['Dec 19', 'Dec 25', 'Dec 31', 'Jan 10', 'Jan 14',
-        'Jan 20', 'Jan 27', 'Jan 30', 'Feb 2', 'Feb 8', 'Feb 15',
-        'Feb 22', 'Feb 28', 'Mar 7', 'Mar 17']
-    };
-  },
-  props: {
-    data: {default: []},
-    isReceiving: {type: Boolean, default: false},
-  },
-  computed: {
+      }
+    },
     chartData() {
       let data = this.data.map(arr => {
         return arr.map(item => {
@@ -110,13 +112,13 @@ export default {
           {
             name: 'Light Blue',
             data: data[0],
-            color: '#F45722',
+            color: this.appConfig.colors.red,
             type: 'areaspline',
             fillColor: {
               linearGradient: [0, 0, 0, 220],
               stops: [
-                [0, '#F45722'],
-                [1, Highcharts.Color("#F45722").setOpacity(0).get('rgba')]
+                [0, this.appConfig.colors.red],
+                [1, Highcharts.Color(this.appConfig.colors.red).setOpacity(0).get('rgba')]
               ]
             }
           },
@@ -124,14 +126,14 @@ export default {
             type: 'spline',
             name: 'RNS App',
             data: data[1],
-            color: '#58D777',
+            color: this.appConfig.colors.green,
             dashStyle: 'Dash'
           },
           {
             type: 'spline',
             name: 'Sing App',
             data: data[2],
-            color: '#1870DC'
+            color: this.appConfig.colors.blue
           }
         ]
       }

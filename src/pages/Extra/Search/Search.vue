@@ -20,10 +20,10 @@
         </b-dropdown>
       </div>
       <b-button-group>
-        <b-button variant="gray" class="active">
+        <b-button variant="default" class="active">
           <i class="fa fa-th-list" />
         </b-button>
-        <b-button variant="gray">
+        <b-button variant="default">
           <i class="fa fa-th-large" />
         </b-button>
       </b-button-group>

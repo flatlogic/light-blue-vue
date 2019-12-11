@@ -16,7 +16,6 @@
     font-size: 1.4rem;
     font-weight: $font-weight-normal;
     margin-bottom: 15px;
-    color: $text-color;
   }
 
   .dot-before {
@@ -84,7 +83,6 @@
 
   .rating {
     font-weight: $font-weight-semi-bold;
-    color: theme-color('warning');
     margin-bottom: 5px;
 
     i {

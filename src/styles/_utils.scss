@@ -43,19 +43,22 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 .circle,
 .rounded,
 .circle-o {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: #{$line-height-base}em;
   height: #{$line-height-base}em;
 }
 
 .circle,
 .circle-o {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   @include border-radius(50%);
 }
 
 .rounded {
+  display: inline-block;
+  line-height: #{$line-height-base}em;
+  text-align: center;
   @include border-radius(5px);
 }
 
@@ -240,6 +243,7 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
 @include text-emphasis-variant('.text-gray-darker', $gray-900);
 @include text-emphasis-variant('.text-gray-lighter', $gray-200);
 @include text-emphasis-variant('.text-color', $text-color);
+@include text-emphasis-variant('.header-color', $header-color);
 
 .text-ellipsis {
   display: block;

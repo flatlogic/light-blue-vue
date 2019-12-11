@@ -1,13 +1,13 @@
 <template>
   <div class="bag" >
-    <button class="btn add">
+    <b-button class="add mr-2" variant="dark">
       add to bag
       <img src="../../../../../assets/bag.svg" alt="bag" />
-    </button>
-    <button class="btn star" @click="toggle">
-      <img v-if="favourite" src="../../../../../assets/stars/star-filled.svg" alt="star" />
-      <img v-else src="../../../../../assets/stars/star.svg" alt="star" />
-    </button>
+    </b-button>
+    <b-button class="star" variant="outline-dark" @click="toggle">
+      <i v-if="favourite" class="la la-star"></i>
+      <i v-else class="la la-star-o"></i>
+    </b-button>
   </div>
 </template>
 

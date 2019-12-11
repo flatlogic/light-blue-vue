@@ -7,23 +7,10 @@
 
 .add {
   width: 100%;
-  background-color: theme-color('dark');
-  background-image: none;
   text-transform: uppercase;
-  color: $white;
-  border: none;
-  margin-right: $spacer / 2;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:focus {
-    outline: none;
-  }
 
   img {
     height: 20px;
@@ -32,23 +19,9 @@
 }
 
 .star {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 55px;
-  border: 2px solid $border-color;
-  background: transparent;
 
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  img {
-    height: 20px;
-    width: 20px;
+  .la {
+    font-size: 20px;
   }
 }

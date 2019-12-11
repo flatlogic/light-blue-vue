@@ -55,11 +55,11 @@
           <hr />
           <div class="d-flex justify-content-between mb-lg">
             <div class="text-warning">
-              <i class="fa fa-star mr-xs" />
-              <i class="fa fa-star mr-xs" />
-              <i class="fa fa-star mr-xs" />
-              <i class="fa fa-star mr-xs" />
-              <i class="fa fa-star" />
+              <i class="la la-star mr-xs" />
+              <i class="la la-star mr-xs" />
+              <i class="la la-star mr-xs" />
+              <i class="la la-star mr-xs" />
+              <i class="la la-star" />
             </div>
             <span class="text-muted"><small>342 REVIEWS</small></span>
           </div>

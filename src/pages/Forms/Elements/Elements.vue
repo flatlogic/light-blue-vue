@@ -316,7 +316,7 @@
             </b-form-group>
             <b-form-group>
               <b-input-group class="input-group-transparent" size="lg">
-                <b-input-group-text class="text-white" slot="prepend">
+                <b-input-group-text class="header-color" slot="prepend">
                   <i class="la la-star" />
                 </b-input-group-text>
                 <b-form-input class="input-transparent" type="text" placeholder="Username" size="16" />

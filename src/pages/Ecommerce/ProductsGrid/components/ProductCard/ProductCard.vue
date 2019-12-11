@@ -8,10 +8,10 @@
           'bg-primary': label !== 'Sale'}">
         {{label}}
       </div>
-      <button class="star" @click="toggleFavourite()">
-        <img v-if="favourite" src="../../../../../assets/stars/star-filled.svg" alt="star" />
-        <img v-else src="../../../../../assets/stars/star.svg" alt="star" />
-      </button>
+      <b-button class="star" variant="default" @click="toggleFavourite()">
+        <i v-if="favourite" class="la la-star"></i>
+        <i v-else class="la la-star-o"></i>
+      </b-button>
     </div>
     <div class="productCardDataWrapper">
       <div class="productsCardTitle">{{product.title}}</div>

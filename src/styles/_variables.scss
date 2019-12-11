@@ -73,7 +73,8 @@ $theme-colors: (
 
 $link-color: $blue;
 
-$text-color: rgba(#F4F4F5, .9) !default;
+$header-color: rgba(#F4F4F5, .9) !default;
+$text-color: rgba(#F4F4F5, .6) !default;
 $body-color: $text-color;
 $border-color: $dark !default;
 $text-muted: rgba($text-color, .7) !default;
@@ -316,6 +317,7 @@ $screen-lg-height: 670px !default;
           danger-light: #fff2ef,
   ) !global;
 
+  $header-color: #444 !default;
   $text-color: #444 !global;
   $body-color: $text-color !global;
   $border-color: $gray-300 !default;

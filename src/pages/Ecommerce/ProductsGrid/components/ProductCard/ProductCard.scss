@@ -52,8 +52,7 @@
     padding: 5px;
     border-radius: 50%;
     border: none;
-    background: $white;
-    display: flex;
+    line-height: 1;
 
     @include media-breakpoint-down(sm) {
       top: auto;
@@ -61,17 +60,9 @@
       padding: 8px;
     }
 
-    &:hover {
-      cursor: pointer;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    img {
-      height: 15px;
-      width: 15px;
+    .la {
+      color: $header-color;
+      font-size: 15px;
     }
   }
 }

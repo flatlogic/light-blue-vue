@@ -25,7 +25,7 @@ const colors = process.env.VUE_APP_THEME === 'light' ? {
   pink: '#e671b8',
   gray: '#d6dee5',
   default: '#595d78',
-  textColor: '#e0e0e1',
+  textColor: '#b4b5bf',
   gridLineColor: '#040620'
 };
 

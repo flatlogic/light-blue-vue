@@ -4,7 +4,7 @@
       <Rating :rating="rating" />
     </div>
     <div class="dataWrapper">
-      <span class="title">{{title}}</span>
+      <h5 class="title">{{title}}</h5>
       <span class="subtitle">{{subtitle}}</span>
     </div>
     <span class="price">${{price}}</span>

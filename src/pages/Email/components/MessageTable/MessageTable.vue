@@ -62,7 +62,7 @@
                   @click="starItem(message.id)"
                 >
                     <span v-if="message.starred" class="messageStarred">
-                      <i class="fa fa-star text-white" />
+                      <i class="fa fa-star header-color" />
                     </span>
                     <span v-else><i class="fa fa-star-o" /></span>
                 </td>

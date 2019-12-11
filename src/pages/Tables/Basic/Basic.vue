@@ -173,28 +173,28 @@
                  <td>Mark</td>
                  <td>Otto</td>
                  <td><a href="#">ottoto@example.com</a></td>
-                 <td><b-badge variant="gray" class="text-gray" pill>Pending</b-badge></td>
+                 <td><b-badge variant="gray" pill>Pending</b-badge></td>
                </tr>
                <tr>
                  <td>2</td>
                  <td>Jacob</td>
                  <td>Thornton</td>
                  <td><a href="#">fat.thor@example.com</a></td>
-                 <td><b-badge variant="gray" class="text-gray-light" pill>Unconfirmed</b-badge></td>
+                 <td><b-badge variant="gray" pill>Unconfirmed</b-badge></td>
                </tr>
                <tr>
                  <td>3</td>
                  <td>Larry</td>
                  <td>the Bird</td>
                  <td><a href="#">larry@example.com</a></td>
-                 <td><b-badge variant="gray" class="text-gray" pill>New</b-badge></td>
+                 <td><b-badge variant="primary" pill>New</b-badge></td>
                </tr>
                <tr>
                  <td>4</td>
                  <td>Peter</td>
                  <td>Horadnia</td>
                  <td><a href="#">peter@example.com</a></td>
-                 <td><b-badge variant="gray" class="text-gray-light" pill>Active</b-badge></td>
+                 <td><b-badge variant="success" pill>Active</b-badge></td>
                </tr>
              </tbody>
            </table>

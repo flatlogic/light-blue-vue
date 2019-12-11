@@ -107,22 +107,9 @@ legend {
   font-size: 11px;
 }
 
-.badge-success,
-.badge-info,
-.bg-primary,
-.badge-danger {
-  color: $white;
-}
-
-.badge-white {
-  @include badge-variant($white);
-}
-
-.badge-default {
-  @include badge-variant($gray-300);
-}
-
 .badge {
+  color: $header-color;
+
   &.badge-pill {
     padding: 0.4em 0.6em;
     font-weight: 700;
@@ -131,6 +118,11 @@ legend {
   .list-group-item > & {
     margin-top: 2px;
   }
+}
+
+.badge-light,
+.badge-secondary {
+  color: $gray-300;
 }
 
 .table-no-border {
@@ -182,18 +174,13 @@ small {
   }
 }
 
-.btn-success,
-.btn-info,
-.btn-warning,
-.btn-dark,
-.btn-default,
-.btn-gray {
+.btn {
 
   &,
   &:hover,
   &.disabled,
   &:disabled {
-    color: $text-color;
+    color: $header-color;
   }
 }
 
@@ -233,7 +220,7 @@ small {
 }
 
 .btn-outline {
-  @include button-variant(transparent, $white);
+  @include button-variant(transparent, $text-color);
 
   @include hover-focus() {
     background-color: rgba($white, 0.1);
@@ -324,7 +311,7 @@ small {
 
 @mixin alert($color) {
   background: theme-color($color);
-  color: $text-color;
+  color: $header-color;
 
   &.alert-transparent {
     color: theme-color($color);
@@ -332,7 +319,7 @@ small {
   }
 
   .btn:not(.btn-default) {
-    background: rgba($text-color, 0.8);
+    background: rgba($header-color, 0.8);
     color: theme-color($color);
   }
 }
@@ -367,7 +354,7 @@ small {
 ///////// Breadcrumbs //////////
 
 .breadcrumb {
-  color: $gray-600;
+  color: $text-color;
   margin-bottom: 1.5rem;
   margin-top: 0;
 
@@ -384,7 +371,7 @@ small {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: '>';
-  color: $gray-600;
+  color: $text-color;
 }
 
 ///////// Glyphicons //////////
@@ -471,6 +458,8 @@ h6,
 .h4,
 .h5,
 .h6 {
+  color: $header-color;
+
   small,
   .small {
     font-weight: $font-weight-thin;
@@ -720,12 +709,12 @@ pre {
   .input-tag {
     border-radius: $border-radius;
     background-color: $purple;
-    color: white;
+    color: $text-color;
     border-color: darken($purple, 10%);
 
     .remove:before {
       content: " ×" !important;
-      color: white;
+      color: $text-color;
     }
   }
 
