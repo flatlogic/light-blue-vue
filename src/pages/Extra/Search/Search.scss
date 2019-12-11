@@ -81,7 +81,7 @@
       font-weight: $font-weight-normal;
 
       > a {
-        color: $text-color;
+        color: $header-color;
       }
 
       @include media-breakpoint-up(md) {
