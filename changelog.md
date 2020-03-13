@@ -1,14 +1,32 @@
-# Change Log
-All notable changes to this project will be documented in this file.
+# Changelog
 
-### v3.1.1
+## [3.1.2]
+
+### Updated
+
+- updated seed version
+- updated documentation
+
+## [3.1.1]
+
+### Fixed
+
 - Design fixes
 
-### v3.1.0
+## [3.1.0]
+
+### Updated
+
 - Added brand new design!
 
-### v3.0.5
+## [3.0.5]
+
+### Fixed
+
 - fix bugs
 
-### v3.0.4
+## [3.0.4]
+
+### Updated
+
 - added documentation menu
