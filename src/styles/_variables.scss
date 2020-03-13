@@ -296,7 +296,7 @@ $screen-lg-height: 670px !default;
   $purple: #a700ae !global;
   $brown: #a05000 !global;
   $teal: #7f49fa !global;
-  $default: #e9ecef !default;
+  $default: #e9ecef !global;
 
   $theme-colors: (
           primary: $blue,
@@ -317,10 +317,10 @@ $screen-lg-height: 670px !default;
           danger-light: #fff2ef,
   ) !global;
 
-  $header-color: #444 !default;
+  $header-color: #444 !global;
   $text-color: #444 !global;
   $body-color: $text-color !global;
-  $border-color: $gray-300 !default;
+  $border-color: $gray-300 !global;
   $text-muted: rgba($text-color, .7) !global;
 
   //== Sidebar
@@ -331,6 +331,7 @@ $screen-lg-height: 670px !default;
   $body-bg-gradient-start: $body-bg 10% !global;
   $body-bg-gradient-end: #9aacbf !global;
   $body-bg-light: lighten($body-bg, 3%) !global;
+  $default-bg: radial-gradient(farthest-side ellipse at 10% 0, $body-bg-gradient-start, $body-bg-gradient-end) !global;
 
   // Widgets
   // -------------------------
@@ -354,9 +355,9 @@ $screen-lg-height: 670px !default;
 
   //== Forms
   //
-  $input-bg: $white !default;
-  $input-border-width: 1 !default;
-  $input-group-addon-bg: $gray-200 !default;
+  $input-bg: $white !global;
+  $input-border-width: 1 !global;
+  $input-group-addon-bg: $gray-200 !global;
 
   // Jumbotron
   $jumbotron-bg: $gray-200;
@@ -386,9 +387,9 @@ $screen-lg-height: 670px !default;
   $pre-border: $gray-400 !global;
 
   // == Location Selector
-  $location-selector-bg: $white !default;
-  $location-selector-border: #bbb !default;
-  $location-selector-bit-bg: $gray-300 !default;
+  $location-selector-bg: $white !global;
+  $location-selector-border: #bbb !global;
+  $location-selector-bit-bg: $gray-300 !global;
 }
 
 @if ($app-theme == 'light') {
