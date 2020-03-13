@@ -130,6 +130,7 @@ $doc-sidebar-color: #6c757d;
     position: fixed;
     overflow-y: auto;
     max-height: calc(100vh - 130px);
+    border-color: $gray-200 !important;
 
     .list-group-item {
       border: none;
@@ -155,7 +156,7 @@ $doc-sidebar-color: #6c757d;
   }
 
   .breadcrumb .breadcrumb-item {
-    &, a {
+    &, a, &:before {
       color: $gray-700;
 
       &:hover {
@@ -198,5 +199,25 @@ $doc-sidebar-color: #6c757d;
 
   .card-body {
     background: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: #444;
+  }
+
+  code {
+    background-color: theme-color('danger-light');
+    color: $pink;
   }
 }
