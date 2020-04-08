@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.3]
+
+### Fixed
+
+- fixed issue with themes
+
 ## [3.1.2]
 
 ### Updated
