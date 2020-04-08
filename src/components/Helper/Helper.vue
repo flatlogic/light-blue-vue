@@ -8,14 +8,8 @@
                         <i class="la la-cog"></i>
                     </div>
                 </div>
-                <h6>Theme</h6>
+                <h6>Links</h6>
             </header>
-            <a :href="theme === 'light' ? 'https://demo.flatlogic.com/light-blue-vue/dark' : '#'" class="theme-preview" :class="{active: theme !== 'light'}">
-                <img src="../../assets/dark-theme.png" alt="Dark Theme" class="img-thumbnail">
-            </a>
-            <a :href="theme !== 'light' ? 'https://demo.flatlogic.com/light-blue-vue/white' : '#'" class="theme-preview" :class="{active: theme === 'light'}">
-                <img src="../../assets/white-theme.png" alt="White Theme" class="img-thumbnail">
-            </a>
             <div class="widget-body mt-3">
                 <div class="mt-4">
                     <a href="https://flatlogic.com/templates/light-blue-vue/"
@@ -68,13 +62,10 @@
 </template>
 
 <script>
-  import config from '../../config';
-
 export default {
     name: 'Helper',
     data() {
         return {
-            theme: config.theme,
             opened: false,
         }
     },

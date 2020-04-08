@@ -4,12 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 3000",
-    "serve:dark": "VUE_APP_THEME='dark' yarn serve",
-    "serve:light": "VUE_APP_THEME='light' yarn serve",
     "serve:backend": "VUE_APP_BACKEND=true vue-cli-service serve --port 3000",
     "build": "VUE_APP_BACKEND=true vue-cli-service build",
-    "build:dark": "VUE_APP_THEME='dark' yarn build",
-    "build:light": "VUE_APP_THEME='light' yarn build",
     "lint": "vue-cli-service lint",
     "start": "node server.js"
   },

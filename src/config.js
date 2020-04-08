@@ -1,20 +1,7 @@
 const hostApi = process.env.NODE_ENV === "development" ? "http://localhost" : "https://flatlogic-node-backend.herokuapp.com";
 const portApi = process.env.NODE_ENV === "development" ? 8080 : "";
 const baseURLApi = `${hostApi}${portApi ? `:${portApi}` : ``}`;
-const colors = process.env.VUE_APP_THEME === 'light' ? {
-  blue: '#196EFF',
-  green: '#2ada7a',
-  orange: '#ffc107',
-  red: '#ff0115',
-  purple: '#a700ae',
-  dark: '#3c484f',
-  teal: '#7f49fa',
-  pink: '#e671b8',
-  gray: '#d6dee5',
-  default: '#e9ecef',
-  textColor: '#444',
-  gridLineColor: '#444'
-} : {
+const colors = {
   blue: '#1870DC',
   green: '#58D777',
   orange: '#f0af03',
@@ -30,7 +17,6 @@ const colors = process.env.VUE_APP_THEME === 'light' ? {
 };
 
 export default {
-  theme: process.env.VUE_APP_THEME,
   colors: {
     ...colors,
     white: "#fff"

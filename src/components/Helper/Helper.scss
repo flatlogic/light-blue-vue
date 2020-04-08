@@ -89,14 +89,4 @@
       transform: rotate(-360deg);
     }
   }
-
-  .theme-preview {
-    display: block;
-    margin-bottom: 1rem;
-
-    &.active {
-      cursor: not-allowed;
-    }
-  }
 }
-  
