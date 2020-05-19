@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.4]
+
+### Fixed
+
+- Fix invalid token validation
+
 ## [3.1.3]
 
 ### Fixed

@@ -58,12 +58,12 @@ yarn
 ## Quick start
 Run development server
 ```shell
-yarn run serve
+yarn run start
 ```
 
 ### If you use app with backend support, please use
 ```
-yarn run serve:backend
+yarn run start:backend
 ```
 
 ## Support
