@@ -1,4 +1,10 @@
 # Changelog
+## [3.1.5]
+
+### Fixed
+- Update dependency 
+- Fix animate class 
+- Fix link to git repo
 
 ## [3.1.4]
 
