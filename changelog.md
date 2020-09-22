@@ -1,4 +1,8 @@
 # Changelog
+## [3.1.6]
+
+### Updated
+- Update dependency 
 ## [3.1.5]
 
 ### Fixed
