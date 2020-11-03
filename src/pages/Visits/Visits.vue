@@ -99,7 +99,7 @@
             :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-primary text-white">
+              <span class="circle bg-primary text-white mr-2">
                 <i class="la la-angle-up" />
               </span>
             </small>
@@ -131,7 +131,7 @@
             :value="60" :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-primary text-white">
+              <span class="circle bg-primary text-white mr-2">
                 <i class="la la-angle-down" />
               </span>
             </small>
@@ -163,7 +163,7 @@
             :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-primary text-white">
+              <span class="circle bg-primary text-white mr-2">
                 <i class="la la-plus" />
               </span>
             </small>
@@ -176,7 +176,7 @@
     <b-row>
       <b-col lg="4" xs="12">
         <Widget
-          title="<h6><span class='badge badge-danger'>New</span> Messages</h6>"
+          title="<h6><span class='badge badge-danger mr-2'>New</span> Messages</h6>"
           refresh close customHeader
         >
           <div class="widget-body p-0">

@@ -11,6 +11,19 @@
   background: $widget-bg;
   border-radius: 0;
 
+  .vc-w-full.vc-relative .vc-grid-container {
+    grid-template-columns: none!important;
+  }
+
+  .vc-arrows-container {
+    @include media-breakpoint-only(xl) {
+      padding: 8px 20px;
+    }
+    @include media-breakpoint-only(md) {
+      padding: 8px 30px;
+    }
+  }
+
   .vc-header {
     padding: $widget-padding-vertical $widget-padding-horizontal 0;
 

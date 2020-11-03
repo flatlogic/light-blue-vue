@@ -18,4 +18,11 @@
       }
     }
   }
+
+  .abc-checkbox {
+    label::before {
+      background-color: transparent;
+      border: 1px solid #c1ccd3;
+    }
+  }
 }

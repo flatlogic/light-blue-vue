@@ -68,10 +68,10 @@
           <template slot="button-content">
             <i class="la la-cog px-2" />
           </template>
-          <b-dropdown-item><i class="la la-user" /> My Account</b-dropdown-item>
+          <b-dropdown-item to="/app/profile"><i class="la la-user" /> My Account</b-dropdown-item>
           <b-dropdown-divider />
-          <b-dropdown-item>Calendar</b-dropdown-item>
-          <b-dropdown-item>
+          <b-dropdown-item to="/app/extra/calendar">Calendar</b-dropdown-item>
+          <b-dropdown-item to="/app/email">
             Inbox &nbsp;&nbsp;<b-badge variant="danger" pill class="animate__animated animate__bounceIn">9</b-badge>
           </b-dropdown-item>
           <b-dropdown-divider />
