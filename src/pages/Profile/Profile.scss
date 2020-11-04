@@ -32,7 +32,7 @@
   border-radius: $border-radius;
   padding: 20px 20px 0;
   position: relative;
-  margin-bottom: $spacer;
+  margin-bottom: $spacer * 2;
   box-shadow: $widget-shadow;
   overflow: hidden;
 }
@@ -43,11 +43,10 @@
 
   a {
     text-decoration: none;
-    color: #7ca9dd;
-  }
-
-  small > a {
-    color: $text-muted;
+    color: $primary;
+    small {
+      color: $primary;
+    }
   }
 }
 

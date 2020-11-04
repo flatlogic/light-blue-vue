@@ -88,7 +88,7 @@
                 <img class="rounded-circle" src="../../assets/people/a5.jpg" alt="..." />
               </span>
               <h5 class="eventTitle">
-                <a href="#">Bob Nilson</a> <small><a href="#">@nils</a></small>
+                <a href="#">Bob Nilson <small>@nils</small></a>
               </h5>
               <p class="eventTimestamp">February 22, 2014 at 01:59 PM</p>
             </header>
@@ -109,7 +109,7 @@
           </section>
           <section class="event">
             <header>
-              <h5 class="eventTitle"><a href="#">Jessica Smith</a> <small>@jess</small></h5>
+              <h5 class="eventTitle"><a href="#">Jessica Smith <small>@jess</small></a></h5>
               <p class="eventTimestamp">February 22, 2014 at 01:59 PM</p>
             </header>
             <div class="eventBody">

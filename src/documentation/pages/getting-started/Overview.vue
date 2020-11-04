@@ -19,7 +19,7 @@
             href="https://github.com/flatlogic/nodejs-backend" rel="noopener noreferrer" target="_blank">backend
           documentation</a> for details
         </p>
-        <img class="img-responsive w-100 border" src="../../../assets/documentation/light-screenshot.png" alt="screenshot"/>
+        <img class="img-responsive w-100 border" src="../../../assets/documentation/screenshot.png" alt="screenshot"/>
         <router-link to="/app">Live demo</router-link>
       </Widget>
       <Widget id="Features">

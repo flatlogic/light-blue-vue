@@ -1,7 +1,7 @@
 <template>
   <div class="messageTableHeader">
     <div>
-      <b-dropdown text="Select" variant="default" size="sm" class="mr-2">
+      <b-dropdown text="Select" variant="default" size="sm" class="mr-3">
         <b-dropdown-item-button @click="chooseAll">All</b-dropdown-item-button>
         <b-dropdown-item-button @click="chooseNone">None</b-dropdown-item-button>
         <b-dropdown-divider />
@@ -30,4 +30,4 @@ export default {
 };
 </script>
 
-<style src="./MessageTableHeader.scss" lang="scss" scoped />
+<style src="./MessageTableHeader.scss" lang="scss"/>

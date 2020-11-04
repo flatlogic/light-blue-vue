@@ -6,4 +6,10 @@
   & .form-control {
     width: auto;
   }
+
+  .dropdown.b-dropdown {
+    button::after {
+      margin-left: 16px;
+    }
+  }
 }
