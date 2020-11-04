@@ -18,7 +18,7 @@
               label-cols="4"
               breakpoint="md"
             >
-              <b-form-input class="input-transparent" type="text" id="normal-field" placeholder="May have placeholder" />
+              <b-form-input class="" type="text" id="normal-field" placeholder="May have placeholder" />
             </b-form-group>
             <b-form-group
               label-for="normal-field"
@@ -30,7 +30,7 @@
                 Label hint
                 <span class="help-block">Some help text</span>
               </div>
-              <b-form-input class="input-transparent" type="text" id="label-hint"/>
+              <b-form-input class="" type="text" id="label-hint"/>
             </b-form-group>
             <b-form-group
               label="Tooltip enabled"
@@ -39,7 +39,7 @@
               label-cols="4"
               breakpoint="md"
             >
-              <b-form-input class="input-transparent"
+              <b-form-input class=""
                 type="text" id="tooltip-field"
                 v-b-tooltip.hover title="Some explanation text here"
               />
@@ -60,7 +60,7 @@
               label-cols="4"
               breakpoint="md"
             >
-              <b-form-input class="input-transparent"
+              <b-form-input class=""
                 type="text"
                 id="length-field"
                 :formatter="(v) => v.length <= 3 ? v : v.substring(0, 3)"
@@ -77,7 +77,7 @@
                 <b-input-group-text slot="prepend">
                   <i class="la la-user" />
                 </b-input-group-text>
-                <b-form-input class="input-transparent"></b-form-input>
+                <b-form-input class=""></b-form-input>
               </b-input-group>
             </b-form-group>
             <b-form-group
@@ -91,7 +91,7 @@
                 <b-input-group-text slot="prepend">
                   <i class="la la-lock" />
                 </b-input-group-text>
-                <b-form-input class="input-transparent" type="password"></b-form-input>
+                <b-form-input class="" type="password"></b-form-input>
               </b-input-group>
             </b-form-group>
             <b-form-group
@@ -102,7 +102,7 @@
               breakpoint="md"
             >
               <b-input-group class="input-group-transparent" id="append-field" append=".00">
-                <b-form-input class="input-transparent"></b-form-input>
+                <b-form-input class=""></b-form-input>
               </b-input-group>
             </b-form-group>
             <b-form-group
@@ -113,7 +113,7 @@
               breakpoint="md"
             >
               <b-input-group class="input-group-transparent" id="combined-field" append=".00" prepend="$">
-                <b-form-input class="input-transparent"></b-form-input>
+                <b-form-input class=""></b-form-input>
               </b-input-group>
             </b-form-group>
             <b-form-group
@@ -123,7 +123,7 @@
               label-cols="4"
               breakpoint="md"
             >
-              <b-button variant="primary" type="submit" class="mr-xs">Save Changes</b-button>
+              <b-button variant="primary" type="submit" class="mr-3">Save Changes</b-button>
               <b-button variant="inverse">Cancel</b-button>
             </b-form-group>
           </b-form>
@@ -145,7 +145,7 @@
                 <b-row>
                   <b-col md="8">
                     <b-input-group>
-                      <b-form-input id="search-field" type="text"></b-form-input>
+                      <b-form-input class="" id="search-field" type="text"></b-form-input>
                       <b-input-group-append>
                         <b-btn variant="default">Search</b-btn>
                       </b-input-group-append>
@@ -252,13 +252,13 @@
                 >
                 <b-row>
                   <b-col md="8">
-                    <b-form-input id="tranparent-field" class="input-transparent"
+                    <b-form-input id="tranparent-field" class=""
                       type="text" placeholder="Search Dashboard"></b-form-input>
                   </b-col>
                 </b-row>
               </b-form-group>
               <b-form-group class="form-action">
-                <b-button variant="primary" type="submit" class="mr-xs">Save Changes</b-button>
+                <b-button variant="primary" type="submit" class="mr-3">Save Changes</b-button>
                 <b-button variant="inverse">Cancel</b-button>
               </b-form-group>
             </b-form>
@@ -270,7 +270,7 @@
       <b-col lg='8' md='12'>
         <Widget
           title="<h6> Form <span class='fw-semi-bold'>Options</span></h6>"
-          settingsInverse refresh close customHeader
+          settings refresh close customHeader
         >
           <b-form>
             <legend>Control sizing</legend>
@@ -296,7 +296,7 @@
       <b-col lg='4' md='12'>
         <Widget
           title="<h6> Form <span class='fw-semi-bold'>Options</span></h6>"
-          settingsInverse refresh close customHeader
+          settings refresh close customHeader
         >
           <b-form>
             <legend> Input Groups</legend>
@@ -319,7 +319,7 @@
                 <b-input-group-text class="header-color" slot="prepend">
                   <i class="la la-star" />
                 </b-input-group-text>
-                <b-form-input class="input-transparent" type="text" placeholder="Username" size="16" />
+                <b-form-input class="" type="text" placeholder="Username" size="16" />
               </b-input-group>
             </b-form-group>
             <b-form-group>
@@ -380,7 +380,7 @@
                 </div>
                 <ckeditor :editor="wygEditor" v-model="wygContent"></ckeditor>
                 <div class="btn-toolbar float-right mt-sm">
-                  <b-button variant="danger">Save</b-button>
+                  <b-button variant="danger" class="mr-3">Save</b-button>
                   <b-button variant="default">Clear</b-button>
                 </div>
             </b-form-group>
@@ -405,7 +405,6 @@
           </b-form>
         </Widget>
       </b-col>
-
       <b-col lg='5' md='12'>
         <Widget
           title="<h6><i class='la la-list-alt'></i> Selects </h6>"
@@ -481,7 +480,7 @@
                 Colored ones <br>
                 <span class="help">A bit of Japanese</span>
               </div>
-              <b-dropdown id="danger-select" :text="dangerDropdownVariant" variant="danger">
+              <b-dropdown class="mr-3" id="danger-select" :text="dangerDropdownVariant" variant="danger">
                 <b-dropdown-item-button
                   @click="changeSelectOption('dangerDropdownVariant', 'Ichi')"
                 >Ichi</b-dropdown-item-button>
@@ -492,7 +491,7 @@
                   @click="changeSelectOption('dangerDropdownVariant', 'San')"
                 >San</b-dropdown-item-button>
               </b-dropdown>
-              <b-dropdown class="ml-1" :text="warningDropdownVariant" variant="warning">
+              <b-dropdown class="mr-3" :text="warningDropdownVariant" variant="warning">
                 <b-dropdown-item-button
                   @click="changeSelectOption('warningDropdownVariant', 'Shi')"
                 >Shi</b-dropdown-item-button>
@@ -503,7 +502,7 @@
                   @click="changeSelectOption('warningDropdownVariant', 'Roku')"
                 >Roku</b-dropdown-item-button>
               </b-dropdown>
-              <b-dropdown class="ml-1" :text="successDropdownVariant" variant="success">
+              <b-dropdown :text="successDropdownVariant" variant="success">
                 <b-dropdown-item-button
                   @click="changeSelectOption('successDropdownVariant', 'Hichi')"
                 >Hichi</b-dropdown-item-button>
@@ -549,7 +548,7 @@
       <b-col md="12">
         <Widget
           title="<h6> Checkbox <strong>Controls</strong></h6>"
-          settingsInverse refresh lose customHeader
+          settings refresh lose customHeader
         >
           <b-row>
             <b-col lg='4'>
@@ -684,7 +683,7 @@
       <b-col md="12">
         <Widget
           title="<h6>Radio <strong>Controls</strong></h6>"
-          settingsInverse refresh lose customHeader
+          settings refresh lose customHeader
         >
           <b-row>
             <b-col lg='4'>
@@ -795,7 +794,7 @@
     </b-row>
     <b-row>
       <b-col lg="6" md="12">
-        <Widget title="<h6>Pickers</h6>" customHeader close refresh settingsInverse>
+        <Widget title="<h6>Pickers</h6>" customHeader close refresh settings>
           <b-form>
             <legend>Date & Time</legend>
             <b-row>
@@ -854,7 +853,7 @@
       </b-col>
       <b-col lg="6" md="12">
         <Widget title="<h6> Input <strong>Masks</strong></h6>"
-          customHeader close settingsInverse refresh>
+          customHeader close settings refresh>
           <b-form class="form-label-left">
             <legend>Masked inputs</legend>
             <b-form-group label-for="phone-mask"
@@ -864,7 +863,7 @@
                 Phone
                 <span class="help-block">(123) 456-7890</span>
               </div>
-              <b-form-input class="input-transparent" type="text" id="phone-mask"
+              <b-form-input class="" type="text" id="phone-mask"
                             placeholder="(___) ___-____"
                             v-mask="'(###) ###-####'"
                             v-model="phoneModel" />
@@ -876,7 +875,7 @@
                 International Phone
                 <span class="help-block">+375 123 456 789</span>
               </div>
-              <b-form-input class="input-transparent" type="text" id="int-phone-mask"
+              <b-form-input class="" type="text" id="int-phone-mask"
                             placeholder="+___ ___ ___ ___"
                             v-mask="'+### ### ### ###'"
                             v-model="intPhoneModel" />
@@ -887,7 +886,7 @@
                 Date Format
                 <span class="help-block">07-03-2013</span>
               </div>
-              <b-form-input class="input-transparent" type="text" id="date-mask"
+              <b-form-input class="" type="text" id="date-mask"
                             placeholder="+___ ___ ___ ___"
                             v-mask="'+### ### ### ###'"
                             v-model="intPhoneModel" />
@@ -898,7 +897,7 @@
                 Time
                 <span class="help-block">13:43</span>
               </div>
-              <b-form-input class="input-transparent" type="text" id="time-mask"
+              <b-form-input class="" type="text" id="time-mask"
                             placeholder="__:__"
                             v-mask="'##:##'"
                             v-model="timeModel" />
@@ -910,7 +909,7 @@
     <b-row>
       <b-col xs="12">
         <Widget title="<h6>Sliders</h6>"
-          customHeader settingsInverse close refresh>
+          customHeader settings close refresh>
           <b-row>
             <b-col lg="4">
               <h4>Color Options</h4>
@@ -1020,7 +1019,7 @@
       <b-col lg="6" md={12}>
         <Widget
           title="<h6>Simple <strong>file uploads</strong></h6>"
-          customHeader settingsInverse close refresh
+          customHeader settings close refresh
         >
           <b-form>
             <blockquote class="blockquote blockquote-reverse">
@@ -1120,7 +1119,7 @@
       <b-col lg="6" md={12}>
         <Widget
           title="<h6><strong>Drop</strong> Zone</h6>"
-          customHeader settingsInverse refresh close
+          customHeader settings refresh close
         >
           <div>
             <vue-dropzone id="dropzone" :options="{ url: '/' }" />

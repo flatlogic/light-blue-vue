@@ -196,10 +196,9 @@ export default {
           colors: [colors.textColor]
         }
       },
-
       xaxis: {
         categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        position: 'top',
+        position: 'bottom',
         labels: {
           style: {
             colors: colors.textColor,

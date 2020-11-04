@@ -6,7 +6,7 @@
     </ol>
     <h1 class="page-title">Grid - <span class="fw-semi-bold">Options</span></h1>
     <b-row>
-      <b-col xl='7'>
+      <b-col col="12">
         <Widget title="Draggable Grid">
           <div>
             <p>
@@ -33,7 +33,6 @@
         </Widget>
       </b-col>
     </b-row>
-
     <b-row>
       <b-col class="widget-container" xl='6' xs='12'>
         <draggable v-bind="sortOptions">
@@ -155,7 +154,6 @@
           </Widget>
         </draggable>
       </b-col>
-
       <b-col xl='6' class="widget-container">
         <draggable v-bind="sortOptions">
           <Widget
@@ -169,7 +167,7 @@
             @close="closePrompt"
             :showLoader="false"
           >
-            <ul class="news-list list-group">
+            <ul class="news-list list-group px-2">
               <li v-for="item in gridData.news" :key="item.title" :class="item.extraClass" class="list-group-item">
                 <span class="icon text-white" :class="'bg-'+item.background">
                   <i class="fa" :class="'fa-'+item.icon"></i>

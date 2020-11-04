@@ -44,6 +44,7 @@
         this.options = {
           mapTypeControl: true,
           mapTypeControlOptions: {
+            // eslint-disable-next-line
             style: google.maps.MapTypeControlStyle.DEFAULT
           }
         }

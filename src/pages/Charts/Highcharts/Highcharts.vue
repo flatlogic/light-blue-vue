@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="highcharts-page">
     <b-breadcrumb>
       <b-breadcrumb-item>YOU ARE HERE</b-breadcrumb-item>
       <b-breadcrumb-item>Charts</b-breadcrumb-item>
@@ -102,3 +102,5 @@
     },
   };
 </script>
+
+<style src="./Highcharts.scss" lang="scss" />

@@ -406,8 +406,10 @@ export default {
   },
   wordCloud: {
     chart: {
+      className: 'highchart-font',
       backgroundColor: 'transparent'
     },
+
     credits: {
       enabled: false
     },

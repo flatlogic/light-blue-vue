@@ -36,9 +36,7 @@
         Another table built with <a href="https://www.npmjs.com/package/vue-tables-2"
           target="_blank" rel="noopener noreferrer">vue-tables-2</a>
       </p>
-      <div class="widget-middle-overflow">
         <v-client-table :data="data" :columns="columns" :options="options" />
-      </div>
     </Widget>
   </div>
 </template>

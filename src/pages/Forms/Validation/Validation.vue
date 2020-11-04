@@ -6,9 +6,7 @@
     </ol>
     <h1 class="page-title">Form - <span class="fw-semi-bold">Validation</span>
     </h1>
-
     <b-row>
-      <b-col xs='0' lg='1' />
       <b-col lg='8' xs='12'>
         <Widget
           title="<h5>
