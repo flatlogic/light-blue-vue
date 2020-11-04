@@ -16,10 +16,9 @@
 </template>
 
 <script>
-import visa from '@/assets/payments/visa.svg';
-import mastercard from '@/assets/payments/mastercard.svg';
-import aexpress from '@/assets/payments/aexpress.svg';
-import paypal from '@/assets/payments/paypal.svg';
+import visa from '@/assets/payments/visa.png';
+import mastercard from '@/assets/payments/master.png';
+import paypal from '@/assets/payments/paypal.png';
 
 import General from '../General/General';
 import Selects from '../Selects/Selects';
@@ -33,7 +32,7 @@ export default {
   },
   data() {
     return {
-      payments: [visa, mastercard, aexpress, paypal],
+      payments: [visa, mastercard, paypal],
     };
   }
 };

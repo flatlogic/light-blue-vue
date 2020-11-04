@@ -31,8 +31,8 @@
             <a href="https://webpack.js.org/">Webpack</a> Module Bundler and Yarn as a package
             manager are under the hood.</p>
           <a
-            class="btn btn-dark btn-lg btn-block"
-            href="https://demo.flatlogic.com/light-blue-react/#/app/main/analytics"
+            class="btn btn-default btn-lg btn-block"
+            href="https://flatlogic.com/templates/light-blue-react/demo"
           >
             Go to Demo
           </a>
@@ -62,8 +62,8 @@
             so everything
             works out of the box! <br /><br /></p>
           <a
-            class="btn btn-dark btn-lg btn-block"
-            href="https://demo.flatlogic.com/4.0.1/angular/#/app/dashboard"
+            class="btn btn-default btn-lg btn-block"
+            href="https://flatlogic.com/templates/light-blue-angular/demo"
           >
             Go to Demo
           </a>
@@ -94,8 +94,8 @@
           <p>Moreover, this version comes with three different color
             schemes which you can easily switch based on your choice.</p>
           <a
-            class="btn btn-dark btn-lg btn-block"
-            href="https://demo.flatlogic.com/4.0.1/dark/"
+            class="btn btn-default btn-lg btn-block"
+            href="https://flatlogic.com/templates/light-blue-html5/demo"
           >
             Go to Demo
           </a>
@@ -119,8 +119,8 @@
           </p>
           <p>Creating Vue JS version is a main
             priority of <a href="https://flatlogic.com">Flatlogic</a> for next months,
-            so seed version will ready really soon! <br /><br /><br /><br /><br /></p>
-          <a class="btn btn-transparent btn-lg btn-block disabled" href="#">You are here!</a>
+            so seed version will ready really soon! <br /><br /><br /></p>
+          <a class="btn btn-transparent btn-lg btn-block disabled mb-3" href="#">You are here!</a>
         </Widget>
       </b-col>
     </b-row>
