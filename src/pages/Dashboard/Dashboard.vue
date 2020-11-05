@@ -4,7 +4,7 @@
     <div class="sidesWrapper">
       <div class="analyticsSide">
         <b-row>
-          <b-col lg="3" sm="6" xs="12">
+          <b-col xl="3" sm="6" xs="12">
             <div class="pb-xlg h-100">
               <Widget class="h-100 mb-0" title="Visits Today" close :fetchingData="isReceiving">
                 <div class="d-flex justify-content-between align-items-center mb-lg">
@@ -25,14 +25,14 @@
               </Widget>
             </div>
           </b-col>
-          <b-col lg="3" sm="6" xs="12">
+          <b-col xl="3" sm="6" xs="12">
             <div class="pb-xlg h-100">
               <Widget class="h-100 mb-0" title="Revenue Breakdown" close :fetchingData="isReceiving">
                 <highcharts :options="donut"></highcharts>
               </Widget>
             </div>
           </b-col>
-          <b-col lg="3" sm="6" xs="12">
+          <b-col xl="3" sm="6" xs="12">
             <div class="pb-xlg h-100">
               <Widget class="h-100 mb-0" title="App Perfomance" close :fetchingData="isReceiving">
                 <p class="text-muted d-flex flex-wrap">
@@ -62,7 +62,7 @@
               </Widget>
             </div>
           </b-col>
-          <b-col lg="3" sm="6" xs="12">
+          <b-col xl="3" sm="6" xs="12">
             <div class="pb-xlg h-100">
               <Widget class="h-100 mb-0" title="Server Overview" close :fetchingData="isReceiving">
                 <div class="d-flex align-items-center mb-sm">

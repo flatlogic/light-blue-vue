@@ -1,5 +1,11 @@
 <template>
   <b-row>
+    <b-col cols="12">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">YOU ARE HERE</li>
+        <li class="breadcrumb-item active">Invoice</li>
+      </ol>
+    </b-col>
     <b-col lg='11'>
       <b-row class='invoice-page'>
         <b-col xs='12'>
@@ -7,7 +13,7 @@
               <header>
                 <b-row>
                   <b-col md="6" xs="12" class="b-col-print-6">
-                    <img src="../../../assets/invoice-logo.png" alt="Logo" class='invoiceLogo' />
+                    <img src="../../../assets/logo.jpg" alt="Logo" class='invoiceLogo' />
                   </b-col>
                   <b-col md="6" xs="12" class="b-col-print-6">
                     <h4 class="text-right">

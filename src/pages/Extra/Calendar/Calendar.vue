@@ -30,7 +30,7 @@
               class="external-event"
               data-event='{ "classNames": ["bg-gray", "text-white"], "title": "Some stuff" }'
           >
-            <i class="fa fa-circle-o fa-fw text-gray-light ml-xs mr-xs"></i>
+            <i class="fa fa-circle fa-fw text-info ml-xs mr-xs"></i>
             Some stuff
           </div>
           <div

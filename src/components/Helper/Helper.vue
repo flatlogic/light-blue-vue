@@ -18,12 +18,11 @@
                     class="btn btn-warning btn-rounded-f btn-block fs-mini text-white">
                         Purchase
                     </a>
-                    <a href='https://demo.flatlogic.com/light-blue-vue/dark/#/documentation'
-                    target="_blank"
-                    role="button"
+                  <router-link
+                    to="/documentation"
                     class="btn btn-inverse btn-rounded-f btn-block fs-mini">
-                        Documentation
-                    </a>
+                      Documentation
+                  </router-link>
                 </div>
                 <div class="d-flex justify-content-between mt-lg">
                     <a role="button"

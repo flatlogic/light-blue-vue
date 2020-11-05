@@ -8,7 +8,7 @@
       Amcharts <span class="fw-semi-bold">Maps</span>
     </h1>
     <b-row>
-      <b-col xs="12" md="10">
+      <b-col cols="12">
         <Widget
             title="<h5>Vue Amcharts Maps <small class='text-muted'>Default and customized</small></h5>"
             customHeader close collapse

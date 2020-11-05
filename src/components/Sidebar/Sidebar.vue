@@ -170,7 +170,7 @@
                 :childrenLinks="[
             { header: 'Calendar', link: '/app/extra/calendar' },
             { header: 'Invoice', link: '/app/extra/invoice' },
-            { header: 'Login Page', link: '/login' },
+            { header: 'Login Page', link: '/login-demo' },
             { header: 'Error Page', link: '/error' },
             { header: 'Gallery', link: '/app/extra/gallery' },
             { header: 'Search Result', link: '/app/extra/search' },

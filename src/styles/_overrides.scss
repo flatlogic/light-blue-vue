@@ -120,6 +120,10 @@ legend {
   color: $gray-300;
 }
 
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: $widget-bg;
+}
+
 .table-no-border {
   margin-left: -$table-cell-padding;
   margin-right: -$table-cell-padding;

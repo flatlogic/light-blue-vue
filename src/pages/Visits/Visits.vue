@@ -23,36 +23,36 @@
             146 Countries, 2759 Cities
           </p>
           <div class="row progress-stats">
-            <div class="col-md-9 col-12">
+            <div class="col-9">
               <h6 class="name">Foreign Visits</h6>
               <p class="description deemphasize mb-xs">Some Cool Text</p>
               <b-progress variant="primary" :value="60" :max="100" class="progress-xs" />
             </div>
-            <div class="col-md-3 col-12 text-center">
+            <div class="col-3 text-center">
               <span class="status rounded rounded-lg bg-widget">
                 <span><AnimatedNumber :value="75" v-bind="animateNumberOptions"></AnimatedNumber>%</span>
               </span>
             </div>
           </div>
           <div class="row progress-stats">
-            <div class="col-md-9 col-12">
+            <div class="col-9">
               <h6 class="name">Local Visits</h6>
               <p class="description deemphasize mb-xs">P. to C. Conversion</p>
               <b-progress variant="danger" :value="39" :max="100" class="progress-xs" />
             </div>
-            <div class="col-md-3 col-12 text-center">
+            <div class="col-3 text-center">
               <span class="status rounded rounded-lg bg-widget">
                 <span><AnimatedNumber :value="84" v-bind="animateNumberOptions"></AnimatedNumber>%</span>
               </span>
             </div>
           </div>
           <div class="row progress-stats">
-            <div class="col-md-9 col-12">
+            <div class="col-9">
               <h6 class="name">Sound Frequencies</h6>
               <p class="description deemphasize mb-xs">Average Bitrate</p>
               <b-progress variant="success" :value="80" :max="100" class="progress-xs" />
             </div>
-            <div class="col-md-3 col-12 text-center">
+            <div class="col-3 text-center">
               <span class="status rounded rounded-lg bg-widget">
                 <span><AnimatedNumber :value="92" v-bind="animateNumberOptions"></AnimatedNumber>%</span>
               </span>
@@ -76,7 +76,7 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col lg="4" xs="12">
+      <b-col xl="4" lg="6" xs="12">
         <Widget
           title="<h6> USERBASE GROWTH </h6>"
           close settings customHeader
@@ -108,7 +108,7 @@
           </p>
         </Widget>
       </b-col>
-      <b-col lg="4" xs="12">
+      <b-col xl="4" lg="6" xs="12">
         <Widget
           title="<h6> TRAFFIC VALUES </h6>"
           close settings customHeader
@@ -140,7 +140,7 @@
           </p>
         </Widget>
       </b-col>
-      <b-col lg="4" xs="12">
+      <b-col xl="4" lg="6" xs="12">
         <Widget
           title="<h6> RANDOM VALUES </h6>"
           close settings customHeader
