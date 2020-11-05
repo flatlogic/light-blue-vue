@@ -4,7 +4,7 @@
 - Update dependency 
 
 ### Fixed
-Much work has been done to improve and correct a lot of small bugs :)
+- Much work has been done to improve and correct a lot of small bugs :)
 
 ## [3.1.6]
 ### Updated
