@@ -874,9 +874,6 @@ $slider-handle-size: 26px;
   }
 
   &.slider-disabled {
-    .slider-handle {
-      //     @include gradient-y(#dfdfdf, #bebebe);
-    }
 
     .slider-track {
       @include gradient-y(#e5e5e5, #e9e9e9);
@@ -1032,20 +1029,20 @@ $slider-handle-size: 26px;
 
 ////// CK Editor ///////
 .ck.ck-toolbar {
-  background: theme-color("default");
-  border-width: $input-border-width;
+  background: theme-color("default")!important;
+  border-width: $input-border-width!important;
 }
 
 .ck.ck-button {
-  color: $text-color;
+  color: $text-color!important;
 }
 
 .ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.2)!important;
 }
 
 .ck.ck-button.ck-on, a.ck.ck-button.ck-on {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4)!important;
 
   &:hover {
     background: rgba(0, 0, 0, 0.5) !important;
@@ -1053,8 +1050,8 @@ $slider-handle-size: 26px;
 }
 
 .ck.ck-editor__main > .ck-editor__editable {
-  background: $input-bg;
-  border-width: $input-border-width;
+  background: $input-bg!important;
+  border-width: $input-border-width!important;
 }
 
 .ck.ck-toolbar__separator {
