@@ -64,7 +64,7 @@ export const chartData = {
         yaxis: {
           labels: {
             style: {
-              color: colors.textColor,
+              colors: colors.textColor,
             },
           },
         },
@@ -73,6 +73,11 @@ export const chartData = {
         },
         grid: {
           borderColor: colors.gridLineColor,
+        },
+        legend: {
+          labels: {
+            colors: colors.textColor,
+          },
         },
       },
     },
