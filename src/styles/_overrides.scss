@@ -30,7 +30,7 @@
 .progress {
   height: $spacer * 1.3;
   margin-bottom: $spacer / 2;
-  background: theme-color("default");
+  background: theme-color('default');
 }
 
 .progress-sm {
@@ -42,7 +42,8 @@
 }
 
 .input-group {
-  .input-group-append, .input-group-prepend {
+  .input-group-append,
+  .input-group-prepend {
     .btn {
       border: none;
     }
@@ -163,7 +164,7 @@ small {
 
 ///////// Buttons //////////
 
-[class*="btn-outline"] {
+[class*='btn-outline'] {
   background-image: none;
 }
 
@@ -174,7 +175,6 @@ small {
 }
 
 .btn {
-
   &,
   &:hover,
   &.disabled,
@@ -243,12 +243,12 @@ small {
 
 .dropdown-toggle::after {
   font-family: 'Line Awesome Free';
-  content: "\F107";
+  content: '\F107';
   border: none;
   width: auto;
   height: auto;
   vertical-align: baseline;
-  opacity: .8;
+  opacity: 0.8;
   font-size: 85%;
   font-weight: $font-weight-semi-bold;
 }
@@ -479,17 +479,16 @@ h6,
   padding: 20px;
 }
 
-.popover-text-gray {
-  .popover-header,
-  .popover-body {
-    color: $gray-700;
-  }
+.popover-header,
+.popover-body {
+  color: $gray-700;
 }
 
 // Modals
 // -------------------------------------------------
 .modal {
-  .modal-footer, .modal-header {
+  .modal-footer,
+  .modal-header {
     border-width: $input-border-width;
   }
 }
@@ -552,7 +551,7 @@ h6,
   padding: 0;
 
   .nav-link {
-    color: transparentize($text-color, .3);
+    color: transparentize($text-color, 0.3);
 
     &:hover {
       color: $nav-pills-link-active-color;
@@ -572,7 +571,7 @@ h6,
   background-color: $widget-bg;
 
   > .tab-pane {
-    padding: $spacer*2;
+    padding: $spacer * 2;
   }
 }
 
@@ -581,7 +580,7 @@ h6,
 
 code {
   font-size: 85%;
-  background-color: rgba($primary, .3);
+  background-color: rgba($primary, 0.3);
   border-radius: $border-radius-sm;
   color: $success;
   padding: $spacer / 10;
@@ -599,10 +598,10 @@ pre {
   background-color: $pre-bg;
   border: 1px solid $pre-border;
   border-radius: $border-radius;
-  white-space: pre-line;       /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-line; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
 
   // Account for some code outputs that place code tags in pre tags
   code {
@@ -646,17 +645,17 @@ pre {
 ///// V Select //////
 .v-select {
   .open-indicator:before {
-    border-width: 1px 1px 0 0;
-    border-color: $text-color;
-    width: 5px;
-    height: 5px;
-    color: $text-color;
+    border-width: 1px 1px 0 0 !important;
+    border-color: $text-color !important;
+    width: 5px !important;
+    height: 5px !important;
+    color: $text-color !important;
   }
 
   .dropdown-toggle .clear {
     font-weight: $font-weight-thin;
-    font-size: 18px;
-    color: $text-color;
+    font-size: 18px !important;
+    color: $text-color !important;
   }
 
   li > a {
@@ -664,21 +663,21 @@ pre {
   }
 
   .selected-tag {
-    color: $text-color;
+    color: $text-color !important;
   }
 
   .dropdown-toggle {
-    border-color: $input-border-color;
-    border-width: $input-border-width;
-    background-color: $input-bg;
+    border-color: $input-border-color !important;
+    border-width: $input-border-width !important;
+    background-color: $input-bg !important;
 
     &:after {
-      content: none;
+      content: none !important;
     }
   }
 
   .dropdown-menu {
-    background: $dropdown-bg;
+    background: $dropdown-bg !important;
   }
 }
 
@@ -691,7 +690,7 @@ pre {
   color: $text-color;
 
   &:hover {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -712,7 +711,7 @@ pre {
     border-color: darken($purple, 10%);
 
     .remove:before {
-      content: " ×" !important;
+      content: ' ×' !important;
       color: $text-color;
     }
   }
@@ -769,7 +768,6 @@ pre {
   }
 }
 
-
 /////// Vue Bootstrap Slider /////////
 /* slider */
 
@@ -788,7 +786,10 @@ $slider-handle-size: 26px;
     background: $default;
     border: 0 solid transparent;
 
-    @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 3px rgba(0, 0, 0, 5));
+    @include box-shadow(
+      inset 0 1px 0 rgba(255, 255, 255, 0.2),
+      0 1px 3px rgba(0, 0, 0, 5)
+    );
 
     &:focus {
       outline: 0;
@@ -828,10 +829,11 @@ $slider-handle-size: 26px;
 
     .slider-handle {
       margin-left: -$slider-handle-size/2;
-      margin-top: -$slider-handle-size*3/8;
+      margin-top: -$slider-handle-size * 3/8;
 
       &.triangle {
-        border-width: 0 $slider-line-height/2 $slider-line-height/2 $slider-line-height/2;
+        border-width: 0 $slider-line-height/2 $slider-line-height/2
+          $slider-line-height/2;
         width: 0;
         height: 0;
         border-bottom-color: #0480be;
@@ -860,11 +862,12 @@ $slider-handle-size: 26px;
     }
 
     .slider-handle {
-      margin-left: -$slider-handle-size*3/8;
+      margin-left: -$slider-handle-size * 3/8;
       margin-top: -$slider-handle-size/2;
 
       &.triangle {
-        border-width: $slider-line-height/2 0 $slider-line-height/2 $slider-line-height/2;
+        border-width: $slider-line-height/2 0 $slider-line-height/2
+          $slider-line-height/2;
         width: 1px;
         height: 1px;
         border-left-color: #0480be;
@@ -874,7 +877,6 @@ $slider-handle-size: 26px;
   }
 
   &.slider-disabled {
-
     .slider-track {
       @include gradient-y(#e5e5e5, #e9e9e9);
 
@@ -930,7 +932,6 @@ $slider-handle-size: 26px;
   @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
 }
 
-
 //////// Vue Color /////////
 .colorpicker-wrapper {
   position: relative;
@@ -949,7 +950,6 @@ $slider-handle-size: 26px;
   }
 }
 
-
 //////// Mavon Editor ////////
 .v-note-wrapper.markdown-body {
   background: $dark;
@@ -959,7 +959,8 @@ $slider-handle-size: 26px;
     background: $default !important;
     border-width: $input-border-width;
 
-    .v-left-item, .v-right-item {
+    .v-left-item,
+    .v-right-item {
       .op-icon-divider {
         border-color: $dark;
       }
@@ -995,11 +996,14 @@ $slider-handle-size: 26px;
     }
   }
 
-  .content-input-wrapper, .content-input-wrapper .content-input, .v-show-content {
+  .content-input-wrapper,
+  .content-input-wrapper .content-input,
+  .v-show-content {
     background: $dark !important;
   }
 
-  pre, textarea {
+  pre,
+  textarea {
     background: $dark;
   }
 
@@ -1008,7 +1012,6 @@ $slider-handle-size: 26px;
     background-color: $gray-300;
   }
 }
-
 
 ////// Awesome Bootstrap checkbox ///////
 .abc-checkbox,
@@ -1026,23 +1029,24 @@ $slider-handle-size: 26px;
 @include checkbox-variant('.abc-checkbox-default', theme-color('default'));
 @include radio-variant('.abc-radio-default', theme-color('default'));
 
-
 ////// CK Editor ///////
 .ck.ck-toolbar {
-  background: theme-color("default")!important;
-  border-width: $input-border-width!important;
+  background: theme-color('default') !important;
+  border-width: $input-border-width !important;
 }
 
 .ck.ck-button {
-  color: $text-color!important;
+  color: $text-color !important;
 }
 
-.ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover {
-  background: rgba(0,0,0,0.2)!important;
+.ck.ck-button:not(.ck-disabled):hover,
+a.ck.ck-button:not(.ck-disabled):hover {
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
-.ck.ck-button.ck-on, a.ck.ck-button.ck-on {
-  background: rgba(0, 0, 0, 0.4)!important;
+.ck.ck-button.ck-on,
+a.ck.ck-button.ck-on {
+  background: rgba(0, 0, 0, 0.4) !important;
 
   &:hover {
     background: rgba(0, 0, 0, 0.5) !important;
@@ -1050,24 +1054,22 @@ $slider-handle-size: 26px;
 }
 
 .ck.ck-editor__main > .ck-editor__editable {
-  background: $input-bg!important;
-  border-width: $input-border-width!important;
+  background: $input-bg !important;
+  border-width: $input-border-width !important;
 }
 
 .ck.ck-toolbar__separator {
   display: none;
 }
 
-
 ////////// ApexCharts ///////////
 .apexcharts-menu {
   background: $dark;
   border: none;
   .apexcharts-menu-item:hover {
-    background: rgba(255,255,255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
   }
 }
-
 
 ////////// Google Maps ///////////
 .gm-style {
