@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.2.0]
+
+- Updated documentation
+
 ## [3.1.9]
 
 ### Updated
