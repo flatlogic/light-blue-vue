@@ -19,7 +19,7 @@
                 v-if="user.avatar || user.email === 'admin@flatlogic.com'"
                 class="rounded-circle"
                 :src="user.avatar || avatarImage"
-                alt="..."
+                :alt="user.name || 'picture'"
             />
             <span v-else>{{firstUserLetter}}</span>
           </span>
@@ -34,7 +34,7 @@
           </template>
           <b-dropdown-item>
             <span class="avatar thumb-sm mr-3">
-              <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="..." />
+              <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="woman" />
             </span>
             <div>
               <h6>Jane <span class="fw-semi-bold">Hew</span></h6>
@@ -43,7 +43,7 @@
           </b-dropdown-item>
           <b-dropdown-item>
             <span class="avatar thumb-sm mr-3">
-              <img class="rounded-circle" src="../../assets/people/a2.jpg" alt="..." />
+              <img class="rounded-circle" src="../../assets/people/a2.jpg" alt="woman" />
             </span>
             <div>
               <h6>Alies <span class="fw-semi-bold">Rumiancaŭ</span></h6>
@@ -52,7 +52,7 @@
           </b-dropdown-item>
           <b-dropdown-item>
             <span class="avatar thumb-sm mr-3">
-              <img class="rounded-circle" src="../../assets/people/a3.jpg" alt="..." />
+              <img class="rounded-circle" src="../../assets/people/a3.jpg" alt="woman" />
             </span>
             <div>
               <h6>Alexey <span class="fw-semi-bold">Kamandzirau</span></h6>

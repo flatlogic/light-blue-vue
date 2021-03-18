@@ -173,7 +173,7 @@
           </div>
           <div class="post-user mt-negative-lg">
             <span class="thumb-lg pull-left mr mt-n-sm">
-              <img class="rounded-circle" src='../../assets/people/a4.jpg' alt="..." />
+              <img class="rounded-circle" src='../../assets/people/a4.jpg' alt="man" />
             </span>
             <h6 class="m-b-1 fw-normal text-white">Jeremy &nbsp;
               <small class="text-white text-light">@light-blue</small>
@@ -200,7 +200,7 @@
             <ul class="post-comments mb-0 mt-2">
               <li>
                 <span class="thumb-xs avatar pull-left mr-sm">
-                  <img class="rounded-circle" src='../../assets/people/a1.jpg' alt="..." />
+                  <img class="rounded-circle" src='../../assets/people/a1.jpg' alt="woman" />
                 </span>
                 <div class="comment-body">
                   <h6 class="author fs-sm fw-semi-bold">Ignacio Abad&nbsp;
@@ -211,7 +211,7 @@
               </li>
               <li>
                 <span class="thumb-xs avatar pull-left mr-sm">
-                  <img class="rounded-circle" src='../../assets/avatar.png' alt="..." />
+                  <img class="rounded-circle" src='../../assets/avatar.png' alt="avatar" />
                 </span>
                 <div class="comment-body">
                   <input
@@ -228,7 +228,7 @@
         <Widget refresh close bodyClass="mt-0">
           <div>
             <div class="widget-top-overflow text-white">
-              <img src='../../assets/pictures/17.jpg' alt="..." />
+              <img src='../../assets/pictures/17.jpg' alt="clouds" />
               <ul class="tags text-white pull-right">
                 <li><a href="#">design</a></li>
                 <li><a href="#">white</a></li>
@@ -236,7 +236,7 @@
             </div>
             <div class="post-user mt-sm">
               <span class="thumb pull-left mr mt-n-sm">
-                <img class="rounded-circle" src='../../assets/people/a6.jpg' alt="..." />
+                <img class="rounded-circle" src='../../assets/people/a6.jpg' alt="woman" />
               </span>
               <h6 class="mb-xs mt"><span class="fw-semi-bold">Maryna</span> Nilson</h6>
               <p class="fs-mini text-muted">
@@ -264,7 +264,7 @@
           <div>
             <div class="post-user mt-n-xs">
               <span class="thumb pull-left mr mt-n-sm">
-                <img class="rounded-circle" src='../../assets/people/a2.jpg' alt="..." />
+                <img class="rounded-circle" src='../../assets/people/a2.jpg' alt="woman" />
               </span>
               <h6 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@jessica</span></h6>
               <p class="fs-mini text-muted">
@@ -305,7 +305,7 @@
       <b-col lg='6' xs='12'>
         <Widget bodyClass="mt-0">
           <div class="widget-image text-white">
-            <img src='../../assets/pictures/18.jpg' alt="..." />
+            <img src='../../assets/pictures/18.jpg' alt="mountains" />
             <h4 class="title">
               <span class="fw-normal">Sunnyvale</span>, CA
             </h4>
@@ -518,7 +518,7 @@
               <ul class="list-group widget-chat-list-group thin-scroll" style="height: 300px;">
                 <li class="list-group-item">
                   <span class="thumb">
-                    <img class="rounded-circle" src='../../assets/people/a6.jpg' alt="..." />
+                    <img class="rounded-circle" src='../../assets/people/a6.jpg' alt="woman" />
                   </span>
                   <div class="message">
                     <h6 class="sender">Chris Gray</h6>
@@ -530,7 +530,7 @@
                 </li>
                 <li class="list-group-item on-right">
                   <span class="thumb">
-                    <img class="rounded-circle" src='../../assets/avatar.png' alt="..." />
+                    <img class="rounded-circle" src='../../assets/avatar.png' alt="avatar" />
                   </span>
                   <div>
                     <h6 class="sender">John Doe</h6>
@@ -540,7 +540,7 @@
                 </li>
                 <li class="list-group-item">
                   <span class="thumb">
-                    <img class="rounded-circle" src='../../assets/people/a6.jpg' alt="..." />
+                    <img class="rounded-circle" src='../../assets/people/a6.jpg' alt="woman" />
                   </span>
                   <div>
                     <h6 class="sender">Chris Gray</h6>
@@ -552,7 +552,7 @@
                 </li>
                 <li class="list-group-item on-right">
                   <span class="thumb">
-                    <img class="rounded-circle" src='../../assets/avatar.png' alt="..." />
+                    <img class="rounded-circle" src='../../assets/avatar.png' alt="avatar" />
                   </span>
                   <div>
                     <h6 class="sender">John Doe</h6>
@@ -644,7 +644,7 @@
                 </p>
                 <footer>
                   <span class="thumb pull-left mr">
-                    <img class="rounded-circle" src='../../assets/people/a4.jpg' alt="..."/>
+                    <img class="rounded-circle" src='../../assets/people/a4.jpg' alt="woman"/>
                   </span>
                   <h4 class="m-0 mb-xs"><span class="fw-semi-bold">Miha</span> Koshir</h4>
                   <p class="text-light">@miha</p>
@@ -653,7 +653,7 @@
               <div v-else key="second" class="carousel-feature-widget">
                 <div class="clearfix mt-xs">
                   <span class="thumb pull-left mr">
-                    <img class="rounded-circle" src='../../assets/people/a3.jpg' alt="..."/>
+                    <img class="rounded-circle" src='../../assets/people/a3.jpg' alt="woman"/>
                   </span>
                   <h4 class="m-0 mb-xs"><span class="fw-semi-bold">Maryna</span> Ess</h4>
                   <p class="text-light">@ess</p>

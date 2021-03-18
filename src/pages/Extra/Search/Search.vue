@@ -58,7 +58,7 @@
         <p class='searchResultsCount'>About 94 700 000 (0.39 sec.) results</p>
         <section class='searchResultItem'>
           <a class='imageLink' href="#">
-            <img class='image' src='../../../assets/search/1.jpg' alt="..." />
+            <img class='image' src='../../../assets/search/1.jpg' alt="picture" />
           </a>
           <div class='searchResultItemBody'>
             <b-row>
@@ -89,7 +89,7 @@
         </section>
         <section class='searchResultItem'>
           <a class='imageLink' href="#">
-            <img class='image' src='../../../assets/search/5.jpg' alt="..." />
+            <img class='image' src='../../../assets/search/5.jpg' alt="woman" />
           </a>
           <div class='searchResultItemBody'>
             <b-row>
@@ -124,7 +124,7 @@
         </section>
         <section class='searchResultItem'>
           <a class='imageLink' href="#">
-            <img class='image' src='../../../assets/search/3.jpg' alt="..." />
+            <img class='image' src='../../../assets/search/3.jpg' alt="mountains" />
           </a>
           <div class='searchResultItemBody'>
             <b-row>
@@ -155,7 +155,7 @@
         </section>
         <section class='searchResultItem'>
           <a class='imageLink' href="#">
-            <img class='image' src=../../../assets/search/13.jpg alt="..." />
+            <img class='image' src=../../../assets/search/13.jpg alt="plane" />
           </a>
           <div class='searchResultItemBody'>
             <b-row>

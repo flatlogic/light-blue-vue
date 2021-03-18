@@ -19,6 +19,11 @@
             </b-button>
           </router-link>
         </b-form>
+        <router-link class="mt-3 d-block" to="/">
+          <button class="btn btn-default" type="button">
+            To main page
+          </button>
+        </router-link>
       </div>
       <footer class="pageFooter">
         Light Blue Vue Admin Dashboard Template - Made by <a href="https://flatlogic.com" target="_blank">Flatlogic</a>

@@ -11,7 +11,7 @@
         <Widget>
           <div class="widget-top-overflow text-white">
             <div class="height-250 overflow-hidden">
-              <img class="img-fluid" src="../../assets/pictures/19.jpg" alt="..." />
+              <img class="img-fluid" src="../../assets/pictures/19.jpg" alt="bridge" />
             </div>
             <a href="#" class="btn btn-outline btn-sm mb-2">
               <i class="fa fa-twitter mr-2" />
@@ -23,7 +23,7 @@
               <div class="profileContactContainer">
                 <span class="thumb-xl mb-3">
                   <img class="profileAvatar rounded-circle"
-                    src="../../assets/people/a5.jpg" alt="..." />
+                    src="../../assets/people/a5.jpg" alt="man" />
                 </span>
                 <h5 class="fw-normal">Adam <span class="fw-semi-bold">Johns</span></h5>
                 <p>UI/UX designer</p>
@@ -34,7 +34,7 @@
                 <div>
                   <ul class="profileContacts mt-sm">
                     <li>
-                      <i class="fa fa-lg fa-phone fa-fw mr-2" /><a href="#"> +375 29 555-55-55</a>
+                      <i class="fa fa-lg fa-phone fa-fw mr-2" /><a href="tel: +375 29 555-55-55"> +375 29 555-55-55</a>
                     </li>
                     <li>
                       <i class="fa fa-lg fa-envelope fa-fw mr-2" />
@@ -85,7 +85,7 @@
           <section class="event">
             <header>
               <span class="eventAvatar">
-                <img class="rounded-circle" src="../../assets/people/a5.jpg" alt="..." />
+                <img class="rounded-circle" src="../../assets/people/a5.jpg" alt="man" />
               </span>
               <h5 class="eventTitle">
                 <a href="#">Bob Nilson <small>@nils</small></a>
@@ -129,22 +129,22 @@
 
                 <span class="thumb thumb-sm pull-right">
                   <a href="#">
-                    <img class="rounded-circle" alt="..." src="../../assets/people/a1.jpg" />
+                    <img class="rounded-circle" alt="woman" src="../../assets/people/a1.jpg" />
                   </a>
                 </span>
                 <span class="thumb thumb-sm pull-right">
                   <a href="#"><img class="rounded-circle"
-                    alt="..." src="../../assets/people/a5.jpg" /></a>
+                    alt="man" src="../../assets/people/a5.jpg" /></a>
                 </span>
                 <span class="thumb thumb-sm pull-right">
                   <a href="#"><img class="rounded-circle"
-                    alt="..." src="../../assets/people/a3.jpg" /></a>
+                    alt="woman" src="../../assets/people/a3.jpg" /></a>
                 </span>
               </div>
               <ul class="post-comments mt-sm">
                 <li>
                   <span class="thumb-xs avatar pull-left mr-sm">
-                    <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="..." />
+                    <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="woman" />
                   </span>
                   <div class="comment-body">
                     <h6 class="author fs-sm fw-semi-bold">
@@ -155,7 +155,7 @@
                 </li>
                 <li>
                   <span class="thumb-xs avatar pull-left mr-sm">
-                    <img class="rounded-circle" src="../../assets/avatar.png" alt="..." />
+                    <img class="rounded-circle" src="../../assets/avatar.png" alt="avatar" />
                   </span>
                   <div class="comment-body">
                     <b-form-input class="form-control form-control-sm"

@@ -12,7 +12,7 @@
           settings collapse close customHeader
         >
           <img class="rounded pull-left mb-1 mr-3 image"
-            src="../../assets/react-logo.svg" width="80" alt="" />
+            src="../../assets/react-logo.svg" width="80" alt="react" />
           <h3>React JS Version</h3>
           <p class="text-muted">We spent another <span class="fw-semi-bold">500</span> man-hours
             developing and designing
@@ -44,7 +44,7 @@
           settings collapse close customHeader
         >
           <img class="rounded pull-left mb-1 mr-3 image"
-            src="../../assets/angularjs-logo.svg" width="80" alt="" />
+            src="../../assets/angularjs-logo.svg" width="80" alt="angular" />
           <h3>Angular 2+ Version</h3>
           <p class="text-muted">We spent around <span class="fw-semi-bold">500</span> man-hours
             developing and designing
@@ -75,7 +75,7 @@
           settings collapse close customHeader
         >
           <img class="rounded pull-left mb-1 mr-3 image"
-            src="../../assets/js-logo.svg" width="80" alt="" />
+            src="../../assets/js-logo.svg" width="80" alt="js" />
           <h3>HTML5 Version</h3>
           <p class="text-muted">During last 4 years we
             invested more than <span class="fw-semi-bold">1000</span> man-hours
@@ -107,7 +107,7 @@
           settings collapse close customHeader
         >
           <img class="rounded pull-left mb-1 mr-3 image"
-            src="../../assets/logo.png" width="80" alt="" />
+            src="../../assets/logo.png" width="80" alt="vue" />
           <h3>VUE JS Version</h3>
           <p class="text-muted">Coming soon version. Seed
             project is <span class="fw-semi-bold">50%</span> ready.</p>

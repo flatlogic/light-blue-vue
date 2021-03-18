@@ -1287,7 +1287,7 @@
                       :style="{ backgroundImage: `url(${image.preview})` }"
                     />
                   </div>
-                  <img v-else alt="..." src="../../../assets/thumb.svg" />
+                  <img v-else alt="thumbnail" src="../../../assets/thumb.svg" />
                 </div>
               </div>
               <div>

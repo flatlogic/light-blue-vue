@@ -32,8 +32,8 @@
                   <th scope="row" class="fw-thin">{{row.state}}</th>
                   <td><span :class="`circle bg-${row.state.toLowerCase()}`">&nbsp;</span></td>
                   <td><code>*-{{row.state.toLowerCase()}}</code></td>
-                  <td><code v-for="usage in row.usage"
-                    :key="usage" class="mr-xs">{{usage}}</code></td>
+                  <td><code v-for="(usage, idx) in row.usage"
+                    :key="usage + idx" class="mr-xs">{{usage}}</code></td>
                 </tr>
               </tbody>
             </table>

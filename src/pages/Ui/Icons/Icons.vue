@@ -239,2632 +239,2632 @@
        </template>
        <h4>Awesome <span class="fw-semi-bold">Font Awesome</span></h4>
        <b-row class="icon-list">
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/bed"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-bed"
-         /> bed</a></b-col>
+         /> bed</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/university"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-bank" /> bank <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/behance"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-behance"
-         /> behance</a></b-col>
+         /> behance</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/behance-square"
-         ><i class="fa fa-behance-square" /> behance-square</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-behance-square" /> behance-square</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/bomb"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-bomb"
-         /> bomb</a></b-col>
+         /> bomb</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/building"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-building"
-         /> building</a></b-col>
+         /> building</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/taxi"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-cab"
-         /> cab <span class="text-muted">(alias)</span></a></b-col>
+         /> cab <span class="text-muted">(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/car"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-car"
-         /> car</a></b-col>
+         /> car</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/child"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-child"
-         /> child</a></b-col>
+         /> child</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/circle-o-notch"
-         ><i class="fa fa-circle-o-notch" /> circle-o-notch</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-circle-o-notch" /> circle-o-notch</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/circle-thin"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-circle-thin"
-         /> circle-thin</a></b-col>
+         /> circle-thin</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/codepen"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-codepen"
-         /> codepen</a></b-col>
+         /> codepen</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/cube"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-cube"
-         /> cube</a></b-col>
+         /> cube</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/cubes"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-cubes"
-         /> cubes</a></b-col>
+         /> cubes</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/database"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-database"
-         /> database</a></b-col>
+         /> database</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/delicious"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-delicious"
-         /> delicious</a></b-col>
+         /> delicious</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/deviantart"
-         ><i class="fa fa-deviantart" /> deviantart</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-deviantart" /> deviantart</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/digg"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-digg"
-         /> digg</a></b-col>
+         /> digg</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/drupal"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-drupal"
-         /> drupal</a></b-col>
+         /> drupal</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/empire"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-empire"
-         /> empire</a></b-col>
+         /> empire</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/envelope-square"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-envelope-square" />
-           envelope-square</a></b-col>
+           envelope-square</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/fax"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-fax"
-         /> fax</a></b-col>
+         /> fax</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-archive-o"
-         ><i class="fa fa-file-archive-o" /> file-archive-o</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-file-archive-o" /> file-archive-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-audio-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-audio-o" />
-           file-audio-o</a></b-col>
+           file-audio-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/file-code-o"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-file-code-o"
-         /> file-code-o</a></b-col>
+         /> file-code-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-excel-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-excel-o" />
-           file-excel-o</a></b-col>
+           file-excel-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-image-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-image-o" />
-           file-image-o</a></b-col>
+           file-image-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-video-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-movie-o" /> file-movie-o <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-pdf-o"
-         ><i class="fa fa-file-pdf-o" /> file-pdf-o</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-file-pdf-o" /> file-pdf-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-image-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-photo-o" /> file-photo-o <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-image-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-picture-o" /> file-picture-o
-           <span class="text-muted">(alias)</span></a></b-col>
+           <span class="text-muted">(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-powerpoint-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-powerpoint-o" />
-           file-powerpoint-o</a></b-col>
+           file-powerpoint-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-audio-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-sound-o" /> file-sound-o <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-video-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-video-o" />
-           file-video-o</a></b-col>
+           file-video-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/file-word-o"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-file-word-o"
-         /> file-word-o</a></b-col>
+         /> file-word-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/file-archive-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-file-zip-o" /> file-zip-o <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/empire"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-ge"
-         /> ge <span class="text-muted">(alias)</span></a></b-col>
+         /> ge <span class="text-muted">(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/git"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-git"
-         /> git</a></b-col>
+         /> git</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/git-square"
-         ><i class="fa fa-git-square" /> git-square</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-git-square" /> git-square</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/google"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-google"
-         /> google</a></b-col>
+         /> google</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/graduation-cap"
-         ><i class="fa fa-graduation-cap" /> graduation-cap</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-graduation-cap" /> graduation-cap</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/hacker-news"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-hacker-news"
-         /> hacker-news</a></b-col>
+         /> hacker-news</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/header"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-header"
-         /> header</a></b-col>
+         /> header</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/history"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-history"
-         /> history</a></b-col>
+         /> history</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/university"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-institution" /> institution <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/joomla"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-joomla"
-         /> joomla</a></b-col>
+         /> joomla</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/jsfiddle"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-jsfiddle"
-         /> jsfiddle</a></b-col>
+         /> jsfiddle</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/language"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-language"
-         /> language</a></b-col>
+         /> language</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/life-ring"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-life-bouy"
          /> life-bouy <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/life-ring"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-life-ring"
-         /> life-ring</a></b-col>
+         /> life-ring</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/life-ring"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-life-saver"
          /> life-saver <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/graduation-cap"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-mortar-board" /> mortar-board
-           <span class="text-muted">(alias)</span></a></b-col>
+           <span class="text-muted">(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/openid"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-openid"
-         /> openid</a></b-col>
+         /> openid</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/paper-plane"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-paper-plane"
-         /> paper-plane</a></b-col>
+         /> paper-plane</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/paper-plane-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-paper-plane-o" />
-           paper-plane-o</a></b-col>
+           paper-plane-o</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/paragraph"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-paragraph"
-         /> paragraph</a></b-col>
+         /> paragraph</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/paw"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-paw"
-         /> paw</a></b-col>
+         /> paw</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/pied-piper"
-         ><i class="fa fa-pied-piper" /> pied-piper</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-pied-piper" /> pied-piper</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/pied-piper-alt"
-         ><i class="fa fa-pied-piper-alt" /> pied-piper-alt</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-pied-piper-alt" /> pied-piper-alt</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/pied-piper"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-pied-piper-square" />
-           pied-piper-square <span class="text-muted">(alias)</span></a></b-col>
+           pied-piper-square <span class="text-muted">(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/qq"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-qq"
-         /> qq</a></b-col>
+         /> qq</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/rebel"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-ra"
-         /> ra <span class="text-muted">(alias)</span></a></b-col>
+         /> ra <span class="text-muted">(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/rebel"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-rebel"
-         /> rebel</a></b-col>
+         /> rebel</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/recycle"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-recycle"
-         /> recycle</a></b-col>
+         /> recycle</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/reddit"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-reddit"
-         /> reddit</a></b-col>
+         /> reddit</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/reddit-square"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-reddit-square" />
-           reddit-square</a></b-col>
+           reddit-square</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/paper-plane"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-send"
          /> send <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/paper-plane-o"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-send-o" /> send-o <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/share-alt"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-share-alt"
-         /> share-alt</a></b-col>
+         /> share-alt</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/share-alt-square"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-share-alt-square" />
-           share-alt-square</a></b-col>
+           share-alt-square</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/slack"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-slack"
-         /> slack</a></b-col>
+         /> slack</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/sliders"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-sliders"
-         /> sliders</a></b-col>
+         /> sliders</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/soundcloud"
-         ><i class="fa fa-soundcloud" /> soundcloud</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-soundcloud" /> soundcloud</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/space-shuttle"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-space-shuttle" />
-           space-shuttle</a></b-col>
+           space-shuttle</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/spoon"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-spoon"
-         /> spoon</a></b-col>
+         /> spoon</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/spotify"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-spotify"
-         /> spotify</a></b-col>
+         /> spotify</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/steam"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-steam"
-         /> steam</a></b-col>
+         /> steam</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/steam-square"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-steam-square" />
-           steam-square</a></b-col>
+           steam-square</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/stumbleupon"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-stumbleupon"
-         /> stumbleupon</a></b-col>
+         /> stumbleupon</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/stumbleupon-circle"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-stumbleupon-circle" />
-           stumbleupon-circle</a></b-col>
+           stumbleupon-circle</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/life-ring"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-support"
          /> support <span
            class="text-muted"
-         >(alias)</span></a></b-col>
+         >(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/taxi"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-taxi"
-         /> taxi</a></b-col>
+         /> taxi</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/tencent-weibo"
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
          ><i class="fa fa-tencent-weibo" />
-           tencent-weibo</a></b-col>
+           tencent-weibo</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/tree"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-tree"
-         /> tree</a></b-col>
+         /> tree</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-           href="../icon/university"
-         ><i class="fa fa-university" /> university</a></b-col>
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+           
+         ><i class="fa fa-university" /> university</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/vine"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-vine"
-         /> vine</a></b-col>
+         /> vine</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/weixin"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-wechat"
-         /> wechat <span class="text-muted">(alias)</span></a></b-col>
+         /> wechat <span class="text-muted">(alias)</span></span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/weixin"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-weixin"
-         /> weixin</a></b-col>
+         /> weixin</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/wordpress"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-wordpress"
-         /> wordpress</a></b-col>
+         /> wordpress</span></b-col>
 
-         <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/yahoo"><i
+         <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
            class="fa fa-yahoo"
-         /> yahoo</a></b-col>
+         /> yahoo</span></b-col>
        </b-row>
       </b-tab>
       <b-tab title="Web Application">
         <b-row class="icon-list">
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/adjust"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-adjust"
-          /> adjust</a></b-col>
+          /> adjust</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/anchor"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-anchor"
-          /> anchor</a></b-col>
+          /> anchor</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/archive"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-archive"
-          /> archive</a></b-col>
+          /> archive</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/arrows"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-arrows"
-          /> arrows</a></b-col>
+          /> arrows</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/arrows-h"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-arrows-h"
-          /> arrows-h</a></b-col>
+          /> arrows-h</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/arrows-v"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-arrows-v"
-          /> arrows-v</a></b-col>
+          /> arrows-v</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/asterisk"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-asterisk"
-          /> asterisk</a></b-col>
+          /> asterisk</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/car"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-automobile"
           /> automobile <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/ban"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-ban"
-          /> ban</a></b-col>
+          /> ban</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/university"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-bank" /> bank <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bar-chart-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bar-chart-o"
-          /> bar-chart-o</a></b-col>
+          /> bar-chart-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/barcode"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-barcode"
-          /> barcode</a></b-col>
+          /> barcode</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bars"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bars"
-          /> bars</a></b-col>
+          /> bars</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/beer"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-beer"
-          /> beer</a></b-col>
+          /> beer</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bell"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bell"
-          /> bell</a></b-col>
+          /> bell</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bell-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bell-o"
-          /> bell-o</a></b-col>
+          /> bell-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bolt"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bolt"
-          /> bolt</a></b-col>
+          /> bolt</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bomb"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bomb"
-          /> bomb</a></b-col>
+          /> bomb</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/book"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-book"
-          /> book</a></b-col>
+          /> book</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bookmark"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bookmark"
-          /> bookmark</a></b-col>
+          /> bookmark</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/bookmark-o"
-          ><i class="fa fa-bookmark-o" /> bookmark-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-bookmark-o" /> bookmark-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/briefcase"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-briefcase"
-          /> briefcase</a></b-col>
+          /> briefcase</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bug"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bug"
-          /> bug</a></b-col>
+          /> bug</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/building"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-building"
-          /> building</a></b-col>
+          /> building</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/building-o"
-          ><i class="fa fa-building-o" /> building-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-building-o" /> building-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bullhorn"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bullhorn"
-          /> bullhorn</a></b-col>
+          /> bullhorn</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bullseye"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bullseye"
-          /> bullseye</a></b-col>
+          /> bullseye</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/taxi"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cab"
-          /> cab <span class="text-muted">(alias)</span></a></b-col>
+          /> cab <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/calendar"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-calendar"
-          /> calendar</a></b-col>
+          /> calendar</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/calendar-o"
-          ><i class="fa fa-calendar-o" /> calendar-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-calendar-o" /> calendar-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/camera"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-camera"
-          /> camera</a></b-col>
+          /> camera</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/camera-retro"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-camera-retro" />
-            camera-retro</a></b-col>
+            camera-retro</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/car"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-car"
-          /> car</a></b-col>
+          /> car</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-down"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-caret-square-o-down" />
-            caret-square-o-down</a></b-col>
+            caret-square-o-down</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-left"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-caret-square-o-left" />
-            caret-square-o-left</a></b-col>
+            caret-square-o-left</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-right"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-caret-square-o-right" />
-            caret-square-o-right</a></b-col>
+            caret-square-o-right</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-up"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-caret-square-o-up" />
-            caret-square-o-up</a></b-col>
+            caret-square-o-up</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/certificate"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-certificate"
-          /> certificate</a></b-col>
+          /> certificate</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/check"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-check"
-          /> check</a></b-col>
+          /> check</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/check-circle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-check-circle" />
-            check-circle</a></b-col>
+            check-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/check-circle-o"
-          ><i class="fa fa-check-circle-o" /> check-circle-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-check-circle-o" /> check-circle-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/check-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-check-square" />
-            check-square</a></b-col>
+            check-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/check-square-o"
-          ><i class="fa fa-check-square-o" /> check-square-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-check-square-o" /> check-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/child"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-child"
-          /> child</a></b-col>
+          /> child</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/circle"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-circle"
-          /> circle</a></b-col>
+          /> circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/circle-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-circle-o"
-          /> circle-o</a></b-col>
+          /> circle-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/circle-o-notch"
-          ><i class="fa fa-circle-o-notch" /> circle-o-notch</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-circle-o-notch" /> circle-o-notch</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/circle-thin"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-circle-thin"
-          /> circle-thin</a></b-col>
+          /> circle-thin</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/clock-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-clock-o"
-          /> clock-o</a></b-col>
+          /> clock-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cloud"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cloud"
-          /> cloud</a></b-col>
+          /> cloud</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/cloud-download"
-          ><i class="fa fa-cloud-download" /> cloud-download</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-cloud-download" /> cloud-download</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/cloud-upload"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-cloud-upload" />
-            cloud-upload</a></b-col>
+            cloud-upload</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/code"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-code"
-          /> code</a></b-col>
+          /> code</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/code-fork"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-code-fork"
-          /> code-fork</a></b-col>
+          /> code-fork</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/coffee"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-coffee"
-          /> coffee</a></b-col>
+          /> coffee</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cog"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cog"
-          /> cog</a></b-col>
+          /> cog</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cogs"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cogs"
-          /> cogs</a></b-col>
+          /> cogs</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/comment"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-comment"
-          /> comment</a></b-col>
+          /> comment</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/comment-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-comment-o"
-          /> comment-o</a></b-col>
+          /> comment-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/comments"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-comments"
-          /> comments</a></b-col>
+          /> comments</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/comments-o"
-          ><i class="fa fa-comments-o" /> comments-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-comments-o" /> comments-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/compass"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-compass"
-          /> compass</a></b-col>
+          /> compass</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/credit-card"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-credit-card"
-          /> credit-card</a></b-col>
+          /> credit-card</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/crop"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-crop"
-          /> crop</a></b-col>
+          /> crop</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/crosshairs"
-          ><i class="fa fa-crosshairs" /> crosshairs</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-crosshairs" /> crosshairs</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cube"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cube"
-          /> cube</a></b-col>
+          /> cube</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cubes"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cubes"
-          /> cubes</a></b-col>
+          /> cubes</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cutlery"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cutlery"
-          /> cutlery</a></b-col>
+          /> cutlery</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/tachometer"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-dashboard" /> dashboard <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/database"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-database"
-          /> database</a></b-col>
+          /> database</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/desktop"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-desktop"
-          /> desktop</a></b-col>
+          /> desktop</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/dot-circle-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-dot-circle-o" />
-            dot-circle-o</a></b-col>
+            dot-circle-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/download"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-download"
-          /> download</a></b-col>
+          /> download</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/pencil-square-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-edit" /> edit <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/ellipsis-h"
-          ><i class="fa fa-ellipsis-h" /> ellipsis-h</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-ellipsis-h" /> ellipsis-h</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/ellipsis-v"
-          ><i class="fa fa-ellipsis-v" /> ellipsis-v</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-ellipsis-v" /> ellipsis-v</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/envelope"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-envelope"
-          /> envelope</a></b-col>
+          /> envelope</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/envelope-o"
-          ><i class="fa fa-envelope-o" /> envelope-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-envelope-o" /> envelope-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/envelope-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-envelope-square" />
-            envelope-square</a></b-col>
+            envelope-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/eraser"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-eraser"
-          /> eraser</a></b-col>
+          /> eraser</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/exchange"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-exchange"
-          /> exchange</a></b-col>
+          /> exchange</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/exclamation"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-exclamation"
-          /> exclamation</a></b-col>
+          /> exclamation</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/exclamation-circle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-exclamation-circle" />
-            exclamation-circle</a></b-col>
+            exclamation-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/exclamation-triangle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-exclamation-triangle" />
-            exclamation-triangle</a></b-col>
+            exclamation-triangle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/external-link"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-external-link" />
-            external-link</a></b-col>
+            external-link</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/external-link-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-external-link-square" />
-            external-link-square</a></b-col>
+            external-link-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/eye"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-eye"
-          /> eye</a></b-col>
+          /> eye</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/eye-slash"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-eye-slash"
-          /> eye-slash</a></b-col>
+          /> eye-slash</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/fax"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-fax"
-          /> fax</a></b-col>
+          /> fax</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/female"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-female"
-          /> female</a></b-col>
+          /> female</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/fighter-jet"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-fighter-jet"
-          /> fighter-jet</a></b-col>
+          /> fighter-jet</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-archive-o"
-          ><i class="fa fa-file-archive-o" /> file-archive-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-file-archive-o" /> file-archive-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-audio-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-audio-o" />
-            file-audio-o</a></b-col>
+            file-audio-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file-code-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file-code-o"
-          /> file-code-o</a></b-col>
+          /> file-code-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-excel-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-excel-o" />
-            file-excel-o</a></b-col>
+            file-excel-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-image-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-image-o" />
-            file-image-o</a></b-col>
+            file-image-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-video-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-movie-o" /> file-movie-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-pdf-o"
-          ><i class="fa fa-file-pdf-o" /> file-pdf-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-file-pdf-o" /> file-pdf-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-image-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-photo-o" /> file-photo-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-image-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-picture-o" /> file-picture-o
-            <span class="text-muted">(alias)</span></a></b-col>
+            <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-powerpoint-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-powerpoint-o" />
-            file-powerpoint-o</a></b-col>
+            file-powerpoint-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-audio-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-sound-o" /> file-sound-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-video-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-video-o" />
-            file-video-o</a></b-col>
+            file-video-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file-word-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file-word-o"
-          /> file-word-o</a></b-col>
+          /> file-word-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-archive-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-zip-o" /> file-zip-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/film"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-film"
-          /> film</a></b-col>
+          /> film</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/filter"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-filter"
-          /> filter</a></b-col>
+          /> filter</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/fire"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-fire"
-          /> fire</a></b-col>
+          /> fire</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/fire-extinguisher"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-fire-extinguisher" />
-            fire-extinguisher</a></b-col>
+            fire-extinguisher</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/flag"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-flag"
-          /> flag</a></b-col>
+          /> flag</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/flag-checkered"
-          ><i class="fa fa-flag-checkered" /> flag-checkered</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-flag-checkered" /> flag-checkered</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/flag-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-flag-o"
-          /> flag-o</a></b-col>
+          /> flag-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bolt"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-flash"
           /> flash <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/flask"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-flask"
-          /> flask</a></b-col>
+          /> flask</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/folder"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-folder"
-          /> folder</a></b-col>
+          /> folder</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/folder-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-folder-o"
-          /> folder-o</a></b-col>
+          /> folder-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/folder-open"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-folder-open"
-          /> folder-open</a></b-col>
+          /> folder-open</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/folder-open-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-folder-open-o" />
-            folder-open-o</a></b-col>
+            folder-open-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/frown-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-frown-o"
-          /> frown-o</a></b-col>
+          /> frown-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/gamepad"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-gamepad"
-          /> gamepad</a></b-col>
+          /> gamepad</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/gavel"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-gavel"
-          /> gavel</a></b-col>
+          /> gavel</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cog"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-gear"
           /> gear <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/cogs"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-gears"
           /> gears <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/gift"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-gift"
-          /> gift</a></b-col>
+          /> gift</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/glass"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-glass"
-          /> glass</a></b-col>
+          /> glass</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/globe"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-globe"
-          /> globe</a></b-col>
+          /> globe</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/graduation-cap"
-          ><i class="fa fa-graduation-cap" /> graduation-cap</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-graduation-cap" /> graduation-cap</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/users"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-group"
           /> group <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/hdd-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-hdd-o"
-          /> hdd-o</a></b-col>
+          /> hdd-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/headphones"
-          ><i class="fa fa-headphones" /> headphones</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-headphones" /> headphones</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/heart"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-heart"
-          /> heart</a></b-col>
+          /> heart</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/heart-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-heart-o"
-          /> heart-o</a></b-col>
+          /> heart-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/history"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-history"
-          /> history</a></b-col>
+          /> history</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/home"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-home"
-          /> home</a></b-col>
+          /> home</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/picture-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-image"
           /> image <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/inbox"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-inbox"
-          /> inbox</a></b-col>
+          /> inbox</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/info"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-info"
-          /> info</a></b-col>
+          /> info</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/info-circle"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-info-circle"
-          /> info-circle</a></b-col>
+          /> info-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/university"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-institution" /> institution <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/key"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-key"
-          /> key</a></b-col>
+          /> key</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/keyboard-o"
-          ><i class="fa fa-keyboard-o" /> keyboard-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-keyboard-o" /> keyboard-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/language"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-language"
-          /> language</a></b-col>
+          /> language</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/laptop"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-laptop"
-          /> laptop</a></b-col>
+          /> laptop</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/leaf"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-leaf"
-          /> leaf</a></b-col>
+          /> leaf</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/gavel"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-legal"
           /> legal <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/lemon-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-lemon-o"
-          /> lemon-o</a></b-col>
+          /> lemon-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/level-down"
-          ><i class="fa fa-level-down" /> level-down</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-level-down" /> level-down</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/level-up"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-level-up"
-          /> level-up</a></b-col>
+          /> level-up</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/life-ring"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-life-bouy"
           /> life-bouy <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/life-ring"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-life-ring"
-          /> life-ring</a></b-col>
+          /> life-ring</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/life-ring"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-life-saver"
           /> life-saver <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/lightbulb-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-lightbulb-o"
-          /> lightbulb-o</a></b-col>
+          /> lightbulb-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/location-arrow"
-          ><i class="fa fa-location-arrow" /> location-arrow</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-location-arrow" /> location-arrow</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/lock"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-lock"
-          /> lock</a></b-col>
+          /> lock</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/magic"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-magic"
-          /> magic</a></b-col>
+          /> magic</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/magnet"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-magnet"
-          /> magnet</a></b-col>
+          /> magnet</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/share"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-mail-forward"
           /> mail-forward <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/reply"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-mail-reply"
           /> mail-reply <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/reply-all"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-mail-reply-all"
-          /> mail-reply-all <span class="text-muted">(alias)</span></a></b-col>
+          /> mail-reply-all <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/male"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-male"
-          /> male</a></b-col>
+          /> male</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/map-marker"
-          ><i class="fa fa-map-marker" /> map-marker</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-map-marker" /> map-marker</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/meh-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-meh-o"
-          /> meh-o</a></b-col>
+          /> meh-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/microphone"
-          ><i class="fa fa-microphone" /> microphone</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-microphone" /> microphone</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/microphone-slash"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-microphone-slash" />
-            microphone-slash</a></b-col>
+            microphone-slash</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/minus"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-minus"
-          /> minus</a></b-col>
+          /> minus</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/minus-circle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-minus-circle" />
-            minus-circle</a></b-col>
+            minus-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/minus-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-minus-square" />
-            minus-square</a></b-col>
+            minus-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/minus-square-o"
-          ><i class="fa fa-minus-square-o" /> minus-square-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-minus-square-o" /> minus-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/mobile"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-mobile"
-          /> mobile</a></b-col>
+          /> mobile</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/mobile"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-mobile-phone"
           /> mobile-phone <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/money"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-money"
-          /> money</a></b-col>
+          /> money</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/moon-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-moon-o"
-          /> moon-o</a></b-col>
+          /> moon-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/graduation-cap"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-mortar-board" /> mortar-board
-            <span class="text-muted">(alias)</span></a></b-col>
+            <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/music"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-music"
-          /> music</a></b-col>
+          /> music</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bars"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-navicon"
           /> navicon <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/paper-plane"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-paper-plane"
-          /> paper-plane</a></b-col>
+          /> paper-plane</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/paper-plane-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-paper-plane-o" />
-            paper-plane-o</a></b-col>
+            paper-plane-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/paw"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-paw"
-          /> paw</a></b-col>
+          /> paw</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/pencil"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-pencil"
-          /> pencil</a></b-col>
+          /> pencil</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/pencil-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-pencil-square" />
-            pencil-square</a></b-col>
+            pencil-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/pencil-square-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-pencil-square-o" />
-            pencil-square-o</a></b-col>
+            pencil-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/phone"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-phone"
-          /> phone</a></b-col>
+          /> phone</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/phone-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-phone-square" />
-            phone-square</a></b-col>
+            phone-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/picture-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-photo"
           /> photo <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/picture-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-picture-o"
-          /> picture-o</a></b-col>
+          /> picture-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/plane"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-plane"
-          /> plane</a></b-col>
+          /> plane</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/plus"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-plus"
-          /> plus</a></b-col>
+          /> plus</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/plus-circle"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-plus-circle"
-          /> plus-circle</a></b-col>
+          /> plus-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/plus-square"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-plus-square"
-          /> plus-square</a></b-col>
+          /> plus-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/plus-square-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-plus-square-o" />
-            plus-square-o</a></b-col>
+            plus-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/power-off"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-power-off"
-          /> power-off</a></b-col>
+          /> power-off</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/print"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-print"
-          /> print</a></b-col>
+          /> print</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/puzzle-piece"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-puzzle-piece" />
-            puzzle-piece</a></b-col>
+            puzzle-piece</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/qrcode"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-qrcode"
-          /> qrcode</a></b-col>
+          /> qrcode</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/question"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-question"
-          /> question</a></b-col>
+          /> question</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/question-circle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-question-circle" />
-            question-circle</a></b-col>
+            question-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/quote-left"
-          ><i class="fa fa-quote-left" /> quote-left</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-quote-left" /> quote-left</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/quote-right"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-quote-right"
-          /> quote-right</a></b-col>
+          /> quote-right</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/random"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-random"
-          /> random</a></b-col>
+          /> random</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/recycle"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-recycle"
-          /> recycle</a></b-col>
+          /> recycle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/refresh"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-refresh"
-          /> refresh</a></b-col>
+          /> refresh</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bars"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-reorder"
           /> reorder <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/reply"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-reply"
-          /> reply</a></b-col>
+          /> reply</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/reply-all"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-reply-all"
-          /> reply-all</a></b-col>
+          /> reply-all</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/retweet"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-retweet"
-          /> retweet</a></b-col>
+          /> retweet</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/road"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-road"
-          /> road</a></b-col>
+          /> road</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/rocket"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-rocket"
-          /> rocket</a></b-col>
+          /> rocket</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/rss"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-rss"
-          /> rss</a></b-col>
+          /> rss</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/rss-square"
-          ><i class="fa fa-rss-square" /> rss-square</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-rss-square" /> rss-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/search"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-search"
-          /> search</a></b-col>
+          /> search</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/search-minus"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-search-minus" />
-            search-minus</a></b-col>
+            search-minus</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/search-plus"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-search-plus"
-          /> search-plus</a></b-col>
+          /> search-plus</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/paper-plane"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-send"
           /> send <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/paper-plane-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-send-o" /> send-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/share"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-share"
-          /> share</a></b-col>
+          /> share</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/share-alt"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-share-alt"
-          /> share-alt</a></b-col>
+          /> share-alt</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/share-alt-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-share-alt-square" />
-            share-alt-square</a></b-col>
+            share-alt-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/share-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-share-square" />
-            share-square</a></b-col>
+            share-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/share-square-o"
-          ><i class="fa fa-share-square-o" /> share-square-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-share-square-o" /> share-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/shield"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-shield"
-          /> shield</a></b-col>
+          /> shield</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/shopping-cart"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-shopping-cart" />
-            shopping-cart</a></b-col>
+            shopping-cart</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sign-in"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sign-in"
-          /> sign-in</a></b-col>
+          /> sign-in</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sign-out"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sign-out"
-          /> sign-out</a></b-col>
+          /> sign-out</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/signal"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-signal"
-          /> signal</a></b-col>
+          /> signal</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sitemap"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sitemap"
-          /> sitemap</a></b-col>
+          /> sitemap</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sliders"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sliders"
-          /> sliders</a></b-col>
+          /> sliders</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/smile-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-smile-o"
-          /> smile-o</a></b-col>
+          /> smile-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sort"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sort"
-          /> sort</a></b-col>
+          /> sort</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/sort-alpha-asc"
-          ><i class="fa fa-sort-alpha-asc" /> sort-alpha-asc</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-sort-alpha-asc" /> sort-alpha-asc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/sort-alpha-desc"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-sort-alpha-desc" />
-            sort-alpha-desc</a></b-col>
+            sort-alpha-desc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/sort-amount-asc"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-sort-amount-asc" />
-            sort-amount-asc</a></b-col>
+            sort-amount-asc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/sort-amount-desc"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-sort-amount-desc" />
-            sort-amount-desc</a></b-col>
+            sort-amount-desc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sort-asc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sort-asc"
-          /> sort-asc</a></b-col>
+          /> sort-asc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sort-desc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sort-desc"
-          /> sort-desc</a></b-col>
+          /> sort-desc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sort-desc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sort-down"
           /> sort-down <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/sort-numeric-asc"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-sort-numeric-asc" />
-            sort-numeric-asc</a></b-col>
+            sort-numeric-asc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/sort-numeric-desc"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-sort-numeric-desc" />
-            sort-numeric-desc</a></b-col>
+            sort-numeric-desc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sort-asc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sort-up"
           /> sort-up <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/space-shuttle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-space-shuttle" />
-            space-shuttle</a></b-col>
+            space-shuttle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/spinner"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-spinner"
-          /> spinner</a></b-col>
+          /> spinner</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/spoon"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-spoon"
-          /> spoon</a></b-col>
+          /> spoon</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/square"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-square"
-          /> square</a></b-col>
+          /> square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/square-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-square-o"
-          /> square-o</a></b-col>
+          /> square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/star"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-star"
-          /> star</a></b-col>
+          /> star</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/star-half"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-star-half"
-          /> star-half</a></b-col>
+          /> star-half</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/star-half-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-star-half-empty"
-          /> star-half-empty <span class="text-muted">(alias)</span></a></b-col>
+          /> star-half-empty <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/star-half-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-star-half-full"
-          /> star-half-full <span class="text-muted">(alias)</span></a></b-col>
+          /> star-half-full <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/star-half-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-star-half-o"
-          /> star-half-o</a></b-col>
+          /> star-half-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/star-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-star-o"
-          /> star-o</a></b-col>
+          /> star-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/suitcase"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-suitcase"
-          /> suitcase</a></b-col>
+          /> suitcase</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sun-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-sun-o"
-          /> sun-o</a></b-col>
+          /> sun-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/life-ring"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-support"
           /> support <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/tablet"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-tablet"
-          /> tablet</a></b-col>
+          /> tablet</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/tachometer"
-          ><i class="fa fa-tachometer" /> tachometer</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-tachometer" /> tachometer</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/tag"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-tag"
-          /> tag</a></b-col>
+          /> tag</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/tags"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-tags"
-          /> tags</a></b-col>
+          /> tags</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/tasks"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-tasks"
-          /> tasks</a></b-col>
+          /> tasks</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/taxi"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-taxi"
-          /> taxi</a></b-col>
+          /> taxi</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/terminal"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-terminal"
-          /> terminal</a></b-col>
+          /> terminal</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/thumb-tack"
-          ><i class="fa fa-thumb-tack" /> thumb-tack</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-thumb-tack" /> thumb-tack</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/thumbs-down"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-thumbs-down"
-          /> thumbs-down</a></b-col>
+          /> thumbs-down</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/thumbs-o-down"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-thumbs-o-down" />
-            thumbs-o-down</a></b-col>
+            thumbs-o-down</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/thumbs-o-up"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-thumbs-o-up"
-          /> thumbs-o-up</a></b-col>
+          /> thumbs-o-up</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/thumbs-up"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-thumbs-up"
-          /> thumbs-up</a></b-col>
+          /> thumbs-up</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/ticket"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-ticket"
-          /> ticket</a></b-col>
+          /> ticket</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/times"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-times"
-          /> times</a></b-col>
+          /> times</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/times-circle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-times-circle" />
-            times-circle</a></b-col>
+            times-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/times-circle-o"
-          ><i class="fa fa-times-circle-o" /> times-circle-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-times-circle-o" /> times-circle-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/tint"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-tint"
-          /> tint</a></b-col>
+          /> tint</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-down"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-toggle-down" /> toggle-down
-            <span class="text-muted">(alias)</span></a></b-col>
+            <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-left"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-toggle-left" /> toggle-left
-            <span class="text-muted">(alias)</span></a></b-col>
+            <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-right"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-toggle-right" />
-            toggle-right <span class="text-muted">(alias)</span></a></b-col>
+            toggle-right <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/caret-square-o-up"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-toggle-up" /> toggle-up <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/trash-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-trash-o"
-          /> trash-o</a></b-col>
+          /> trash-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/tree"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-tree"
-          /> tree</a></b-col>
+          /> tree</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/trophy"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-trophy"
-          /> trophy</a></b-col>
+          /> trophy</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/truck"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-truck"
-          /> truck</a></b-col>
+          /> truck</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/umbrella"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-umbrella"
-          /> umbrella</a></b-col>
+          /> umbrella</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/university"
-          ><i class="fa fa-university" /> university</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-university" /> university</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/unlock"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-unlock"
-          /> unlock</a></b-col>
+          /> unlock</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/unlock-alt"
-          ><i class="fa fa-unlock-alt" /> unlock-alt</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-unlock-alt" /> unlock-alt</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/sort"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-unsorted"
-          /> unsorted <span class="text-muted">(alias)</span></a></b-col>
+          /> unsorted <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/upload"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-upload"
-          /> upload</a></b-col>
+          /> upload</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/user"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-user"
-          /> user</a></b-col>
+          /> user</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/users"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-users"
-          /> users</a></b-col>
+          /> users</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/video-camera"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-video-camera" />
-            video-camera</a></b-col>
+            video-camera</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/volume-down"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-volume-down"
-          /> volume-down</a></b-col>
+          /> volume-down</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/volume-off"
-          ><i class="fa fa-volume-off" /> volume-off</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-volume-off" /> volume-off</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/volume-up"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-volume-up"
-          /> volume-up</a></b-col>
+          /> volume-up</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/exclamation-triangle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-warning" /> warning <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/wheelchair"
-          ><i class="fa fa-wheelchair" /> wheelchair</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-wheelchair" /> wheelchair</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/wrench"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-wrench"
-          /> wrench</a></b-col>
+          /> wrench</span></b-col>
         </b-row>
       </b-tab>
       <b-tab title="Spinner">
         <b-row class="icon-list">
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/circle-o-notch"
-          ><i class="fa fa-circle-o-notch" /> circle-o-notch</a></b-col>
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/cog"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
+          ><i class="fa fa-circle-o-notch" /> circle-o-notch</span></b-col>
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-cog"
-          /> cog</a></b-col>
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/cog"><i
+          /> cog</span></b-col>
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-gear"
           /> gear <span
             class="text-muted"
-          >(alias)</span></a></b-col>
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/refresh"><i
+          >(alias)</span></span></b-col>
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-refresh"
-          /> refresh</a></b-col>
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/spinner"><i
+          /> refresh</span></b-col>
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-spinner"
-          /> spinner</a></b-col>
+          /> spinner</span></b-col>
         </b-row>
       </b-tab>
       <b-tab title="Text Editor">
         <b-row class="icon-list">
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/align-center"
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
           ><i class="fa fa-align-center" />
-            align-center</a></b-col>
+            align-center</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/align-justify"
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
           ><i class="fa fa-align-justify" />
-            align-justify</a></b-col>
+            align-justify</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/align-left"
-          ><i class="fa fa-align-left" /> align-left</a></b-col>
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
+          ><i class="fa fa-align-left" /> align-left</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/align-right"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-align-right"
-          /> align-right</a></b-col>
+          /> align-right</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/bold"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-bold"
-          /> bold</a></b-col>
+          /> bold</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/link"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-chain"
           /> chain <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/chain-broken"
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
           ><i class="fa fa-chain-broken" />
-            chain-broken</a></b-col>
+            chain-broken</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/clipboard"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-clipboard"
-          /> clipboard</a></b-col>
+          /> clipboard</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/columns"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-columns"
-          /> columns</a></b-col>
+          /> columns</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/files-o"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-copy"
           /> copy <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/scissors"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-cut"
-          /> cut <span class="text-muted">(alias)</span></a></b-col>
+          /> cut <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/outdent"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-dedent"
-          /> dedent <span class="text-muted">(alias)</span></a></b-col>
+          /> dedent <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/eraser"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-eraser"
-          /> eraser</a></b-col>
+          /> eraser</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/file"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-file"
-          /> file</a></b-col>
+          /> file</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/file-o"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-file-o"
-          /> file-o</a></b-col>
+          /> file-o</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/file-text"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-file-text"
-          /> file-text</a></b-col>
+          /> file-text</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/file-text-o"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-file-text-o"
-          /> file-text-o</a></b-col>
+          /> file-text-o</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/files-o"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-files-o"
-          /> files-o</a></b-col>
+          /> files-o</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/floppy-o"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-floppy-o"
-          /> floppy-o</a></b-col>
+          /> floppy-o</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/font"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-font"
-          /> font</a></b-col>
+          /> font</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/header"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-header"
-          /> header</a></b-col>
+          /> header</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/indent"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-indent"
-          /> indent</a></b-col>
+          /> indent</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/italic"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-italic"
-          /> italic</a></b-col>
+          /> italic</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/link"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-link"
-          /> link</a></b-col>
+          /> link</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/list"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-list"
-          /> list</a></b-col>
+          /> list</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/list-alt"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-list-alt"
-          /> list-alt</a></b-col>
+          /> list-alt</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/list-ol"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-list-ol"
-          /> list-ol</a></b-col>
+          /> list-ol</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/list-ul"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-list-ul"
-          /> list-ul</a></b-col>
+          /> list-ul</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/outdent"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-outdent"
-          /> outdent</a></b-col>
+          /> outdent</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/paperclip"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-paperclip"
-          /> paperclip</a></b-col>
+          /> paperclip</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/paragraph"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-paragraph"
-          /> paragraph</a></b-col>
+          /> paragraph</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/clipboard"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-paste"
           /> paste <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/repeat"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-repeat"
-          /> repeat</a></b-col>
+          /> repeat</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/undo"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-rotate-left"
           /> rotate-left <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/repeat"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-rotate-right"
           /> rotate-right <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/floppy-o"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-save"
           /> save <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/scissors"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-scissors"
-          /> scissors</a></b-col>
+          /> scissors</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/strikethrough"
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
           ><i class="fa fa-strikethrough" />
-            strikethrough</a></b-col>
+            strikethrough</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/subscript"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-subscript"
-          /> subscript</a></b-col>
+          /> subscript</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/superscript"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-superscript"
-          /> superscript</a></b-col>
+          /> superscript</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/table"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-table"
-          /> table</a></b-col>
+          /> table</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/text-height"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-text-height"
-          /> text-height</a></b-col>
+          /> text-height</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/text-width"
-          ><i class="fa fa-text-width" /> text-width</a></b-col>
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
+          ><i class="fa fa-text-width" /> text-width</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/th"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-th"
-          /> th</a></b-col>
+          /> th</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/th-large"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-th-large"
-          /> th-large</a></b-col>
+          /> th-large</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/th-list"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-th-list"
-          /> th-list</a></b-col>
+          /> th-list</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/underline"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-underline"
-          /> underline</a></b-col>
+          /> underline</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a href="../icon/undo"><i
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span ><i
             class="fa fa-undo"
-          /> undo</a></b-col>
+          /> undo</span></b-col>
 
-          <b-col md="4" lg="3" xs="12" class="icon-list-item"><a
-            href="../icon/chain-broken"
+          <b-col md="4" lg="3" xs="12" class="icon-list-item"><span
+            
           ><i class="fa fa-unlink" /> unlink <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
         </b-row>
       </b-tab>
       <b-tab title="Brand">
         <b-row class="icon-list">
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/adn"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-adn"
-          /> adn</a></b-col>
+          /> adn</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/android"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-android"
-          /> android</a></b-col>
+          /> android</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/apple"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-apple"
-          /> apple</a></b-col>
+          /> apple</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/behance"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-behance"
-          /> behance</a></b-col>
+          /> behance</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/behance-square"
-          ><i class="fa fa-behance-square" /> behance-square</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-behance-square" /> behance-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/bitbucket"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bitbucket"
-          /> bitbucket</a></b-col>
+          /> bitbucket</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/bitbucket-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-bitbucket-square" />
-            bitbucket-square</a></b-col>
+            bitbucket-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/btc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bitcoin"
           /> bitcoin <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/btc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-btc"
-          /> btc</a></b-col>
+          /> btc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/codepen"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-codepen"
-          /> codepen</a></b-col>
+          /> codepen</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/css3"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-css3"
-          /> css3</a></b-col>
+          /> css3</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/delicious"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-delicious"
-          /> delicious</a></b-col>
+          /> delicious</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/deviantart"
-          ><i class="fa fa-deviantart" /> deviantart</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-deviantart" /> deviantart</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/digg"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-digg"
-          /> digg</a></b-col>
+          /> digg</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/dribbble"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-dribbble"
-          /> dribbble</a></b-col>
+          /> dribbble</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/dropbox"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-dropbox"
-          /> dropbox</a></b-col>
+          /> dropbox</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/drupal"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-drupal"
-          /> drupal</a></b-col>
+          /> drupal</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/empire"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-empire"
-          /> empire</a></b-col>
+          /> empire</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/facebook"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-facebook"
-          /> facebook</a></b-col>
+          /> facebook</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/facebook-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-facebook-square" />
-            facebook-square</a></b-col>
+            facebook-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/flickr"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-flickr"
-          /> flickr</a></b-col>
+          /> flickr</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/foursquare"
-          ><i class="fa fa-foursquare" /> foursquare</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-foursquare" /> foursquare</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/empire"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-ge"
-          /> ge <span class="text-muted">(alias)</span></a></b-col>
+          /> ge <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/git"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-git"
-          /> git</a></b-col>
+          /> git</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/git-square"
-          ><i class="fa fa-git-square" /> git-square</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-git-square" /> git-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/github"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-github"
-          /> github</a></b-col>
+          /> github</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/github-alt"
-          ><i class="fa fa-github-alt" /> github-alt</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-github-alt" /> github-alt</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/github-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-github-square" />
-            github-square</a></b-col>
+            github-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/gittip"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-gittip"
-          /> gittip</a></b-col>
+          /> gittip</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/google"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-google"
-          /> google</a></b-col>
+          /> google</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/google-plus"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-google-plus"
-          /> google-plus</a></b-col>
+          /> google-plus</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/google-plus-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-google-plus-square" />
-            google-plus-square</a></b-col>
+            google-plus-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/hacker-news"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-hacker-news"
-          /> hacker-news</a></b-col>
+          /> hacker-news</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/html5"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-html5"
-          /> html5</a></b-col>
+          /> html5</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/instagram"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-instagram"
-          /> instagram</a></b-col>
+          /> instagram</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/joomla"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-joomla"
-          /> joomla</a></b-col>
+          /> joomla</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/jsfiddle"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-jsfiddle"
-          /> jsfiddle</a></b-col>
+          /> jsfiddle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/linkedin"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-linkedin"
-          /> linkedin</a></b-col>
+          /> linkedin</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/linkedin-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-linkedin-square" />
-            linkedin-square</a></b-col>
+            linkedin-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/linux"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-linux"
-          /> linux</a></b-col>
+          /> linux</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/maxcdn"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-maxcdn"
-          /> maxcdn</a></b-col>
+          /> maxcdn</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/openid"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-openid"
-          /> openid</a></b-col>
+          /> openid</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/pagelines"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-pagelines"
-          /> pagelines</a></b-col>
+          /> pagelines</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/pied-piper"
-          ><i class="fa fa-pied-piper" /> pied-piper</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-pied-piper" /> pied-piper</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/pied-piper-alt"
-          ><i class="fa fa-pied-piper-alt" /> pied-piper-alt</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-pied-piper-alt" /> pied-piper-alt</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/pied-piper"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-pied-piper-square" />
-            pied-piper-square <span class="text-muted">(alias)</span></a></b-col>
+            pied-piper-square <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/pinterest"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-pinterest"
-          /> pinterest</a></b-col>
+          /> pinterest</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/pinterest-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-pinterest-square" />
-            pinterest-square</a></b-col>
+            pinterest-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/qq"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-qq"
-          /> qq</a></b-col>
+          /> qq</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/rebel"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-ra"
-          /> ra <span class="text-muted">(alias)</span></a></b-col>
+          /> ra <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/rebel"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-rebel"
-          /> rebel</a></b-col>
+          /> rebel</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/reddit"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-reddit"
-          /> reddit</a></b-col>
+          /> reddit</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/reddit-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-reddit-square" />
-            reddit-square</a></b-col>
+            reddit-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/renren"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-renren"
-          /> renren</a></b-col>
+          /> renren</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/share-alt"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-share-alt"
-          /> share-alt</a></b-col>
+          /> share-alt</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/share-alt-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-share-alt-square" />
-            share-alt-square</a></b-col>
+            share-alt-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/skype"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-skype"
-          /> skype</a></b-col>
+          /> skype</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/slack"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-slack"
-          /> slack</a></b-col>
+          /> slack</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/soundcloud"
-          ><i class="fa fa-soundcloud" /> soundcloud</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-soundcloud" /> soundcloud</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/spotify"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-spotify"
-          /> spotify</a></b-col>
+          /> spotify</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/stack-exchange"
-          ><i class="fa fa-stack-exchange" /> stack-exchange</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-stack-exchange" /> stack-exchange</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/stack-overflow"
-          ><i class="fa fa-stack-overflow" /> stack-overflow</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-stack-overflow" /> stack-overflow</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/steam"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-steam"
-          /> steam</a></b-col>
+          /> steam</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/steam-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-steam-square" />
-            steam-square</a></b-col>
+            steam-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/stumbleupon"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-stumbleupon"
-          /> stumbleupon</a></b-col>
+          /> stumbleupon</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/stumbleupon-circle"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-stumbleupon-circle" />
-            stumbleupon-circle</a></b-col>
+            stumbleupon-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/tencent-weibo"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-tencent-weibo" />
-            tencent-weibo</a></b-col>
+            tencent-weibo</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/trello"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-trello"
-          /> trello</a></b-col>
+          /> trello</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/tumblr"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-tumblr"
-          /> tumblr</a></b-col>
+          /> tumblr</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/tumblr-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-tumblr-square" />
-            tumblr-square</a></b-col>
+            tumblr-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/twitter"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-twitter"
-          /> twitter</a></b-col>
+          /> twitter</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/twitter-square"
-          ><i class="fa fa-twitter-square" /> twitter-square</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-twitter-square" /> twitter-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/vimeo-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-vimeo-square" />
-            vimeo-square</a></b-col>
+            vimeo-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/vine"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-vine"
-          /> vine</a></b-col>
+          /> vine</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/vk"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-vk"
-          /> vk</a></b-col>
+          /> vk</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/weixin"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-wechat"
-          /> wechat <span class="text-muted">(alias)</span></a></b-col>
+          /> wechat <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/weibo"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-weibo"
-          /> weibo</a></b-col>
+          /> weibo</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/weixin"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-weixin"
-          /> weixin</a></b-col>
+          /> weixin</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/windows"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-windows"
-          /> windows</a></b-col>
+          /> windows</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/wordpress"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-wordpress"
-          /> wordpress</a></b-col>
+          /> wordpress</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/xing"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-xing"
-          /> xing</a></b-col>
+          /> xing</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/xing-square"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-xing-square"
-          /> xing-square</a></b-col>
+          /> xing-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/yahoo"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-yahoo"
-          /> yahoo</a></b-col>
+          /> yahoo</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/youtube"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-youtube"
-          /> youtube</a></b-col>
+          /> youtube</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/youtube-play"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-youtube-play" />
-            youtube-play</a></b-col>
+            youtube-play</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/youtube-square"
-          ><i class="fa fa-youtube-square" /> youtube-square</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-youtube-square" /> youtube-square</span></b-col>
         </b-row>
       </b-tab>
       <b-tab title="Other">
         <h4>File Type <span class="fw-semi-bold">Icons</span></h4>
         <b-row class="icon-list">
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file"
-          /> file</a></b-col>
+          /> file</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-archive-o"
-          ><i class="fa fa-file-archive-o" /> file-archive-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-file-archive-o" /> file-archive-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-audio-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-audio-o" />
-            file-audio-o</a></b-col>
+            file-audio-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file-code-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file-code-o"
-          /> file-code-o</a></b-col>
+          /> file-code-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-excel-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-excel-o" />
-            file-excel-o</a></b-col>
+            file-excel-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-image-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-image-o" />
-            file-image-o</a></b-col>
+            file-image-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-video-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-movie-o" /> file-movie-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file-o"
-          /> file-o</a></b-col>
+          /> file-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-pdf-o"
-          ><i class="fa fa-file-pdf-o" /> file-pdf-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-file-pdf-o" /> file-pdf-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-image-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-photo-o" /> file-photo-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-image-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-picture-o" /> file-picture-o
-            <span class="text-muted">(alias)</span></a></b-col>
+            <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-powerpoint-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-powerpoint-o" />
-            file-powerpoint-o</a></b-col>
+            file-powerpoint-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-audio-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-sound-o" /> file-sound-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file-text"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file-text"
-          /> file-text</a></b-col>
+          /> file-text</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file-text-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file-text-o"
-          /> file-text-o</a></b-col>
+          /> file-text-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-video-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-video-o" />
-            file-video-o</a></b-col>
+            file-video-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/file-word-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-file-word-o"
-          /> file-word-o</a></b-col>
+          /> file-word-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/file-archive-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-file-zip-o" /> file-zip-o <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
         </b-row>
 
         <h4>Form Control <span class="fw-semi-bold">Icons</span></h4>
         <b-row class="icon-list">
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/check-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-check-square" />
-            check-square</a></b-col>
+            check-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/check-square-o"
-          ><i class="fa fa-check-square-o" /> check-square-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-check-square-o" /> check-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/circle"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-circle"
-          /> circle</a></b-col>
+          /> circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/circle-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-circle-o"
-          /> circle-o</a></b-col>
+          /> circle-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/dot-circle-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-dot-circle-o" />
-            dot-circle-o</a></b-col>
+            dot-circle-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/minus-square"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-minus-square" />
-            minus-square</a></b-col>
+            minus-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/minus-square-o"
-          ><i class="fa fa-minus-square-o" /> minus-square-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-minus-square-o" /> minus-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/plus-square"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-plus-square"
-          /> plus-square</a></b-col>
+          /> plus-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/plus-square-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-plus-square-o" />
-            plus-square-o</a></b-col>
+            plus-square-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/square"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-square"
-          /> square</a></b-col>
+          /> square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/square-o"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-square-o"
-          /> square-o</a></b-col>
+          /> square-o</span></b-col>
         </b-row>
 
         <h4>Currency <span class="fw-semi-bold">Icons</span></h4>
         <b-row class="icon-list">
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/btc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-bitcoin"
           /> bitcoin <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/btc"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-btc"
-          /> btc</a></b-col>
+          /> btc</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/jpy"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-cny"
-          /> cny <span class="text-muted">(alias)</span></a></b-col>
+          /> cny <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/usd"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-dollar"
-          /> dollar <span class="text-muted">(alias)</span></a></b-col>
+          /> dollar <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/eur"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-eur"
-          /> eur</a></b-col>
+          /> eur</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/eur"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-euro"
           /> euro <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/gbp"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-gbp"
-          /> gbp</a></b-col>
+          /> gbp</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/inr"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-inr"
-          /> inr</a></b-col>
+          /> inr</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/jpy"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-jpy"
-          /> jpy</a></b-col>
+          /> jpy</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/krw"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-krw"
-          /> krw</a></b-col>
+          /> krw</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/money"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-money"
-          /> money</a></b-col>
+          /> money</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/jpy"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-rmb"
-          /> rmb <span class="text-muted">(alias)</span></a></b-col>
+          /> rmb <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/rub"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-rouble"
-          /> rouble <span class="text-muted">(alias)</span></a></b-col>
+          /> rouble <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/rub"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-rub"
-          /> rub</a></b-col>
+          /> rub</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/rub"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-ruble"
           /> ruble <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/inr"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-rupee"
           /> rupee <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/try"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-try"
-          /> try</a></b-col>
+          /> try</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/try"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-turkish-lira"
           /> turkish-lira <span
             class="text-muted"
-          >(alias)</span></a></b-col>
+          >(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/usd"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-usd"
-          /> usd</a></b-col>
+          /> usd</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/krw"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-won"
-          /> won <span class="text-muted">(alias)</span></a></b-col>
+          /> won <span class="text-muted">(alias)</span></span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/jpy"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-yen"
-          /> yen <span class="text-muted">(alias)</span></a></b-col>
+          /> yen <span class="text-muted">(alias)</span></span></b-col>
         </b-row>
 
         <h4>Video Player <span class="fw-semi-bold">Icons</span></h4>
         <b-row class="icon-list">
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/arrows-alt"
-          ><i class="fa fa-arrows-alt" /> arrows-alt</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-arrows-alt" /> arrows-alt</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/backward"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-backward"
-          /> backward</a></b-col>
+          /> backward</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/compress"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-compress"
-          /> compress</a></b-col>
+          /> compress</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/eject"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-eject"
-          /> eject</a></b-col>
+          /> eject</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/expand"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-expand"
-          /> expand</a></b-col>
+          /> expand</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/fast-backward"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-fast-backward" />
-            fast-backward</a></b-col>
+            fast-backward</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/fast-forward"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-fast-forward" />
-            fast-forward</a></b-col>
+            fast-forward</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/forward"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-forward"
-          /> forward</a></b-col>
+          /> forward</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/pause"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-pause"
-          /> pause</a></b-col>
+          /> pause</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/play"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-play"
-          /> play</a></b-col>
+          /> play</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/play-circle"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-play-circle"
-          /> play-circle</a></b-col>
+          /> play-circle</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/play-circle-o"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-play-circle-o" />
-            play-circle-o</a></b-col>
+            play-circle-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/step-backward"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-step-backward" />
-            step-backward</a></b-col>
+            step-backward</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/step-forward"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-step-forward" />
-            step-forward</a></b-col>
+            step-forward</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/stop"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-stop"
-          /> stop</a></b-col>
+          /> stop</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/youtube-play"
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
           ><i class="fa fa-youtube-play" />
-            youtube-play</a></b-col>
+            youtube-play</span></b-col>
         </b-row>
 
         <h4>Medical <span class="fw-semi-bold">Icons</span></h4>
         <b-row class="icon-list">
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/ambulance"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-ambulance"
-          /> ambulance</a></b-col>
+          /> ambulance</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/h-square"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-h-square"
-          /> h-square</a></b-col>
+          /> h-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/hospital-o"
-          ><i class="fa fa-hospital-o" /> hospital-o</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-hospital-o" /> hospital-o</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/medkit"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-medkit"
-          /> medkit</a></b-col>
+          /> medkit</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/plus-square"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-plus-square"
-          /> plus-square</a></b-col>
+          /> plus-square</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/stethoscope"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-stethoscope"
-          /> stethoscope</a></b-col>
+          /> stethoscope</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a href="../icon/user-md"><i
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span ><i
             class="fa fa-user-md"
-          /> user-md</a></b-col>
+          /> user-md</span></b-col>
 
-          <b-col class="icon-list-item" lg="3" md="4" xs="12"><a
-            href="../icon/wheelchair"
-          ><i class="fa fa-wheelchair" /> wheelchair</a></b-col>
+          <b-col class="icon-list-item" lg="3" md="4" xs="12"><span
+            
+          ><i class="fa fa-wheelchair" /> wheelchair</span></b-col>
         </b-row>
       </b-tab>
     </b-tabs>
