@@ -19,7 +19,7 @@
                 v-if="user.avatar || user.email === 'admin@flatlogic.com'"
                 class="rounded-circle"
                 :src="user.avatar || avatarImage"
-                :alt="user.name || 'picture'"
+                :alt="user.name || 'avatar'"
             />
             <span v-else>{{firstUserLetter}}</span>
           </span>

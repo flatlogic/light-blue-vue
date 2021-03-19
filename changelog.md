@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.2.1]
+
+- Fix icons animation
+- Fix images naming
+- Fix calendar buttons
+- Fix 404 page
+
 ## [3.2.0]
 
 - Updated documentation
