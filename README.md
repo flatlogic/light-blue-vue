@@ -41,11 +41,11 @@ We have implemented some basic pages, so you can see our template in action.
 
 1. Clone repository
 ```shell
-git clone https://github.com/flatlogic/light-blue-vue-admin.git
+git clone https://github.com/flatlogic/light-blue-vue.git
 ```
 2. Get in the project folder
 ```shell
-cd light-blue-vue-admin
+cd light-blue-vue
 ```
 3. Install dependencies via npm or yarn
 ```shell
@@ -71,7 +71,7 @@ For any additional information please refer to [Flatlogic homepage](https://flat
 
 ## How can I support developers?
 - Star our GitHub repo :star:
-- [Tweet about it](https://twitter.com/intent/tweet?text=Amazing%20dashboard%20built%20with%20%23VueJS%20and%20%23Bootstrap!&url=https://github.com/flatlogic/light-blue-vue-admin&via=flatlogic).
+- [Tweet about it](https://twitter.com/intent/tweet?text=Amazing%20dashboard%20built%20with%20%23VueJS%20and%20%23Bootstrap!&url=https://github.com/flatlogic/light-blue-vue&via=flatlogic).
 - Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
 - Follow [@flatlogic on Twitter](https://twitter.com/flatlogic).
 - Subscribe to Flatlogic newsletter at [flatlogic.com](https://flatlogic.com/)
