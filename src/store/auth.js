@@ -28,14 +28,13 @@ export default {
           if (!config.isBackend) {
             dispatch('receiveToken', 'token');
           }
-
           else {
             dispatch('requestLogin');
             if (creds.social) {
-              window.location.href = config.baseURLApi + "/user/signin/" + creds.social + (process.env.NODE_ENV === "production" ? "?app=light-blue-vue/dark" : "");
+              window.location.href = config.baseURLApi + "/auth/signin/" + creds.social + '?app=' + config.redirectUrl;
             } else if (creds.email.length > 0 && creds.password.length > 0) {
-              axios.post("/user/signin/local", creds).then(res => {
-                const token = res.data.token;
+              axios.post("/auth/signin/local", creds).then(res => {
+                const token = res.data;
                 dispatch('receiveToken', token);
               }).catch(err => {
                 dispatch('loginError', err.response.data);
