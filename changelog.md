@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.2.2] [12/04/2021] 
+
+### Updated
+- Update project for new backend
+- Update support links
+
 ## [3.2.1]
 
 - Fix icons animation
