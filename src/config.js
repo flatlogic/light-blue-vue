@@ -1,6 +1,8 @@
-const hostApi = process.env.NODE_ENV === "development" ? "http://localhost" : "https://flatlogic-node-backend.herokuapp.com";
+const hostApi = process.env.NODE_ENV === "development" ? "http://localhost" : "https://sing-generator-node.herokuapp.com";
 const portApi = process.env.NODE_ENV === "development" ? 8080 : "";
-const baseURLApi = `${hostApi}${portApi ? `:${portApi}` : ``}`;
+const baseURLApi = `${hostApi}${portApi ? `:${portApi}` : ``}/api`;
+const redirectUrl = process.env.NODE_ENV === "development" ? "http://localhost:3000/light-blue-vue" : "https://demo.flatlogic.com/light-blue-vue/";
+
 const colors = {
   blue: '#2477FF',
   green: '#2D8515',
@@ -25,7 +27,7 @@ export default {
   portApi,
   baseURLApi,
   redirectUrl,
-  remote: "https://flatlogic-node-backend.herokuapp.com",
+  remote: "https://sing-generator-node.herokuapp.com",
   isBackend: process.env.VUE_APP_BACKEND,
   auth: {
     email: 'admin@flatlogic.com',
