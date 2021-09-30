@@ -1,5 +1,5 @@
 <template>
-  <li v-if="!childrenLinks && isHeader" :class="{headerLink: true, className}">
+  <li v-if="!childrenLinks && isHeader && !externalLink" :class="{headerLink: true, className}">
     <router-link :to="link" class="sidebar-link">
       <span class="icon">
         <i :class="fullIconName"></i>
@@ -7,6 +7,14 @@
       {{header}} <sup v-if="label" :class="'text-' + labelColor" class="headerLabel">{{label}}</sup>
       <b-badge v-if="badge" class="badge rounded-f" variant="primary" pill>{{badge}}</b-badge>
     </router-link>
+  </li>
+  <li v-else-if="!childrenLinks && isHeader && externalLink" :class="{headerLink: true, className}">
+    <a :href="link" class="sidebar-link">
+      <span class="icon">
+        <i :class="fullIconName"></i>
+      </span>
+      {{header}} <sup v-if="label" :class="'text-' + labelColor" class="headerLabel">{{label}}</sup>
+    </a>
   </li>
   <li v-else-if="childrenLinks" :class="{headerLink: true, className}">
     <div @click="() => togglePanelCollapse(link)">
@@ -23,12 +31,12 @@
     <b-collapse :id="'collapse' + index" :visible="isActive">
       <ul class="sub-menu">
         <NavLink class="nav-link-nested" v-for="link in childrenLinks"
-          :activeItem="activeItem"
-          :header="link.header"
-          :index="link.index"
-          :link="link.link"
-          :childrenLinks="link.childrenLinks"
-          :key="link.link"
+                 :activeItem="activeItem"
+                 :header="link.header"
+                 :index="link.index"
+                 :link="link.link"
+                 :childrenLinks="link.childrenLinks"
+                 :key="link.link"
         />
       </ul>
     </b-collapse>
@@ -51,6 +59,7 @@ export default {
     iconName: { type: String, default: '' },
     headerLink: { type: String, default: '' },
     link: { type: String, default: '' },
+    externalLink: {type: Boolean, default: false },
     childrenLinks: { type: Array, default: null },
     className: { type: String, default: '' },
     isHeader: { type: Boolean, default: false },
@@ -70,7 +79,7 @@ export default {
     togglePanelCollapse(link) {
       this.changeSidebarActive(link);
       this.headerLinkWasClicked = !this.headerLinkWasClicked
-      || !this.activeItem.includes(this.index);
+          || !this.activeItem.includes(this.index);
     },
   },
   computed: {
@@ -79,8 +88,8 @@ export default {
     },
     isActive() {
       return (this.activeItem
-      && this.activeItem.includes(this.index)
-      && this.headerLinkWasClicked);
+          && this.activeItem.includes(this.index)
+          && this.headerLinkWasClicked);
     },
   },
 };

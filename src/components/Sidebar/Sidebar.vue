@@ -68,6 +68,15 @@
             index="documentation"
             isHeader
         />
+        <NavLink
+            :activeItem="activeItem"
+            externalLink
+            header="Generate web app"
+            link="https://flatlogic.com/generator"
+            iconName="flaticon-magic-wand"
+            index="generator"
+            isHeader
+        />
         <h5 class="navTitle">TEMPLATE</h5>
         <NavLink
                 :activeItem="activeItem"

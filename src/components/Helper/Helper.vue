@@ -23,6 +23,12 @@
                     class="btn btn-inverse btn-rounded-f btn-block fs-mini">
                       Documentation
                   </router-link>
+                  <a href="https://flatlogic.com/generator"
+                     target="_blank"
+                     role="button"
+                     class="btn btn-primary btn-rounded-f btn-block fs-mini text-white">
+                    Generate web app
+                  </a>
                 </div>
                 <div class="d-flex justify-content-between mt-lg">
                     <a role="button"
