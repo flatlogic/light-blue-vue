@@ -32,6 +32,14 @@
   }
 }
 
+.generator-link {
+  display: block;
+  color: var(--sidebar-color-item)!important;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px!important;
+}
+
 .nav {
   width: 100%;
   padding: 30px 0 10px;

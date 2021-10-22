@@ -6,6 +6,9 @@
       <header class="logo">
         <router-link to="/app">Light <span class="fw-semi-bold">Blue</span></router-link>
       </header>
+
+      <a class="generator-link navTitle" target="_blank" href="https://flatlogic.com/generator">Generate App</a>
+
       <ul class="nav">
         <NavLink
                 :activeItem="activeItem"
