@@ -1,5 +1,5 @@
 <template>
-<div :class="{root: true, sidebarClose}">
+<div :class="{root: true}">
   <Helper />
   <Header />
   <Sidebar />
@@ -15,7 +15,9 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+
+import { createNamespacedHelpers } from 'vuex';
+const { mapState, mapActions } = createNamespacedHelpers('layout');
 
 import Sidebar from '@/components/Sidebar/Sidebar';
 import Header from '@/components/Header/Header';
@@ -30,13 +32,18 @@ export default {
     ...mapActions(
       'layout', ['switchSidebar', 'changeSidebarActive'],
     ),
+    setTheme(){
+      let theme = localStorage.getItem("theme")
+      document.querySelector('body').setAttribute("class", `light-blue ${'theme--' + (theme || 'dark')}`)
+    }
   },
   computed: {
     ...mapState('layout', {
-      sidebarClose: state => state.sidebarClose,
+
     }),
   },
   created() {
+    this.setTheme()
   },
   mounted() {
     this.$refs.content.addEventListener('animationend', () => {

@@ -12,7 +12,7 @@
   position: relative;
   margin-bottom: $grid-gutter-width;
   padding: $widget-padding-vertical $widget-padding-horizontal;
-  background: $widget-bg;
+  background: var(--widget-bg);
   border-radius: $widget-border-radius;
   box-shadow: $widget-shadow;
 

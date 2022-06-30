@@ -3,6 +3,8 @@
 .headerLink {
   width: 100%;
   overflow-x: hidden;
+  font-weight: $font-weight-semi-bold;
+  font-size: 13px;
 
   @media (min-width: map_get($grid-breakpoints, lg))
   and (min-height: $screen-lg-height), (max-width: map_get($grid-breakpoints, md) - 1px) {
@@ -75,6 +77,8 @@
 }
 
 .nav-link-nested > a {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
   line-height: 32px !important;
 }
 

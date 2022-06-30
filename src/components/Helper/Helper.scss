@@ -1,11 +1,13 @@
 @import '../../styles/app';
 
 .theme-helper {
-  width: 220px;
+  width: $helper-width;
   position: fixed;
-  right: -220px;
-  top: $navbar-height * 2;
-  z-index: 100;
+  right: -$helper-width;
+  top: 20px;
+  bottom: 20px;
+  z-index: 101;
+  background-color: theme-color(inverse);
   @include transition(right $sidebar-transition-time ease-in-out);
 
   &.theme-helper-opened {
@@ -13,8 +15,11 @@
   }
 
   .theme-helper-toggler {
-    width: 55px;
-    margin-left: -55px;
+    position: absolute;
+    right: 100%;
+    top: 15%;
+    width: $sidebar-width-open / 4;
+    margin-left: -($sidebar-width-open / 4);
     cursor: pointer;
 
     i {
@@ -42,24 +47,22 @@
     font-size: $font-size-lg * 1.4;
     line-height: initial;
     box-shadow: $widget-shadow-designated;
-    background: opacify($widget-bg, .1);
-  }
-
-  .theme-helper-header {
-    padding-top: 0;
-
-    h6 {
-      margin: auto;
-    }
   }
 
   .theme-helper-content {
+    border-radius: $border-radius 0 0 $border-radius;
+    overflow: auto;
     box-shadow: $widget-shadow-designated;
-    border-radius: 0;
-    background: opacify($widget-bg, .1);
+    height: 100%;
   }
 
-  .theme-sharing, .theme-switcher {
+  .theme-settings {
+    .form-group, .colors-list {
+      margin-bottom: $spacer * 2;
+    }
+  }
+
+  .theme-sharing {
     font-size: $font-size-lg;
     cursor: pointer;
   }
@@ -70,6 +73,18 @@
 
   .abc-radio-secondary input[type="radio"]:not(:checked) + label::before {
     background-color: theme-color('secondary');
+  }
+
+  .abc-radio {
+    & > label {
+      padding-left: 25px;
+
+      &:before, &:after {
+        outline: none !important;
+        transition: $transition-base;
+        margin-left: 4px;
+      }
+    }
   }
 
   @keyframes spin {

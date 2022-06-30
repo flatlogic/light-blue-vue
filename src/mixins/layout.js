@@ -1,10 +1,13 @@
+import { LayoutComponents } from '@/store/layout';
 import config from "../config";
 
 export default {
   data: () => {
     return {
       appConfig: {
-        colors: config.colors
+        themeColors: config.app.themeColors,
+        colors: config.colors,
+        layoutComponents: LayoutComponents,
       }
     }
   },

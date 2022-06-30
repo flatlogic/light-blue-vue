@@ -1,0 +1,24 @@
+@import "../../styles/app";
+
+.colors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .color-box {
+    min-width: 30px;
+    height: 30px;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    margin: 3px;
+    transition: $transition-base;
+
+    &:hover {
+      border-color: darken($border-color, 30%);
+    }
+
+    &.active {
+      border-color: darken($primary, 10%);
+    }
+  }
+}

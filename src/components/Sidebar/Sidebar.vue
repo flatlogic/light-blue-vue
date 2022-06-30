@@ -28,8 +28,6 @@
             link="/app/ecommerce"
             iconName="flaticon-diamond"
             index="ecommerce"
-            label="NodeJS"
-            labelColor="danger"
             :childrenLinks="[
             { header: 'Product Management', link: '/app/ecommerce/management' },
             { header: 'Products Grid', link: '/app/ecommerce/products' },

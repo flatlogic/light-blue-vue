@@ -9,8 +9,8 @@ html, body {
 
 body {
   overflow-x: hidden;
-  color: $text-color;
-  background: $default-bg;
+  color: var(--text-color);
+  background: var(--body-bg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

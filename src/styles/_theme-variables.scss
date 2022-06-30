@@ -1,0 +1,42 @@
+body {
+  &.light-blue {
+
+    --body-bg: linear-gradient(136.36deg, #333964 4.86%, #171A39 94.85%);
+    --widget-bg: rgba(0,0,0,.24);
+    --text-color: rgba(244,244,245, .6);
+
+
+    &.theme {
+      &--light {
+        --body-bg: radial-gradient(farthest-side ellipse at 10% 0, #333867 20%, #17193B);
+        --widget-bg: rgba(0,0,0,.24);
+
+      }
+
+      &--sea {
+        --body-bg: radial-gradient(farthest-side ellipse at 10% 0, #0A0417 20%, #0D1635);
+        --widget-bg: linear-gradient(135deg, #222231 0%, rgba(34, 33, 52, 0.78) 100%);
+        --sidebar-list-color: #222230;
+
+      }
+      &--sky {
+        --body-bg: radial-gradient(farthest-side ellipse at 10% 0, #0A0417 20%, #0D1635);
+        --widget-bg: linear-gradient(135deg, #4B4E5F 0%, rgba(38, 40, 55, 0.87) 100%);
+        --sidebar-list-color: #25307E;
+
+      }
+      &--rain {
+        --body-bg: radial-gradient(farthest-side ellipse at 10% 0, #3846AA 20%, #0B0D2C);
+        --widget-bg: linear-gradient(135deg, rgba(101, 114, 207, 0.63) 0%, rgba(32, 38, 82, 0) 100%);
+        --sidebar-list-color: rgba(41, 85, 142, 0.5);
+
+      }
+      &--middle {
+        --body-bg: linear-gradient(136.36deg, #3390C4 4.86%, #1D1252 94.85%);
+        --widget-bg: linear-gradient(172.98deg, rgba(255, 255, 255, 0.08) 1.49%, rgba(255, 255, 255, 0.0208) 99.64%);
+        --sidebar-list-color: rgba(41, 85, 142, 0.5);
+
+      }
+    }
+  }
+}

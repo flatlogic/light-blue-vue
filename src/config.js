@@ -18,11 +18,35 @@ const colors = {
   gridLineColor: '#040620'
 };
 
+
+
+const app = {
+  themeColors: [
+    ['dark', "#333964"],
+    ['light', "#0A0417"],
+    ['sea', "#4A4657"],
+    ['sky', "#3A3847"],
+    ['rain', "#3846AA"],
+    ['middle', "#3390C3"],
+
+    // ['default','#002B49'],
+    // ['white', '#FFFFFF'],
+    // ['first','#004472'],
+    // ['second','#e9ebef'],
+    // ['third','#d1e7f5'],
+    // ['fourth','#ccdde9'],
+    // ['fifth','#d6dfe6'],
+    // ['sixth','#13191d'],
+    // ['seventh','#20ae8c'],
+  ],
+}
+
 export default {
   colors: {
     ...colors,
     white: "#fff"
   },
+  app,
   hostApi,
   portApi,
   baseURLApi,
