@@ -16,35 +16,35 @@
               class="external-event"
               data-event='{ "classNames": ["bg-success", "text-white"], "title": "Make a tea" }'
           >
-            <i class="fa fa-circle fa-fw text-success ml-xs mr-xs"></i>
+            <i class="fa fa-circle fa-fw text-success ms-1 me-1"></i>
             Make a tea
           </div>
           <div
               class="external-event"
               data-event='{ "classNames": ["bg-primary", "text-white"], "title": "Open windows" }'
           >
-            <i class="fa fa-circle fa-fw text-warning ml-xs mr-xs"></i>
+            <i class="fa fa-circle fa-fw text-warning ms-1 me-1"></i>
             Open windows
           </div>
           <div
               class="external-event"
               data-event='{ "classNames": ["bg-gray", "text-white"], "title": "Some stuff" }'
           >
-            <i class="fa fa-circle fa-fw text-info ml-xs mr-xs"></i>
+            <i class="fa fa-circle fa-fw text-info ms-1 me-1"></i>
             Some stuff
           </div>
           <div
               class="external-event"
               data-event='{ "classNames": ["bg-danger", "text-white"], "title": "Study UX engineering" }'
           >
-            <i class="fa fa-square fa-fw text-danger ml-xs mr-xs"></i>
+            <i class="fa fa-square fa-fw text-danger ms-1 me-1"></i>
             Study UX engineering
           </div>
           <div
               class="external-event"
               data-event='{ "classNames": ["bg-gray", "text-white"], "title": "Another stuff" }'
           >
-            <i class="fa fa-circle-o fa-fw text-gray-light ml-xs mr-xs"></i>
+            <i class="fa fa-circle-o fa-fw text-gray-light ms-1 me-1"></i>
             Another stuff
           </div>
         </div>
@@ -53,7 +53,7 @@
         <Widget>
           <b-row class="calendar-controls">
             <b-col md='3'>
-              <b-button-group class="mr-sm">
+              <b-button-group class="me-2">
                 <b-button variant="default" @click="prev">
                   <i class="fa fa-angle-left"></i>
                 </b-button>
@@ -65,7 +65,7 @@
                 Today
               </b-button>
             </b-col>
-            <b-col md='9' class="calendar-controls text-right">
+            <b-col md='9' class="calendar-controls text-end">
               <b-button-group>
                 <b-button
                   variant="default" @click="changeView('dayGridMonth')"

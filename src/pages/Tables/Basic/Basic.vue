@@ -67,9 +67,9 @@
             </table>
           </div>
           <div class="clearfix">
-            <div class="float-right">
-              <b-button variant="default" class="mr-3" size="sm">Send to...</b-button>
-              <b-dropdown variant="inverse" class="mr-xs" size="sm" text="Clear" right>
+            <div class="float-end">
+              <b-button variant="default" class="me-3" size="sm">Send to...</b-button>
+              <b-dropdown variant="inverse" class="me-1" size="sm" text="Clear" right>
                 <b-dropdown-item>Clear</b-dropdown-item>
                 <b-dropdown-item>Move ...</b-dropdown-item>
                 <b-dropdown-item>Something else here</b-dropdown-item>
@@ -133,7 +133,7 @@
                    <label for="checkbox3" />
                  </div>
                </td>
-               <td>Jacob <b-badge variant="warning" class="text-gray-dark">ALERT!</b-badge></td>
+               <td>Jacob <b-badge variant="warning" class="text-gray-dark bg-warning">ALERT!</b-badge></td>
                <td>Thornton</td>
                <td><b-badge variant="gray">Away</b-badge></td>
              </tr>
@@ -223,7 +223,7 @@
                   </div>
                 </th>
                 <th>Product</th>
-                <th class="text-right">Price</th>
+                <th class="text-end">Price</th>
                 <th class="text-center">Sales</th>
               </tr>
             </thead>
@@ -239,7 +239,7 @@
                   </div>
                 </td>
                 <td>On the Road</td>
-                <td class="text-right">$25 224.2</td>
+                <td class="text-end">$25 224.2</td>
                 <td class="text-center">
                   <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                 </td>
@@ -255,7 +255,7 @@
                   </div>
                 </td>
                 <td>HP Core i7</td>
-                <td class="text-right">$87 346.1</td>
+                <td class="text-end">$87 346.1</td>
                 <td class="text-center">
                   <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                 </td>
@@ -271,7 +271,7 @@
                   </div>
                 </td>
                 <td>Let&apos;s Dance</td>
-                <td class="text-right">$57 944.6</td>
+                <td class="text-end">$57 944.6</td>
                 <td class="text-center">
                   <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                 </td>
@@ -287,7 +287,7 @@
                   </div>
                 </td>
                 <td>Air Pro</td>
-                <td class="text-right">$118 533.1</td>
+                <td class="text-end">$118 533.1</td>
                 <td class="text-center">
                   <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                 </td>
@@ -303,7 +303,7 @@
                   </div>
                 </td>
                 <td>Version Control</td>
-                <td class="text-right">$72 854.5</td>
+                <td class="text-end">$72 854.5</td>
                 <td class="text-center">
                   <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                 </td>
@@ -336,7 +336,7 @@
                     </div>
                   </th>
                   <th>Product</th>
-                  <th class="text-right">Price</th>
+                  <th class="text-end">Price</th>
                   <th class="text-center">Sales</th>
                 </tr>
               </thead>
@@ -352,7 +352,7 @@
                     </div>
                   </td>
                   <td>On the Road</td>
-                  <td class="text-right">$25 224.2</td>
+                  <td class="text-end">$25 224.2</td>
                   <td class="text-center">
                     <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                   </td>
@@ -368,7 +368,7 @@
                     </div>
                   </td>
                   <td>HP Core i7</td>
-                  <td class="text-right">$87 346.1</td>
+                  <td class="text-end">$87 346.1</td>
                   <td class="text-center">
                     <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                   </td>
@@ -384,7 +384,7 @@
                     </div>
                   </td>
                   <td>Let&apos;s Dance</td>
-                  <td class="text-right">$57 944.6</td>
+                  <td class="text-end">$57 944.6</td>
                   <td class="text-center">
                     <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                   </td>
@@ -400,7 +400,7 @@
                     </div>
                   </td>
                   <td>Air Pro</td>
-                  <td class="text-right">$118 533.1</td>
+                  <td class="text-end">$118 533.1</td>
                   <td class="text-center">
                     <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                   </td>
@@ -416,7 +416,7 @@
                     </div>
                   </td>
                   <td>Version Control</td>
-                  <td class="text-right">$72 854.5</td>
+                  <td class="text-end">$72 854.5</td>
                   <td class="text-center">
                     <Sparklines :data="getRandomData()" :options="getRandomColor()"></Sparklines>
                   </td>

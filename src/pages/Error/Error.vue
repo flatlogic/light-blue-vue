@@ -10,12 +10,12 @@
             If you are sure there must be a page, search for it.
         </p>
         <b-form>
-          <b-form-group>
+          <b-form-group class="mb-3">
             <b-form-input class="input-transparent" size="lg" type="text" placeholder="Search Pages" />
           </b-form-group>
           <router-link tag="a" to="/app/dashboard/visits">
             <b-button class="errorBtn" type="submit" variant="inverse">
-                Search <i class="fa fa-search ml-xs" />
+                Search <i class="fa fa-search ms-1" />
             </b-button>
           </router-link>
         </b-form>

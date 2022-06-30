@@ -172,7 +172,7 @@
             </ul>
           </div>
           <div class="post-user mt-negative-lg">
-            <span class="thumb-lg pull-left mr mt-n-sm">
+            <span class="thumb-lg pull-left me-1 mt-n-sm">
               <img class="rounded-circle" src='../../assets/people/a4.jpg' alt="man" />
             </span>
             <h6 class="m-b-1 fw-normal text-white">Jeremy &nbsp;
@@ -199,7 +199,7 @@
             </ul>
             <ul class="post-comments mb-0 mt-2">
               <li>
-                <span class="thumb-xs avatar pull-left mr-sm">
+                <span class="thumb-xs avatar pull-left me-2">
                   <img class="rounded-circle" src='../../assets/people/a1.jpg' alt="woman" />
                 </span>
                 <div class="comment-body">
@@ -210,7 +210,7 @@
                 </div>
               </li>
               <li>
-                <span class="thumb-xs avatar pull-left mr-sm">
+                <span class="thumb-xs avatar pull-left me-2">
                   <img class="rounded-circle" src='../../assets/avatar.png' alt="avatar" />
                 </span>
                 <div class="comment-body">
@@ -235,7 +235,7 @@
               </ul>
             </div>
             <div class="post-user mt-sm">
-              <span class="thumb pull-left mr mt-n-sm">
+              <span class="thumb pull-left me-1 mt-n-sm">
                 <img class="rounded-circle" src='../../assets/people/a6.jpg' alt="woman" />
               </span>
               <h6 class="mb-xs mt"><span class="fw-semi-bold">Maryna</span> Nilson</h6>
@@ -263,7 +263,7 @@
         <Widget refresh close>
           <div>
             <div class="post-user mt-n-xs">
-              <span class="thumb pull-left mr mt-n-sm">
+              <span class="thumb pull-left me-1 mt-n-sm">
                 <img class="rounded-circle" src='../../assets/people/a2.jpg' alt="woman" />
               </span>
               <h6 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@jessica</span></h6>
@@ -309,8 +309,8 @@
             <h4 class="title">
               <span class="fw-normal">Sunnyvale</span>, CA
             </h4>
-            <div class="info text-right">
-              <i class="fa fa-map-marker h1 m-0 mr-xs" />
+            <div class="info text-end">
+              <i class="fa fa-map-marker h1 m-0 me-1" />
               <h6 class="m-0 mt-xs">FLORIDA, USA</h6>
               <p class="fs-sm">9:41 am</p>
             </div>
@@ -367,21 +367,21 @@
                   <h6 class="text-white fw-normal m-t-1">FRIDAY</h6>
                 </div>
                 <div class="col-7">
-                  <p class="value0 text-danger mt-n-xs mr-n-xs">
+                  <p class="value0 text-danger mt-n-xs me-n-1">
                     33&deg;
                   </p>
                   <p class="mt-n-sm m-b-0 fw-normal fs-sm text-muted">WINDY</p>
                   <div class="row mt-n-xs mb-xs">
                     <div class="col-6 p-0">
                       <Skycon icon="WIND" color="#999" :options="{ width: '20', height: '20' }" />
-                      <div class="d-inline-block ml-1">
+                      <div class="d-inline-block ms-1">
                         <p class="value6">4</p>
                         <p class="fs-sm m-0 mt-n-xs text-muted fw-normal">MPS</p>
                       </div>
                     </div>
                     <div class="col-6 p-0">
                       <Skycon icon="RAIN" color="#999" :options="{ width: '20', height: '20' }" />
-                      <div class="d-inline-block ml-1">
+                      <div class="d-inline-block ms-1">
                         <p class="value6">52</p>
                         <p class="fs-sm m-0 mt-n-xs text-muted fw-normal">MM</p>
                       </div>
@@ -395,7 +395,7 @@
             <Widget class="p-0 text-center">
               <div class="row m-0">
                 <div class="col-7 bg-success btlr bblr">
-                  <p class="value0 text-white mt-sm mr-n-xs">
+                  <p class="value0 text-white mt-sm me-n-1">
                     20&deg;
                   </p>
                   <p class="text-white fw-normal d-inline-block mb">SUNDAY</p>
@@ -643,7 +643,7 @@
                   <i class="fa fa-quote-right opacity-50"/>
                 </p>
                 <footer>
-                  <span class="thumb pull-left mr">
+                  <span class="thumb pull-left me-1">
                     <img class="rounded-circle" src='../../assets/people/a4.jpg' alt="woman"/>
                   </span>
                   <h4 class="m-0 mb-xs"><span class="fw-semi-bold">Miha</span> Koshir</h4>
@@ -652,7 +652,7 @@
               </div>
               <div v-else key="second" class="carousel-feature-widget">
                 <div class="clearfix mt-xs">
-                  <span class="thumb pull-left mr">
+                  <span class="thumb pull-left me-1">
                     <img class="rounded-circle" src='../../assets/people/a3.jpg' alt="woman"/>
                   </span>
                   <h4 class="m-0 mb-xs"><span class="fw-semi-bold">Maryna</span> Ess</h4>

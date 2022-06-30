@@ -66,11 +66,9 @@
           </p>
           <b-input-group class="mt">
             <b-form-input placeholder="Search..." />
-            <b-input-group-append>
               <b-btn variant="default">
                 <i class="la la-search" />
               </b-btn>
-            </b-input-group-append>
           </b-input-group>
         </Widget>
       </b-col>
@@ -99,7 +97,7 @@
             :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-primary text-white mr-2">
+              <span class="circle bg-primary text-white me-2">
                 <i class="la la-angle-up" />
               </span>
             </small>
@@ -131,7 +129,7 @@
             :value="60" :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-primary text-white mr-2">
+              <span class="circle bg-primary text-white me-2">
                 <i class="la la-angle-down" />
               </span>
             </small>
@@ -163,7 +161,7 @@
             :max="100" class="progress-xs" />
           <p>
             <small>
-              <span class="circle bg-primary text-white mr-2">
+              <span class="circle bg-primary text-white me-2">
                 <i class="la la-plus" />
               </span>
             </small>
@@ -176,13 +174,13 @@
     <b-row>
       <b-col lg="4" xs="12">
         <Widget
-          title="<h6><span class='badge badge-danger mr-2'>New</span> Messages</h6>"
+          title="<h6><span class='badge badge-danger me-2'>New</span> Messages</h6>"
           refresh close customHeader
         >
           <div class="widget-body p-0">
             <div class="list-group list-group-lg">
               <a class="list-group-item" href="#">
-                <span class="thumb-sm float-left mr">
+                <span class="thumb-sm float-start me-2">
                   <img class="rounded-circle" src="../../assets/people/a2.jpg" alt="woman" />
                   <i class="status status-bottom bg-success" />
                 </span>
@@ -194,7 +192,7 @@
                 </div>
               </a>
               <a class="list-group-item" href="#">
-                <span class="thumb-sm float-left mr">
+                <span class="thumb-sm float-start me-2">
                   <img class="rounded-circle" src="../../assets/people/a4.jpg" alt="woman" />
                   <i class="status status-bottom bg-success" />
                 </span>
@@ -206,7 +204,7 @@
                 </div>
               </a>
               <a class="list-group-item" href="#">
-                <span class="thumb-sm float-left mr">
+                <span class="thumb-sm float-start me-2">
                   <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="woman" />
                   <i class="status status-bottom bg-primary" />
                 </span>
@@ -216,7 +214,7 @@
                 </div>
               </a>
               <a class="list-group-item" href="#">
-                <span class="thumb-sm float-left mr">
+                <span class="thumb-sm float-start me-2">
                   <img class="rounded-circle" src="../../assets/people/a5.jpg" alt="man" />
                   <i class="status status-bottom bg-danger" />
                 </span>
@@ -312,11 +310,11 @@
           <Calendar />
           <div class="list-group fs-mini">
             <a href="#" class="list-group-item text-ellipsis">
-              <span class="badge badge-pill bg-primary float-right">6:45</span>
+              <span class="badge badge-pill bg-primary float-end">6:45</span>
               Weed out the flower bed
             </a>
             <a href="#" class="list-group-item text-ellipsis">
-              <span class="badge badge-pill badge-success float-right">9:41</span>
+              <span class="badge badge-pill badge-success float-end">9:41</span>
               Stop world water pollution
             </a>
           </div>
@@ -327,6 +325,7 @@
 </template>
 
 <script>
+import config from '../../config'
 import Vue from 'vue';
 import Widget from '@/components/Widget/Widget';
 import Map from './components/Map/Map';
@@ -383,12 +382,12 @@ export default {
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: '#1870DC',
+            backgroundColor: config.colors.blue,
             borderColor: 'transparent',
             data: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt()]
           }, {
             label: 'Data Two',
-            backgroundColor: '#F45722',
+            backgroundColor: config.colors.red,
             borderColor: 'transparent',
             data: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt(), this.getRandomInt()]
           }

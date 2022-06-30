@@ -20,7 +20,7 @@
             Toggle a working modal demo by clicking the button below. It will
             slide down and fade in from the top of the page.
           </p>
-          <b-button class="mr-sm" variant="primary" v-b-modal.demo
+          <b-button class="me-2" variant="primary" v-b-modal.demo
             >Demo</b-button
           >
           <b-button variant="primary" v-b-modal.long
@@ -39,7 +39,7 @@
             in at certain breakpoints to avoid horizontal scrollbars on narrower
             viewports.
           </p>
-          <b-button class="mr-sm" variant="primary" v-b-modal.large
+          <b-button class="me-2" variant="primary" v-b-modal.large
             >Large modal</b-button
           >
           <b-button variant="primary" v-b-modal.small>Small modal</b-button>
@@ -59,29 +59,29 @@
             <code>&lt;b-modal&gt;</code>. Then, use the normal grid system
             classes as you would anywhere else.
           </p>
-          <div class="bg-dark p-3">
+          <div class="bg-dark-main p-3">
             <b-button variant="primary" v-b-modal.launch>Launch</b-button>
-            <pre class="bg-dark border-0 w-100 h-100">
+            <pre class="bg-dark-main border-0 w-100 h-100">
               <code class="text-danger">{{'&lt;b-container fluid&gt;'}}</code>
               <code class="text-success">{{'  &lt;b-row&gt;'}}</code>
               <code class="text-info">{{'    &lt;b-col md="4"&gt;'}}</code>
               <code>{{'      .col-md-4'}}</code>
               <code class="text-info">{{'    &lt;/b-col&gt;'}}</code>
-              <code class="text-info">{{'    &lt;b-col md="4" class="ml-auto"&gt;'}}</code>
-              <code>{{'      .col-md-4 .ml-auto'}}</code>
+              <code class="text-info">{{'    &lt;b-col md="4" class="ms-auto"&gt;'}}</code>
+              <code>{{'      .col-md-4 .ms-auto'}}</code>
               <code class="text-info">{{'    &lt;/b-col&gt;'}}</code>
               <code class="text-success">{{'  &lt;/b-row&gt;'}}</code>
               <code class="text-success">{{'  &lt;b-row&gt;'}}</code>
-              <code class="text-info">{{'    &lt;b-col md="3" class="ml-auto"&gt;'}}</code>
-              <code>{{'      .col-md-3 .ml-auto'}}</code>
+              <code class="text-info">{{'    &lt;b-col md="3" class="ms-auto"&gt;'}}</code>
+              <code>{{'      .col-md-3 .ms-auto'}}</code>
               <code class="text-info">{{'    &lt;/b-col&gt;'}}</code>
-              <code class="text-info">{{'    &lt;b-col md="4" class="ml-auto"&gt;'}}</code>
-              <code>{{'      .col-md-4 .ml-auto'}}</code>
+              <code class="text-info">{{'    &lt;b-col md="4" class="ms-auto"&gt;'}}</code>
+              <code>{{'      .col-md-4 .ms-auto'}}</code>
               <code class="text-info">{{'    &lt;/b-col&gt;'}}</code>
               <code class="text-success">{{'  &lt;/b-row&gt;'}}</code>
               <code class="text-success">{{'  &lt;b-row&gt;'}}</code>
-              <code class="text-info">{{'    &lt;b-col md="6" class="ml-auto"&gt;'}}</code>
-              <code>{{'      .col-md-6 .ml-auto'}}</code>
+              <code class="text-info">{{'    &lt;b-col md="6" class="ms-auto"&gt;'}}</code>
+              <code>{{'      .col-md-6 .ms-auto'}}</code>
               <code class="text-info">{{'    &lt;/b-col&gt;'}}</code>
               <code class="text-success">{{'  &lt;/b-row&gt;'}}</code>
               <code class="text-danger">{{'&lt;/b-container&gt;'}}</code>
@@ -208,21 +208,21 @@
           <b-col md="4">
             <div class="h-100 w-100 bg-primary p-2">.col-md-4</div>
           </b-col>
-          <b-col md="4" class="ml-auto">
-            <div class="h-100 w-100 bg-primary p-2">.col-md-4 .ml-auto</div>
+          <b-col md="4" class="ms-auto">
+            <div class="h-100 w-100 bg-primary p-2">.col-md-4 .ms-auto</div>
           </b-col>
         </b-row>
         <b-row class="mt-sm">
-          <b-col md="3" class="ml-auto">
-            <div class="h-100 w-100 bg-primary p-2">.col-md-3 .ml-auto</div>
+          <b-col md="3" class="ms-auto">
+            <div class="h-100 w-100 bg-primary p-2">.col-md-3 .ms-auto</div>
           </b-col>
-          <b-col md="4" class="ml-auto">
-            <div class="h-100 w-100 bg-primary p-2">.col-md-4 .ml-auto</div>
+          <b-col md="4" class="ms-auto">
+            <div class="h-100 w-100 bg-primary p-2">.col-md-4 .ms-auto</div>
           </b-col>
         </b-row>
         <b-row class="mt-sm">
-          <b-col md="6" class="ml-auto">
-            <div class="h-100 w-100 bg-primary p-2">.col-md-6 .ml-auto</div>
+          <b-col md="6" class="ms-auto">
+            <div class="h-100 w-100 bg-primary p-2">.col-md-6 .ms-auto</div>
           </b-col>
         </b-row>
       </b-container>

@@ -173,7 +173,7 @@ $doc-sidebar-color: #6c757d;
     color: #218bc3;
 
     &:hover {
-      color: lighten(#218bc3, 10%);
+      color: tint-color(#218bc3, 10%);
     }
   }
 

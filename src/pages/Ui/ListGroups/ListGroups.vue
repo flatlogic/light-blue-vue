@@ -20,8 +20,8 @@
             justify-content-between align-items-center"
             v-for="element in sortableList" :key="element.id">
             <div>
-              <i class="fa fa-sort mr-sm" />
-              <span class="mr-sm">{{element.id}}</span>{{element.text}}
+              <i class="fa fa-sort me-2" />
+              <span class="me-2">{{element.id}}</span>{{element.text}}
             </div>
             <i class="fa fa-times text-muted" />
           </div>
@@ -47,7 +47,7 @@
                     v-if="data.children && data.children.length"
                     @click="store.toggleOpen(data)"
                   >
-                    <span class="bg-default border circle mr-sm">
+                    <span class="bg-default border circle me-2">
                       <i :class="['la', data.open ? 'la-minus' : 'la-plus']"></i>
                     </span>
                   </div>
@@ -56,7 +56,7 @@
                     <div class="drag bg-default px-4 py-3">
                       <i class="la la-lg la-bars"></i>
                     </div>
-                    <span class="ml">{{data.text}}</span>
+                    <span class="ms-1">{{data.text}}</span>
                   </span>
                 </div>
               </template>
@@ -73,7 +73,7 @@
                     v-if="data.children && data.children.length"
                     @click="store.toggleOpen(data)"
                   >
-                    <span class="bg-default border circle mr-sm">
+                    <span class="bg-default border circle me-2">
                       <i :class="['la', data.open ? 'la-minus' : 'la-plus']"></i>
                     </span>
                   </div>
@@ -82,7 +82,7 @@
                     <div class="drag bg-default px-4 py-3">
                       <i class="la la-lg la-bars"></i>
                     </div>
-                    <span class="ml">{{data.text}}</span>
+                    <span class="ms-1">{{data.text}}</span>
                   </span>
                 </div>
               </template>

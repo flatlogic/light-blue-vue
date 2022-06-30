@@ -33,6 +33,7 @@
             <tab-content title="1. Your Details">
               <b-form>
                 <b-form-group
+                  class="mb-3"
                   label="Username"
                   label-for="username"
                   description="Username can contain any letters or numbers, without spaces"
@@ -40,6 +41,7 @@
                   <b-form-input id="username" type="text" />
                 </b-form-group>
                 <b-form-group
+                  class="mb-3"
                   label="Email"
                   label-for="email"
                   description="Please provide your E-mail"
@@ -47,17 +49,19 @@
                   <b-form-input id="email" type="text" />
                 </b-form-group>
                 <b-form-group
-                  label="Adress"
-                  label-for="adress"
+                  class="mb-3"
+                  label="Address"
+                  label-for="address"
                   description="Please provide your address"
                 >
-                  <b-form-input id="adress" type="text" />
+                  <b-form-input id="address" type="text" />
                 </b-form-group>
               </b-form>
             </tab-content>
             <tab-content title="2. Shipping">
               <b-form>
                 <b-form-group
+                  class="mb-3"
                   label="Destination Country"
                   label-for="destination"
                   description="Please choose your country destination"
@@ -70,6 +74,7 @@
                   />
                 </b-form-group>
                 <b-form-group
+                  class="mb-3"
                   label="Choose shipping option"
                   label-for="shipping"
                   description="Please choose your shipping option"
@@ -82,6 +87,7 @@
                   />
                 </b-form-group>
                 <b-form-group
+                  class="mb-3"
                   label="Destination Zip Code"
                   label-for="zip"
                   description="Please provide your Destination Zip Code"
@@ -90,6 +96,7 @@
                     type="text" v-mask="'######'" placeholder="______" />
                 </b-form-group>
                 <b-form-group
+                  class="mb-3"
                   label="Destination Address"
                   label-for="destAdress"
                   description="Please provide the destination address"
@@ -101,12 +108,14 @@
             <tab-content title="3. Pay">
               <b-form>
                 <b-form-group
+                  class="mb-3"
                   label="Name on the Card"
                   label-for="cardname"
                 >
                   <b-form-input id="cardname" />
                 </b-form-group>
                 <b-form-group
+                  class="mb-3"
                   label="Credit card type"
                   label-for="cardtype"
                 >
@@ -118,6 +127,7 @@
                   />
                 </b-form-group>
                 <b-form-group
+                  class="mb-3"
                   label="Credit Card Number"
                   label-for="cardnumber"
                 >
@@ -125,6 +135,7 @@
                     type="text" v-mask="'#### #### #### ####'"/>
                 </b-form-group>
                 <b-form-group
+                  class="mb-3"
                   label="Expiration Date"
                   label-for="exp"
                 >

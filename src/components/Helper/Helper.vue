@@ -35,14 +35,14 @@
                     target="_blank"
                     href="https://flatlogic.com/forum"
                     class="btn btn-outline-default btn-rounded-f fs-mini text-muted d-flex align-items-center">
-                        <i class="glyphicon glyphicon-headphones mr-xs mt-n-sm"></i>
+                        <i class="glyphicon glyphicon-headphones me-1 mt-n-sm"></i>
                         Support
                     </a>
                     <a role="button"
                     target="_blank"
                     href="https://github.com/flatlogic/light-blue-vue-admin"
                     class="btn btn-outline-default btn-rounded-f fs-mini text-muted d-flex align-items-center">
-                        <i class="fa fa-github mr-xs"></i>
+                        <i class="fa fa-github me-1"></i>
                         Github
                     </a>
                 </div>

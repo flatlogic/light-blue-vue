@@ -33,7 +33,7 @@
                   <td><span :class="`circle bg-${row.state.toLowerCase()}`">&nbsp;</span></td>
                   <td><code>*-{{row.state.toLowerCase()}}</code></td>
                   <td><code v-for="(usage, idx) in row.usage"
-                    :key="usage + idx" class="mr-xs">{{usage}}</code></td>
+                    :key="usage + idx" class="me-1">{{usage}}</code></td>
                 </tr>
               </tbody>
             </table>
@@ -52,7 +52,7 @@
             Includes support for styling links with hover states, too. Use <code>text-*</code>
             class to fill text.
           </p>
-          <div class="widget-padding-md w-100 h-100 text-left border rounded">
+          <div class="widget-padding-md w-100 h-100 text-start border rounded">
             <b-row>
               <b-col sm="12">
                 <h1 class="text-danger">h1. Heading</h1>
@@ -73,14 +73,14 @@
         >
           <p>Use any of the available button classes to quickly create a styled button.
             Semantically distinguishable beauty.</p>
-          <b-button class="width-100 mb-3 mr-3" variant="default">Default</b-button>
-          <b-button class="width-100 mb-3 mr-3" variant="primary">Primary</b-button>
-          <b-button class="width-100 mb-3 mr-3" variant="info">Info</b-button>
-          <b-button class="width-100 mb-3 mr-3" variant="success">Success</b-button>
-          <b-button class="width-100 mb-3 mr-3" variant="warning">Warning</b-button>
-          <b-button class="width-100 mb-3 mr-3" variant="danger">Danger</b-button>
-          <b-button class="width-100 mb-3 mr-3" variant="gray">Gray</b-button>
-          <b-button class="width-100 mb-3 mr-3" variant="inverse">Inverse</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="default">Default</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="primary">Primary</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="info">Info</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="success">Success</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="warning">Warning</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="danger">Danger</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="gray">Gray</b-button>
+          <b-button class="width-100 mb-3 me-3" variant="inverse">Inverse</b-button>
         </Widget>
       </b-col>
     </b-row>

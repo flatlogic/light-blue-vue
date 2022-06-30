@@ -24,7 +24,7 @@
               Everyone knows what is lore ipsum - it is easy to understand if
               text is lore ipsum.
             </p>
-            <b-button variant="danger" class="mr-2">Check</b-button>
+            <b-button variant="danger" class="me-2">Check</b-button>
             <b-button variant="default">Dance</b-button>
           </b-tab>
           <b-tab title="Works">
@@ -56,7 +56,7 @@
               Everyone knows what is lore ipsum - it is easy to understand if
               text is lore ipsum.
             </p>
-            <b-button variant="danger" class="mr-2">Check</b-button>
+            <b-button variant="danger" class="me-2">Check</b-button>
             <b-button variant="default">Dance</b-button>
           </b-tab>
           <b-tab title="Works">
@@ -88,7 +88,7 @@
             </div>
           </div>
           <b-collapse id="accordion-first" class="card-body" :visible="accordionFirst === index">
-            <div class="card-body" v-html="element.body" />
+            <div class="card-body" v-htms="element.body" />
           </b-collapse>
         </div>
       </b-col>

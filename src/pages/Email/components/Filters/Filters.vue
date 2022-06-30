@@ -1,12 +1,13 @@
 <template>
   <div class="col-lg-3 col-xl-2 col-xs-12">
-    <b-button
-      variant="danger"
-      class="btn-block"
-      @click="compose(true)"
-    >
-      Compose
-    </b-button>
+    <div class="d-grid gap-2">
+      <b-button
+        variant="danger"
+        @click="compose(true)"
+      >
+        Compose
+      </b-button>
+    </div>
     <div class="mb mt">
       <b-button
         v-for="button in mainButtons"
@@ -16,7 +17,7 @@
         variant="transparent"
       >
         {{button.title}}
-        <b-badge v-if="button.notifications" :variant="button.lable || 'default'"  pill>
+        <b-badge v-if="button.notifications" :variant="button.label || 'default'"  :class="`bg-${button.label || 'default'}`" pill>
           {{button.notifications}}
         </b-badge>
       </b-button>
@@ -47,12 +48,12 @@ export default {
       activeButtonId: 0,
       mainButtons: [
         {
-          id: 0, title: 'Inbox', notifications: 2, lable: 'primary', filter: null,
+          id: 0, title: 'Inbox', notifications: 2, label: 'primary', filter: null,
         },
         { id: 1, title: 'Starred', filter: 'starred' },
         { id: 2, title: 'Sent Mail', filter: 'sent' },
         {
-          id: 3, title: 'Draft', notifications: 3, lable: 'danger', filter: 'draft',
+          id: 3, title: 'Draft', notifications: 3, label: 'danger', filter: 'draft',
         },
         { id: 4, title: 'Trash', filter: 'trash' },
       ],

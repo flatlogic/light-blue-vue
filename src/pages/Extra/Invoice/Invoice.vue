@@ -16,11 +16,11 @@
                     <img src="../../../assets/logo.jpg" alt="Logo" class='invoiceLogo' />
                   </b-col>
                   <b-col md="6" xs="12" class="b-col-print-6">
-                    <h4 class="text-right">
+                    <h4 class="text-end">
                       #<span class="fw-semi-bold">9.45613</span> /
                       <small>17 May 2014</small>
                     </h4>
-                    <div class="text-muted fs-larger text-right">
+                    <div class="text-muted fs-larger text-end">
                       Some Invoice number description or whatever
                     </div>
                   </b-col>
@@ -44,7 +44,7 @@
                     </address>
                   </b-col>
 
-                  <b-col sm='6' class="b-col-print-6 text-right">
+                  <b-col sm='6' class="b-col-print-6 text-end">
                     <h5 class="text-muted no-margin">Client Information</h5>
                     <h3 class="client-name m-t-1">
                       Veronica Niasvizhskaja
@@ -127,7 +127,7 @@
                     </p>
                   </b-col>
                   <b-col md='4' xs='12' class="b-col-print-6">
-                    <b-row class="text-right justify-content-end">
+                    <b-row class="text-end justify-content-end">
                       <b-col xs='6' />
                       <b-col sm='3'>
                         <p>Subtotal</p>
@@ -142,14 +142,14 @@
                     </b-row>
                   </b-col>
                 </b-row>
-                <p class="text-right mt-lg mb-xs">
+                <p class="text-end mt-lg mb-xs">
                   Marketing Consultant
                 </p>
-                <p class="text-right">
+                <p class="text-end">
                   <span class="fw-semi-bold">Bob Smith</span>
                 </p>
                 <b-button-toolbar class="mt-lg justify-content-end d-print-none">
-                  <b-button @click="printInvoice()" variant="inverse" class="mr-2">
+                  <b-button @click="printInvoice()" variant="inverse" class="me-2">
                     <i class="fa fa-print" />
                     &nbsp;&nbsp;
                     Print

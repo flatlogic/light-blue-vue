@@ -6,9 +6,9 @@
       <b-form-input class="mb" type="text" placeholder="Subject" :value="data && data.theme" />
       <ckeditor :editor="wygEditor" v-model="wygContent"></ckeditor>
       <div class="text-md-right mt">
-        <b-button class="ml-xs" variant="default">Discard</b-button>
-        <b-button class="ml-xs" variant="default">Save</b-button>
-        <b-button class="ml-xs" variant="danger">Send</b-button>
+        <b-button class="ms-1" variant="default">Discard</b-button>
+        <b-button class="ms-1" variant="default">Save</b-button>
+        <b-button class="ms-1" variant="danger">Send</b-button>
       </div>
     </div>
   </Widget>

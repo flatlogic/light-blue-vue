@@ -1,20 +1,20 @@
 <template>
   <b-navbar toggleable="md" class="app-header d-print-none">
-    <b-navbar-nav class="navbar-nav-mobile ml-auto">
-        <b-nav-text class="mr-3">
+    <b-navbar-nav class="navbar-nav-mobile ms-auto">
+        <b-nav-text class="me-3">
           <b-alert class="header-alert animate__animated animate__bounceIn animate__delay-2s" dismissible v-model="showNavbarAlert">
-            <i class="fa fa-info-circle mr-1"></i> Check out Light Blue Settings on the right!
+            <i class="fa fa-info-circle me-1"></i> Check out Light Blue Settings on the right!
           </b-alert>
         </b-nav-text>
-        <b-nav-form class="d-sm-down-none mr-3">
+        <b-nav-form class="d-sm-down-none me-3 d-flex align-items-center">
           <b-input-group class="input-group-transparent">
-            <b-input-group-text slot="prepend"><i class="la la-search"></i></b-input-group-text>
+            <b-input-group-text><i class="la la-search"></i></b-input-group-text>
             <b-input class="input-transparent" id="search-input" placeholder="Search Dashboard" />
           </b-input-group>
         </b-nav-form>
         <b-nav-item-dropdown right menu-class="py-0">
           <template slot="button-content">
-          <span class="avatar rounded-circle thumb-sm float-left mr-2">
+          <span class="avatar rounded-circle thumb-sm float-start me-2">
             <img
                 v-if="user.avatar || user.email === 'admin@flatlogic.com'"
                 class="rounded-circle"
@@ -33,7 +33,7 @@
             <i class="la la-comment px-2" />
           </template>
           <b-dropdown-item>
-            <span class="avatar thumb-sm mr-3">
+            <span class="avatar thumb-sm me-3">
               <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="woman" />
             </span>
             <div>
@@ -42,7 +42,7 @@
             </div>
           </b-dropdown-item>
           <b-dropdown-item>
-            <span class="avatar thumb-sm mr-3">
+            <span class="avatar thumb-sm me-3">
               <img class="rounded-circle" src="../../assets/people/a2.jpg" alt="woman" />
             </span>
             <div>
@@ -51,7 +51,7 @@
             </div>
           </b-dropdown-item>
           <b-dropdown-item>
-            <span class="avatar thumb-sm mr-3">
+            <span class="avatar thumb-sm me-3">
               <img class="rounded-circle" src="../../assets/people/a3.jpg" alt="woman" />
             </span>
             <div>
@@ -60,7 +60,7 @@
             </div>
           </b-dropdown-item>
           <b-dropdown-item-button class="text-center">
-            <span class="mx-auto">See all messages <i class="fa fa-arrow-right ml-1"></i></span>
+            <span class="mx-auto">See all messages <i class="fa fa-arrow-right ms-1"></i></span>
           </b-dropdown-item-button>
         </b-nav-item-dropdown>
         <b-nav-item class="divider d-md-down-none"></b-nav-item>
@@ -84,27 +84,27 @@
             <i class="la la-globe px-2" />
           </template>
           <b-dropdown-item>
-            <span class="badge badge-danger mr-2"><i class="fa fa-bell-o"></i></span>
+            <span class="badge badge-danger me-2"><i class="fa fa-bell-o"></i></span>
             <span class="fs-sm">Check out this awesome ticket</span>
           </b-dropdown-item>
           <b-dropdown-item>
-            <span class="badge bg-primary mr-2"><i class="fa fa-question-circle"></i></span>
+            <span class="badge bg-primary me-2"><i class="fa fa-question-circle"></i></span>
             <span class="fs-sm">Finish 2019 annual report</span>
           </b-dropdown-item>
           <b-dropdown-item>
-            <span class="badge badge-success mr-2"><i class="fa fa-info-circle"></i></span>
+            <span class="badge badge-success me-2"><i class="fa fa-info-circle"></i></span>
             <span class="fs-sm">Update Vue.js to the newest version</span>
           </b-dropdown-item>
           <b-dropdown-item>
-            <span class="badge badge-info mr-2"><i class="fa fa-plus"></i></span>
+            <span class="badge badge-info me-2"><i class="fa fa-plus"></i></span>
             <span class="fs-sm">Establish OKR system</span>
           </b-dropdown-item>
           <b-dropdown-item>
-            <span class="badge badge-danger mr-2"><i class="fa fa-tag"></i></span>
+            <span class="badge badge-danger me-2"><i class="fa fa-tag"></i></span>
             <span class="fs-sm">Fill in time tracking</span>
           </b-dropdown-item>
           <b-dropdown-item-button class="text-center">
-            See all tickets <i class="fa fa-arrow-right ml-1"></i>
+            See all tickets <i class="fa fa-arrow-right ms-1"></i>
           </b-dropdown-item-button>
         </b-nav-item-dropdown>
         <b-nav-item class="d-md-down-none" @click="logoutUser">

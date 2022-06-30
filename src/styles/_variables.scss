@@ -20,7 +20,7 @@ $font-size-larger:        1.1rem;
 $font-size-mini:          0.9rem;
 $font-size-index:         0.7rem;
 
-$font-family-base: 'Open Sans', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
 
 // Color system
 //
@@ -38,37 +38,46 @@ $gray-900: #29323a !default;
 $black:    #000 !default;
 $gray-light: $gray-100 !default;
 
-$lime:     #8cbf26 !default;
-$red:      #DB2A34 !default;
-$red-dark: #d04f4f !default;
-$blue:     #2477FF !default;
-$green:    #2D8515 !default;
-$orange:   #E49400 !default;
-$pink:     #e671b8 !default;
-$purple:   #474D84 !default;
-$brown:    #a05000 !default;
-$teal:     #4179CF !default;
+$lime:       #8cbf26 !default;
+$red:        #c93c3c !default;
+$red-dark:   #d04f4f !default;
+$blue:       #3979f6 !default;
+$green:      #47822B !default;
+$orange:     #da9734 !default;
+$pink:       #e671b8 !default;
+$purple:     #a700ae !default;
+$brown:      #a05000 !default;
+$teal:       #6291e3 !default;
+$subtle-blue:#474D84 !default;
+$gray:       #595D78 !default;
+$inverse:    #30314E !default;
+$violet_deep:#1B1E3C !default;
+$icon-blue:  #3979F6 !default;
+$main-gray:  #C1C3CF !default;
+$header-gray: #51536C !default;
 $dark:     #040620 !default;
 $violet:   #333867 !default;
 $default:  #474D84 !default;
+$secondary: #f4f4f5 !default;
 
 $theme-colors: (
-        primary: $blue,
-        secondary: rgba(#F4F4F5, .9),
-        success: $green,
-        info: $teal,
-        warning: $orange,
-        danger: $red,
-        dark: $dark,
-        inverse: #30314E,
-        gray: $gray-300,
-        light: $gray-100,
-        default: $default,
-        primary-light: #dee4ee,
-        success-light: #ecfaec,
-        info-light: #f2fafa,
-        warning-light: #fdf7e6,
-        danger-light: #fff2ef,
+  primary: $blue,
+  secondary: $secondary,
+  success: $green,
+  info: $teal,
+  warning: $orange,
+  danger: $red,
+  dark: $gray-700,
+  inverse: $inverse,
+  gray: $gray,
+  dark-main: $dark,
+  light: $gray-100,
+  default: $subtle-blue,
+  primary-light: #dee4ee,
+  success-light: #ecfaec,
+  info-light: #f2fafa,
+  warning-light: #fdf7e6,
+  danger-light: #fff2ef,
 );
 
 $link-color: $blue;
@@ -90,8 +99,8 @@ $addition-bg: rgba($dark, .24) !default;
 $body-bg: $violet !default;
 $body-bg-gradient-start: $violet;
 $body-bg-gradient-end: #17193B;
-$body-bg-light: lighten($body-bg, 3%);
-$default-bg: radial-gradient(farthest-side ellipse at 10% 0, $body-bg-gradient-start, $body-bg-gradient-end);
+$body-bg-light: tint-color($body-bg, 3%);
+$default-bg: linear-gradient(136.36deg, #333964 4.86%, #171A39 94.85%);
 
 $headings-font-weight: 300;
 
@@ -268,3 +277,43 @@ $location-selector-bit-bg: rgba(255, 255, 255, 0.2) !default;
 // -------------------------
 
 $screen-lg-height: 670px !default;
+
+
+// Bootstrap 4 variables //
+$emphasized-link-hover-darken-percentage: 15% !default;
+
+$custom-control-indicator-size: 1rem !default;
+$custom-control-indicator-bg-size: 50% 50%;
+$custom-control-gutter: .5rem !default;
+$custom-radio-indicator-border-radius: 50% !default;
+$custom-control-indicator-border-width: 1px !default;
+
+$input-line-height-lg: 1.5;
+$input-line-height-sm: 1.5;
+
+$form-check-input-gutter:               1.25rem !default;
+$form-check-input-margin-y:             .3rem !default;
+$form-check-input-margin-x:             .25rem !default;
+
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm:       .3rem !default;
+
+$table-dark-color:            $white !default;
+$table-dark-bg:               $gray-800 !default;
+$table-dark-accent-bg:        rgba($white, .05) !default;
+$table-dark-hover-color:      $table-dark-color !default;
+$table-dark-hover-bg:         rgba($white, .075) !default;
+$table-dark-border-color:     lighten($table-dark-bg, 7.5%) !default;
+
+$alert-bg-level:                    -10 !default;
+$alert-border-level:                -9 !default;
+$alert-color-level:                 6 !default;
+
+$blockquote-small-color: $gray-600 !default;
+
+$enable-pointer-cursor-for-buttons:           true !default;
+
+$theme-color-interval: 8%;
+
+$hr-border-color:             rgba($black, .1) !default;
+$hr-border-width:             1px !default;

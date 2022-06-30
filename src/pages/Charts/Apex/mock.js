@@ -1,12 +1,12 @@
 import config from '../../../config';
 const colors = config.colors;
 
-var generateDayWiseTimeSeries = function(baseval, count, yrange) {
-  var i = 0;
-  var series = [];
+let generateDayWiseTimeSeries = function(baseval, count, yrange) {
+  let i = 0;
+  let series = [];
   while (i < count) {
-    var x = baseval;
-    var y =
+    let x = baseval;
+    let y =
       Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
     series.push([x, y]);
@@ -17,11 +17,11 @@ var generateDayWiseTimeSeries = function(baseval, count, yrange) {
 };
 
 function generateHeatMapData(count, yrange) {
-  var i = 0;
-  var series = [];
+  let i = 0;
+  let series = [];
   while (i < count) {
-    var x = (i + 1).toString();
-    var y =
+    let x = (i + 1).toString();
+    let y =
       Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
     series.push({

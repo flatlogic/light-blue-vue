@@ -13,7 +13,7 @@
           <p class="h4 m-0">18.7M</p>
           <p class="deemphasize">Shares Traded</p>
         </b-col>
-        <b-col xs='6' class="text-right">
+        <b-col xs='6' class="text-end">
           <p class="h4 m-0">19.9B</p>
           <p class="deemphasize">Market Cap</p>
         </b-col>
@@ -25,7 +25,7 @@
           <p class="h3 m-0 text-success fw-semi-bold">+120.93</p>
           <p class="deemphasize">Yearly Change</p>
         </b-col>
-        <b-col xs='6' class="text-right">
+        <b-col xs='6' class="text-end">
           <Sparklines :data="sparklineData" :options="sparklineOptions" :width="80" :height="25" />
           <p class="deemphasize">GOOG</p>
         </b-col>
@@ -37,6 +37,8 @@
 <script>
 import Rickshaw from 'rickshaw';
 import Sparklines from '@/components/Sparklines/Sparklines';
+import config from '../../../../config'
+const colors = config.colors;
 
 export default {
   name: 'ChangesChart',
@@ -45,7 +47,7 @@ export default {
     return {
       sparklineData: [{data: [3, 6, 2, 4, 5, 8, 6, 8]}],
       sparklineOptions: {
-        colors: ["#58D777"],
+        colors: [colors.teal],
         plotOptions: {
           bar: {
             columnWidth: '50%'
@@ -73,7 +75,7 @@ export default {
         series: [{
           name: 'pop',
           data: seriesData.shift().map(d => ({ x: d.x, y: d.y })),
-          color: '#7bd47a', // (#64bd63, 0.9)
+          color: colors.default, // (#64bd63, 0.9)
           renderer: 'bar',
           gapSize: 2,
           min: 'auto',

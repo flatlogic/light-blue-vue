@@ -193,25 +193,25 @@
       <h5 class="navTitle d-sm-down-none">
         LABELS
         <a class="actionLink">
-          <i class="la la-plus float-right" />
+          <i class="la la-plus float-end" />
         </a>
       </h5>
       <ul class="sidebarLabels d-sm-down-none">
         <li>
           <a href="#">
-            <i class="fa fa-circle text-success mr-2" />
+            <i class="fa fa-circle text-success me-2" />
             <span class="labelName">My Recent</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="fa fa-circle text-primary mr-2" />
+            <i class="fa fa-circle text-primary me-2" />
             <span class="labelName">Starred</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="fa fa-circle text-danger mr-2" />
+            <i class="fa fa-circle text-danger me-2" />
             <span class="labelName">Background</span>
           </a>
         </li>

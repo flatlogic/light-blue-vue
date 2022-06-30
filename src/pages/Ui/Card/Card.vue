@@ -51,14 +51,14 @@
       <b-col xs='12' sm='6' md='4'>
         <b-card class="mb-xlg border-0">
           <a href="#" class="fw-semi-bold text-success">Avg Rating</a>
-          <a href="#" class="fw-semi-bold text-muted ml-sm">All Time</a>
+          <a href="#" class="fw-semi-bold text-muted ms-2">All Time</a>
           <hr />
           <div class="d-flex justify-content-between mb-lg">
             <div class="text-warning">
-              <i class="la la-star mr-xs" />
-              <i class="la la-star mr-xs" />
-              <i class="la la-star mr-xs" />
-              <i class="la la-star mr-xs" />
+              <i class="la la-star me-1" />
+              <i class="la la-star me-1" />
+              <i class="la la-star me-1" />
+              <i class="la la-star me-1" />
               <i class="la la-star" />
             </div>
             <span class="text-muted"><small>342 REVIEWS</small></span>

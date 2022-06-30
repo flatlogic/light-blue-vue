@@ -47,7 +47,7 @@
             <div class='col-12'>
               <h6 class='mb-0'>
                 <span class='fw-semi-bold'>Budget</span>&nbsp;
-                <div class='badge badge-pill badge-danger'>2017</div>
+                <div class='badge badge-pill bg-danger'>2017</div>
               </h6>
               <span class='text-muted fs-mini'>
                 monthly report will be available in <a href='#'>6 hours</a>
@@ -76,11 +76,11 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-3 text-right m-t-1">
+              <div class="col-md-3 text-end m-t-1">
                 <h6 class="text-muted mb-xs">Inqueries</h6>
                 <p class="fw-semi-bold">73 at 14am</p>
               </div>
-              <div class="col-md-4 text-right m-t-1">
+              <div class="col-md-4 text-end m-t-1">
                 <h6 class="text-muted mb-xs">Last Updated</h6>
                 <p class="fw-semi-bold">23.06.2013</p>
               </div>
@@ -96,8 +96,10 @@
 </template>
 
 <script>
+import config from '../../../../config'
 import Widget from '@/components/Widget/Widget';
 import { Chart } from 'highcharts-vue';
+const colors = config.colors;
 
 export default {
   name: 'FlotCharts',
@@ -147,17 +149,17 @@ export default {
       chart_one: {
         ...options,
         series: this.generateRandomData([{
-          name: 'Visitors', color: '#1870DC',
+          name: 'Visitors', color: colors.blue,
         }, {
-          name: 'Charts', color: '#F45722',
+          name: 'Charts', color: colors.red,
         }])
       } ,
       chart_two: {
         ...options,
         series: this.generateRandomData([{
-          name: 'Controllers', color: '#58D777',
+          name: 'Controllers', color: colors.green,
         }, {
-          name: 'Scopes', color: '#1870DC',
+          name: 'Scopes', color: colors.blue,
         }])
       }
     };

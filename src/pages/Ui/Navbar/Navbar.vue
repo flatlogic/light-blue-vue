@@ -28,10 +28,10 @@
           </ul>
           <b-navbar class="mt p-4" toggleable="md" type="light" variant="default">
             <b-navbar-brand href="#">Navbar</b-navbar-brand>
-            <b-navbar-toggle class="ml-auto" target="nav_collapse1"></b-navbar-toggle>
+            <b-navbar-toggle class="ms-auto" target="nav_collapse1"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse1">
               <!-- Right aligned nav items -->
-              <b-navbar-nav class="ml-auto">
+              <b-navbar-nav class="ms-auto">
                 <b-nav-item href="#">Home</b-nav-item>
                 <b-nav-item href="#">Features</b-nav-item>
                 <b-nav-item href="#">Pricing</b-nav-item>
@@ -50,14 +50,14 @@
             theming classes and background-color utilities.
             Choose from <code>color=&quot;light&quot;</code>
             for use with light background colors, or
-            <code>color=&quot;dark&quot;</code> for dark background
+            <code>color=&quot;dark-main&quot;</code> for dark background
             colors. Then, customize with <code>.bg-*</code> utilities.</p>
-          <b-navbar class="mt p-4" toggleable="md" type="dark" variant="dark">
+          <b-navbar class="mt p-4" toggleable="md" type="dark" variant="dark-main">
             <b-navbar-brand href="#">Navbar</b-navbar-brand>
-            <b-navbar-toggle class="ml-auto" target="nav_collapse2"></b-navbar-toggle>
+            <b-navbar-toggle class="ms-auto" target="nav_collapse2"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse2">
               <!-- Right aligned nav items -->
-              <b-navbar-nav class="ml-auto">
+              <b-navbar-nav class="ms-auto">
                 <b-nav-item href="#">Home</b-nav-item>
                 <b-nav-item href="#">Features</b-nav-item>
                 <b-nav-item href="#">Pricing</b-nav-item>
@@ -67,10 +67,10 @@
           </b-navbar>
           <b-navbar class="mt p-4" toggleable="md" type="dark" variant="primary">
             <b-navbar-brand href="#">Navbar</b-navbar-brand>
-            <b-navbar-toggle class="ml-auto" target="nav_collapse3"></b-navbar-toggle>
+            <b-navbar-toggle class="ms-auto" target="nav_collapse3"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse3">
               <!-- Right aligned nav items -->
-              <b-navbar-nav class="ml-auto">
+              <b-navbar-nav class="ms-auto">
                 <b-nav-item href="#">Home</b-nav-item>
                 <b-nav-item href="#">Features</b-nav-item>
                 <b-nav-item href="#">Pricing</b-nav-item>
@@ -80,10 +80,10 @@
           </b-navbar>
           <b-navbar class="mt p-4" toggleable="md" type="dark" variant="success">
             <b-navbar-brand href="#">Navbar</b-navbar-brand>
-            <b-navbar-toggle class="ml-auto" target="nav_collapse4"></b-navbar-toggle>
+            <b-navbar-toggle class="ms-auto" target="nav_collapse4"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse4">
               <!-- Right aligned nav items -->
-              <b-navbar-nav class="ml-auto">
+              <b-navbar-nav class="ms-auto">
                 <b-nav-item href="#">Home</b-nav-item>
                 <b-nav-item href="#">Features</b-nav-item>
                 <b-nav-item href="#">Pricing</b-nav-item>

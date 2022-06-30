@@ -1,7 +1,7 @@
 <template>
   <div class="messageTableHeader">
     <div>
-      <b-dropdown text="Select" variant="default" size="sm" class="mr-3">
+      <b-dropdown text="Select" variant="default" size="sm" class="me-3">
         <b-dropdown-item-button @click="chooseAll">All</b-dropdown-item-button>
         <b-dropdown-item-button @click="chooseNone">None</b-dropdown-item-button>
         <b-dropdown-divider />

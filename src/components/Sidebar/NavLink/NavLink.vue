@@ -5,7 +5,7 @@
         <i :class="fullIconName"></i>
       </span>
       {{header}} <sup v-if="label" :class="'text-' + labelColor" class="headerLabel">{{label}}</sup>
-      <b-badge v-if="badge" class="badge rounded-f" variant="primary" pill>{{badge}}</b-badge>
+      <b-badge v-if="badge" :class="`badge rounded-f bg-${labelColor}`" variant="primary" pill>{{badge}}</b-badge>
     </router-link>
   </li>
   <li v-else-if="!childrenLinks && isHeader && externalLink" :class="{headerLink: true, className}">
@@ -22,7 +22,7 @@
         <span class="icon">
           <i :class="fullIconName"></i>
         </span>
-        {{header}} <sup v-if="label" :class="'text-' + labelColor" class="ml-1 headerLabel">{{label}}</sup>
+        {{header}} <sup v-if="label" :class="'text-' + labelColor" class="ms-1 headerLabel">{{label}}</sup>
         <div :class="{caretWrapper: true, carretActive: isActive}">
           <i class="fa fa-angle-left" />
         </div>

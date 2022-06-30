@@ -14,7 +14,7 @@
               <img class="img-fluid" src="../../assets/pictures/19.jpg" alt="bridge" />
             </div>
             <a href="#" class="btn btn-outline btn-sm mb-2">
-              <i class="fa fa-twitter mr-2" />
+              <i class="fa fa-twitter me-2" />
               Follow
             </a>
           </div>
@@ -29,19 +29,19 @@
                 <p>UI/UX designer</p>
                 <a href="#" class="btn btn-danger btn-sm mb-3">
                   &nbsp;Send
-                  <i class="fa fa-envelope ml-2" />&nbsp;
+                  <i class="fa fa-envelope ms-2" />&nbsp;
                 </a>
                 <div>
                   <ul class="profileContacts mt-sm">
                     <li>
-                      <i class="fa fa-lg fa-phone fa-fw mr-2" /><a href="tel: +375 29 555-55-55"> +375 29 555-55-55</a>
+                      <i class="fa fa-lg fa-phone fa-fw me-2" /><a href="tel: +375 29 555-55-55"> +375 29 555-55-55</a>
                     </li>
                     <li>
-                      <i class="fa fa-lg fa-envelope fa-fw mr-2" />
+                      <i class="fa fa-lg fa-envelope fa-fw me-2" />
                       <a href="#"> psmith@example.com</a>
                     </li>
                     <li>
-                      <i class="fa fa-lg fa-map-marker fa-fw mr-2" /><a href="#"> Minsk, Belarus</a>
+                      <i class="fa fa-lg fa-map-marker fa-fw me-2" /><a href="#"> Minsk, Belarus</a>
                     </li>
                   </ul>
                 </div>
@@ -50,22 +50,22 @@
             <b-col md="7" xs="12">
               <div class="stats-row mt-3">
                 <div class="profileStat stat-item">
-                  <p class="profileStatValue value text-right">251</p>
+                  <p class="profileStatValue value text-end">251</p>
                   <h6 class="name">Posts</h6>
                 </div>
                 <div class="profileStat stat-item">
-                  <p class="profileStatValue value text-right">9.38%</p>
+                  <p class="profileStatValue value text-end">9.38%</p>
                   <h6 class="name">Conversion</h6>
                 </div>
                 <div class="profileStat stat-item">
-                  <p class="profileStatValue value text-right">842</p>
+                  <p class="profileStatValue value text-end">842</p>
                   <h6 class="name">Followers</h6>
                 </div>
               </div>
               <p>
                 <a href="#" class="badge bg-primary rounded-0"> UI/UX </a>
-                <a href="#" class="badge badge-danger rounded-0 ml-2"> Web Design </a>
-                <a href="#" class="badge badge-default rounded-0 ml-2"> Mobile Apps </a>
+                <a href="#" class="badge bg-danger rounded-0 ms-2"> Web Design </a>
+                <a href="#" class="badge bg-default rounded-0 ms-2"> Mobile Apps </a>
               </p>
               <p class="lead mt-xlg">
                 My name is Adam Johns and here is my new Sing user profile page.
@@ -81,7 +81,7 @@
       </b-col>
       <b-col lg="6" xs="12">
         <section class="activities">
-          <h2 class="ml-3">Activities</h2>
+          <h2 class="ms-3">Activities</h2>
           <section class="event">
             <header>
               <span class="eventAvatar">
@@ -143,7 +143,7 @@
               </div>
               <ul class="post-comments mt-sm">
                 <li>
-                  <span class="thumb-xs avatar pull-left mr-sm">
+                  <span class="thumb-xs avatar pull-left me-2">
                     <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="woman" />
                   </span>
                   <div class="comment-body">
@@ -154,7 +154,7 @@
                   </div>
                 </li>
                 <li>
-                  <span class="thumb-xs avatar pull-left mr-sm">
+                  <span class="thumb-xs avatar pull-left me-2">
                     <img class="rounded-circle" src="../../assets/avatar.png" alt="avatar" />
                   </span>
                   <div class="comment-body">
@@ -180,7 +180,7 @@
                   <i class="fa fa-map-marker fa-lg" />
                 </a>
               </div>
-              <b-button variant="danger" size="sm" type="submit" class="btn ml-auto">Post</b-button>
+              <b-button variant="danger" size="sm" type="submit" class="btn ms-auto">Post</b-button>
             </div>
           </b-form>
         </section>

@@ -11,7 +11,7 @@
       than last month
     </p>
     <p class="fs-sm text-gray-lighter mb-0">Remaining hours</p>
-    <a class="btn btn-xs btn-gray pull-right ml-xs" href="#">
+    <a class="btn btn-xs btn-gray pull-right ms-1" href="#">
       <i class="fa fa-compress" /> track
     </a>
     <a class="btn btn-xs btn-gray pull-right" href="#">

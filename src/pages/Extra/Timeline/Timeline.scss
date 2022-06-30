@@ -244,27 +244,27 @@
 
     &.eventIconDanger {
       background-color: theme-color('danger');
-      border-color: lighten(theme-color('danger'), 7%);
+      border-color: tint-color(theme-color('danger'), 7%);
     }
 
     &.eventIconWarning {
       background-color: theme-color('warning');
-      border-color: lighten(theme-color('warning'), 7%);
+      border-color: tint-color(theme-color('warning'), 7%);
     }
 
     &.eventIconSuccess {
       background-color: theme-color('success');
-      border-color: lighten(theme-color('success'), 7%);
+      border-color: tint-color(theme-color('success'), 7%);
     }
 
     &.eventIconInfo {
       background-color: theme-color('info');
-      border-color: lighten(theme-color('info'), 7%);
+      border-color: tint-color(theme-color('info'), 7%);
     }
 
     &.eventIconPrimary {
       background-color: theme-color('primary');
-      border-color: lighten(theme-color('primary'), 7%);
+      border-color: tint-color(theme-color('primary'), 7%);
     }
 
     &.eventIconDanger,

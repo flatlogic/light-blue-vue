@@ -6,7 +6,7 @@
     <div class="stats">
       <h6 class="mt-1">GEO-LOCATIONS</h6>
       <p class="h3 m-0">
-      <span class="mr-xs fw-normal"><AnimatedNumber value="1656843"
+      <span class="me-1 fw-normal"><AnimatedNumber value="1656843"
                                                     v-bind="animateNumberOptions"></AnimatedNumber></span>
         <i class="fa fa-map-marker"/>
       </p>

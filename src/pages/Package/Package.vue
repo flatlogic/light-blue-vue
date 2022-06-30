@@ -6,12 +6,12 @@
     <p class="lead">Over 8,000 developers worldwide chose our bootstrap admin templates to build their
       web applications, SAAS and E-Commerce platforms faster. Jump in to burn through your gig too!</p>
     <b-row>
-      <b-col lg="5" md="6">
+      <b-col md="6">
         <Widget
           title="<h6>React JS Version</h6>"
           settings collapse close customHeader
         >
-          <img class="rounded pull-left mb-1 mr-3 image"
+          <img class="rounded pull-left mb-1 me-3 image"
             src="../../assets/react-logo.svg" width="80" alt="react" />
           <h3>React JS Version</h3>
           <p class="text-muted">We spent another <span class="fw-semi-bold">500</span> man-hours
@@ -30,20 +30,22 @@
             decide on development approaches that are the best for your project.
             <a href="https://webpack.js.org/">Webpack</a> Module Bundler and Yarn as a package
             manager are under the hood.</p>
-          <a
-            class="btn btn-default btn-lg btn-block"
-            href="https://flatlogic.com/templates/light-blue-react/demo"
-          >
-            Go to Demo
-          </a>
+          <div class="d-grid gap-2">
+            <a
+              class="btn btn-default btn-lg"
+              href="https://flatlogic.com/templates/light-blue-react/demo"
+            >
+              Go to Demo
+            </a>
+          </div>
         </Widget>
       </b-col>
-      <b-col lg="5" md="6" xs="12">
+      <b-col md="6" xs="12">
         <Widget
           title="<h6>Angular Version</h6>"
           settings collapse close customHeader
         >
-          <img class="rounded pull-left mb-1 mr-3 image"
+          <img class="rounded pull-left mb-1 me-3 image"
             src="../../assets/angularjs-logo.svg" width="80" alt="angular" />
           <h3>Angular 2+ Version</h3>
           <p class="text-muted">We spent around <span class="fw-semi-bold">500</span> man-hours
@@ -61,20 +63,22 @@
             uses <a href="https://webpack.js.org/">Webpack</a> Module Bundler and NPM as a package manager,
             so everything
             works out of the box! <br /><br /></p>
-          <a
-            class="btn btn-default btn-lg btn-block"
-            href="https://flatlogic.com/templates/light-blue-angular/demo"
-          >
-            Go to Demo
-          </a>
+          <div class="d-grid gap-2">
+            <a
+              class="btn btn-default btn-lg"
+              href="https://flatlogic.com/templates/light-blue-angular/demo"
+            >
+              Go to Demo
+            </a>
+          </div>
         </Widget>
       </b-col>
-      <b-col lg="5" md="6" xs="12">
+      <b-col md="6" xs="12">
         <Widget
           title="<h6>Pure HTML5 Version</h6>"
           settings collapse close customHeader
         >
-          <img class="rounded pull-left mb-1 mr-3 image"
+          <img class="rounded pull-left mb-1 me-3 image"
             src="../../assets/js-logo.svg" width="80" alt="js" />
           <h3>HTML5 Version</h3>
           <p class="text-muted">During last 4 years we
@@ -93,20 +97,22 @@
             value of &nbsp;<code>window.PJAX_ENABLED</code> global variable.</p>
           <p>Moreover, this version comes with three different color
             schemes which you can easily switch based on your choice.</p>
-          <a
-            class="btn btn-default btn-lg btn-block"
-            href="https://flatlogic.com/templates/light-blue-html5/demo"
-          >
-            Go to Demo
-          </a>
+          <div class="d-grid gap-2">
+            <a
+              class="btn btn-default btn-lg"
+              href="https://flatlogic.com/templates/light-blue-html5/demo"
+            >
+              Go to Demo
+            </a>
+          </div>
         </Widget>
       </b-col>
-      <b-col lg="5" md="6">
+      <b-col md="6">
         <Widget
           title="<h6>Vue JS Version</h6>"
           settings collapse close customHeader
         >
-          <img class="rounded pull-left mb-1 mr-3 image"
+          <img class="rounded pull-left mb-1 me-3 image"
             src="../../assets/logo.png" width="80" alt="vue" />
           <h3>VUE JS Version</h3>
           <p class="text-muted">Coming soon version. Seed
@@ -120,7 +126,9 @@
           <p>Creating Vue JS version is a main
             priority of <a href="https://flatlogic.com">Flatlogic</a> for next months,
             so seed version will ready really soon! <br /><br /><br /></p>
-          <a class="btn btn-transparent btn-lg btn-block disabled mb-3" href="#">You are here!</a>
+          <div class="d-grid gap-2">
+            <a class="btn btn-transparent btn-lg disabled mb-3" href="#">You are here!</a>
+          </div>
         </Widget>
       </b-col>
     </b-row>

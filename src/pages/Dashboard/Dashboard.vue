@@ -13,13 +13,13 @@
                 </div>
                 <div class="d-flex flex-wrap justify-content-between">
                   <div class="mt">
-                    <h6>+{{visits.logins}}</h6><p class="text-muted mb-0 mr"><small>Logins</small></p>
+                    <h6>+{{visits.logins}}</h6><p class="text-muted mb-0 me-2"><small>Logins</small></p>
                   </div>
                   <div class="mt">
                     <h6>{{visits.sign_out_pct}}%</h6><p class="text-muted mb-0"><small>Sign Out</small></p>
                   </div>
                   <div class="mt">
-                    <h6>{{visits.rate_pct}}%</h6><p class="text-muted mb-0 mr"><small>Rate</small></p>
+                    <h6>{{visits.rate_pct}}%</h6><p class="text-muted mb-0 me-2"><small>Rate</small></p>
                   </div>
                 </div>
               </Widget>
@@ -36,14 +36,14 @@
             <div class="pb-xlg h-100">
               <Widget class="h-100 mb-0" title="App Perfomance" close :fetchingData="isReceiving">
                 <p class="text-muted d-flex flex-wrap">
-                  <small class="mr-lg d-flex align-items-center">
-                    <span class="circle bg-success text-success mr-xs" style="font-size: 4px;">
+                  <small class="me-4 d-flex align-items-center">
+                    <span class="circle bg-success text-success me-1" style="font-size: 4px;">
                       .
                     </span>
                     This Period
                   </small>
-                  <small class="mr-lg d-flex align-items-center">
-                    <span class="circle bg-primary text-warning mr-xs" style="font-size: 4px;">
+                  <small class="me-4 d-flex align-items-center">
+                    <span class="circle bg-primary text-warning me-1" style="font-size: 4px;">
                       .
                     </span>
                     Last Period
@@ -187,7 +187,7 @@
             >
               <div v-for="notification in mock.notifications"
                 class="d-flex align-items-start" :key="notification.id">
-                <i :class="`la la-${notification.icon} mr text-${notification.color}`" />
+                <i :class="`la la-${notification.icon} me-2 text-${notification.color}`" />
                 <p
                   :class="{ 'mb-0': notification.id === mock.notifications.length - 1 }"
                   v-html="notification.content"
@@ -333,7 +333,7 @@ export default {
             }
           }
         },
-        colors: ['#1870DC', '#F45722', '#474D84'],
+        colors: [this.appConfig.colors.blue, this.appConfig.colors.red, this.appConfig.colors.default],
         legend: {
           align: 'right',
           verticalAlign: 'middle',

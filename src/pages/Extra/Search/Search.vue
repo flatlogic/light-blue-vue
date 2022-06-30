@@ -29,17 +29,17 @@
       </b-button-group>
     </div>
     <b-row class="mt-3 d-block">
-      <b-col xl='3' sm='12' class="float-xl-right">
+      <b-col xl='3' sm='12' class="float-xl-end">
         <h5>Results <span class="fw-semi-bold">Filtering</span></h5>
         <p class="text-muted fs-mini">Listed content is categorized by the following groups:</p>
         <b-nav pills class="flex-column nav-stacked searchResultCategories mt">
           <b-nav-item href="#">
             Hot Ideas
-            <b-badge variant="default" pill class="float-right">34</b-badge>
+            <b-badge variant="default" pill class="float-end">34</b-badge>
           </b-nav-item>
           <b-nav-item href="#">
             Latest Pictures
-            <b-badge variant="default" pill class="float-right">9</b-badge>
+            <b-badge variant="default" pill class="float-end">9</b-badge>
           </b-nav-item>
           <b-nav-item href="#">
             Labels of Day
@@ -49,7 +49,7 @@
           </b-nav-item>
            <b-nav-item href="#">
             Globals
-            <b-badge variant="default" pill class="float-right">18</b-badge>
+            <b-badge variant="default" pill class="float-end">18</b-badge>
           </b-nav-item>
         </b-nav>
       </b-col>
@@ -97,7 +97,7 @@
                 <h4 class='searchResultItemHeading'>
                   <a href="#">Try. Posted by Okendoken</a>
                   <small>
-                    <span class="badge badge-pill badge-danger float-right">
+                    <span class="badge badge-pill badge-danger float-end">
                       <span class="fw-normal"> Best Deal!</span>
                     </span>
                   </small>

@@ -4,7 +4,7 @@
                   v-model="currentPage"
                   :total-rows="rows"
                   :per-page="perPage"
-                  class="ml-auto"
+                  class="ms-auto"
     ></b-pagination>
     <span v-else>
       <b-button variant="default" class="mb" @click="openMessage(null)">
@@ -74,7 +74,7 @@
                 <td class="messageClip">
                   <i v-show="message.attachments" class="fa fa-paperclip" />
                 </td>
-                <td class="text-right">{{message.date}}</td>
+                <td class="text-end">{{message.date}}</td>
               </tr>
             </tbody>
           </table>

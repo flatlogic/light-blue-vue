@@ -3,7 +3,7 @@
     <div class="map" ref="map"></div>
     <div class="stats">
       <h6>YEARLY <span class="fw-semi-bold">DISTRIBUTIONS</span></h6>
-      <span class="pull-left mr-xs">
+      <span class="pull-left me-1">
           <small><span class="circle bg-success">
             <i class="fa fa-plus"/></span></small>
         </span>

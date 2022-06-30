@@ -59,7 +59,7 @@
         background-color: #3b5998;
 
         &:hover {
-          background-color: lighten(#3b5998, 10%);
+          background-color: tint-color(#3b5998, 10%);
         }
       }
 
@@ -67,7 +67,7 @@
         background-color: #8a3ab9;
 
         &:hover {
-          background-color: lighten(#8a3ab9, 10%);
+          background-color: tint-color(#8a3ab9, 10%);
         }
       }
 
@@ -75,7 +75,7 @@
         background-color: #1dcaff;
 
         &:hover {
-          background-color: lighten(#1dcaff, 10%);
+          background-color: tint-color(#1dcaff, 10%);
         }
       }
     }

@@ -13,7 +13,7 @@
       <b-button
         variant="link"
         @click="loadNotifications"
-        :class="{disabled: isLoad, 'btn-xs float-right py-0': true}"
+        :class="{disabled: isLoad, 'btn-xs float-end py-0': true}"
       >
         <span v-if="isLoad"><i class="la la-refresh la-spin" /> Loading...</span>
         <i v-else class="la la-refresh" />

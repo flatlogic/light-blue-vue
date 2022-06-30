@@ -12,78 +12,76 @@
         <Widget title="<h6> Inputs </h6>" customHeader settings refresh close>
           <b-form>
             <legend><strong>Horizontal</strong> form</legend>
-            <b-form-group
-              label="Normal field"
-              label-for="normal-field"
-              label-class="text-md-right px-3"
-              label-cols="4"
-              breakpoint="md"
-            >
-              <b-form-input
-                class=""
-                type="text"
-                id="normal-field"
-                placeholder="May have placeholder"
-              />
-            </b-form-group>
-            <b-form-group
-              label-for="normal-field"
-              label-class="text-md-right px-3"
-              label-cols="4"
-              breakpoint="md"
-            >
-              <div slot="label">
+            <b-row class="mb-3">
+              <label class="col-4 col-form-label text-end">Normal field</label>
+              <b-col md="8">
+                <b-form-input
+                    class=""
+                    type="text"
+                    id="normal-field"
+                    placeholder="May have placeholder"
+                />
+              </b-col>
+            </b-row>
+
+            <b-row class="mb-3">
+              <label class="col-4 col-form-label text-end">
                 Label hint
-                <span class="help-block">Some help text</span>
-              </div>
-              <b-form-input class="" type="text" id="label-hint" />
-            </b-form-group>
+                <span class="help-block text-end">Some help text</span>
+              </label>
+
+              <b-col md="8">
+                <b-form-input class="form-floating" type="text" id="label-hint" />
+              </b-col>
+            </b-row>
+
+            <b-row class="mb-3">
+              <label class="col-4 col-form-label text-end">
+                Tooltip enabled
+              </label>
+              <b-col md="8">
+                <b-form-input
+                  class=""
+                  type="text"
+                  id="tooltip-field"
+                  v-b-tooltip.hover
+                  title="Some explanation text here"
+                />
+              </b-col>
+            </b-row>
+
+            <b-row class="mb-3">
+              <label class="col-4 col-form-label text-end">
+                Disabled input
+              </label>
+              <b-col md="8">
+                <b-form-input
+                    class="input-transparent"
+                    type="text"
+                    id="disabled-field"
+                    disabled
+                    value="Default value"
+                />
+              </b-col>
+            </b-row>
+
+            <b-row class="mb-3">
+              <label class="col-4 col-form-label text-end">
+                Max length
+              </label>
+              <b-col md="8">
+                <b-form-input
+                    class=""
+                    type="text"
+                    id="length-field"
+                    :formatter="(v) => (v.length <= 3 ? v : v.substring(0, 3))"
+                    placeholder="Max length 3 characters"
+                />
+              </b-col>
+            </b-row>
+
             <b-form-group
-              label="Tooltip enabled"
-              label-for="tooltip-field"
-              label-class="text-md-right px-3"
-              label-cols="4"
-              breakpoint="md"
-            >
-              <b-form-input
-                class=""
-                type="text"
-                id="tooltip-field"
-                v-b-tooltip.hover
-                title="Some explanation text here"
-              />
-            </b-form-group>
-            <b-form-group
-              label="Disabled input"
-              label-for="disabled-field"
-              label-class="text-md-right px-3"
-              label-cols="4"
-              breakpoint="md"
-            >
-              <b-form-input
-                class="input-transparent"
-                type="text"
-                id="disabled-field"
-                disabled
-                value="Default value"
-              />
-            </b-form-group>
-            <b-form-group
-              label="Max length"
-              label-for="length-field"
-              label-class="text-md-right px-3"
-              label-cols="4"
-              breakpoint="md"
-            >
-              <b-form-input
-                class=""
-                type="text"
-                id="length-field"
-                :formatter="(v) => (v.length <= 3 ? v : v.substring(0, 3))"
-                placeholder="Max length 3 characters"
-              />
-            </b-form-group>
-            <b-form-group
+              class="row mb-3 text-end"
               label="Prepended input"
               label-for="prepended-field"
               label-class="text-md-right px-3"
@@ -94,13 +92,18 @@
                 class="input-group-transparent"
                 id="prepended-field"
               >
-                <b-input-group-text slot="prepend">
+                <b-input-group-text>
                   <i class="la la-user" />
                 </b-input-group-text>
-                <b-form-input class=""></b-form-input>
+                <b-form-input
+                  type="text"
+                  value="admin@flatlogic.com"
+                />
               </b-input-group>
             </b-form-group>
+
             <b-form-group
+              class="row mb-3 text-end"
               label="Password"
               label-for="password-field"
               label-class="text-md-right px-3"
@@ -111,13 +114,18 @@
                 class="input-group-transparent"
                 id="password-field"
               >
-                <b-input-group-text slot="prepend">
+                <b-input-group-text>
                   <i class="la la-lock" />
                 </b-input-group-text>
-                <b-form-input class="" type="password"></b-form-input>
+                <b-form-input
+                    type="password"
+                    value="password"
+                />
               </b-input-group>
             </b-form-group>
+
             <b-form-group
+              class="row mb-3 text-end"
               label="Appended input"
               label-for="append-field"
               label-class="text-md-right px-3"
@@ -127,12 +135,14 @@
               <b-input-group
                 class="input-group-transparent"
                 id="append-field"
-                append=".00"
               >
                 <b-form-input class=""></b-form-input>
+                <b-input-group-text>.00</b-input-group-text>
               </b-input-group>
             </b-form-group>
+
             <b-form-group
+              class="row mb-3 text-end"
               label="Combined input"
               label-for="combined-field"
               label-class="text-md-right px-3"
@@ -142,12 +152,13 @@
               <b-input-group
                 class="input-group-transparent"
                 id="combined-field"
-                append=".00"
-                prepend="$"
               >
+                <b-input-group-text>$</b-input-group-text>
                 <b-form-input class=""></b-form-input>
+                <b-input-group-text>.00</b-input-group-text>
               </b-input-group>
             </b-form-group>
+
             <b-form-group
               class="form-action"
               label=""
@@ -155,10 +166,10 @@
               label-cols="4"
               breakpoint="md"
             >
-              <b-button variant="primary" type="submit" class="mr-3"
+              <b-button variant="primary" type="submit" class="pull-right"
                 >Save Changes</b-button
               >
-              <b-button variant="inverse">Cancel</b-button>
+              <b-button variant="inverse" class="pull-right me-3">Cancel</b-button>
             </b-form-group>
           </b-form>
         </Widget>
@@ -174,55 +185,59 @@
           <b-form-group>
             <b-form>
               <legend><strong>Default</strong> form</legend>
-              <b-form-group
-                label="Search type input"
-                label-for="search-field"
-                breakpoint="md"
-              >
-                <b-row>
-                  <b-col md="8">
+
+              <b-form-group>
+                <b-row class="mb-3">
+                  <b-col md="12">
+                    <label class="col-4 form-label text-start">
+                      Search type input
+                    </label>
                     <b-input-group>
                       <b-form-input
                         class=""
                         id="search-field"
                         type="text"
                       ></b-form-input>
-                      <b-input-group-append>
-                        <b-btn variant="default">Search</b-btn>
-                      </b-input-group-append>
+                      <b-btn variant="default">Search</b-btn>
                     </b-input-group>
                   </b-col>
                 </b-row>
               </b-form-group>
+
               <b-form-group
-                label="Whole bar appended"
                 label-for="bar-field"
                 breakpoint="md"
               >
-                <b-row>
-                  <b-col md="8">
+                <b-row class="mb-3">
+                  <b-col md="12">
+                    <label class="col-4 form-label text-start">
+                      Whole bar appended
+                    </label>
                     <b-input-group>
                       <b-form-input id="bar-field" type="text"></b-form-input>
-                      <b-input-group-append>
-                        <b-btn variant="danger"
-                          ><i class="la la-pencil"
-                        /></b-btn>
-                        <b-btn variant="warning"><i class="la la-plus"/></b-btn>
-                        <b-btn variant="success"
-                          ><i class="la la-refresh"
-                        /></b-btn>
-                      </b-input-group-append>
+
+                      <b-btn variant="danger"
+                        ><i class="la la-pencil"
+                      /></b-btn>
+                      <b-btn variant="warning"><i class="la la-plus"/></b-btn>
+                      <b-btn variant="success"
+                        ><i class="la la-refresh"
+                      /></b-btn>
+
                     </b-input-group>
                   </b-col>
                 </b-row>
               </b-form-group>
+
               <b-form-group
-                label="Actions dropdown"
                 label-for="actions-field"
                 breakpoint="md"
               >
-                <b-row>
-                  <b-col md="8">
+                <b-row class="mb-3">
+                  <b-col md="12">
+                    <label class="col-4 form-label text-start">
+                      Actions dropdown
+                    </label>
                     <b-input-group>
                       <b-form-input
                         id="actions-field"
@@ -247,47 +262,55 @@
                   </b-col>
                 </b-row>
               </b-form-group>
+
               <b-form-group
-                label="Segmented dropdown"
+                class="mb-3"
                 label-for="segmented-field"
                 description="Anything can be appended to the right"
                 breakpoint="md"
               >
                 <b-row>
-                  <b-col md="8">
+                  <b-col md="12">
+                    <label class="col-4 form-label text-start">
+                      Segmented dropdown
+                    </label>
                     <b-input-group>
                       <b-form-input
                         id="segmented-field"
                         type="text"
                       ></b-form-input>
-                      <b-input-group-append>
-                        <b-button variant="warning">Action</b-button>
-                        <b-dropdown variant="warning">
-                          <b-dropdown-item href="#">Action</b-dropdown-item>
-                          <b-dropdown-item href="#"
-                            >Another action</b-dropdown-item
-                          >
-                          <b-dropdown-item href="#"
-                            >Something else here</b-dropdown-item
-                          >
-                          <b-dropdown-divider />
-                          <b-dropdown-item href="#"
-                            >Separated link</b-dropdown-item
-                          >
-                        </b-dropdown>
-                      </b-input-group-append>
+
+                      <b-button variant="warning">Action</b-button>
+                      <b-dropdown variant="warning">
+                        <b-dropdown-item href="#">Action</b-dropdown-item>
+                        <b-dropdown-item href="#"
+                          >Another action</b-dropdown-item
+                        >
+                        <b-dropdown-item href="#"
+                          >Something else here</b-dropdown-item
+                        >
+                        <b-dropdown-divider />
+                        <b-dropdown-item href="#"
+                          >Separated link</b-dropdown-item
+                        >
+                      </b-dropdown>
+
                     </b-input-group>
                   </b-col>
                 </b-row>
               </b-form-group>
+
               <b-form-group
-                label="Types dropdown"
+                class="mb-3"
                 label-for="types-field"
                 description="You can select some type of a field just right in the place."
                 breakpoint="md"
               >
                 <b-row>
-                  <b-col md="8">
+                  <b-col md="12">
+                    <label class="col-4 form-label text-start">
+                      Types dropdown
+                    </label>
                     <b-input-group>
                       <b-form-input id="types-field" type="text"></b-form-input>
                       <b-input-group-append>
@@ -313,14 +336,18 @@
                   </b-col>
                 </b-row>
               </b-form-group>
+
               <b-form-group
-                label="Transparent input"
+                class="mb-3"
                 label-for="transparent-field"
                 description="With gray-light background. Transparent by default."
                 breakpoint="md"
               >
                 <b-row>
-                  <b-col md="8">
+                  <b-col md="12">
+                    <label class="col-4 form-label text-start">
+                      Transparent input
+                    </label>
                     <b-form-input
                       id="tranparent-field"
                       class=""
@@ -330,11 +357,12 @@
                   </b-col>
                 </b-row>
               </b-form-group>
+
               <b-form-group class="form-action">
-                <b-button variant="primary" type="submit" class="mr-3"
+                <b-button variant="primary" type="submit" class="float-end"
                   >Save Changes</b-button
                 >
-                <b-button variant="inverse">Cancel</b-button>
+                <b-button variant="inverse" class="float-end me-3">Cancel</b-button>
               </b-form-group>
             </b-form>
           </b-form-group>
@@ -360,13 +388,13 @@
               selects.
             </p>
             <br />
-            <b-form-group>
+            <b-form-group class="mb-3">
               <b-form-input type="text" placeholder='size="lg"' size="lg" />
             </b-form-group>
-            <b-form-group>
+            <b-form-group class="mb-3">
               <b-form-input type="text" placeholder="default input" />
             </b-form-group>
-            <b-form-group>
+            <b-form-group class="mb-3">
               <b-form-input type="text" placeholder='size="sm"' size="sm" />
             </b-form-group>
           </b-form>
@@ -389,10 +417,9 @@
               <code>.bg-transparent</code>
             </p>
             <br />
-            <b-form-group>
+            <b-form-group class="row mb-3">
               <b-input-group>
                 <b-input-group-text
-                  slot="prepend"
                   class="bg-success text-white"
                 >
                   <i class="la la-github-alt" />
@@ -400,9 +427,10 @@
                 <b-form-input type="text" placeholder="First Name" size="16" />
               </b-input-group>
             </b-form-group>
-            <b-form-group>
+
+            <b-form-group class="row mb-3">
               <b-input-group class="input-group-transparent" size="lg">
-                <b-input-group-text class="header-color" slot="prepend">
+                <b-input-group-text class="header-color">
                   <i class="la la-star" />
                 </b-input-group-text>
                 <b-form-input
@@ -416,9 +444,11 @@
             <b-form-group>
               <b-input-group size="sm">
                 <b-form-input type="text" placeholder="City" />
-                <b-input-group-text slot="append" class="bg-danger text-muted">
+
+                <b-input-group-text class="bg-danger text-muted">
                   <i class="la la-code-fork" />
                 </b-input-group-text>
+
               </b-input-group>
             </b-form-group>
           </b-form>
@@ -436,86 +466,80 @@
         >
           <b-form>
             <legend>Small form</legend>
-            <b-form-group
-              label="Default textarea"
-              label-for="default-textarea"
-              label-class="text-md-right px-3"
-              :label-cols="3"
-              breakpoint="md"
-            >
-              <b-form-textarea
-                :rows="3"
-                id="default-textarea"
-                v-model="textAreaContent"
-              />
-            </b-form-group>
-            <b-form-group
-              label="Auto-growing textarea"
-              label-for="autosize-textarea"
-              label-class="text-md-right px-3"
-              :label-cols="3"
-              breakpoint="md"
-            >
-              <textarea-autosize
-                placeholder="Try to add few new lines..."
-                class="form-control"
-                :min-height="75"
-                id="autosize-textarea"
-              />
-            </b-form-group>
-            <b-form-group
-              label-for="wysiwyg-textarea"
-              label-class="text-md-right px-3"
-              :label-cols="3"
-              breakpoint="md"
-            >
-              <div slot="label">
+            <b-row class="mb-3">
+              <label class="col-3 col-form-label text-end">Default textarea</label>
+              <b-col md="9">
+                <b-form-textarea
+                  :rows="3"
+                  id="default-textarea"
+                  v-model="textAreaContent"
+                />
+              </b-col>
+            </b-row>
+
+            <b-row class="mb-3">
+              <label class="col-3 col-form-label text-end">Auto-growing textarea</label>
+              <b-col md="9">
+                <textarea-autosize
+                    placeholder="Try to add few new lines..."
+                    class="form-control"
+                    :min-height="75"
+                    id="autosize-textarea"
+                />
+              </b-col>
+            </b-row>
+
+            <b-row class="mb-3">
+              <label class="col-3 col-form-label text-end">
                 Wysiwyg
                 <span class="help-block">With bottom toolbar appended</span>
-              </div>
-              <ckeditor :editor="wygEditor" v-model="wygContent"></ckeditor>
-              <div class="btn-toolbar float-right mt-sm">
-                <b-button variant="danger" class="mr-3">Save</b-button>
-                <b-button variant="default">Clear</b-button>
-              </div>
-            </b-form-group>
-            <b-form-group
-              label="Markdown Editor"
-              label-for="markdown-editor"
-              label-class="text-md-right px-3"
-              :label-cols="3"
-              breakpoint="md"
-            >
-              <mavon-editor
-                id="markdown-editor"
-                language="en"
-                v-model="mdContent"
-              />
-              <a
-                class="text-muted d-flex align-items-center mt-sm"
-                href="http://commonmark.org/help/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <!-- eslint-disable -->
-                <svg
-                  aria-hidden="true"
-                  class="markdown-help-svg"
-                  height="16"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  width="16"
+              </label>
+              <b-col md="9">
+                <ckeditor :editor="wygEditor" v-model="wygContent"></ckeditor>
+                <div class="btn-toolbar float-end mt-sm">
+                  <b-button variant="danger" class="me-3">Save</b-button>
+                  <b-button variant="default">Clear</b-button>
+                </div>
+              </b-col>
+            </b-row>
+
+            <b-row class="mb-3">
+              <label class="col-3 col-form-label text-end">
+                Markdown Editor
+              </label>
+              <b-col md="9">
+                <mavon-editor
+                    id="markdown-editor"
+                    language="en"
+                    v-model="mdContent"
+                />
+                <a
+                    class="text-muted d-flex align-items-center mt-sm"
+                    href="http://commonmark.org/help/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    fill="#798892"
-                    d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"
-                  ></path>
-                </svg>
-                <!-- eslint-enable -->
-                <span class="ml-xs">Markdown styling is supported</span>
-              </a>
-            </b-form-group>
+                  <!-- eslint-disable -->
+                  <svg
+                      aria-hidden="true"
+                      class="markdown-help-svg"
+                      height="16"
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="16"
+                  >
+                    <path
+                        fill-rule="evenodd"
+                        fill="#798892"
+                        d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"
+                    ></path>
+                  </svg>
+                  <!-- eslint-enable -->
+                  <span class="ms-1">Markdown styling is supported</span>
+                </a>
+              </b-col>
+            </b-row>
+
           </b-form>
         </Widget>
       </b-col>
@@ -527,9 +551,10 @@
           settings
           customHeader
         >
-          <b-form class="form-label-left">
+          <b-form class="form-label-left mb-3">
             <legend>Default form with labels on left</legend>
             <b-form-group
+              class="row mb-3"
               label="Default select"
               label-for="default-select"
               :label-cols="4"
@@ -550,6 +575,7 @@
               </b-row>
             </b-form-group>
             <b-form-group
+              class="row mb-3"
               label="Select with search"
               label-for="search-select"
               :label-cols="4"
@@ -580,6 +606,7 @@
               :label-cols="4"
             >
               <b-dropdown
+                class="me-2"
                 id="simple-select"
                 :text="simpleDropdownVariant"
                 variant="default"
@@ -610,7 +637,7 @@
                 <span class="help">A bit of Japanese</span>
               </div>
               <b-dropdown
-                class="mr-3"
+                class="me-3"
                 id="danger-select"
                 :text="dangerDropdownVariant"
                 variant="danger"
@@ -629,7 +656,7 @@
                 >
               </b-dropdown>
               <b-dropdown
-                class="mr-3"
+                class="me-3"
                 :text="warningDropdownVariant"
                 variant="warning"
               >
@@ -919,7 +946,7 @@
                   checkbox inputs into beautiful iOS 7 style switches in just
                   few simple steps.
                 </p>
-                <b-form-group class="display-inline-block checkbox-ios mr-3">
+                <b-form-group class="display-inline-block checkbox-ios me-3">
                   <label for="checkbox-ios1" class="switch  form-control-label">
                     <input
                       type="checkbox"
@@ -956,7 +983,7 @@
             <b-row>
               <b-col md="6" xs="12">
                 <b-form-group>
-                  <label for="datetimepicker" class="mr-3">Datepicker</label>
+                  <label for="datetimepicker" class="me-3">Datepicker</label>
                   <DatePicker
                     lang="en"
                     :placeholder="datepickerText"
@@ -970,7 +997,7 @@
               </b-col>
               <b-col md="6" xs="12">
                 <b-form-group>
-                  <label for="datetimepicker_withtime" class="mr-3"
+                  <label for="datetimepicker_withtime" class="me-3"
                     >With time</label
                   >
                   <DatePicker
