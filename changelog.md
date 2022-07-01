@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.0] [01/07/2022]
+
+### Updated
+- Update dependency
+- Updated Bootstrap/Reactstrap
+- Add theme switcher
+
 ## [3.2.3] [22/10/2021]
 
 ### Updated
