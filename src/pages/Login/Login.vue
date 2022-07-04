@@ -1,5 +1,5 @@
 <template>
-  <div class="auth-page">
+  <div class="auth-page light-blue theme--dark">
     <b-container>
       <Widget class="widget-auth mx-auto" title="<h3 class='mt-0'>Login to your Web App</h3>" customHeader>
         <p class="widget-auth-info">
@@ -100,9 +100,16 @@ export default {
     },
     microsoftLogin() {
       this.loginUser({social: "microsoft"});
+    },
+    setTheme() {
+
+      let theme = localStorage.getItem("theme")
+
+      document.querySelector('body').setAttribute("class", `light-blue ${'theme--' + (theme ? theme : 'dark')}`)
     }
   },
   created() {
+
     const token = this.$route.query.token;
     if (token) {
       this.receiveToken(token);
@@ -114,6 +121,7 @@ export default {
     const creds = config.auth;
     this.$refs.email.value = creds.email;
     this.$refs.password.value = creds.password;
+    this.setTheme()
   }
 };
 </script>

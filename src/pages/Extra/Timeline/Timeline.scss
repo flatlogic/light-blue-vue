@@ -45,12 +45,12 @@
     font-size: 11px;
   }
 
-  :global {
-    .widget > footer & {
-      margin-left: -$widget-padding-horizontal;
-      margin-right: -$widget-padding-horizontal;
-    }
-  }
+  //:global {
+  //  .widget > footer & {
+  //    margin-left: -$widget-padding-horizontal;
+  //    margin-right: -$widget-padding-horizontal;
+  //  }
+  //}
 }
 
 /*           Post Links            */
@@ -83,15 +83,15 @@
     }
   }
 
-  :global {
-    .no-separator > li + li {
-      margin-left: 12px;
-
-      &::before {
-        content: normal;
-      }
-    }
-  }
+  //:global {
+  //  .no-separator > li + li {
+  //    margin-left: 12px;
+  //
+  //    &::before {
+  //      content: normal;
+  //    }
+  //  }
+  //}
 }
 
 /*            Time Line            */
@@ -166,11 +166,11 @@
 
     @include clearfix();
 
-    :global {
-      .thumb {
-        margin-left: 10px;
-      }
-    }
+    //:global {
+    //  .thumb {
+    //    margin-left: 10px;
+    //  }
+    //}
   }
 
   @include media-breakpoint-up(lg) {
@@ -223,11 +223,11 @@
 }
 
 .eventIcon {
-  :global {
-    .glyphicon {
-      top: -2px;
-    }
-  }
+  //:global {
+  //  .glyphicon {
+  //    top: -2px;
+  //  }
+  //}
 
   .timeline & {
     position: absolute;

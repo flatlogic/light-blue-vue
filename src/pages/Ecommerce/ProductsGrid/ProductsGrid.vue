@@ -113,4 +113,4 @@ export default {
 };
 </script>
 
-<style  src="./ProductsGrid.scss" lang="scss" />
+<!--<style  src="./ProductsGrid.scss" lang="scss" />-->
