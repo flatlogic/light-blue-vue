@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.3.1] [04/07/2022]
+
+- Fix auth page style and several errors
+
 ## [3.3.0] [01/07/2022]
 
 ### Updated
