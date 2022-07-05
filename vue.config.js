@@ -14,4 +14,13 @@ module.exports = {
     }
     config.resolve.alias["jquery"] = path.join(__dirname, "./jqueryStub.js");
   },
+  css: {
+    loaderOptions: {
+      sass: {
+        sassOptions: {
+          logger: require('sass').Logger.silent,
+        },
+      },
+    }
+  }
 };
