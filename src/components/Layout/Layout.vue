@@ -29,18 +29,16 @@ export default {
   name: 'Layout',
   components: { Sidebar, Header, Helper },
   methods: {
-    ...mapActions(
-      'layout', ['switchSidebar', 'changeSidebarActive'],
-    ),
+    ...mapActions([
+      'layout'/'switchSidebar', 'changeSidebarActive',
+    ]),
     setTheme(){
       let theme = localStorage.getItem("theme")
       document.querySelector('body').setAttribute("class", `light-blue ${'theme--' + (theme || 'dark')}`)
     }
   },
   computed: {
-    ...mapState('layout', {
-
-    }),
+    ...mapState(['layout']),
   },
   created() {
     this.setTheme()

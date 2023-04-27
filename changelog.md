@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.3.2] [27/04/2023]
+
+- Fix vuex errors
+- Fix charts errors
+
+### Updated
+- Update dependency
+
 ## [3.3.1] [04/07/2022]
 
 - Fix auth page style and several errors
