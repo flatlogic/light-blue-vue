@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.1.1] - 22/11/2024
+
+- Fixed dev mode errors
+
 ## [3.3.2] [27/04/2023]
 
 - Fix vuex errors
