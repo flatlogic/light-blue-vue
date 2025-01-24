@@ -1,4 +1,4 @@
-# 🚀 Light Blue Vue - A Free Transparent Vue.js Dashboard!
+# 🚀 Light Blue Vue Full - A Free Transparent Vue.js Dashboard!
 
 [View Demo](https://flatlogic.com/templates/light-blue-vue/demo) | [Download](https://github.com/flatlogic/light-blue-vue/archive/refs/heads/master.zip) | [More Templates](https://flatlogic.com/templates) | [Discord Community](https://discord.gg/flatlogic-community) | [Support Forum](https://flatlogic.com/forum)
 
