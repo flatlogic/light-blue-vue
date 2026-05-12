@@ -1,15 +1,79 @@
+@import '../../../../styles/app';
+
 .messageTableHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
+  border-bottom: 1px solid rgba($white, 0.1);
 
-  & .form-control {
-    width: auto;
+  .header-dropdowns {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
   }
 
-  .dropdown.b-dropdown {
-    button::after {
-      margin-left: 16px;
+  .search-input {
+    width: 200px;
+    background-color: $default;
+    border-color: rgba($white, 0.15);
+    color: $text-color;
+
+    &::placeholder {
+      color: $text-muted;
     }
+
+    &:focus {
+      background-color: $default;
+      border-color: theme-color('primary');
+      color: $text-color;
+      box-shadow: none;
+    }
+  }
+}
+
+// Email dropdown button styling (applied globally)
+.email-btn,
+.email-btn.btn,
+button.email-btn {
+  background-color: $default !important;
+  border-color: rgba($white, 0.15) !important;
+  color: $text-color !important;
+  font-weight: 500;
+  box-shadow: none !important;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.show,
+  &[aria-expanded="true"] {
+    background-color: lighten($default, 5%) !important;
+    border-color: rgba($white, 0.2) !important;
+    color: $text-color !important;
+  }
+
+  &::after {
+    margin-left: 12px;
+  }
+}
+
+// Dropdown menu styling
+.email-dropdown .dropdown-menu {
+  background-color: $default;
+  border-color: rgba($white, 0.15);
+
+  .dropdown-item {
+    color: $text-color;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($white, 0.1);
+      color: $white;
+    }
+  }
+
+  .dropdown-divider {
+    border-color: rgba($white, 0.15);
   }
 }

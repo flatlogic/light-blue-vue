@@ -5,16 +5,50 @@
   height: 320px;
   overflow-y: scroll;
 
-  .listGroupItem:first-child {
+  :global(.list-group-item) {
     border: none;
+    background: transparent;
+    color: $text-color;
+    font-weight: $font-weight-normal;
+    overflow: hidden;
+
+    &:hover {
+      background-color: $list-group-hover-bg;
+    }
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
   }
 }
 
 .listGroupItem {
   transition: background-color 0.15s ease-in-out;
   text-decoration: none;
-  color: $gray-700;
-  display: block;
+
+  p {
+    margin: 0;
+  }
+
+  .btn {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 0.25rem;
+    white-space: nowrap;
+  }
+
+  time {
+    display: block;
+    margin-top: 4px;
+    color: $text-muted;
+  }
 
   .progress {
     transition: background 0.15s ease-in-out;
@@ -23,31 +57,33 @@
       background: $black;
     }
   }
-
-  &:hover {
-    background-color: $list-group-hover-bg;
-
-    .progress {
-      background: $white !important;
-    }
-  }
-
-  &:first-child {
-    border-top: none;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-
-  &:last-child {
-    border-bottom: none;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
 }
 
 .notificationIcon {
-  margin-right: 1rem;
   float: left;
+  margin-right: 1rem;
 
-  @include clearfix;
+  img {
+    width: 34px;
+    height: 34px;
+  }
+
+  i {
+    font-size: 1.5rem;
+    color: $text-muted;
+  }
+
+  .rounded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

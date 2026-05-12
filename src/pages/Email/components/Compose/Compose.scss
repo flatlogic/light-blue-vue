@@ -1,0 +1,72 @@
+@import '../../../../styles/app';
+
+.compose {
+  h4 {
+    margin-bottom: $spacer * 1.5;
+  }
+
+  .form-control {
+    background-color: $black;
+    border-color: rgba($white, 0.1);
+    color: $text-color;
+
+    &::placeholder {
+      color: $text-muted;
+    }
+
+    &:focus {
+      background-color: $black;
+      border-color: theme-color('primary');
+      color: $text-color;
+      box-shadow: none;
+    }
+  }
+
+  .mb {
+    margin-bottom: $spacer;
+  }
+
+  .mb-lg {
+    margin-bottom: $spacer * 1.5;
+  }
+
+  .mt {
+    margin-top: $spacer;
+  }
+
+  // CKEditor dark theme
+  :deep(.ck-editor) {
+    .ck-toolbar {
+      background-color: $black;
+      border-color: rgba($white, 0.1);
+    }
+
+    .ck-toolbar__items .ck-button {
+      color: $text-color;
+
+      &:hover {
+        background-color: rgba($white, 0.1);
+      }
+    }
+
+    .ck-content {
+      background-color: $widget-bg;
+      border-color: rgba($white, 0.1);
+      color: $text-color;
+      min-height: 200px;
+    }
+  }
+
+  // Button styling
+  :deep(.btn-secondary) {
+    background-color: $black;
+    border-color: rgba($white, 0.1);
+    color: $text-color;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($black, 5%);
+      border-color: rgba($white, 0.2);
+    }
+  }
+}

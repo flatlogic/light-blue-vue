@@ -1,98 +1,97 @@
+<script setup lang="ts">
+// Static notifications list - no reactive state needed
+</script>
+
 <template>
-  <b-list-group class="listGroup thin-scroll">
-    <b-list-group-item class="listGroupItem">
+  <BListGroup class="listGroup thin-scroll">
+    <BListGroupItem class="listGroupItem">
       <span class="notificationIcon thumb-sm">
-        <img class="rounded-circle" src="../../../assets/people/a3.jpg" alt="woman" />
+        <img
+          class="rounded-circle"
+          src="../../../assets/people/a3.jpg"
+          alt="woman"
+        />
       </span>
       <p class="m-0 overflow-hidden">
         1 new user just signed up! Check out
-        &nbsp;<a href="#">Monica Smith</a>'s account.
-        <time class="help-block m-0">
-          2 mins ago
-        </time>
+        <a href="#">Monica Smith</a>'s account.
+        <time class="help-block m-0">2 mins ago</time>
       </p>
-    </b-list-group-item>
-    <b-list-group-item class="listGroupItem">
+    </BListGroupItem>
+    <BListGroupItem class="listGroupItem">
       <span class="notificationIcon thumb-sm">
-        <i class="fa fa-angle-double-up fa-2x" />
+        <i class="fa-solid fa-angles-up" />
       </span>
-      <p class="text-ellipsis m-0">
+      <p class="m-0 overflow-hidden">
         2.1.0-pre-alpha just released.
-        <time class="help-block m-0">
-          5h ago
-        </time>
+        <time class="help-block m-0">5h ago</time>
       </p>
-    </b-list-group-item>
-    <b-list-group-item class="listGroupItem">
+    </BListGroupItem>
+    <BListGroupItem class="listGroupItem">
       <span class="notificationIcon thumb-sm">
-        <i class="fa fa-bolt fa-lg" />
+        <i class="fa-solid fa-bolt" />
       </span>
-      <p class="text-ellipsis m-0 overflow-hidden">
+      <p class="m-0 overflow-hidden">
         Server load limited.
-        <time class="help-block m-0">
-          7h ago
-        </time>
+        <time class="help-block m-0">7h ago</time>
       </p>
-    </b-list-group-item>
-    <b-list-group-item class="listGroupItem">
+    </BListGroupItem>
+    <BListGroupItem class="listGroupItem">
       <span class="notificationIcon thumb-sm">
-        <img class="rounded-circle" src="../../../assets/people/a5.jpg" alt="man" />
+        <img
+          class="rounded-circle"
+          src="../../../assets/people/a5.jpg"
+          alt="man"
+        />
       </span>
       <p class="m-0 overflow-hidden">
         User <a href="#">Jeff</a> registered
-        &nbsp;&nbsp;
-        <b-button size="xs" variant="success" class="me-1">Allow</b-button>
-        <b-button size="xs" variant="danger">Deny</b-button>
-        <time class="help-block m-0">
-          12:18 AM
-        </time>
+        <span class="button-group">
+          <BButton
+            size="sm"
+            variant="success"
+          >Allow</BButton>
+          <BButton
+            size="sm"
+            variant="danger"
+          >Deny</BButton>
+        </span>
+        <time class="help-block m-0">12:18 AM</time>
       </p>
-    </b-list-group-item>
-    <b-list-group-item class="listGroupItem">
+    </BListGroupItem>
+    <BListGroupItem class="listGroupItem">
       <span class="notificationIcon thumb-sm">
-        <i class="fa fa-shield fa-lg" />
+        <i class="fa-solid fa-shield" />
       </span>
       <p class="m-0 overflow-hidden">
         Instructions for changing your Envato Account password. Please
         check your account <a href="#">security page</a>.
-        <time class="help-block m-0">
-          12:18 AM
-        </time>
+        <time class="help-block m-0">12:18 AM</time>
       </p>
-    </b-list-group-item>
-    <b-list-group-item class="listGroupItem">
+    </BListGroupItem>
+    <BListGroupItem class="listGroupItem">
       <span class="notificationIcon thumb-sm">
-        <span class="rounded bg-primary rounded-lg">
-          <i class="fa fa-facebook text-white" />
+        <span class="rounded bg-primary">
+          <i class="fa-brands fa-facebook-f text-white" />
         </span>
       </span>
-      <p class="text-ellipsis m-0">
+      <p class="m-0 overflow-hidden">
         New <strong>76</strong> facebook likes received.
-        <time class="help-block m-0">
-          15 Apr 2014
-        </time>
+        <time class="help-block m-0">15 Apr 2014</time>
       </p>
-    </b-list-group-item>
-    <b-list-group-item class="listGroupItem">
+    </BListGroupItem>
+    <BListGroupItem class="listGroupItem">
       <span class="notificationIcon thumb-sm">
         <span class="circle circle-lg bg-gray-dark">
-          <i class="fa fa-circle-o text-white" />
+          <i class="fa-regular fa-circle text-white" />
         </span>
       </span>
-      <p class="text-ellipsis m-0">
+      <p class="m-0 overflow-hidden">
         Dark matter detected.
-        <time class="help-block m-0">
-          15 Apr 2014
-        </time>
+        <time class="help-block m-0">15 Apr 2014</time>
       </p>
-    </b-list-group-item>
-  </b-list-group>
+    </BListGroupItem>
+  </BListGroup>
 </template>
-
-<script>
-export default {
-  name: 'NotificationsList',
-};
-</script>
 
 <style src="./ListGroup.scss" lang="scss" />

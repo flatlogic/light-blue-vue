@@ -4,32 +4,76 @@
  * Vue calendar
  */
 
+.lb-calendar {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
+
 .lb-calendar .vc-container {
   border: none;
   font-family: $font-family-base;
   color: $text-color;
-  background: $widget-bg;
+  background: transparent;
   border-radius: 0;
+  width: 100%;
 
-  .vc-w-full.vc-relative .vc-grid-container {
-    grid-template-columns: none!important;
-  }
-
-  .vc-arrows-container {
-    @include media-breakpoint-only(xl) {
-      padding: 8px 20px;
-    }
-    @include media-breakpoint-only(md) {
-      padding: 8px 30px;
-    }
+  // v-calendar v3 dark theme overrides
+  &.vc-dark {
+    --vc-bg: transparent;
+    --vc-border: transparent;
+    --vc-color: #{$text-color};
+    --vc-header-arrow-color: #{$text-color};
+    --vc-header-title-color: #{$text-color};
+    --vc-weekday-color: #{$text-muted};
+    --vc-day-content-color: #{$text-color};
+    --vc-nav-hover-bg: rgba(255, 255, 255, 0.1);
+    --vc-accent-50: #{theme-color("primary")};
+    --vc-accent-100: #{theme-color("primary")};
+    --vc-accent-200: #{theme-color("primary")};
+    --vc-accent-300: #{theme-color("primary")};
+    --vc-accent-400: #{theme-color("primary")};
+    --vc-accent-500: #{theme-color("primary")};
+    --vc-accent-600: #{theme-color("primary")};
+    --vc-accent-700: #{theme-color("primary")};
+    --vc-accent-800: #{theme-color("primary")};
+    --vc-accent-900: #{theme-color("primary")};
   }
 
   .vc-header {
-    padding: $widget-padding-vertical $widget-padding-horizontal 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-    .vc-title {
-      color: $text-color;
-      font-weight: $font-weight-normal;
+  .vc-weeks {
+    padding: 0;
+  }
+
+  // Navigation arrows
+  .vc-arrow {
+    background: transparent;
+    border: none;
+    color: $text-color;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    svg {
+      stroke: $text-color;
+    }
+  }
+
+  // Month/Year title button
+  .vc-title {
+    color: $text-color;
+    font-weight: $font-weight-normal;
+    background: transparent;
+    border: none;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
     }
   }
 
@@ -38,19 +82,43 @@
     color: $text-muted;
   }
 
-  .vc-day {
-    .vc-dots {
-      .vc-bg-red-600 {
-        background-color: theme-color("danger");
-      }
+  .vc-day-content {
+    color: $text-color;
 
-      .vc-bg-green-600 {
-        background-color: theme-color("success");
-      }
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
 
-      .vc-bg-blue-600 {
-        background-color: theme-color("primary");
-      }
+  // Highlight styles
+  .vc-highlight {
+    background-color: rgba(theme-color("primary"), 0.3);
+    border-radius: 50%;
+  }
+
+  // Dots for events - positioned above the day number
+  .vc-dots {
+    margin-top: 2px;
+  }
+
+  .vc-dot {
+    width: 6px;
+    height: 6px;
+
+    &.vc-blue {
+      background-color: theme-color("primary");
+    }
+
+    &.vc-green {
+      background-color: theme-color("success");
+    }
+
+    &.vc-red {
+      background-color: theme-color("danger");
+    }
+
+    &.vc-orange {
+      background-color: theme-color("warning");
     }
   }
 

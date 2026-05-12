@@ -3,12 +3,12 @@
 .rating {
   display: flex;
   font-size: $font-size-lg;
-  font-weight: $font-weight-semi-bold;
-  color: $text-color;
+  font-weight: 500;
+  color: #fff;
   align-items: center;
 
   .la {
-    color: $header-color;
+    color: #ffc107;
     margin-left: 5px;
     font-size: $font-size-lg;
   }

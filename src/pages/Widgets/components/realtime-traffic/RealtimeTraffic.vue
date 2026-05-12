@@ -1,8 +1,15 @@
 <template>
   <div>
-    <h4 class="mb-lg">Recent <span class="fw-semi-bold">Update</span></h4>
+    <h4 class="mb-lg">
+      Recent <span class="fw-semi-bold">Update</span>
+    </h4>
     <h6>Node.js <span class="fw-semi-bold">4.0.1 distribution</span></h6>
-    <b-progress class="progress-xs" variant="danger" :value="77" :max="100" />
+    <b-progress
+      class="progress-xs"
+      variant="danger"
+      :value="77"
+      :max="100"
+    />
     <p class="mt-sm mb fs-mini ">
       <small><span class="circle bg-primary"><i
         class="glyphicon glyphicon-chevron-up"
@@ -10,75 +17,131 @@
       <strong class="px-1">17% higher</strong>
       than last month
     </p>
-    <p class="fs-sm text-gray-lighter mb-0">Remaining hours</p>
-    <a class="btn btn-xs btn-gray pull-right ms-1" href="#">
+    <p class="fs-sm text-gray-lighter mb-0">
+      Remaining hours
+    </p>
+    <a
+      class="btn btn-xs btn-gray pull-right ms-1"
+      href="#"
+    >
       <i class="fa fa-compress" /> track
     </a>
-    <a class="btn btn-xs btn-gray pull-right" href="#">
+    <a
+      class="btn btn-xs btn-gray pull-right"
+      href="#"
+    >
       <i class="fa fa-pause" /> pause
     </a>
-    <p class="value4">2h 56m</p>
+    <p class="value4">
+      2h 56m
+    </p>
     <br />
-    <div ref="chart" class="mt-xlg chart-overflow-bottom" :style="{ height: '130px' }"
-    />
+    <div class="mt-xlg chart-overflow-bottom">
+      <apexchart
+        v-if="isMounted"
+        ref="chartRef"
+        type="area"
+        height="130"
+        :options="chartOptions"
+        :series="series"
+      />
+    </div>
   </div>
 </template>
 
-<script>
-import Rickshaw from 'rickshaw';
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-export default {
-  name: 'RealtimeTraffic',
-  methods: {
-    initChart() {
-      const seriesData = [[], []];
-      const random = new Rickshaw.Fixtures.RandomData(30);
+// Generate initial random data
+function generateData(count: number): number[] {
+  return Array.from({ length: count }, () => Math.floor(Math.random() * 100) + 20)
+}
 
-      for (let i = 0; i < 30; i += 1) {
-        random.addData(seriesData);
+const series = ref([
+  {
+    name: 'Uploads',
+    data: generateData(30)
+  },
+  {
+    name: 'Downloads',
+    data: generateData(30)
+  }
+])
+
+const chartOptions = ref({
+  chart: {
+    type: 'area',
+    height: 130,
+    toolbar: { show: false },
+    animations: {
+      enabled: true,
+      easing: 'linear',
+      dynamicAnimation: {
+        speed: 1000
       }
-      this.graph = new Rickshaw.Graph({
-        element: this.$refs.chart,
-        height: 130,
-        realtime: true,
-        series: [
-          {
-            color: '#1870DC',
-            data: seriesData[0],
-            name: 'Uploads',
-          }, {
-            color: '#58D777',
-            data: seriesData[1],
-            name: 'Downloads',
-          },
-        ],
-      });
-      const hoverDetail = new Rickshaw.Graph.HoverDetail({
-        graph: this.graph,
-        xFormatter: x => new Date(x * 1000).toString(),
-      });
-
-      hoverDetail.show();
-
-      setInterval(() => {
-        random.removeData(seriesData);
-        random.addData(seriesData);
-        this.graph.update();
-      }, 1000);
-
-      this.graph.render();
     },
-    onResizeRickshaw() {
-      this.graph.configure({ height: 130 });
-      this.graph.render();
-    },
+    background: 'transparent'
   },
-  mounted() {
-    this.initChart();
-    window.addEventListener('resize', this.onResizeRickshaw);
+  colors: ['#1870DC', '#58D777'],
+  stroke: {
+    curve: 'smooth',
+    width: 2
   },
-  destroyed() {
-    window.removeEventListener('resize', this.onResizeRickshaw);
+  fill: {
+    type: 'gradient',
+    gradient: {
+      shadeIntensity: 1,
+      opacityFrom: 0.4,
+      opacityTo: 0.1,
+      stops: [0, 90, 100]
+    }
   },
-};
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    labels: { show: false },
+    axisBorder: { show: false },
+    axisTicks: { show: false }
+  },
+  yaxis: {
+    labels: { show: false }
+  },
+  grid: {
+    show: false,
+    padding: { left: 0, right: 0, top: 0, bottom: 0 }
+  },
+  legend: { show: false },
+  tooltip: {
+    enabled: true,
+    theme: 'dark',
+    shared: true,
+    x: { show: false }
+  }
+})
+
+const chartRef = ref<{ chart?: { update: () => void } } | null>(null)
+const isMounted = ref(false)
+let updateInterval: ReturnType<typeof setInterval> | null = null
+
+onMounted(() => {
+  isMounted.value = true
+  // Update chart data every second
+  updateInterval = setInterval(() => {
+    const newUploads = [...series.value[0].data.slice(1), Math.floor(Math.random() * 100) + 20]
+    const newDownloads = [...series.value[1].data.slice(1), Math.floor(Math.random() * 100) + 20]
+
+    series.value = [
+      { name: 'Uploads', data: newUploads },
+      { name: 'Downloads', data: newDownloads }
+    ]
+  }, 1000)
+})
+
+onBeforeUnmount(() => {
+  isMounted.value = false
+  if (updateInterval) {
+    clearInterval(updateInterval)
+  }
+})
 </script>

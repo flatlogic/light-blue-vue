@@ -1,111 +1,156 @@
 <template>
   <div>
-    <div class="map" ref="map">
-
-    </div>
+    <div
+      ref="mapRef"
+      class="map"
+    />
     <div class="stats">
-      <h6 class="mt-1">GEO-LOCATIONS</h6>
-      <p class="h3 m-0">
-      <span class="me-1 fw-normal"><AnimatedNumber value="1656843"
-                                                    v-bind="animateNumberOptions"></AnimatedNumber></span>
-        <i class="fa fa-map-marker"/>
+      <h6 class="mt-1 text-muted">
+        GEO-LOCATIONS
+      </h6>
+      <p class="h2 m-0 fw-normal d-flex align-items-center">
+        <CountUp
+          :end-val="1656843"
+          :duration="2"
+          :options="countUpOptions"
+        />
+        <i class="fa-solid fa-location-dot ms-2" />
       </p>
     </div>
   </div>
-
 </template>
 
-<script>
-import AnimatedNumber from "animated-number-vue";
-import * as am4core from "@amcharts/amcharts4/core";
-import * as am4maps from "@amcharts/amcharts4/maps";
-import am4geodata_usaHigh from "@amcharts/amcharts4-geodata/usaHigh";
+<script setup lang="ts">
+import { onMounted, onBeforeUnmount, useTemplateRef } from 'vue'
+import CountUp from 'vue-countup-v3'
 
-import cities from './mock';
+import * as am5 from '@amcharts/amcharts5'
+import * as am5map from '@amcharts/amcharts5/map'
+import am5geodata_usaLow from '@amcharts/amcharts5-geodata/usaLow'
 
-export default {
-  name: 'Map',
-  components: { AnimatedNumber },
-  data() {
-    return {
-      animateNumberOptions: {
-        duration: 2000,
-        easing: 'easeInQuad',
-        formatValue(value) {
-          let number = value.toFixed(0);
-          let numberAsArrayWithSapces = [];
-          while (number >= 1) {
-            numberAsArrayWithSapces.unshift(number % 1000);
-            number = (number/1000).toFixed();
-          }
-          return numberAsArrayWithSapces.join(' ');
-        }
-      }
-    }
-  },
-  mounted() {
-    let map = am4core.create(this.$refs.map, am4maps.MapChart);
-    map.geodata = am4geodata_usaHigh;
-    map.projection = new am4maps.projections.AlbersUsa();
-    map.chartContainer.wheelable = false;
-    map.seriesContainer.draggable = false;
-    map.seriesContainer.resizable = false;
-    let polygonSeries = map.series.push(new am4maps.MapPolygonSeries());
-    polygonSeries.useGeodata = true;
-    map.homeZoomLevel = 1.2;
+import cities from './mock'
 
-    map.zoomControl = new am4maps.ZoomControl();
-    map.zoomControl.align = 'left';
-    map.zoomControl.valign = 'bottom';
-    map.zoomControl.dy = -20;
+const mapRef = useTemplateRef<HTMLDivElement>('mapRef')
+let root: ReturnType<typeof am5.Root.new> | null = null
 
-    map.zoomControl.minusButton.background.fill = am4core.color("#C7D0FF");
-    map.zoomControl.minusButton.background.fillOpacity = 0.24;
-    map.zoomControl.minusButton.background.stroke = null;
-    map.zoomControl.plusButton.background.fill = am4core.color("#C7D0FF");
-    map.zoomControl.plusButton.background.fillOpacity = 0.24;
-    map.zoomControl.plusButton.background.stroke = null;
-    map.zoomControl.plusButton.label.fill = am4core.color("#fff");
-    map.zoomControl.plusButton.label.fontWeight = 600;
-    map.zoomControl.plusButton.label.fontSize = 16;
-    map.zoomControl.minusButton.label.fill = am4core.color("#fff");
-    map.zoomControl.minusButton.label.fontWeight = 600;
-    map.zoomControl.minusButton.label.fontSize = 16;
-    let plusButtonHoverState = map.zoomControl.plusButton.background.states.create("hover");
-    plusButtonHoverState.properties.fillOpacity = 0.24;
-    let minusButtonHoverState = map.zoomControl.minusButton.background.states.create("hover");
-    minusButtonHoverState.properties.fillOpacity = 0.24;
+// Map colors
+const MAP_FILL_COLOR = '#474D84'
+const MAP_STROKE_COLOR = '#6979C9'
+const POINT_COLOR = '#C7D0FF'
 
-    let polygonTemplate = polygonSeries.mapPolygons.template;
-    polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.fill = am4core.color("#474D84");
-    polygonTemplate.fillOpacity = 1;
-    let hs = polygonTemplate.states.create("hover");
-    hs.properties.fillOpacity = 0.5;
+const countUpOptions = {
+  separator: ' ',
+}
 
-    polygonTemplate.stroke = am4core.color("#6979C9");
-    polygonTemplate.strokeOpacity = 1;
+onMounted(() => {
+  if (!mapRef.value) return
 
-    let citySeries = map.series.push(new am4maps.MapImageSeries());
-    citySeries.data = cities;
-    citySeries.dataFields.value = "size";
+  root = am5.Root.new(mapRef.value)
 
-    let city = citySeries.mapImages.template;
-    city.nonScaling = true;
-    city.propertyFields.latitude = "latitude";
-    city.propertyFields.longitude = "longitude";
-    let circle = city.createChild(am4core.Circle);
-    circle.fill = am4core.color("#C7D0FF");
-    circle.stroke = am4core.color("#ffffff");
-    circle.strokeWidth = 0;
-    let circleHoverState = circle.states.create("hover");
-    circleHoverState.properties.strokeWidth = 1;
-    circle.tooltipText = '{tooltip}';
-    circle.propertyFields.radius = 'size';
+  const chart = root.container.children.push(
+    am5map.MapChart.new(root, {
+      projection: am5map.geoAlbersUsa(),
+      panX: 'none',
+      panY: 'none',
+      wheelX: 'none',
+      wheelY: 'none',
+      homeZoomLevel: 1.2
+    })
+  )
 
-    this.map = map;
-  },
-};
+  const polygonSeries = chart.series.push(
+    am5map.MapPolygonSeries.new(root, {
+      geoJSON: am5geodata_usaLow,
+      fill: am5.color(MAP_FILL_COLOR),
+      stroke: am5.color(MAP_STROKE_COLOR)
+    })
+  )
+
+  polygonSeries.mapPolygons.template.setAll({
+    tooltipText: '{name}',
+    fill: am5.color(MAP_FILL_COLOR),
+    fillOpacity: 1,
+    stroke: am5.color(MAP_STROKE_COLOR),
+    strokeOpacity: 1
+  })
+
+  // Create tooltip with default background color
+  const tooltip = am5.Tooltip.new(root, {
+    getFillFromSprite: false,
+    getStrokeFromSprite: false,
+    autoTextColor: false,
+    labelText: '{name}'
+  })
+  tooltip.get('background')?.setAll({
+    fill: am5.color(MAP_FILL_COLOR),
+    fillOpacity: 1,
+    stroke: am5.color(POINT_COLOR),
+    strokeWidth: 1
+  })
+  tooltip.label.setAll({
+    fill: am5.color(POINT_COLOR)
+  })
+  polygonSeries.mapPolygons.template.set('tooltip', tooltip)
+
+  polygonSeries.mapPolygons.template.states.create('hover', {
+    fillOpacity: 0.5
+  })
+
+  const pointSeries = chart.series.push(
+    am5map.MapPointSeries.new(root, {})
+  )
+
+  pointSeries.bullets.push((root, series, dataItem) => {
+    const data = dataItem.dataContext as { size: number; tooltip: string }
+    return am5.Bullet.new(root, {
+      sprite: am5.Circle.new(root, {
+        radius: data.size,
+        fill: am5.color(POINT_COLOR),
+        strokeWidth: 0,
+        tooltipText: '{tooltip}'
+      })
+    })
+  })
+
+  pointSeries.data.setAll(cities.map((city: { latitude: number; longitude: number; tooltip: string; size: number }) => ({
+    geometry: { type: 'Point', coordinates: [city.longitude, city.latitude] },
+    tooltip: city.tooltip,
+    size: city.size
+  })))
+
+  const zoomControl = am5map.ZoomControl.new(root, {
+    x: am5.percent(0),
+    centerX: am5.percent(0),
+    y: am5.percent(100),
+    centerY: am5.percent(100),
+    paddingBottom: 35
+  })
+
+  // Make horizontal layout and smaller buttons
+  zoomControl.setAll({
+    layout: root.horizontalLayout
+  })
+
+  const buttonColor = am5.color(MAP_STROKE_COLOR)
+  const bgColor = am5.color(MAP_FILL_COLOR)
+
+  // Style plus button
+  zoomControl.plusButton.setAll({ width: 28, height: 28, scale: 0.8, marginRight: 2 })
+  zoomControl.plusButton.get('background')?.setAll({ fill: buttonColor })
+
+  // Style minus button - use background color for border and icon
+  zoomControl.minusButton.setAll({ width: 28, height: 28, scale: 0.8, marginLeft: 2 })
+  zoomControl.minusButton.get('background')?.setAll({ stroke: bgColor })
+  zoomControl.minusButton.get('icon')?.setAll({ stroke: bgColor })
+
+  chart.set('zoomControl', zoomControl)
+})
+
+onBeforeUnmount(() => {
+  if (root) {
+    root.dispose()
+  }
+})
 </script>
 
 <style src="./Map.scss" lang="scss" />

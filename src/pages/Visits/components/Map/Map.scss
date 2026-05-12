@@ -2,7 +2,7 @@
 
 .map {
   position: relative;
-  margin: (-$widget-padding-vertical) (-$widget-padding-horizontal) 0;
+  margin: 0 (-$widget-padding-horizontal) 0;
   height: 400px;
 
   @include media-breakpoint-down(sm) {

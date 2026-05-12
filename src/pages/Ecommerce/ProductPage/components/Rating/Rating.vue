@@ -1,15 +1,19 @@
 <template>
   <div :class="{ rating: true, [`rating-${size}`]: size }">
-    {{rating}}
-    <i class="la la-star"></i>
+    {{ rating }}
+    <i class="la la-star" />
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Rating',
-  props: ['rating', 'size'],
-};
+<script setup lang="ts">
+interface Props {
+  rating?: number | string
+  size?: string
+}
+
+withDefaults(defineProps<Props>(), {
+  rating: 0,
+})
 </script>
 
 <style src="./Rating.scss" lang="scss" scoped />

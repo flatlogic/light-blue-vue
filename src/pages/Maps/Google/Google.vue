@@ -1,57 +1,65 @@
 <template>
   <div>
-    <b-breadcrumb>
-      <b-breadcrumb-item>YOU ARE HERE</b-breadcrumb-item>
-      <b-breadcrumb-item active>Google Maps</b-breadcrumb-item>
-    </b-breadcrumb>
     <h1 class="page-title">
       Google <span class="fw-semi-bold">Maps</span>
     </h1>
     <b-row>
       <b-col cols="12">
         <Widget
-                title="<h5>Vue Google Maps <small class='text-muted'>Default and customized</small></h5>"
-                customHeader close collapse
+          title="<h5>Vue Google Maps <small class='text-muted'>Default and customized</small></h5>"
+          custom-header
+          close
+          collapse
         >
-          <GmapMap
-                  :center="{lat: -37.813179, lng: 144.950259}"
-                  :zoom="12"
-                  style="width: 100%; height: 60vh"
-                  :options="options"
+          <GMapMap
+            :center="{ lat: -37.813179, lng: 144.950259 }"
+            :zoom="12"
+            class="mapContainer"
+            :options="options"
           >
-            <GmapMarker
-                    :position="{lat: -37.813179, lng: 144.950259}"
+            <GMapMarker
+              :position="{ lat: -37.813179, lng: 144.950259 }"
             />
-          </GmapMap>
+          </GMapMap>
         </Widget>
       </b-col>
     </b-row>
   </div>
 </template>
 
-<script>
-  import Widget from '@/components/Widget/Widget';
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import Widget from '@/components/Widget/Widget.vue'
 
-  export default {
-    name: 'Maps',
-    data() {
-      return {
-        options: {},
+declare const google: {
+  maps: {
+    MapTypeControlStyle: {
+      DEFAULT: number
+    }
+  }
+}
+
+interface MapOptions {
+  mapTypeControl?: boolean
+  mapTypeControlOptions?: {
+    style?: number
+  }
+}
+
+const options = ref<MapOptions>({})
+
+onMounted(() => {
+  // Options will be applied once the map loads
+  // The Google Maps API is loaded by @fawmi/vue-google-maps
+  if (typeof google !== 'undefined' && google.maps) {
+    options.value = {
+      mapTypeControl: true,
+      mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DEFAULT
       }
-    },
-    created() {
-      this.$gmapApiPromiseLazy().then(() => {
-        this.options = {
-          mapTypeControl: true,
-          mapTypeControlOptions: {
-            // eslint-disable-next-line
-            style: google.maps.MapTypeControlStyle.DEFAULT
-          }
-        }
-      })
-    },
-    components: { Widget }
-  };
+    }
+  }
+})
 </script>
 
 <style src="./Google.scss" lang="scss" scoped />

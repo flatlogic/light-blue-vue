@@ -1,4 +1,21 @@
+@import '../../../../styles/app';
+
 .bigStatTitle {
   width: 220px;
   margin-right: 0.5rem;
+}
+
+.stat-dropdown {
+  :deep(.btn) {
+    background-color: $default;
+    border-color: $default;
+    color: $text-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($default, 5%);
+      border-color: darken($default, 5%);
+    }
+  }
 }

@@ -35,3 +35,21 @@
   color: $text-color;
   font-weight: 600;
 }
+
+h6 {
+  color: $text-muted;
+  font-size: 0.75rem;
+  font-weight: $font-weight-semi-bold;
+  letter-spacing: 0.5px;
+  margin-top: $spacer * 1.5;
+  margin-bottom: $spacer * 0.5;
+  padding: 0 14px;
+}
+
+.mt {
+  margin-top: $spacer;
+}
+
+.mb {
+  margin-bottom: $spacer;
+}

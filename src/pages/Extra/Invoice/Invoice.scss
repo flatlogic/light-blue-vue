@@ -1,5 +1,3 @@
-@import '../../../styles/app';
-
 .invoice-page {
   .invoiceLogo {
     max-height: 100px;
@@ -10,7 +8,7 @@
     margin-top: 70px;
   }
 
-  .widget {
+  :deep(.widget) {
     padding: 20px 40px;
   }
 }

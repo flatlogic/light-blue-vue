@@ -1,160 +1,244 @@
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
+import { useLayoutStore } from '@/store/layout'
+import { useAuthStore } from '@/store/auth'
+import config from '@/config'
+import avatarImage from '@/assets/people/a5.jpg'
+import Notifications from '@/components/Notifications/Notifications.vue'
+
+const route = useRoute()
+const layoutStore = useLayoutStore()
+const authStore = useAuthStore()
+
+const showNavbarAlert = ref(true)
+
+const user = computed(() => authStore.user)
+
+const sidebarClose = computed(() => layoutStore.sidebarStatic)
+
+const firstUserLetter = computed(() => {
+  return (user.value?.name || user.value?.email || 'P')[0].toUpperCase()
+})
+
+function switchSidebarMethod() {
+  if (!sidebarClose.value) {
+    layoutStore.toggleSidebar()
+    layoutStore.changeSidebarActive(null)
+  } else {
+    layoutStore.toggleSidebar()
+    const paths = route.fullPath.split('/')
+    paths.pop()
+    layoutStore.changeSidebarActive(paths.join('/') as unknown as number)
+  }
+}
+
+function logoutUser() {
+  authStore.logoutUser()
+}
+</script>
+
 <template>
-  <b-navbar toggleable="md" class="app-header d-print-none">
-    <b-navbar-nav class="navbar-nav-mobile ms-auto">
-        <b-nav-text class="me-3">
-          <b-alert class="header-alert animate__animated animate__bounceIn animate__delay-2s" dismissible v-model="showNavbarAlert">
-            <i class="fa fa-info-circle me-1"></i> Check out Light Blue Settings on the right!
-          </b-alert>
-        </b-nav-text>
-        <b-nav-form class="d-sm-down-none me-3 d-flex align-items-center">
-          <b-input-group class="input-group-transparent">
-            <b-input-group-text><i class="la la-search"></i></b-input-group-text>
-            <b-input class="input-transparent" id="search-input" placeholder="Search Dashboard" />
-          </b-input-group>
-        </b-nav-form>
-        <b-nav-item-dropdown right menu-class="py-0">
-          <template slot="button-content">
+  <BNavbar
+    toggleable="md"
+    class="app-header d-print-none"
+  >
+    <BNavbarNav class="navbar-nav-mobile ms-auto">
+      <BNavText class="me-3">
+        <div
+          v-if="showNavbarAlert"
+          class="header-alert animate__animated animate__bounceIn animate__delay-2s"
+        >
+          Check out Light Blue <i class="fa-solid fa-gear text-primary mx-1" /> on the right!
+          <button
+            type="button"
+            class="header-alert-close"
+            @click="showNavbarAlert = false"
+          >
+            ✕
+          </button>
+        </div>
+      </BNavText>
+      <BNavForm class="d-sm-down-none me-3 d-flex align-items-center">
+        <BInputGroup class="input-group-transparent">
+          <BInputGroupText><i class="fa-solid fa-magnifying-glass" /></BInputGroupText>
+          <BFormInput
+            id="search-input"
+            class="input-transparent"
+            placeholder="Search Dashboard"
+          />
+        </BInputGroup>
+      </BNavForm>
+      <BNavItemDropdown
+        right
+        menu-class="py-0"
+      >
+        <template #button-content>
           <span class="avatar rounded-circle thumb-sm float-start me-2">
             <img
-                v-if="user.avatar || user.email === 'admin@flatlogic.com'"
-                class="rounded-circle"
-                :src="user.avatar || avatarImage"
-                :alt="user.name || 'avatar'"
+              v-if="user?.avatar || user?.email === config.auth.email"
+              class="rounded-circle"
+              :src="user?.avatar || avatarImage"
+              :alt="user?.name || 'avatar'"
             />
-            <span v-else>{{firstUserLetter}}</span>
+            <span v-else>{{ firstUserLetter }}</span>
           </span>
-            <span class="small">{{user.name || user.email || "Philip smith"}}</span>
-            <span class="mx-2 circle bg-primary text-white fs-sm fw-bold">13</span>
-          </template>
-          <notifications />
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown class="d-md-down-none" no-caret right menu-class="dropdown-menu-messages">
-          <template slot="button-content">
-            <i class="la la-comment px-2" />
-          </template>
-          <b-dropdown-item>
-            <span class="avatar thumb-sm me-3">
-              <img class="rounded-circle" src="../../assets/people/a1.jpg" alt="woman" />
-            </span>
-            <div>
-              <h6>Jane <span class="fw-semi-bold">Hew</span></h6>
-              <span class="fs-sm text-muted fw-thin">Hey, John! How is it going? ...</span>
+          <span class="small">{{ user?.name || 'Admin' }}</span>
+          <span class="mx-2 circle bg-danger text-white fs-sm fw-bold">9</span>
+        </template>
+        <Notifications />
+      </BNavItemDropdown>
+      <BNavItemDropdown
+        class="d-md-down-none"
+        no-caret
+        right
+        menu-class="dropdown-menu-messages"
+      >
+        <template #button-content>
+          <i class="fa-regular fa-comment px-1" />
+        </template>
+        <BDropdownItem>
+          <span class="avatar thumb-sm me-3">
+            <img
+              class="rounded-circle"
+              src="../../assets/people/a1.jpg"
+              alt="woman"
+            />
+          </span>
+          <div>
+            <h6>Jane <span class="fw-semi-bold">Hew</span></h6>
+            <span class="fs-sm text-muted fw-thin">Hey, John! How is it going? ...</span>
+          </div>
+        </BDropdownItem>
+        <BDropdownItem>
+          <span class="avatar thumb-sm me-3">
+            <img
+              class="rounded-circle"
+              src="../../assets/people/a2.jpg"
+              alt="woman"
+            />
+          </span>
+          <div>
+            <h6>Alies <span class="fw-semi-bold">Rumiancaŭ</span></h6>
+            <span class="fs-sm text-muted fw-thin">I will definitely buy this template</span>
+          </div>
+        </BDropdownItem>
+        <BDropdownItem>
+          <span class="avatar thumb-sm me-3">
+            <img
+              class="rounded-circle"
+              src="../../assets/people/a3.jpg"
+              alt="woman"
+            />
+          </span>
+          <div>
+            <h6>Alexey <span class="fw-semi-bold">Kamandzirau</span></h6>
+            <span class="fs-sm text-muted fw-thin">I will definitely buy this template</span>
+          </div>
+        </BDropdownItem>
+        <BDropdownItemButton class="text-center">
+          <span class="mx-auto">See all messages <i class="fa-solid fa-arrow-right ms-1" /></span>
+        </BDropdownItemButton>
+      </BNavItemDropdown>
+      <BNavItem class="divider d-md-down-none" />
+      <BNavItemDropdown
+        no-caret
+        right
+        menu-class="dropdown-menu-settings"
+      >
+        <template #button-content>
+          <i class="fa-solid fa-gear px-1" />
+        </template>
+        <div class="sidebar-controls-dropdown px-3 py-3">
+          <div class="mb-3">
+            <div class="text-center mb-2">
+              Sidebar on the
             </div>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <span class="avatar thumb-sm me-3">
-              <img class="rounded-circle" src="../../assets/people/a2.jpg" alt="woman" />
-            </span>
-            <div>
-              <h6>Alies <span class="fw-semi-bold">Rumiancaŭ</span></h6>
-              <span class="fs-sm text-muted fw-thin">I will definitely buy this template</span>
+            <BButtonGroup class="w-100">
+              <BButton
+                :class="layoutStore.sidebarPosition === 'left' ? 'active-control' : 'inactive-control'"
+                @click.stop="layoutStore.setSidebarPosition('left')"
+              >
+                Left
+              </BButton>
+              <BButton
+                :class="layoutStore.sidebarPosition === 'right' ? 'active-control' : 'inactive-control'"
+                @click.stop="layoutStore.setSidebarPosition('right')"
+              >
+                Right
+              </BButton>
+            </BButtonGroup>
+          </div>
+          <div>
+            <div class="text-center mb-2">
+              Sidebar
             </div>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <span class="avatar thumb-sm me-3">
-              <img class="rounded-circle" src="../../assets/people/a3.jpg" alt="woman" />
-            </span>
-            <div>
-              <h6>Alexey <span class="fw-semi-bold">Kamandzirau</span></h6>
-              <span class="fs-sm text-muted fw-thin">I will definitely buy this template</span>
-            </div>
-          </b-dropdown-item>
-          <b-dropdown-item-button class="text-center">
-            <span class="mx-auto">See all messages <i class="fa fa-arrow-right ms-1"></i></span>
-          </b-dropdown-item-button>
-        </b-nav-item-dropdown>
-        <b-nav-item class="divider d-md-down-none"></b-nav-item>
-        <b-nav-item-dropdown no-caret right menu-class="dropdown-menu-settings">
-          <template slot="button-content">
-            <i class="la la-cog px-2" />
-          </template>
-          <b-dropdown-item to="/app/profile"><i class="la la-user" /> My Account</b-dropdown-item>
-          <b-dropdown-divider />
-          <b-dropdown-item to="/app/extra/calendar">Calendar</b-dropdown-item>
-          <b-dropdown-item to="/app/email">
-            Inbox &nbsp;&nbsp;<b-badge variant="danger" pill class="animate__animated animate__bounceIn">9</b-badge>
-          </b-dropdown-item>
-          <b-dropdown-divider />
-          <b-dropdown-item-button @click="logoutUser">
-            <i class="la la-sign-out" /> Log Out
-          </b-dropdown-item-button>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown no-caret right class="d-md-down-none">
-          <template slot="button-content">
-            <i class="la la-globe px-2" />
-          </template>
-          <b-dropdown-item>
-            <span class="badge badge-danger me-2"><i class="fa fa-bell-o"></i></span>
-            <span class="fs-sm">Check out this awesome ticket</span>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <span class="badge bg-primary me-2"><i class="fa fa-question-circle"></i></span>
-            <span class="fs-sm">Finish 2019 annual report</span>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <span class="badge badge-success me-2"><i class="fa fa-info-circle"></i></span>
-            <span class="fs-sm">Update Vue.js to the newest version</span>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <span class="badge badge-info me-2"><i class="fa fa-plus"></i></span>
-            <span class="fs-sm">Establish OKR system</span>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <span class="badge badge-danger me-2"><i class="fa fa-tag"></i></span>
-            <span class="fs-sm">Fill in time tracking</span>
-          </b-dropdown-item>
-          <b-dropdown-item-button class="text-center">
-            See all tickets <i class="fa fa-arrow-right ms-1"></i>
-          </b-dropdown-item-button>
-        </b-nav-item-dropdown>
-        <b-nav-item class="d-md-down-none" @click="logoutUser">
-          <i class="la la-power-off px-2" />
-        </b-nav-item>
-        <b-nav-item class="d-md-none" @click="switchSidebarMethod" >
-          <i class="la la-navicon px-2" />
-        </b-nav-item>
-      </b-navbar-nav>
-  </b-navbar>
+            <BButtonGroup class="w-100">
+              <BButton
+                :class="layoutStore.sidebarVisible ? 'active-control' : 'inactive-control'"
+                @click.stop="layoutStore.setSidebarVisible(true)"
+              >
+                Show
+              </BButton>
+              <BButton
+                :class="!layoutStore.sidebarVisible ? 'active-control' : 'inactive-control'"
+                @click.stop="layoutStore.setSidebarVisible(false)"
+              >
+                Hide
+              </BButton>
+            </BButtonGroup>
+          </div>
+        </div>
+      </BNavItemDropdown>
+      <BNavItemDropdown
+        no-caret
+        right
+        class="d-md-down-none"
+      >
+        <template #button-content>
+          <span class="bell-icon-wrapper">
+            <i class="fa-regular fa-bell px-1" />
+            <span class="bell-notification-dot" />
+          </span>
+        </template>
+        <BDropdownItem>
+          <span class="badge bg-danger me-2"><i class="fa-regular fa-bell" /></span>
+          <span class="fs-sm">Check out this awesome ticket</span>
+        </BDropdownItem>
+        <BDropdownItem>
+          <span class="badge bg-primary me-2"><i class="fa-regular fa-circle-question" /></span>
+          <span class="fs-sm">Finish 2019 annual report</span>
+        </BDropdownItem>
+        <BDropdownItem>
+          <span class="badge bg-success me-2"><i class="fa-solid fa-circle-info" /></span>
+          <span class="fs-sm">Update Vue.js to the newest version</span>
+        </BDropdownItem>
+        <BDropdownItem>
+          <span class="badge bg-info me-2"><i class="fa-solid fa-plus" /></span>
+          <span class="fs-sm">Establish OKR system</span>
+        </BDropdownItem>
+        <BDropdownItem>
+          <span class="badge bg-danger me-2"><i class="fa-solid fa-tag" /></span>
+          <span class="fs-sm">Fill in time tracking</span>
+        </BDropdownItem>
+        <BDropdownItemButton class="text-center">
+          See all tickets <i class="fa-solid fa-arrow-right ms-1" />
+        </BDropdownItemButton>
+      </BNavItemDropdown>
+      <BNavItem
+        class="d-md-down-none"
+        @click="logoutUser"
+      >
+        <i class="fa-solid fa-power-off px-1" />
+      </BNavItem>
+      <BNavItem
+        class="d-md-none"
+        @click="switchSidebarMethod"
+      >
+        <i class="fa-solid fa-bars px-1" />
+      </BNavItem>
+    </BNavbarNav>
+  </BNavbar>
 </template>
-
-<script>
-import { mapState, mapActions } from 'vuex';
-import avatarImage from '@/assets/people/a5.jpg';
-import Notifications from '@/components/Notifications/Notifications';
-
-export default {
-  name: 'Header',
-  components: { Notifications },
-  data() {
-    return {
-      avatarImage,
-      user: JSON.parse(localStorage.getItem('user') || {}),
-      showNavbarAlert: true
-    }
-  },
-  computed: {
-    ...mapState('layout', {
-      sidebarClose: state => state.sidebarClose,
-      sidebarStatic: state => state.sidebarStatic,
-    }),
-    firstUserLetter() { return (this.user.name || this.user.email || "P")[0].toUpperCase(); }
-  },
-  methods: {
-    ...mapActions('layout', ['toggleSidebar', 'toggleChat', 'switchSidebar', 'changeSidebarActive']),
-    ...mapActions('auth', ['logoutUser']),
-    switchSidebarMethod() {
-      if (!this.sidebarClose) {
-        this.switchSidebar(true);
-        this.changeSidebarActive(null);
-      } else {
-        this.switchSidebar(false);
-        const paths = this.$route.fullPath.split('/');
-        paths.pop();
-        this.changeSidebarActive(paths.join('/'));
-      }
-    },
-  },
-};
-</script>
 
 <style src="./Header.scss" lang="scss" />

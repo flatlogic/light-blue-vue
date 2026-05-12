@@ -4,14 +4,41 @@
   width: 343px;
   height: 100%;
   border: none;
+  box-shadow: none;
 
   :global(.list-group-item) {
+    border: none;
+  }
+
+  :global(.dropdown-menu) {
     border: none;
   }
 }
 
 .header {
-  border-bottom: 1px solid $widget-bg;
+  border-bottom: none;
+}
+
+.notifications-tabs {
+  border: none;
+
+  :global(.nav-item) {
+    .nav-link {
+      border: none;
+      color: $text-muted;
+      padding: 10px 15px;
+
+      &:hover {
+        color: $text-color;
+      }
+
+      &.active {
+        color: $text-color;
+        background: transparent;
+        font-weight: $font-weight-semi-bold;
+      }
+    }
+  }
 }
 
 .footer {
@@ -28,14 +55,5 @@
       color: $text-color;
       text-decoration: none;
     }
-  }
-}
-
-.btnNotificationsReload {
-  color: $navbar-link-color;
-  outline: none;
-
-  i::before {
-    top: 2px;
   }
 }

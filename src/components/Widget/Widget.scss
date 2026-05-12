@@ -3,6 +3,7 @@
 .title {
   margin-top: 0;
   color: $widget-title-color;
+  padding-right: 80px; // Make room for widget controls
 
   @include clearfix();
 }
@@ -83,34 +84,32 @@
     }
   }
 
-  :global {
-    .loader {
+  .loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .spinner {
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-
-      .spinner {
-        position: absolute;
-        top: 50%;
-        width: 100%; //ie fix
-        margin-top: -10px;
-        font-size: 20px;
-        text-align: center;
-      }
-    }
-
-    .widget-body.p-0 {
-      margin: $widget-padding-vertical (-$widget-padding-horizontal) (-$widget-padding-vertical);
-
-      + footer {
-        margin-top: $widget-padding-vertical;
-      }
+      top: 50%;
+      width: 100%; //ie fix
+      margin-top: -10px;
+      font-size: 20px;
+      text-align: center;
     }
   }
 
-  &:global.bg-transparent {
+  .widget-body.p-0 {
+    margin: $widget-padding-vertical (-$widget-padding-horizontal) (-$widget-padding-vertical);
+
+    + footer {
+      margin-top: $widget-padding-vertical;
+    }
+  }
+
+  &.bg-transparent {
     box-shadow: none;
   }
 }
@@ -130,19 +129,27 @@
   margin-top: $widget-padding-vertical;
 }
 
-.widgetControls,
-:global(.widget-controls) {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  padding: 14px;
+.widget > .widgetControls,
+.widget > .widget-controls {
+  position: absolute !important;
+  z-index: 10;
+  top: 14px;
+  right: 14px;
+  padding: 0;
   font-size: $font-size-sm;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
 
-  a {
+  a,
+  span:not(.text-gray-light) {
+    display: inline-flex;
     padding: 1px 4px;
     border-radius: 4px;
     color: $widget-title-color;
+    line-height: 1;
 
     @include transition(color 0.15s ease-in-out);
 
@@ -153,106 +160,104 @@
   }
 }
 
-:global {
-  .widget-image {
-    position: relative;
-    overflow: hidden;
-    margin: (-$widget-padding-vertical) (-$widget-padding-horizontal);
-    border-radius: $border-radius;
+.widget-image {
+  position: relative;
+  overflow: hidden;
+  margin: (-$widget-padding-vertical) (-$widget-padding-horizontal);
+  border-radius: $border-radius;
 
-    > img {
-      max-width: 100%;
-      border-radius: $border-radius $border-radius 0 0;
-      transition: transform 0.15s ease;
-    }
-
-    &:hover > img {
-      transform: scale(1.1, 1.1);
-    }
-
-    .title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin: 20px;
-    }
-
-    .info {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: 20px;
-    }
+  > img {
+    max-width: 100%;
+    border-radius: $border-radius $border-radius 0 0;
+    transition: transform 0.15s ease;
   }
 
-  .widget-footer-bottom {
+  &:hover > img {
+    transform: scale(1.1, 1.1);
+  }
+
+  .title {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 20px;
   }
 
-  .widget-sm {
-    height: 230px;
+  .info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
   }
+}
 
-  .widget-md {
-    height: 373px;
+.widget-footer-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.widget-sm {
+  height: 230px;
+}
+
+.widget-md {
+  height: 373px;
+}
+
+.widget-padding-md {
+  padding: $widget-padding-vertical $widget-padding-horizontal;
+}
+
+.widget-padding-lg {
+  padding: $widget-padding-vertical*2 $widget-padding-horizontal*2;
+}
+
+.widget-body-container {
+  position: relative;
+  height: 100%;
+}
+
+.widget-top-overflow,
+.widget-middle-overflow {
+  position: relative;
+  margin: 0 (-$widget-padding-horizontal);
+
+  > img {
+    max-width: 100%;
   }
+}
 
-  .widget-padding-md {
-    padding: $widget-padding-vertical $widget-padding-horizontal;
-  }
+.widget-top-overflow {
+  margin-top: (-$widget-padding-vertical);
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  overflow: hidden;
 
-  .widget-padding-lg {
-    padding: $widget-padding-vertical*2 $widget-padding-horizontal*2;
-  }
-
-  .widget-body-container {
-    position: relative;
-    height: 100%;
-  }
-
-  .widget-top-overflow,
-  .widget-middle-overflow {
-    position: relative;
-    margin: 0 (-$widget-padding-horizontal);
-
-    > img {
-      max-width: 100%;
-    }
-  }
-
-  .widget-top-overflow {
-    margin-top: (-$widget-padding-vertical);
+  > img {
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    overflow: hidden;
-
-    > img {
-      border-top-left-radius: $border-radius;
-      border-top-right-radius: $border-radius;
-    }
-
-    > .btn-toolbar {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      margin-right: $widget-padding-horizontal;
-
-      @include media-breakpoint-up(md) {
-        top: auto;
-        bottom: 0;
-      }
-    }
   }
 
-  .widget-icon {
-    font-size: 42px;
-    height: 60px;
-    line-height: 45px;
-    display: inline-block;
+  > .btn-toolbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin-right: $widget-padding-horizontal;
+
+    @include media-breakpoint-up(md) {
+      top: auto;
+      bottom: 0;
+    }
   }
+}
+
+.widget-icon {
+  font-size: 42px;
+  height: 60px;
+  line-height: 45px;
+  display: inline-block;
 }
 
 .widget-loader {

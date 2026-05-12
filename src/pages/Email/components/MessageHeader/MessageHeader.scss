@@ -2,6 +2,13 @@
 
 .messageHeader {
   width: 100%;
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
+  border-bottom: 1px solid rgba($white, 0.1);
+
+  h3 {
+    margin-bottom: $spacer;
+  }
 }
 
 .messageHeaderLine {
@@ -9,6 +16,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: $spacer;
 }
 
 .messageFrom {
@@ -16,17 +24,65 @@
   align-items: center;
 
   img {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
   }
 }
 
 .messageFromInfo {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.3;
 }
 
-.messageHeaderDate button {
-  font-size: $font-size-sm;
+.messageHeaderDate {
+  display: flex;
+  align-items: center;
+  color: $text-muted;
+
+  :deep(.btn-secondary) {
+    background-color: $black;
+    border-color: rgba($white, 0.1);
+    color: $text-color;
+    font-size: $font-size-sm;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($black, 5%);
+      border-color: rgba($white, 0.2);
+    }
+  }
+
+  :deep(.dropdown-menu) {
+    background-color: $black;
+    border-color: rgba($white, 0.1);
+
+    .dropdown-item {
+      color: $text-color;
+
+      i {
+        margin-right: 8px;
+        width: 14px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: rgba($white, 0.1);
+        color: $white;
+      }
+    }
+
+    .dropdown-divider {
+      border-color: rgba($white, 0.1);
+    }
+  }
+}
+
+.mt-lg {
+  margin-top: $spacer * 1.5;
+}
+
+.mb-lg {
+  margin-bottom: $spacer * 1.5;
 }

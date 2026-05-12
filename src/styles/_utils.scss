@@ -451,7 +451,9 @@ $z-index-variants: (more: 1, less: -1, '10': 10, '-10': -10);
     background-color: $widget-bg;
     border-color: transparentize($widget-bg, 0.15);
     border-right: none;
-    border-left: none;
+    padding-left: 12px;
+    padding-right: 8px;
+    color: $text-muted;
   }
 
   .input-transparent:focus {

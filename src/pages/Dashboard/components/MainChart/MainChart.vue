@@ -1,8 +1,8 @@
 <template>
   <Widget
-    bodyClass="mt"
-    class="mb-xlg"
     id="main-chart"
+    body-class="mt"
+    class="mb-xlg"
     title="
         <div class='row'>
           <div class='col-sm-5 col-xs-12'>
@@ -15,129 +15,125 @@
           </div>
         </div>
       "
-      customHeader
-    collapse close
-    :fetchingData="isReceiving"
-    >
-    <highcharts :options="chartData"></highcharts>
+    custom-header
+    collapse
+    close
+    :fetching-data="isReceiving"
+  >
+    <highcharts :options="chartData" />
   </Widget>
 </template>
 
-<script>
-import Widget from '@/components/Widget/Widget';
-import { Chart } from 'highcharts-vue';
-import Highcharts from 'highcharts';
+<script setup lang="ts">
+import { computed } from 'vue'
+import Widget from '@/components/Widget/Widget.vue'
+import { Chart as Highcharts } from 'highcharts-vue'
+import HighchartsLib from 'highcharts'
+import { useAppConfig } from '@/composables/useAppConfig'
 
-export default {
-  name: 'MainChart',
-  components: { Widget, highcharts: Chart },
-  data() {
-    return {
-      ticks: ['Dec 19', 'Dec 25', 'Dec 31', 'Jan 10', 'Jan 14',
-        'Jan 20', 'Jan 27', 'Jan 30', 'Feb 2', 'Feb 8', 'Feb 15',
-        'Feb 22', 'Feb 28', 'Mar 7', 'Mar 17']
-    };
+// Props
+interface Props {
+  data?: number[][][]
+  isReceiving?: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  data: () => [],
+  isReceiving: false,
+})
+
+const appConfig = useAppConfig()
+
+const chartOptions = computed(() => ({
+  credits: {
+    enabled: false,
   },
-  props: {
-    data: {default: []},
-    isReceiving: {type: Boolean, default: false},
+  chart: {
+    height: 350,
+    backgroundColor: 'transparent',
   },
-  computed: {
-    chartOptions() {
-      return {
-        credits: {
-          enabled: false
-        },
-        chart: {
-          height: 350,
-          backgroundColor: 'transparent'
-        },
-        title: false,
-        exporting: {
-          enabled: false
-        },
-        legend: {
-          verticalAlign: 'top',
-          itemStyle: {
-            color: this.appConfig.colors.textColor
-          }
-        },
-        yAxis: {
-          gridLineColor: '#040620',
-          title: false,
-          labels: {
-            style: {
-              color: this.appConfig.colors.textColor
-            }
-          },
-        },
-        xAxis: {
-          type: 'datetime',
-          labels: {
-            overflow: 'justify',
-            style: {
-              color: this.appConfig.colors.textColor
-            }
-          },
-        },
-        annotations: {
-          visible: false
-        },
-        plotOptions: {
-          series: {
-            marker: {
-              enabled: false,
-              symbol: 'circle'
-            },
-            pointInterval: 3600000 * 25, // every day
-            pointStart: Date.UTC(2018, 12, 19, 0, 0, 0),
-            tooltip: {
-              pointFormatter() {
-                return `<span style="color: ${this.color}">${this.series.name} at ${this.y.toFixed(2)}</span>`;
-              }
-            }
-          },
-        }
-      }
+  title: { text: '' },
+  exporting: {
+    enabled: false,
+  },
+  accessibility: {
+    enabled: false,
+  },
+  legend: {
+    verticalAlign: 'top' as const,
+    itemStyle: {
+      color: appConfig.colors.textColor,
     },
-    chartData() {
-      let data = this.data.map(arr => {
-        return arr.map(item => {
-          return item[1]
-        });
-      });
-      return {
-        ...this.chartOptions,
-        series: [
-          {
-            name: 'Light Blue',
-            data: data[0],
-            color: this.appConfig.colors.red,
-            type: 'areaspline',
-            fillColor: {
-              linearGradient: [0, 0, 0, 220],
-              stops: [
-                [0, this.appConfig.colors.red],
-                [1, Highcharts.Color(this.appConfig.colors.red).setOpacity(0).get('rgba')]
-              ]
-            }
-          },
-          {
-            type: 'spline',
-            name: 'RNS App',
-            data: data[1],
-            color: this.appConfig.colors.green,
-            dashStyle: 'Dash'
-          },
-          {
-            type: 'spline',
-            name: 'Sing App',
-            data: data[2],
-            color: this.appConfig.colors.blue
-          }
-        ]
-      }
-    }
   },
-};
+  yAxis: {
+    gridLineColor: '#040620',
+    title: { text: '' },
+    labels: {
+      style: {
+        color: appConfig.colors.textColor,
+      },
+    },
+  },
+  xAxis: {
+    type: 'datetime' as const,
+    labels: {
+      overflow: 'justify' as const,
+      style: {
+        color: appConfig.colors.textColor,
+      },
+    },
+  },
+  plotOptions: {
+    series: {
+      marker: {
+        enabled: false,
+        symbol: 'circle',
+      },
+      pointInterval: 3600000 * 25, // every day
+      pointStart: Date.UTC(2018, 12, 19, 0, 0, 0),
+      tooltip: {
+        pointFormatter() {
+          const point = this as unknown as { color?: string; series: { name: string }; y: number }
+          return `<span style="color: ${point.color || '#000'}">${point.series.name} at ${point.y?.toFixed(2) || 0}</span>`
+        },
+      },
+    },
+  },
+}))
+
+const chartData = computed(() => {
+  const data = props.data.map((arr) => arr.map((item) => item[1]))
+
+  return {
+    ...chartOptions.value,
+    series: [
+      {
+        name: 'Light Blue',
+        data: data[0] || [],
+        color: appConfig.colors.red,
+        type: 'areaspline' as const,
+        fillColor: {
+          linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+          stops: [
+            [0, appConfig.colors.red] as [number, string],
+            [1, HighchartsLib.color(appConfig.colors.red).setOpacity(0).get('rgba') as string] as [number, string],
+          ],
+        },
+      },
+      {
+        type: 'spline' as const,
+        name: 'RNS App',
+        data: data[1] || [],
+        color: appConfig.colors.green,
+        dashStyle: 'Dash' as const,
+      },
+      {
+        type: 'spline' as const,
+        name: 'Sing App',
+        data: data[2] || [],
+        color: appConfig.colors.blue,
+      },
+    ],
+  }
+})
 </script>

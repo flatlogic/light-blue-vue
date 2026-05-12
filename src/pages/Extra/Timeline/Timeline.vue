@@ -1,14 +1,15 @@
 <template>
   <div>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">YOU ARE HERE</li>
-      <li class="breadcrumb-item active">Time Line</li>
-    </ol>
-    <h1 class="page-title">Events - <span class="fw-semi-bold">Feed</span></h1>
+    <h1 class="page-title">
+      Events - <span class="fw-semi-bold">Feed</span>
+    </h1>
 
     <ul class="timeline">
       <li class="onLeft">
-        <time class="eventTime" dateTime="2014-05-19 03:04">
+        <time
+          class="eventTime"
+          dateTime="2014-05-19 03:04"
+        >
           <span class="date">yesterday</span>
           <span class="time">8:03 <span class="fw-semi-bold">pm</span></span>
         </time>
@@ -17,51 +18,73 @@
         </span>
         <section class="event">
           <span class="thumb-sm avatar pull-left me-2">
-            <img class="rounded-circle" src="../../../assets/people/a2.jpg" alt="woman" />
+            <img
+              class="rounded-circle"
+              src="../../../assets/people/a2.jpg"
+              alt="woman"
+            />
           </span>
-          <h4 class="eventHeading"><a href="#">Jessica Nilson</a>
+          <h4 class="eventHeading">
+            <a href="#">Jessica Nilson</a>
             <small> @jess</small>
           </h4>
-          <p class="fs-sm text-muted">10:12 am - Publicly near Minsk</p>
+          <p class="fs-sm text-muted">
+            10:12 am - Publicly near Minsk
+          </p>
           <div class="eventMap">
-            <GmapMap
+            <GMapMap
               :center="{lat: 51, lng: 7}"
               :zoom="8"
               style="width: 100%; height: inherit"
             >
-            <GmapMarker
-              :position="{lat: 51, lng: 7}"
-            />
-            </GmapMap>
+              <GMapMarker
+                :position="{lat: 51, lng: 7}"
+              />
+            </GMapMap>
           </div>
           <footer>
             <ul class="postLinks">
-              <li><a href="#">1 hour</a>
+              <li>
+                <a href="#">1 hour</a>
               </li>
-              <li><a href="#"><span class="text-danger">
-                <i class="fa fa-heart" /> Like
-              </span></a></li>
+              <li>
+                <a href="#"><span class="text-danger">
+                  <i class="fa fa-heart" /> Like
+                </span></a>
+              </li>
               <li><a href="#">Comment</a></li>
             </ul>
             <ul class="postComments">
               <li>
                 <span class="thumb-xs avatar pull-left me-2">
-                  <img class="rounded-circle" src="../../../assets/people/a2.jpg" alt="woman" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/people/a2.jpg"
+                    alt="woman"
+                  />
                 </span>
                 <div class="commentBody">
-                  <h6 class="author fs-sm fw-semi-bold">Radrigo Gonzales
+                  <h6 class="author fs-sm fw-semi-bold">
+                    Radrigo Gonzales
                     <small>7 mins ago</small>
                   </h6>
-                  <p>Someone said they were the best people out there just few years ago. Don't know
-                    better options.</p>
+                  <p>
+                    Someone said they were the best people out there just few years ago. Don't know
+                    better options.
+                  </p>
                 </div>
               </li>
               <li>
                 <span class="thumb-xs avatar pull-left me-2">
-                  <img class="rounded-circle" src="../../../assets/people/a4.jpg" alt="woman" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/people/a4.jpg"
+                    alt="woman"
+                  />
                 </span>
                 <div class="commentBody">
-                  <h6 class="author fs-sm fw-semi-bold">Ignacio Abad
+                  <h6 class="author fs-sm fw-semi-bold">
+                    Ignacio Abad
                     <small>6 mins ago</small>
                   </h6>
                   <p>True. Heard absolutely the same.</p>
@@ -69,10 +92,17 @@
               </li>
               <li>
                 <span class="thumb-xs avatar pull-left me-2">
-                  <img class="rounded-circle" src="../../../assets/avatar.png" alt="avatar" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/avatar.png"
+                    alt="avatar"
+                  />
                 </span>
                 <div class="commentBody">
-                  <b-form-input size="sm" placeholder="Write your comment..." />
+                  <BFormInput
+                    size="sm"
+                    placeholder="Write your comment..."
+                  />
                 </div>
               </li>
             </ul>
@@ -81,7 +111,10 @@
       </li>
 
       <li>
-        <time class="eventTime" dateTime="2014-05-19 03:04">
+        <time
+          class="eventTime"
+          dateTime="2014-05-19 03:04"
+        >
           <span class="date">today</span>
           <span class="time">9:41 <span class="fw-semi-bold">am</span></span>
         </time>
@@ -90,12 +123,19 @@
         </span>
         <section class="event">
           <span class="thumb-xs avatar pull-left me-2">
-            <img class="rounded-circle" src="../../../assets/people/a5.jpg" alt="man" />
+            <img
+              class="rounded-circle"
+              src="../../../assets/people/a5.jpg"
+              alt="man"
+            />
           </span>
-          <h5 class="eventHeading"><a href="#">Bob Nilson</a>
+          <h5 class="eventHeading">
+            <a href="#">Bob Nilson</a>
             <small><a href="#"> @nils</a></small>
           </h5>
-          <p class="fs-sm text-muted">February 22, 2014 at 01:59 PM</p>
+          <p class="fs-sm text-muted">
+            February 22, 2014 at 01:59 PM
+          </p>
           <p class="fs-mini">
             There is no such thing as maturity. There is
             instead an ever-evolving process of maturing.
@@ -104,27 +144,35 @@
           <footer>
             <ul class="postLinks">
               <li><a href="#">1 hour</a></li>
-              <li><a href="#"><span class="text-danger">
-                <i class="fa fa-heart" /> Like
-              </span></a></li>
+              <li>
+                <a href="#"><span class="text-danger">
+                  <i class="fa fa-heart" /> Like
+                </span></a>
+              </li>
               <li><a href="#">Comment</a></li>
             </ul>
           </footer>
         </section>
       </li>
       <li class="onLeft">
-        <time class="eventTime" dateTime="2014-05-19 03:04">
+        <time
+          class="eventTime"
+          dateTime="2014-05-19 03:04"
+        >
           <span class="date">yesterday</span>
           <span class="time">9:03 <span class="fw-semi-bold">am</span></span>
         </time>
         <span class="eventIcon eventIconDanger">
-          <i class="la la-lg la-utensils"/>
+          <i class="la la-lg la-utensils" />
         </span>
         <section class="event">
-          <h5 class="eventHeading"><a href="#">Jessica Smith</a>
+          <h5 class="eventHeading">
+            <a href="#">Jessica Smith</a>
             <small> @jess</small>
           </h5>
-          <p class="fs-sm text-muted">February 22, 2014 at 01:59 PM</p>
+          <p class="fs-sm text-muted">
+            February 22, 2014 at 01:59 PM
+          </p>
           <p class="fs-mini">
             Check out this awesome photo I made in Italy last
             summer. Seems it was lost somewhere deep inside
@@ -132,7 +180,10 @@
           </p>
           <div class="eventImage">
             <a :href="image">
-              <img :src="image" alt="picture" />
+              <img
+                :src="image"
+                alt="picture"
+              />
             </a>
           </div>
           <footer>
@@ -151,27 +202,44 @@
 
               <span class="thumb thumb-sm pull-right">
                 <a href="#">
-                  <img class="rounded-circle" src="../../../assets/people/a1.jpg" alt="woman" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/people/a1.jpg"
+                    alt="woman"
+                  />
                 </a>
               </span>
               <span class="thumb thumb-sm pull-right">
                 <a href="#">
-                  <img class="rounded-circle" src="../../../assets/people/a5.jpg" alt="man" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/people/a5.jpg"
+                    alt="man"
+                  />
                 </a>
               </span>
               <span class="thumb thumb-sm pull-right">
                 <a href="#">
-                  <img class="rounded-circle" src="../../../assets/people/a3.jpg" alt="woman" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/people/a3.jpg"
+                    alt="woman"
+                  />
                 </a>
               </span>
             </div>
             <ul class="postComments mt-sm">
               <li>
                 <span class="thumb-xs avatar pull-left me-2">
-                  <img class="rounded-circle" src="../../../assets/people/a1.jpg" alt="woman" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/people/a1.jpg"
+                    alt="woman"
+                  />
                 </span>
                 <div class="commentBody">
-                  <h6 class="author fs-sm fw-semi-bold">Ignacio Abad
+                  <h6 class="author fs-sm fw-semi-bold">
+                    Ignacio Abad
                     <small>6 mins ago</small>
                   </h6>
                   <p>Hey, have you heard anything about that?</p>
@@ -179,10 +247,17 @@
               </li>
               <li>
                 <span class="thumb-xs avatar pull-left me-2">
-                  <img class="rounded-circle" src="../../../assets/avatar.png" alt="avatar" />
+                  <img
+                    class="rounded-circle"
+                    src="../../../assets/avatar.png"
+                    alt="avatar"
+                  />
                 </span>
                 <div class="commentBody">
-                  <b-form-input size="sm" placeholder="Write your comment..." />
+                  <BFormInput
+                    size="sm"
+                    placeholder="Write your comment..."
+                  />
                 </div>
               </li>
             </ul>
@@ -190,35 +265,50 @@
         </section>
       </li>
       <li>
-        <time class="eventTime" dateTime="2014-05-19 03:04">
+        <time
+          class="eventTime"
+          dateTime="2014-05-19 03:04"
+        >
           <span class="date">yesterday</span>
           <span class="time">9:03 <span class="fw-semi-bold">am</span></span>
         </time>
         <span class="eventIcon eventIconInfo">
-          <i class="la la-lg la-user"/>
+          <i class="la la-lg la-user" />
         </span>
         <section class="event">
           <span class="thumb-xs avatar pull-left me-2">
-            <img class="rounded-circle" src="../../../assets/people/a6.jpg" alt="woman" />
+            <img
+              class="rounded-circle"
+              src="../../../assets/people/a6.jpg"
+              alt="woman"
+            />
           </span>
-          <h5 class="eventHeading"><a href="#">Jessica Smith</a>
+          <h5 class="eventHeading">
+            <a href="#">Jessica Smith</a>
             <small> @jess</small>
           </h5>
-          <p class="fs-sm text-muted">9:03 am - Publicly near Minsk</p>
+          <p class="fs-sm text-muted">
+            9:03 am - Publicly near Minsk
+          </p>
           <h5>New <span class="fw-semi-bold">Project</span> Launch</h5>
           <p class="fs-mini">
             Let's try something different this time. Hey, do you wanna join us tonight?
             We're planning to a launch a new project soon. Want to discuss with all of you...
           </p>
-          <a class="mt-n-xs fs-mini text-muted" href="#">Read more...</a>
+          <a
+            class="mt-n-xs fs-mini text-muted"
+            href="#"
+          >Read more...</a>
           <footer>
             <ul class="postLinks">
               <li><a href="#">1 hour</a></li>
-              <li><a href="#">
-                <span class="text-danger">
-                  <i class="fa fa-heart-o" /> Like
-                </span>
-              </a></li>
+              <li>
+                <a href="#">
+                  <span class="text-danger">
+                    <i class="fa fa-heart-o" /> Like
+                  </span>
+                </a>
+              </li>
               <li><a href="#">Comment</a></li>
             </ul>
           </footer>
@@ -228,17 +318,8 @@
   </div>
 </template>
 
-<script>
-import image from '../../../assets/search/8.jpg';
-
-export default {
-  name: 'Timeline',
-  data() {
-    return {
-      image,
-    };
-  },
-};
+<script setup lang="ts">
+import image from '@/assets/search/8.jpg'
 </script>
 
 <style src="./Timeline.scss" lang="scss" scoped />

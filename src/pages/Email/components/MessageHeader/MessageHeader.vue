@@ -1,27 +1,38 @@
 <template>
   <div class="messageHeader">
-    <h3>{{title}}</h3>
+    <h3>{{ title }}</h3>
     <div class="messageHeaderLine mt-lg mb-lg">
       <div class="messageFrom">
-        <img src="../../../../assets/people/a4.jpg" alt="user" class="rounded-circle me-1" />
+        <img
+          src="../../../../assets/people/a4.jpg"
+          alt="user"
+          class="rounded-circle me-1"
+        />
         <div class="messageFromInfo">
           <span>
-            <strong>{{name}}</strong>
+            <strong>{{ name }}</strong>
             <span class="text-muted fw-thin ms-1">
-              &lt;{{email}}&gt;
+              &lt;{{ email }}&gt;
             </span>
           </span>
-          <span class="text-muted">to {{to}}</span>
+          <span class="text-muted">to {{ to }}</span>
         </div>
       </div>
       <div class="messageHeaderDate">
-        {{date}}
+        {{ date }}
         <b-button-group class="ms-2">
-          <b-button variant="default" @click="changeCompose">
+          <b-button
+            variant="secondary"
+            @click="emit('reply')"
+          >
             <i class="fa fa-reply" /> Reply
           </b-button>
-          <b-dropdown variant="default" size="sm" right>
-            <b-dropdown-item-button @click="changeCompose">
+          <b-dropdown
+            variant="secondary"
+            size="sm"
+            right
+          >
+            <b-dropdown-item-button @click="emit('reply')">
               <i class="fa fa-reply" /> Reply
             </b-dropdown-item-button>
             <b-dropdown-item-button>
@@ -44,11 +55,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MessageHeader',
-  props: ['title', 'name', 'photo', 'email', 'to', 'date', 'changeCompose'],
-};
+<script setup lang="ts">
+defineProps<{
+  title: string
+  name: string
+  photo?: string
+  email: string
+  to: string
+  date: string
+}>()
+
+const emit = defineEmits<{
+  reply: []
+}>()
 </script>
 
 <style src="./MessageHeader.scss" lang="scss" scoped />

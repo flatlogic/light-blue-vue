@@ -1,106 +1,131 @@
 <template>
   <div class="highcharts-page">
-    <b-breadcrumb>
-      <b-breadcrumb-item>YOU ARE HERE</b-breadcrumb-item>
-      <b-breadcrumb-item>Charts</b-breadcrumb-item>
-      <b-breadcrumb-item active>Highcharts</b-breadcrumb-item>
-    </b-breadcrumb>
-    <h1 class="page-title">Visual - <span class="fw-semi-bold">Highcharts</span></h1>
+    <h1 class="page-title">
+      Visual - <span class="fw-semi-bold">Highcharts</span>
+    </h1>
     <p>For more information please read full <a href="https://github.com/highcharts/highcharts-vue">documentation</a></p>
     <b-row>
-      <b-col xs='12' lg='12'>
+      <b-col
+        xs="12"
+        lg="12"
+      >
         <Widget
-            title="<h5>Highcharts <span class='fw-semi-bold'>Line Chart</span></h5>"
-            close collapse customHeader
+          title="<h5>Highcharts <span class='fw-semi-bold'>Line Chart</span></h5>"
+          close
+          collapse
+          custom-header
         >
-          <highcharts :options="cd.line"></highcharts>
+          <HighchartsChart :options="cd.line" />
         </Widget>
       </b-col>
-      <b-col xs='12' lg='6'>
+      <b-col
+        xs="12"
+        lg="6"
+      >
         <Widget
-            title="<h5>Highcharts <span class='fw-semi-bold'>Pie Chart</span></h5>"
-            close collapse customHeader
+          title="<h5>Highcharts <span class='fw-semi-bold'>Pie Chart</span></h5>"
+          close
+          collapse
+          custom-header
         >
-          <highcharts :options="cd.pie"></highcharts>
+          <HighchartsChart :options="cd.pie" />
         </Widget>
       </b-col>
-      <b-col xs='12' lg='6'>
+      <b-col
+        xs="12"
+        lg="6"
+      >
         <Widget
-            title="<h5>Highcharts <span class='fw-semi-bold'>Column 3D Chart</span></h5>"
-            close collapse customHeader
+          title="<h5>Highcharts <span class='fw-semi-bold'>Column 3D Chart</span></h5>"
+          close
+          collapse
+          custom-header
         >
-          <highcharts :options="cd.column3D"></highcharts>
+          <HighchartsChart :options="cd.column3D" />
         </Widget>
       </b-col>
-      <b-col xs='12' lg='5'>
+      <b-col
+        xs="12"
+        lg="5"
+      >
         <b-row>
-          <b-col xs="12" lg="12">
+          <b-col
+            xs="12"
+            lg="12"
+          >
             <Widget
-                title="<h5>Highcharts <span class='fw-semi-bold'>Vector Chart</span></h5>"
-                close collapse customHeader
+              title="<h5>Highcharts <span class='fw-semi-bold'>Vector Chart</span></h5>"
+              close
+              collapse
+              custom-header
             >
-              <highcharts :options="cd.vector"></highcharts>
+              <HighchartsChart :options="cd.vector" />
             </Widget>
           </b-col>
-          <b-col xs="12" lg="12">
+          <b-col
+            xs="12"
+            lg="12"
+          >
             <Widget
-                title="<h5>Highcharts <span class='fw-semi-bold'>Sunburst Chart</span></h5>"
-                close collapse customHeader
+              title="<h5>Highcharts <span class='fw-semi-bold'>Sunburst Chart</span></h5>"
+              close
+              collapse
+              custom-header
             >
-              <highcharts :options="cd.wordCloud"></highcharts>
+              <HighchartsChart :options="cd.wordCloud" />
             </Widget>
           </b-col>
         </b-row>
       </b-col>
-      <b-col xs='12' lg='7'>
+      <b-col
+        xs="12"
+        lg="7"
+      >
         <Widget
-            title="<h5>Highcharts <span class='fw-semi-bold'>Sunburst Chart</span></h5>"
-            close collapse customHeader
+          title="<h5>Highcharts <span class='fw-semi-bold'>Sunburst Chart</span></h5>"
+          close
+          collapse
+          custom-header
         >
-          <highcharts :options="cd.sunburst"></highcharts>
+          <HighchartsChart :options="cd.sunburst" />
         </Widget>
       </b-col>
     </b-row>
   </div>
 </template>
 
-<script>
-  import Widget from '@/components/Widget/Widget';
-  import Highcharts from 'highcharts';
-  import variablePie from 'highcharts/modules/variable-pie';
-  import exporting from 'highcharts/modules/exporting';
-  import exportData from 'highcharts/modules/export-data';
-  import accessibility from 'highcharts/modules/accessibility';
-  import highcharts3d from 'highcharts/highcharts-3d';
-  import sunburst from 'highcharts/modules/sunburst';
-  import vector from 'highcharts/modules/vector';
-  import wordcloud from 'highcharts/modules/wordcloud';
+<script setup lang="ts">
+import Widget from '@/components/Widget/Widget.vue'
+import Highcharts from 'highcharts'
+import * as HighchartsMore from 'highcharts/highcharts-more'
+import * as Highcharts3D from 'highcharts/highcharts-3d'
+import * as VariablePie from 'highcharts/modules/variable-pie'
+import * as Exporting from 'highcharts/modules/exporting'
+import * as ExportData from 'highcharts/modules/export-data'
+import * as Accessibility from 'highcharts/modules/accessibility'
+import * as Sunburst from 'highcharts/modules/sunburst'
+import * as Vector from 'highcharts/modules/vector'
+import * as Wordcloud from 'highcharts/modules/wordcloud'
+import { Chart as HighchartsChart } from 'highcharts-vue'
+import chartsData from './mock'
 
-  variablePie(Highcharts);
-  exporting(Highcharts);
-  exportData(Highcharts);
-  accessibility(Highcharts);
-  highcharts3d(Highcharts);
-  sunburst(Highcharts);
-  vector(Highcharts);
-  wordcloud(Highcharts);
+// Initialize Highcharts modules - handle ESM default exports
+const initModule = (mod: unknown) => {
+  const m = mod as { default?: (hc: typeof Highcharts) => void }
+  const fn = typeof mod === 'function' ? mod : m.default
+  if (typeof fn === 'function') fn(Highcharts)
+}
+initModule(HighchartsMore)
+initModule(Highcharts3D)
+initModule(VariablePie)
+initModule(Exporting)
+initModule(ExportData)
+initModule(Accessibility)
+initModule(Sunburst)
+initModule(Vector)
+initModule(Wordcloud)
 
-  import { Chart } from 'highcharts-vue';
-
-  import chartsData from './mock';
-
-  export default {
-    data() {
-      return {
-        cd: chartsData
-      }
-    },
-    name: 'Chartkick',
-    components: {
-      Widget,
-      highcharts: Chart
-    },
-  };
+const cd = chartsData
 </script>
 
 <style src="./Highcharts.scss" lang="scss" />

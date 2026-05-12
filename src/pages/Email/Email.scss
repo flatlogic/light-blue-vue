@@ -1,23 +1,57 @@
+@import '../../styles/app';
+
 .email-page {
   .pageTopLine {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  
-    & .close {
+    margin-bottom: $spacer * 1.5;
+
+    & .btn-close {
       margin-left: 25px;
     }
   }
-  
+
   .alertTransform {
     transition: 0.6s;
     transition-timing-function: ease;
     transform: translateX(-130vw);
     padding-right: 1.25rem;
   }
-  
+
   .alertAfter {
     transform: translateX(0);
-  }  
+  }
+
+  .view {
+    :deep(.pagination) {
+      margin-bottom: $spacer;
+
+      .page-item {
+        .page-link {
+          background-color: $widget-bg;
+          border-color: rgba($white, 0.1);
+          color: $text-color;
+
+          &:hover {
+            background-color: lighten($widget-bg, 5%);
+            border-color: rgba($white, 0.2);
+          }
+        }
+
+        &.active .page-link {
+          background-color: theme-color('primary');
+          border-color: theme-color('primary');
+          color: $white;
+        }
+
+        &.disabled .page-link {
+          background-color: $widget-bg;
+          border-color: rgba($white, 0.1);
+          color: $text-muted;
+        }
+      }
+    }
+  }
 }

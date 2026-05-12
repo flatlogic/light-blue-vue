@@ -8,7 +8,7 @@
   @include clearfix();
 
   .postLinks + & {
-    margin-top: $spacer / 2;
+    margin-top: $spacer * 0.5;
   }
 
   > li {
@@ -247,11 +247,6 @@
       border-color: tint-color(theme-color('danger'), 7%);
     }
 
-    &.eventIconWarning {
-      background-color: theme-color('warning');
-      border-color: tint-color(theme-color('warning'), 7%);
-    }
-
     &.eventIconSuccess {
       background-color: theme-color('success');
       border-color: tint-color(theme-color('success'), 7%);
@@ -268,7 +263,6 @@
     }
 
     &.eventIconDanger,
-    &.eventIconWarning,
     &.eventIconSuccess,
     &.eventIconInfo,
     &.eventIconPrimary {
