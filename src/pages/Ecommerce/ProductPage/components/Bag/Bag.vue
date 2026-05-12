@@ -1,32 +1,41 @@
 <template>
-  <div class="bag" >
-    <b-button class="add me-2" variant="success">
+  <div class="bag">
+    <BButton
+      class="add me-2"
+      variant="success"
+    >
       add to bag
-      <img src="../../../../../assets/bag.svg" alt="bag" />
-    </b-button>
-    <b-button class="star" variant="outline-dark" @click="toggle">
-      <i v-if="favourite" class="la la-star"></i>
-      <i v-else class="la la-star-o"></i>
-    </b-button>
+      <img
+        :src="bagIcon"
+        alt="bag"
+      />
+    </BButton>
+    <BButton
+      class="star"
+      variant="outline-dark"
+      @click="toggle"
+    >
+      <i
+        v-if="favourite"
+        class="la la-star"
+      />
+      <i
+        v-else
+        class="la la-star-o"
+      />
+    </BButton>
   </div>
 </template>
 
-<script>
-import Vue from 'vue';
+<script setup lang="ts">
+import { ref } from 'vue'
+import bagIcon from '../../../../../assets/bag.svg'
 
-export default {
-  name: 'Bag',
-  data() {
-    return {
-      favourite: false,
-    };
-  },
-  methods: {
-    toggle() {
-      Vue.set(this, 'favourite', !this.favourite);
-    },
-  },
-};
+const favourite = ref(false)
+
+function toggle() {
+  favourite.value = !favourite.value
+}
 </script>
 
 <style src="./Bag.scss" lang="scss" scoped />

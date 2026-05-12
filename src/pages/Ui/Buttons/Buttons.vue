@@ -1,15 +1,26 @@
 <template>
   <div>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item">YOU ARE HERE</li>
-      <li class="active breadcrumb-item">UI Buttons</li>
+      <li class="breadcrumb-item">
+        YOU ARE HERE
+      </li>
+      <li class="active breadcrumb-item">
+        UI Buttons
+      </li>
     </ol>
-    <h1 class="page-title">Buttons - <span class="fw-semi-bold">Styles </span></h1>
+    <h1 class="page-title">
+      Buttons - <span class="fw-semi-bold">Styles </span>
+    </h1>
     <b-row>
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5> Color <span class='fw-semi-bold'>Options</span></h5>"
-          customHeader close collapse
+          custom-header
+          close
+          collapse
         >
           <div>
             <p class="fs-mini text-muted">
@@ -17,22 +28,67 @@
               Semantically distinguishable beauty.
             </p>
             <p class="text-start">
-              <b-button variant="default" class="width-100 mb-3 me-3">Default</b-button>
-              <b-button variant="primary" class="width-100 mb-3 me-3">Primary</b-button>
-              <b-button variant="info" class="width-100 mb-3 me-3">Info</b-button>
-              <b-button variant="success" class="width-100 mb-3 me-3">Success</b-button>
-              <b-button variant="warning" class="width-100 mb-3 me-3">Warning</b-button>
-              <b-button variant="danger" class="width-100 mb-3 me-3">Danger</b-button>
-              <b-button variant="gray" class="width-100 mb-3 me-3">Gray</b-button>
-              <b-button variant="inverse" class="width-100 mb-3 me-3">Inverse</b-button>
+              <b-button
+                variant="secondary"
+                class="width-100 mb-3 me-3"
+              >
+                Default
+              </b-button>
+              <b-button
+                variant="primary"
+                class="width-100 mb-3 me-3"
+              >
+                Primary
+              </b-button>
+              <b-button
+                variant="info"
+                class="width-100 mb-3 me-3"
+              >
+                Info
+              </b-button>
+              <b-button
+                variant="success"
+                class="width-100 mb-3 me-3"
+              >
+                Success
+              </b-button>
+              <b-button
+                variant="warning"
+                class="width-100 mb-3 me-3"
+              >
+                Warning
+              </b-button>
+              <b-button
+                variant="danger"
+                class="width-100 mb-3 me-3"
+              >
+                Danger
+              </b-button>
+              <b-button
+                variant="secondary"
+                class="width-100 mb-3 me-3"
+              >
+                Gray
+              </b-button>
+              <b-button
+                variant="dark"
+                class="width-100 mb-3 me-3"
+              >
+                Inverse
+              </b-button>
             </p>
           </div>
         </Widget>
       </b-col>
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5> Size <span class='fw-semi-bold'>Variants</span></h5>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <div>
             <p class="fs-mini text-muted">
@@ -41,43 +97,116 @@
               from tiny 10px button to large one.
             </p>
             <p>
-              <b-button variant="default" size="lg" class="mb-3 me-3">Large button</b-button>
-              <b-button variant="primary" class="mb-3 me-3">Default button</b-button>
-              <b-button variant="info" size="sm" class="mb-3 me-3">Small button</b-button>
-              <b-button variant="success" size="xs" class="mb-3 me-3">Tiny button</b-button>
+              <b-button
+                variant="secondary"
+                size="lg"
+                class="mb-3 me-3"
+              >
+                Large button
+              </b-button>
+              <b-button
+                variant="primary"
+                class="mb-3 me-3"
+              >
+                Default button
+              </b-button>
+              <b-button
+                variant="info"
+                size="sm"
+                class="mb-3 me-3"
+              >
+                Small button
+              </b-button>
+              <b-button
+                variant="success"
+                size="sm"
+                class="mb-3 me-3"
+              >
+                Tiny button
+              </b-button>
             </p>
           </div>
         </Widget>
       </b-col>
 
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5> <span class='fw-semi-bold'>Buttons</span></h5>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <div>
             <p class="fs-mini">
               In need of a button, but not the hefty background colors they bring?
-              Use <code></code> property to remove all
+              Use <code /> property to remove all
               background images and colors on any button.
             </p>
             <p>
-              <b-button variant="outline-default" class="width-100 mb-3 me-3">Default</b-button>
-              <b-button variant="outline-primary" class="width-100 mb-3 me-3">Primary</b-button>
-              <b-button variant="outline-info" class="width-100 mb-3 me-3">Info</b-button>
-              <b-button variant="outline-success" class="width-100 mb-3 me-3">Success</b-button>
-              <b-button variant="outline-warning" class="width-100 mb-3 me-3">Warning</b-button>
-              <b-button variant="outline-danger" class="width-100 mb-3 me-3">Danger</b-button>
-              <b-button variant="outline-gray" class="width-100 mb-3 me-3">Gray</b-button>
-              <b-button variant="outline-inverse" class="width-100 mb-3 me-3">Inverse</b-button>
+              <b-button
+                variant="outline-secondary"
+                class="width-100 mb-3 me-3"
+              >
+                Default
+              </b-button>
+              <b-button
+                variant="outline-primary"
+                class="width-100 mb-3 me-3"
+              >
+                Primary
+              </b-button>
+              <b-button
+                variant="outline-info"
+                class="width-100 mb-3 me-3"
+              >
+                Info
+              </b-button>
+              <b-button
+                variant="outline-success"
+                class="width-100 mb-3 me-3"
+              >
+                Success
+              </b-button>
+              <b-button
+                variant="outline-warning"
+                class="width-100 mb-3 me-3"
+              >
+                Warning
+              </b-button>
+              <b-button
+                variant="outline-danger"
+                class="width-100 mb-3 me-3"
+              >
+                Danger
+              </b-button>
+              <b-button
+                variant="outline-secondary"
+                class="width-100 mb-3 me-3"
+              >
+                Gray
+              </b-button>
+              <b-button
+                variant="outline-dark"
+                class="width-100 mb-3 me-3"
+              >
+                Inverse
+              </b-button>
             </p>
           </div>
         </Widget>
       </b-col>
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5>Rounded <span class='fw-semi-bold'>Buttons</span></h5>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <div>
             <p class="fs-mini">
@@ -86,38 +215,67 @@
               <code>.btn-rounded</code> or <code>.btn-rounded-f</code>.
             </p>
             <p>
-              <b-button variant="default" class="btn-rounded-f width-100 mb-3 me-3">
+              <b-button
+                variant="secondary"
+                class="btn-rounded-f width-100 mb-3 me-3"
+              >
                 Default
               </b-button>
-              <b-button variant="primary" class="btn-rounded-f width-100 mb-3 me-3">
+              <b-button
+                variant="primary"
+                class="btn-rounded-f width-100 mb-3 me-3"
+              >
                 Primary
               </b-button>
-              <b-button variant="info" class="btn-rounded-f width-100 mb-3 me-3">
+              <b-button
+                variant="info"
+                class="btn-rounded-f width-100 mb-3 me-3"
+              >
                 Info
               </b-button>
-              <b-button variant="success" class="btn-rounded-f width-100 mb-3 me-3">
+              <b-button
+                variant="success"
+                class="btn-rounded-f width-100 mb-3 me-3"
+              >
                 Success
               </b-button>
-              <b-button variant="outline-warning" class="btn-rounded width-100 mb-3 me-3">
+              <b-button
+                variant="outline-warning"
+                class="btn-rounded width-100 mb-3 me-3"
+              >
                 Warning
               </b-button>
-              <b-button variant="outline-danger" class="btn-rounded width-100 mb-3 me-3">
+              <b-button
+                variant="outline-danger"
+                class="btn-rounded width-100 mb-3 me-3"
+              >
                 Danger
               </b-button>
-              <b-button variant="outline-gray" class="btn-rounded width-100 mb-3 me-3">
+              <b-button
+                variant="outline-secondary"
+                class="btn-rounded width-100 mb-3 me-3"
+              >
                 Gray
               </b-button>
-              <b-button variant="outline-inverse" class="btn-rounded width-100 mb-3 me-3">
+              <b-button
+                variant="outline-dark"
+                class="btn-rounded width-100 mb-3 me-3"
+              >
                 Inverse
               </b-button>
             </p>
           </div>
         </Widget>
       </b-col>
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5> Block <span class='fw-semi-bold'>Buttons</span></h5>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <div>
             <p class="fs-mini text-muted">
@@ -127,21 +285,46 @@
               greater control over spacing, alignment, and responsive behaviors.
             </p>
             <div class="d-grid gap-2">
-              <b-button variant="info" block>Block Button</b-button>
-              <b-button variant="default" block>Show Menu &nbsp;&nbsp;&nbsp;<i
-                class="fa fa-bars"
-              /></b-button>
-              <b-button variant="primary" block><i class="fa fa-facebook" />&nbsp;&nbsp;Login mit
-                Facebook</b-button>
-              <b-button variant="warning" block>Are you sure?</b-button>
+              <b-button
+                variant="info"
+                block
+              >
+                Block Button
+              </b-button>
+              <b-button
+                variant="secondary"
+                block
+              >
+                Show Menu &nbsp;&nbsp;&nbsp;<i
+                  class="fa fa-bars"
+                />
+              </b-button>
+              <b-button
+                variant="primary"
+                block
+              >
+                <i class="fa fa-facebook" />&nbsp;&nbsp;Login mit
+                Facebook
+              </b-button>
+              <b-button
+                variant="warning"
+                block
+              >
+                Are you sure?
+              </b-button>
             </div>
           </div>
         </Widget>
       </b-col>
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5> Disabled <span class='fw-semi-bold'>Buttons</span></h5>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <div>
             <p class="fs-mini text-muted">
@@ -149,20 +332,51 @@
               Add the <code>disabled</code> to <code>&lt;Button&gt;</code> component.
             </p>
             <p>
-              <b-button variant="primary" disabled class="me-3">Primary button</b-button>
-              <b-button variant="default" disabled class="me-3">Button</b-button>
+              <b-button
+                variant="primary"
+                disabled
+                class="me-3"
+              >
+                Primary button
+              </b-button>
+              <b-button
+                variant="secondary"
+                disabled
+                class="me-3"
+              >
+                Button
+              </b-button>
             </p>
             <p>
-              <b-button variant="success" size="sm" disabled class="me-3">Primary Link</b-button>
-              <b-button variant="default" size="sm" disabled class="me-3">Link</b-button>
+              <b-button
+                variant="success"
+                size="sm"
+                disabled
+                class="me-3"
+              >
+                Primary Link
+              </b-button>
+              <b-button
+                variant="secondary"
+                size="sm"
+                disabled
+                class="me-3"
+              >
+                Link
+              </b-button>
             </p>
           </div>
         </Widget>
       </b-col>
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5> Button <span class='fw-semi-bold'>Groups</span></h5>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <div>
             <p class="fs-mini text-muted">
@@ -172,33 +386,63 @@
               style behavior with Bootstrap buttons plugin.
             </p>
             <b-button-group class="mb-3">
-              <b-button variant="default">Left</b-button>
-              <b-button variant="default">Middle</b-button>
-              <b-button variant="default">Right</b-button>
+              <b-button variant="secondary">
+                Left
+              </b-button>
+              <b-button variant="secondary">
+                Middle
+              </b-button>
+              <b-button variant="secondary">
+                Right
+              </b-button>
             </b-button-group>
             <b-button-toolbar class="mb-3">
               <b-button-group>
-                <b-button variant="default" class="ms-0">1</b-button>
-                <b-button variant="default">2</b-button>
-                <b-button variant="default">3</b-button>
-                <b-button variant="default">4</b-button>
+                <b-button
+                  variant="secondary"
+                  class="ms-0"
+                >
+                  1
+                </b-button>
+                <b-button variant="secondary">
+                  2
+                </b-button>
+                <b-button variant="secondary">
+                  3
+                </b-button>
+                <b-button variant="secondary">
+                  4
+                </b-button>
               </b-button-group>
               <b-button-group>
-                <b-button variant="default">5</b-button>
-                <b-button variant="default">6</b-button>
-                <b-button variant="default">7</b-button>
+                <b-button variant="secondary">
+                  5
+                </b-button>
+                <b-button variant="secondary">
+                  6
+                </b-button>
+                <b-button variant="secondary">
+                  7
+                </b-button>
               </b-button-group>
               <b-button-group>
-                <b-button variant="default">8</b-button>
+                <b-button variant="secondary">
+                  8
+                </b-button>
               </b-button-group>
             </b-button-toolbar>
           </div>
         </Widget>
       </b-col>
-      <b-col md='6' xs='12'>
+      <b-col
+        md="6"
+        xs="12"
+      >
         <Widget
           title="<h5> Button <span class='fw-semi-bold'>Dropdowns</span></h5>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <div>
             <p class="fs-mini text-muted">
@@ -209,7 +453,11 @@
             </p>
 
             <div class="mb-3">
-              <b-dropdown variant="danger" text="One" class="me-3">
+              <b-dropdown
+                variant="danger"
+                text="One"
+                class="me-3"
+              >
                 <b-dropdown-item>Action</b-dropdown-item>
                 <b-dropdown-item>Another action</b-dropdown-item>
                 <b-dropdown-item>Something else here</b-dropdown-item>
@@ -217,7 +465,10 @@
                 <b-dropdown-item>Separated link</b-dropdown-item>
               </b-dropdown>
 
-              <b-dropdown variant="gray" text="One">
+              <b-dropdown
+                variant="secondary"
+                text="One"
+              >
                 <b-dropdown-item>Action</b-dropdown-item>
                 <b-dropdown-item>Another action</b-dropdown-item>
                 <b-dropdown-item>Something else here</b-dropdown-item>
@@ -226,14 +477,23 @@
               </b-dropdown>
             </div>
             <div class="mb-3">
-              <b-dropdown variant="primary" split text="Primary" class="me-3">
+              <b-dropdown
+                variant="primary"
+                split
+                text="Primary"
+                class="me-3"
+              >
                 <b-dropdown-item>Action</b-dropdown-item>
                 <b-dropdown-item>Another action</b-dropdown-item>
                 <b-dropdown-item>Something else here</b-dropdown-item>
                 <b-dropdown-divider />
                 <b-dropdown-item>Separated link</b-dropdown-item>
               </b-dropdown>
-              <b-dropdown variant="gray" split text="Gray">
+              <b-dropdown
+                variant="secondary"
+                split
+                text="Gray"
+              >
                 <b-dropdown-item>Action</b-dropdown-item>
                 <b-dropdown-item>Another action</b-dropdown-item>
                 <b-dropdown-item>Something else here</b-dropdown-item>
@@ -247,13 +507,22 @@
     </b-row>
 
     <b-row>
-      <b-col md='12' xs='12'>
+      <b-col
+        md="12"
+        xs="12"
+      >
         <Widget
           title="<h6> Button <span class='fw-semi-bold'>Options</span></h6>"
-          close collapse customHeader
+          close
+          collapse
+          custom-header
         >
           <b-row>
-            <b-col md='4' sm='6' xs='12'>
+            <b-col
+              md="4"
+              sm="6"
+              xs="12"
+            >
               <h4> Button <span class="fw-semi-bold">Checkboxes</span></h4>
               <p class="fs-mini text-muted">
                 Do more with buttons. Control button states
@@ -266,37 +535,62 @@
               <div class="mb-3">
                 <b-button-group>
                   <b-button
-                    variant="default" @click="changeCheckbox('checkboxOne', 0)"
+                    variant="secondary"
                     :class="{ active: checkboxOne[0] }"
-                  >Left way</b-button>
+                    @click="changeCheckbox('checkboxOne', 0)"
+                  >
+                    Left way
+                  </b-button>
                   <b-button
-                    variant="default" @click="changeCheckbox('checkboxOne', 1)"
-                   :class="{ active: checkboxOne[1] }"
-                  >Middle way</b-button>
+                    variant="secondary"
+                    :class="{ active: checkboxOne[1] }"
+                    @click="changeCheckbox('checkboxOne', 1)"
+                  >
+                    Middle way
+                  </b-button>
                   <b-button
-                    variant="default" @click="changeCheckbox('checkboxOne', 2)"
+                    variant="secondary"
                     :class="{ active: checkboxOne[2] }"
-                  >Right way</b-button>
+                    @click="changeCheckbox('checkboxOne', 2)"
+                  >
+                    Right way
+                  </b-button>
                 </b-button-group>
               </div>
               <div class="mb-3">
                 <b-button-group>
                   <b-button
-                    variant="default" size="sm" @click="changeCheckbox('checkboxTwo', 0)"
+                    variant="secondary"
+                    size="sm"
                     :class="{ active: checkboxTwo[0] }"
-                  >Left way</b-button>
+                    @click="changeCheckbox('checkboxTwo', 0)"
+                  >
+                    Left way
+                  </b-button>
                   <b-button
-                    variant="default" size="sm" @click="changeCheckbox('checkboxTwo', 1)"
-                   :class="{ active: checkboxTwo[1] }"
-                  >Middle way</b-button>
+                    variant="secondary"
+                    size="sm"
+                    :class="{ active: checkboxTwo[1] }"
+                    @click="changeCheckbox('checkboxTwo', 1)"
+                  >
+                    Middle way
+                  </b-button>
                   <b-button
-                    variant="default" size="sm" @click="changeCheckbox('checkboxTwo', 2)"
+                    variant="secondary"
+                    size="sm"
                     :class="{ active: checkboxTwo[2] }"
-                  >Right way</b-button>
+                    @click="changeCheckbox('checkboxTwo', 2)"
+                  >
+                    Right way
+                  </b-button>
                 </b-button-group>
               </div>
             </b-col>
-            <b-col md='4' sm='12' xs='12'>
+            <b-col
+              md="4"
+              sm="12"
+              xs="12"
+            >
               <h4> Button <span class="fw-semi-bold">Radios</span></h4>
               <p class="fs-mini text-muted">
                 Do more with buttons. Control button states
@@ -307,37 +601,62 @@
               <div class="mb-3">
                 <b-button-group>
                   <b-button
-                    variant="default" @click="changeRadio('radioOne', 0)"
+                    variant="secondary"
                     :class="{ active: radioOne === 0 }"
-                  >Left way</b-button>
+                    @click="changeRadio('radioOne', 0)"
+                  >
+                    Left way
+                  </b-button>
                   <b-button
-                    variant="default" @click="changeRadio('radioOne', 1)"
-                   :class="{ active: radioOne === 1 }"
-                  >Middle way</b-button>
+                    variant="secondary"
+                    :class="{ active: radioOne === 1 }"
+                    @click="changeRadio('radioOne', 1)"
+                  >
+                    Middle way
+                  </b-button>
                   <b-button
-                    variant="default" @click="changeRadio('radioOne', 2)"
+                    variant="secondary"
                     :class="{ active: radioOne === 2 }"
-                  >Right way</b-button>
+                    @click="changeRadio('radioOne', 2)"
+                  >
+                    Right way
+                  </b-button>
                 </b-button-group>
               </div>
               <div class="mb-3">
                 <b-button-group>
                   <b-button
-                    variant="default" size="sm" @click="changeRadio('radioTwo', 0)"
+                    variant="secondary"
+                    size="sm"
                     :class="{ active: radioTwo === 0 }"
-                  >Left way</b-button>
+                    @click="changeRadio('radioTwo', 0)"
+                  >
+                    Left way
+                  </b-button>
                   <b-button
-                    variant="default" size="sm" @click="changeRadio('radioTwo', 1)"
-                   :class="{ active: radioTwo === 1 }"
-                  >Middle way</b-button>
+                    variant="secondary"
+                    size="sm"
+                    :class="{ active: radioTwo === 1 }"
+                    @click="changeRadio('radioTwo', 1)"
+                  >
+                    Middle way
+                  </b-button>
                   <b-button
-                    variant="default" size="sm" @click="changeRadio('radioTwo', 2)"
+                    variant="secondary"
+                    size="sm"
                     :class="{ active: radioTwo === 2 }"
-                  >Right way</b-button>
+                    @click="changeRadio('radioTwo', 2)"
+                  >
+                    Right way
+                  </b-button>
                 </b-button-group>
               </div>
             </b-col>
-            <b-col md='4' sm='12' xs='12'>
+            <b-col
+              md="4"
+              sm="12"
+              xs="12"
+            >
               <h4> Use with <span class="fw-semi-bold">Icons</span></h4>
               <p class="fs-mini text-muted">
                 Fontawesome and Glyph- icons may be used in buttons,
@@ -345,29 +664,47 @@
                 Let your buttons shine!
               </p>
               <div class="mb-sm">
-                <b-button variant="default" class="width-100 me-3">
+                <b-button
+                  variant="secondary"
+                  class="width-100 me-3"
+                >
                   <i class="glyphicon glyphicon-tree-conifer text-success me-2 mb-2" />
                   Forest
                 </b-button>
-                <b-button variant="default" class="width-100 me-3">
+                <b-button
+                  variant="secondary"
+                  class="width-100 me-3"
+                >
                   <i class="fa fa-check text-danger me-2 mb-2" />
                   Submit
                 </b-button>
-                <b-button variant="default" class="width-100 me-3">
+                <b-button
+                  variant="secondary"
+                  class="width-100 me-3"
+                >
                   <i class="fa fa-facebook text-primary me-2 mb-2" />
                   Login
                 </b-button>
               </div>
               <div>
-                <b-button variant="inverse" class="width-100 me-3">
+                <b-button
+                  variant="dark"
+                  class="width-100 me-3"
+                >
                   <i class="fa fa-exclamation text-warning me-2 mb-2" />
                   Error
                 </b-button>
-                <b-button variant="inverse" class="width-100 me-3">
+                <b-button
+                  variant="dark"
+                  class="width-100 me-3"
+                >
                   <i class="glyphicon glyphicon-globe text-info me-2 mb-2" />
                   <span class="text-info">Globe</span>
                 </b-button>
-                <b-button variant="inverse" class="width-100 me-3">
+                <b-button
+                  variant="dark"
+                  class="width-100 me-3"
+                >
                   <span class="circle bg-white me-3">
                     <i class="fa fa-map-marker text-gray" />
                   </span>
@@ -382,28 +719,38 @@
   </div>
 </template>
 
-<script>
-import Vue from 'vue';
-import Widget from '@/components/Widget/Widget';
+<script setup lang="ts">
+import { ref } from 'vue'
+import Widget from '@/components/Widget/Widget.vue'
 
-export default {
-  name: 'Buttons',
-  components: { Widget },
-  data() {
-    return {
-      checkboxOne: [false, true, false],
-      checkboxTwo: [true, false, true],
-      radioOne: -1,
-      radioTwo: 1,
-    };
-  },
-  methods: {
-    changeCheckbox(field, index) {
-      Vue.set(this[field], index, !this[field][index]);
-    },
-    changeRadio(field, index) {
-      Vue.set(this, field, index);
-    },
-  },
-};
+const checkboxOne = ref([false, true, false])
+const checkboxTwo = ref([true, false, true])
+const radioOne = ref(-1)
+const radioTwo = ref(1)
+
+// Checkbox map for dynamic access
+const checkboxMap: Record<string, typeof checkboxOne> = {
+  checkboxOne,
+  checkboxTwo,
+}
+
+// Radio map for dynamic access
+const radioMap: Record<string, typeof radioOne> = {
+  radioOne,
+  radioTwo,
+}
+
+function changeCheckbox(field: string, index: number) {
+  const checkboxRef = checkboxMap[field]
+  if (checkboxRef) {
+    checkboxRef.value[index] = !checkboxRef.value[index]
+  }
+}
+
+function changeRadio(field: string, index: number) {
+  const radioRef = radioMap[field]
+  if (radioRef) {
+    radioRef.value = index
+  }
+}
 </script>

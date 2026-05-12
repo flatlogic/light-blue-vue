@@ -11,24 +11,12 @@
 
 .productCardPhoto {
   width: 100%;
-  height: 320px;
+  aspect-ratio: 4 / 3;
   background-position: center;
   background-size: cover;
   position: relative;
   border-radius: $border-radius;
   box-shadow: $widget-shadow;
-
-  @include media-breakpoint-down(sm) {
-    height: 200px;
-  }
-
-  @include media-breakpoint-down(md) {
-    height: 250px;
-  }
-
-  @include media-breakpoint-down(xs) {
-    height: 150px;
-  }
 
   cursor: pointer;
   transition: $transition-base;
@@ -61,7 +49,7 @@
     }
 
     .la {
-      color: $header-color;
+      color: $gray-600;
       font-size: 15px;
     }
   }

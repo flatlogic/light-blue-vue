@@ -1,7 +1,4 @@
 @import '../../../styles/app';
-@import '../../../../node_modules/@fullcalendar/core/main.css';
-@import '../../../../node_modules/@fullcalendar/daygrid/main.css';
-@import '../../../../node_modules/@fullcalendar/timegrid/main.css';
 
 .calendar-page {
   :global {
@@ -25,8 +22,8 @@
       margin-top: $spacer;
 
       .external-event {
-        margin: ($spacer/2) 0;
-        padding: $spacer / 2;
+        margin: calc($spacer / 2) 0;
+        padding: calc($spacer / 2);
         font-size: $font-size-mini;
         cursor: move;
         border-radius: $border-radius;
@@ -40,4 +37,3 @@
     border-color: $text-color;
   }
 }
-

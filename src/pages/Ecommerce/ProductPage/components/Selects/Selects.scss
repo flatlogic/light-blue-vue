@@ -2,6 +2,7 @@
 
 .selects {
   display: flex;
+  gap: $spacer;
   margin: $spacer / 2 0;
 
   .btn {
@@ -19,6 +20,38 @@
     &:last-child {
       width: calc(35% - #{$spacer / 2});
       margin-left: $spacer / 2;
+    }
+  }
+
+  .btn-secondary {
+    background-color: $black;
+    border-color: rgba($white, 0.1);
+    color: $text-color;
+    font-weight: 500;
+    height: 100%;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.show {
+      background-color: lighten($black, 5%);
+      border-color: rgba($white, 0.2);
+      color: $text-color;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $black;
+    border-color: rgba($white, 0.1);
+
+    .dropdown-item {
+      color: $text-color;
+
+      &:hover,
+      &:focus {
+        background-color: rgba($white, 0.1);
+        color: $white;
+      }
     }
   }
 }

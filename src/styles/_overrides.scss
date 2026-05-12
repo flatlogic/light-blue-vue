@@ -75,7 +75,7 @@ legend {
 }
 
 .input-sm {
-  font-size: 13px;
+  font-size: $font-size-sm;
 }
 
 .alert {
@@ -121,8 +121,96 @@ legend {
   color: $gray-300;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: $widget-bg;
+// Dark theme table styling
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #{$text-color};
+  --bs-table-border-color: #{$border-color};
+  color: $text-color;
+
+  > thead {
+    color: $header-color;
+
+    > tr > th {
+      border-bottom-color: $border-color;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  > tbody {
+    > tr > td {
+      border-bottom-color: $border-color;
+      color: $text-color;
+    }
+  }
+
+  th, td {
+    vertical-align: middle;
+  }
+}
+
+.table-striped {
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.03);
+
+  > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: $text-color;
+  }
+}
+
+.table-hover {
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.075);
+
+  > tbody > tr:hover > * {
+    background-color: rgba(255, 255, 255, 0.075);
+    color: $text-color;
+  }
+}
+
+.table-bordered {
+  --bs-table-border-color: #{$border-color};
+
+  > :not(caption) > * > * {
+    border-color: $border-color;
+  }
+}
+
+// Pagination dark theme
+.pagination {
+  --bs-pagination-bg: #{$widget-bg};
+  --bs-pagination-color: #{$text-color};
+  --bs-pagination-border-color: #{$border-color};
+  --bs-pagination-hover-bg: rgba(255, 255, 255, 0.1);
+  --bs-pagination-hover-color: #{$header-color};
+  --bs-pagination-hover-border-color: #{$border-color};
+  --bs-pagination-active-bg: #{theme-color('primary')};
+  --bs-pagination-active-border-color: #{theme-color('primary')};
+  --bs-pagination-disabled-bg: #{$widget-bg};
+  --bs-pagination-disabled-color: #{$text-muted};
+  --bs-pagination-disabled-border-color: #{$border-color};
+
+  .page-link {
+    background-color: $widget-bg;
+    border-color: $border-color;
+    color: $text-color;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $header-color;
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: theme-color('primary');
+    border-color: theme-color('primary');
+    color: $white;
+  }
+
+  .page-item.disabled .page-link {
+    background-color: $widget-bg;
+    border-color: $border-color;
+    color: $text-muted;
+  }
 }
 
 .table-no-border {
@@ -191,11 +279,26 @@ small {
   border: none;
 }
 
+.btn-secondary {
+  color: #333 !important;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #333 !important;
+  }
+
+  i {
+    color: #333;
+  }
+}
+
 .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: $font-size-index;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: $border-radius-sm;
 }
 
 .btn {
@@ -648,7 +751,7 @@ pre {
   display: block;
   padding: 6.5px;
   margin: 0 0 (1rem / 2);
-  font-size: 13px;
+  font-size: $font-size-sm;
   line-height: 1rem;
   word-break: break-all;
   word-wrap: break-word;
@@ -1002,7 +1105,7 @@ $slider-handle-size: 26px;
   }
 
   .rect {
-    border: 1px solid #fff;
+    border: 1px solid $white;
     width: 20px;
     height: 20px;
   }
@@ -1071,16 +1174,29 @@ $slider-handle-size: 26px;
   }
 }
 
-////// Awesome Bootstrap checkbox ///////
+////// Awesome Bootstrap checkbox - Dark theme overrides ///////
 .abc-checkbox,
 .abc-radio {
-  label:before {
-    background: theme-color('default');
-    border: none;
+  label::before {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-width: 2px;
+    border-radius: 5px;
   }
 
-  label:after {
+  label::after {
     color: $text-color;
+  }
+
+  input[type="checkbox"]:checked + label,
+  input[type="radio"]:checked + label {
+    &::before {
+      background-color: theme-color('default');
+      border-color: theme-color('default');
+    }
+    &::after {
+      color: #fff;
+    }
   }
 }
 
@@ -1129,6 +1245,30 @@ a.ck.ck-button.ck-on {
   }
 }
 
+////////// Navbar Notifications Dropdown ///////////
+.navbar-notifications {
+  border: none;
+
+  .list-group-item {
+    border: none;
+
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px;
+
+      .btn {
+        display: inline-flex;
+      }
+
+      time {
+        width: 100%;
+      }
+    }
+  }
+}
+
 ////////// Google Maps ///////////
 .gm-style {
   img {
@@ -1137,5 +1277,51 @@ a.ck.ck-button.ck-on {
 
   label {
     margin-bottom: 0;
+  }
+}
+
+////////// Email Page Dropdowns ///////////
+.email-dropdown {
+  > button,
+  > .btn,
+  .dropdown-toggle {
+    background-color: $default !important;
+    border-color: rgba($white, 0.15) !important;
+    color: $text-color !important;
+    font-weight: 500;
+    box-shadow: none !important;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.show,
+    &[aria-expanded="true"] {
+      background-color: lighten($default, 5%) !important;
+      border-color: rgba($white, 0.2) !important;
+      color: $text-color !important;
+    }
+
+    &::after {
+      margin-left: 12px;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $default;
+    border-color: rgba($white, 0.15);
+
+    .dropdown-item {
+      color: $text-color;
+
+      &:hover,
+      &:focus {
+        background-color: rgba($white, 0.1);
+        color: $white;
+      }
+    }
+
+    .dropdown-divider {
+      border-color: rgba($white, 0.15);
+    }
   }
 }

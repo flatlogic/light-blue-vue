@@ -1,41 +1,53 @@
 <template>
-  <canvas ref="canvas" v-bind="options" />
+  <canvas
+    ref="canvas"
+    v-bind="options"
+  />
 </template>
 
-<script>
-const Skycons = require('skycons')(window || {});
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUpdate } from 'vue'
+import SkyconsFactory from 'skycons'
 
-export default {
-  name: 'Skycon',
-  props: {
-    options: { type: Object },
-    icon: { type: String },
-    color: { type: String },
-    autoplay: { type: Boolean, default: true },
-  },
-  data() {
-    return {
-      skycons: new Skycons({ color: this.color }),
-    };
-  },
-  methods: {
-    play() {
-      this.skycons.play();
-    },
-    pause() {
-      this.skycons.pause();
-    },
-  },
-  mounted() {
-    const { skycons } = this;
-    skycons.add(this.$refs.canvas, Skycons[this.icon]); // eslint-disable-line
+const Skycons = SkyconsFactory(window || {})
 
-    if (this.autoplay) {
-      skycons.play();
+interface Props {
+  options?: Record<string, unknown>
+  icon?: string
+  color?: string
+  autoplay?: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  autoplay: true,
+})
+
+const canvas = ref<HTMLCanvasElement | null>(null)
+const skycons = new Skycons({ color: props.color })
+
+onMounted(() => {
+  if (canvas.value && props.icon) {
+    skycons.add(canvas.value, (Skycons as Record<string, unknown>)[props.icon])
+
+    if (props.autoplay) {
+      skycons.play()
     }
-  },
-  beforeUpdate() {
-     this.skycons.set(this.$refs.canvas, Skycons[this.icon]); // eslint-disable-line
-  },
-};
+  }
+})
+
+onBeforeUpdate(() => {
+  if (canvas.value && props.icon) {
+    skycons.set(canvas.value, (Skycons as Record<string, unknown>)[props.icon])
+  }
+})
+
+function play() {
+  skycons.play()
+}
+
+function pause() {
+  skycons.pause()
+}
+
+defineExpose({ play, pause })
 </script>

@@ -1,96 +1,107 @@
 <template>
   <div>
-    <b-breadcrumb>
-      <b-breadcrumb-item>YOU ARE HERE</b-breadcrumb-item>
-      <b-breadcrumb-item active>Amcharts Maps</b-breadcrumb-item>
-    </b-breadcrumb>
     <h1 class="page-title">
       Amcharts <span class="fw-semi-bold">Maps</span>
     </h1>
-    <b-row>
-      <b-col cols="12">
+    <BRow>
+      <BCol cols="12">
         <Widget
-            title="<h5>Vue Amcharts Maps <small class='text-muted'>Default and customized</small></h5>"
-            customHeader close collapse
+          title="<h5>Vue Amcharts Maps <small class='text-muted'>Default and customized</small></h5>"
+          custom-header
+          close
+          collapse
         >
-          <div class="amcharts-map" ref="chartdiv"></div>
+          <div
+            ref="chartdiv"
+            class="amcharts-map"
+          />
         </Widget>
-      </b-col>
-    </b-row>
+      </BCol>
+    </BRow>
   </div>
 </template>
-<script>
-  import * as am4core from "@amcharts/amcharts4/core";
-  import * as am4maps from "@amcharts/amcharts4/maps";
-  import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 
-  import Widget from '@/components/Widget/Widget';
-  import places from "./mock";
+<script setup lang="ts">
+import { onMounted, onBeforeUnmount, useTemplateRef } from 'vue'
 
-  export default {
-    name: 'AmchartsMap',
-    components: {
-      Widget
-    },
-    mounted() {
-      let map = am4core.create(this.$refs.chartdiv, am4maps.MapChart);
-      map.geodata = am4geodata_worldLow;
-      map.projection = new am4maps.projections.Miller();
-      let polygonSeries = map.series.push(new am4maps.MapPolygonSeries());
-      polygonSeries.useGeodata = true;
-      polygonSeries.exclude = ["AQ"];
+import * as am5 from '@amcharts/amcharts5'
+import * as am5map from '@amcharts/amcharts5/map'
+import am5geodata_worldLow from '@amcharts/amcharts5-geodata/worldLow'
 
-      map.zoomControl = new am4maps.ZoomControl();
-      map.zoomControl.align = 'left';
-      map.zoomControl.valign = 'top';
+import Widget from '@/components/Widget/Widget.vue'
+import places from './mock'
 
-      map.zoomControl.minusButton.background.fill = am4core.color("#C7D0FF");
-      map.zoomControl.minusButton.background.fillOpacity = 0.24;
-      map.zoomControl.minusButton.background.stroke = null;
-      map.zoomControl.plusButton.background.fill = am4core.color("#C7D0FF");
-      map.zoomControl.plusButton.background.fillOpacity = 0.24;
-      map.zoomControl.plusButton.background.stroke = null;
-      map.zoomControl.plusButton.label.fill = am4core.color("#fff");
-      map.zoomControl.plusButton.label.fontWeight = 600;
-      map.zoomControl.plusButton.label.fontSize = 16;
-      map.zoomControl.minusButton.label.fill = am4core.color("#fff");
-      map.zoomControl.minusButton.label.fontWeight = 600;
-      map.zoomControl.minusButton.label.fontSize = 16;
-      let plusButtonHoverState = map.zoomControl.plusButton.background.states.create("hover");
-      plusButtonHoverState.properties.fillOpacity = 0.24;
-      let minusButtonHoverState = map.zoomControl.minusButton.background.states.create("hover");
-      minusButtonHoverState.properties.fillOpacity = 0.24;
+const chartdiv = useTemplateRef<HTMLDivElement>('chartdiv')
+let root: ReturnType<typeof am5.Root.new> | null = null
 
-    let polygonTemplate = polygonSeries.mapPolygons.template;
-    polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.fill = am4core.color("#474D84");
-    polygonTemplate.fillOpacity = 1;
-    let hs = polygonTemplate.states.create("hover");
-    hs.properties.fillOpacity = 0.5;
+onMounted(() => {
+  if (!chartdiv.value) return
 
-    polygonTemplate.stroke = am4core.color("#6979C9");
-    polygonTemplate.strokeOpacity = 1;
+  root = am5.Root.new(chartdiv.value)
 
-      let placeSeries = map.series.push(new am4maps.MapImageSeries());
-      let place = placeSeries.mapImages.template;
-      place.nonScaling = true;
-      place.propertyFields.latitude = "latitude";
-      place.propertyFields.longitude = "longitude";
-      let circle = place.createChild(am4core.Circle);
-      circle.radius = 4;
-      circle.fill = am4core.color("#C7D0FF");
-      circle.stroke = am4core.color("#ffffff");
-      circle.strokeWidth = 0;
-      placeSeries.data = places;
-      circle.tooltipText = '{name}';
+  const chart = root.container.children.push(
+    am5map.MapChart.new(root, {
+      projection: am5map.geoNaturalEarth1(),
+      panX: 'rotateX',
+      panY: 'translateY'
+    })
+  )
 
-      this.map = map;
-    },
-    beforeDestroy() {
-      if (this.map) {
-        this.map.dispose();
-      }
-    }
+  const polygonSeries = chart.series.push(
+    am5map.MapPolygonSeries.new(root, {
+      geoJSON: am5geodata_worldLow,
+      exclude: ['AQ'],
+      fill: am5.color('#474D84'),
+      stroke: am5.color('#6979C9')
+    })
+  )
+
+  polygonSeries.mapPolygons.template.setAll({
+    tooltipText: '{name}',
+    fill: am5.color('#474D84'),
+    fillOpacity: 1,
+    stroke: am5.color('#6979C9'),
+    strokeOpacity: 1
+  })
+
+  polygonSeries.mapPolygons.template.states.create('hover', {
+    fillOpacity: 0.5
+  })
+
+  const pointSeries = chart.series.push(
+    am5map.MapPointSeries.new(root, {})
+  )
+
+  pointSeries.bullets.push(() => {
+    return am5.Bullet.new(root!, {
+      sprite: am5.Circle.new(root!, {
+        radius: 4,
+        fill: am5.color('#C7D0FF'),
+        stroke: am5.color('#ffffff'),
+        strokeWidth: 0,
+        tooltipText: '{name}'
+      })
+    })
+  })
+
+  pointSeries.data.setAll(places.map((place: { latitude: number; longitude: number; name: string }) => ({
+    geometry: { type: 'Point', coordinates: [place.longitude, place.latitude] },
+    name: place.name
+  })))
+
+  chart.set('zoomControl', am5map.ZoomControl.new(root, {
+    x: am5.percent(0),
+    centerX: am5.percent(0),
+    y: am5.percent(0),
+    centerY: am5.percent(0)
+  }))
+})
+
+onBeforeUnmount(() => {
+  if (root) {
+    root.dispose()
   }
+})
 </script>
+
 <style src="./Amcharts.scss" lang="scss" scoped />

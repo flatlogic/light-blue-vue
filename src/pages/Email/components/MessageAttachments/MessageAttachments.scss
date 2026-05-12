@@ -2,13 +2,53 @@
 
 .messageAttachments {
   width: 50%;
+  margin-top: $spacer * 1.5;
 
   @include media-breakpoint-down(sm) {
     width: 100%;
   }
+
+  hr {
+    border-color: rgba($white, 0.1);
+    margin-bottom: $spacer;
+  }
 }
 
-.attachmentsInfo,
+.attachmentsInfo {
+  margin-bottom: $spacer;
+  color: $text-muted;
+
+  a {
+    color: theme-color('primary');
+
+    &:hover {
+      color: lighten(theme-color('primary'), 10%);
+    }
+  }
+}
+
+.attachment {
+  margin-bottom: $spacer;
+
+  img {
+    max-width: 150px;
+    border-radius: $border-radius;
+    margin-bottom: 8px;
+  }
+
+  h5 {
+    margin-bottom: 4px;
+  }
+}
+
 .attachmentButtons {
-  margin: -5px 0 10px;
+  color: $text-muted;
+
+  a {
+    color: theme-color('primary');
+
+    &:hover {
+      color: lighten(theme-color('primary'), 10%);
+    }
+  }
 }

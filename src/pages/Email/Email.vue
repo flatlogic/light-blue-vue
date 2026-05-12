@@ -1,11 +1,9 @@
 <template>
   <div class="email-page">
-    <b-breadcrumb>
-      <b-breadcrumb-item>YOU ARE HERE</b-breadcrumb-item>
-      <b-breadcrumb-item active>Email</b-breadcrumb-item>
-    </b-breadcrumb>
     <div class="pageTopLine">
-      <h1 class="page-title">Email - <span class="fw-semi-bold">Inbox</span></h1>
+      <h1 class="page-title">
+        Email - <span class="fw-semi-bold">Inbox</span>
+      </h1>
       <b-alert
         :show="isNotificationOpen"
         variant="success"
@@ -19,71 +17,71 @@
     <div class="view">
       <b-row>
         <Filters
-          :filter="filter"
-          :openMessage="openMessage"
-          :compose="changeCompose"
+          @filter="filter"
+          @open-message="openMessage"
+          @compose="changeCompose"
         />
         <MessageTable
           :filter="filterValue"
-          :openedMessage="openedMessage"
-          :openMessage="openMessage"
+          :opened-message="openedMessage"
           :compose="compose"
-          :changeCompose="changeCompose"
-          :composeData="composeData"
+          :compose-data="composeData"
+          @open-message="openMessage"
+          @change-compose="changeCompose"
         />
       </b-row>
     </div>
   </div>
 </template>
 
-<script>
-import Vue from 'vue';
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
 
-import Filters from './components/Filters/Filters';
-import MessageTable from './components/MessageTable/MessageTable';
+import Filters from './components/Filters/Filters.vue'
+import MessageTable from './components/MessageTable/MessageTable.vue'
 
-export default {
-  name: 'Email',
-  components: { Filters, MessageTable },
-  data() {
-    return {
-      isNotificationOpen: true,
-      filterValue: null,
-      openedMessage: null,
-      compose: false,
-      composeData: null,
-      alertAfter: false,
-    };
-  },
-  methods: {
-    fixAlert() {
-      Vue.set(this, 'alertAfter', true);
-    },
-    filter(filterValue) {
-      Vue.set(this, 'filterValue', filterValue);
-      Vue.set(this, 'compose', false);
-      Vue.set(this, 'composeData', null);
-    },
-    closeNotification() {
-      Vue.set(this, 'isNotificationOpen', false);
-    },
-    openMessage(id) {
-      Vue.set(this, 'openedMessage', id);
-      Vue.set(this, 'compose', id === null ? false : this.compose);
-      Vue.set(this, 'composeData', id === null ? null : this.composeData);
-    },
-    changeCompose(compose, data) {
-      Vue.set(this, 'compose', compose);
+interface ComposeData {
+  to?: string
+  subject?: string
+  content?: string
+}
 
-      if (data) {
-        Vue.set(this, 'composeData', data);
-      }
-    },
-  },
-  created() {
-    setTimeout(() => { this.fixAlert(); }, 500);
-  },
-};
+// Reactive state
+const isNotificationOpen = ref(true)
+const filterValue = ref<string | null>(null)
+const openedMessage = ref<number | null>(null)
+const compose = ref(false)
+const composeData = ref<ComposeData>({})
+const alertAfter = ref(false)
+
+function fixAlert() {
+  alertAfter.value = true
+}
+
+function filter(value: string | null) {
+  filterValue.value = value
+  compose.value = false
+  composeData.value = {}
+}
+
+function openMessage(id: number | null) {
+  openedMessage.value = id
+  compose.value = id === null ? false : compose.value
+  if (id === null) composeData.value = {}
+}
+
+function changeCompose(composeVal: boolean, data?: ComposeData) {
+  compose.value = composeVal
+  if (data) {
+    composeData.value = data
+  }
+}
+
+onMounted(() => {
+  setTimeout(() => {
+    fixAlert()
+  }, 500)
+})
 </script>
 
 <style src="./Email.scss" lang="scss" scoped />

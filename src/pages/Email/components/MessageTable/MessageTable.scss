@@ -1,5 +1,28 @@
 @import '../../../../styles/app';
 
+// Table styling matching other tables
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #{$text-color};
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.03);
+  --bs-table-striped-color: #{$text-color};
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.05);
+  --bs-table-hover-color: #{$text-color};
+  border-color: rgba(255, 255, 255, 0.1);
+
+  tr {
+    cursor: pointer;
+
+    td {
+      padding: 12px 8px;
+      vertical-align: middle;
+      color: $text-color;
+      border-color: rgba(255, 255, 255, 0.1);
+      font-weight: 500;
+    }
+  }
+}
+
 .unreadedMessage {
   td {
     font-weight: $font-weight-semi-bold;
@@ -9,24 +32,139 @@
 .messageCheckbox {
   width: 50px;
   padding-right: 0;
+  vertical-align: middle;
+
+  .abc-checkbox {
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    label {
+      display: inline-block;
+      padding-left: 0;
+      min-height: 20px;
+
+      &::before {
+        width: 22px;
+        height: 22px;
+        border: 2px solid rgba($white, 0.3);
+        border-radius: 5px;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        width: 22px;
+        height: 22px;
+        top: 0;
+        left: 0;
+        padding-left: 4px;
+        padding-top: 2px;
+      }
+    }
+
+    input[type="checkbox"]:checked + label::before {
+      background-color: theme-color('success');
+      border-color: theme-color('success');
+    }
+  }
 }
 
-.messageStarred {
-  color: theme-color('warning');
+.messageStar {
+  width: 40px;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 1.1rem;
+
+  i {
+    color: rgba($white, 0.4);
+  }
+
+  .fa-star.text-success {
+    color: theme-color('success') !important;
+  }
+
+  &:hover i {
+    color: theme-color('success');
+  }
 }
 
-.messageFrom,
-.messageClip {
+.messageFrom {
+  width: 150px;
+  cursor: pointer;
+
   @include media-breakpoint-down(sm) {
     display: none;
   }
 }
 
-.messageDate {
-  display: flex;
-  justify-content: flex-end;
+.messageClip {
+  width: 30px;
 
   @include media-breakpoint-down(sm) {
-    width: 65px;
+    display: none;
+  }
+}
+
+// Back button styling
+.mb {
+  margin-bottom: $spacer;
+}
+
+// Pagination styling
+.email-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: $spacer;
+  gap: $spacer;
+
+  .pagination-info {
+    color: $text-muted;
+    font-style: italic;
+    padding-right: $spacer;
+    border-right: 1px solid rgba($white, 0.2);
+  }
+
+  .pagination {
+    margin-bottom: 0;
+
+    .page-item {
+      .page-link {
+        background-color: $default;
+        border-color: transparent;
+        color: $white;
+        font-weight: 500;
+        min-width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $border-radius;
+        margin: 0 2px;
+
+        &:hover {
+          background-color: lighten($default, 5%);
+          color: $white;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      &.active .page-link {
+        background-color: $default;
+        border: 2px solid rgba($white, 0.4);
+        color: $white;
+      }
+
+      &.disabled .page-link {
+        background-color: $default;
+        border-color: transparent;
+        color: $text-muted;
+        opacity: 0.5;
+      }
+    }
   }
 }

@@ -1,6 +1,12 @@
 @import '../../styles/app';
 
 .widgets-page {
+  // Top stat cards - align icon and text center
+  .row.flex-nowrap {
+    align-items: center;
+    justify-content: center;
+  }
+
   /*          Post User           */
   .post-user {
     position: relative;
@@ -72,7 +78,7 @@
 
   /*       Chat List Group         */
   .widget-chat-list-group {
-    padding-top: $spacer/2;
+    padding-top: $spacer * 0.5;
 
     .list-group-item {
       margin-left: $widget-padding-horizontal;
@@ -144,7 +150,7 @@
     }
   }
 
-  .carousel-enter {
+  .carousel-enter-from {
     transform: translateY(100%);
   }
 
@@ -163,7 +169,7 @@
     justify-content: space-between;
   }
 
-  .flip-enter {
+  .flip-enter-from {
     transform: rotateY(-90deg);
   }
 

@@ -1,21 +1,29 @@
 <template>
   <li
     :class="{ option: true, active: active }"
-    @click="onClick()"
+    @click="emit('select')"
   >
     <span>
-      <img src='../../../../../assets/check.svg' alt="check" />
+      <img
+        src="../../../../../assets/check.svg"
+        alt="check"
+      />
     </span>
-    {{option}}
+    {{ option }}
   </li>
 </template>
 
-<script>
-export default {
-  name: 'MobileMenuOption',
-  props: ['option', 'active', 'onClick'],
+<script setup lang="ts">
+interface Props {
+  option: string | number
+  active: boolean
+}
 
-};
+defineProps<Props>()
+
+const emit = defineEmits<{
+  select: []
+}>()
 </script>
 
 <style src="./MobileMenuOption.scss" lang="scss" scoped />

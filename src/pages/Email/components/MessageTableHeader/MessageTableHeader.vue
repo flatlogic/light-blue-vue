@@ -1,33 +1,66 @@
+<script setup lang="ts">
+const emit = defineEmits<{
+  search: [value: string]
+  'choose-all': []
+  'choose-none': []
+  'choose-read': []
+  'choose-unread': []
+  'mark-read': []
+  'mark-unread': []
+  'delete-msg': []
+}>()
+</script>
+
 <template>
   <div class="messageTableHeader">
-    <div>
-      <b-dropdown text="Select" variant="default" size="sm" class="me-3">
-        <b-dropdown-item-button @click="chooseAll">All</b-dropdown-item-button>
-        <b-dropdown-item-button @click="chooseNone">None</b-dropdown-item-button>
-        <b-dropdown-divider />
-        <b-dropdown-item-button @click="chooseRead">Read</b-dropdown-item-button>
-        <b-dropdown-item-button @click="chooseUnread">Unread</b-dropdown-item-button>
-      </b-dropdown>
-      <b-dropdown text="Actions" variant="default" size="sm">
-        <b-dropdown-item-button>Reply</b-dropdown-item-button>
-        <b-dropdown-item-button>Forward</b-dropdown-item-button>
-        <b-dropdown-item-button>Archive</b-dropdown-item-button>
-        <b-dropdown-divider />
-        <b-dropdown-item-button @click="markRead">Mark As Read</b-dropdown-item-button>
-        <b-dropdown-item-button @click="markUnread">Mark As Unread</b-dropdown-item-button>
-        <b-dropdown-divider />
-        <b-dropdown-item-button @click="deleteMsg">Delete</b-dropdown-item-button>
-      </b-dropdown>
+    <div class="header-dropdowns">
+      <BDropdown
+        text="Select"
+        size="sm"
+        class="email-dropdown"
+      >
+        <BDropdownItemButton @click="emit('choose-all')">
+          All
+        </BDropdownItemButton>
+        <BDropdownItemButton @click="emit('choose-none')">
+          None
+        </BDropdownItemButton>
+        <BDropdownDivider />
+        <BDropdownItemButton @click="emit('choose-read')">
+          Read
+        </BDropdownItemButton>
+        <BDropdownItemButton @click="emit('choose-unread')">
+          Unread
+        </BDropdownItemButton>
+      </BDropdown>
+      <BDropdown
+        text="Actions"
+        size="sm"
+        class="email-dropdown"
+      >
+        <BDropdownItemButton>Reply</BDropdownItemButton>
+        <BDropdownItemButton>Forward</BDropdownItemButton>
+        <BDropdownItemButton>Archive</BDropdownItemButton>
+        <BDropdownDivider />
+        <BDropdownItemButton @click="emit('mark-read')">
+          Mark As Read
+        </BDropdownItemButton>
+        <BDropdownItemButton @click="emit('mark-unread')">
+          Mark As Unread
+        </BDropdownItemButton>
+        <BDropdownDivider />
+        <BDropdownItemButton @click="emit('delete-msg')">
+          Delete
+        </BDropdownItemButton>
+      </BDropdown>
     </div>
-    <b-form-input placeholder="Search Messages" size="sm" @input="search" />
+    <BFormInput
+      placeholder="Search Messages"
+      size="sm"
+      class="search-input"
+      @input="(e: Event) => emit('search', (e.target as HTMLInputElement).value)"
+    />
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MessageTableHeader',
-  props: ['search', 'chooseAll', 'chooseNone', 'chooseRead', 'chooseUnread', 'markRead', 'markUnread', 'deleteMsg'],
-};
-</script>
-
-<style src="./MessageTableHeader.scss" lang="scss"/>
+<style src="./MessageTableHeader.scss" lang="scss" />

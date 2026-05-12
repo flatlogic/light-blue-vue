@@ -2,7 +2,7 @@
 
 .app-header.navbar {
   z-index: 100;
-  padding: 0 1.85rem 0;
+  padding: 0 1.85rem;
 
   @include media-breakpoint-down(md) {
     padding: 0 10px;
@@ -38,12 +38,48 @@
     .dropdown-divider {
       border-color: $dark;
     }
+
+    .sidebar-controls-dropdown {
+      min-width: 180px;
+
+      .btn-group {
+        .btn {
+          flex: 1;
+          padding: 8px 16px;
+          font-weight: 500;
+          border: none;
+
+          &.active-control {
+            background-color: $primary;
+            color: #fff;
+          }
+
+          &.inactive-control {
+            background-color: rgba($primary, 0.6);
+            color: #fff;
+
+            &:hover {
+              background-color: rgba($primary, 0.8);
+            }
+          }
+        }
+      }
+    }
   }
 
+  .input-group-transparent {
+    .input-group-text {
+      padding-left: 1rem;
+      padding-right: 0.75rem;
+      color: $text-muted;
+      font-size: 0.95rem;
+      border-top-left-radius: $border-radius-lg;
+      border-bottom-left-radius: $border-radius-lg;
+    }
 
-  .input-group-text {
-    padding-left: .85rem;
-    color: $gray-600;
+    .form-control {
+      padding-left: 0;
+    }
   }
 
   .divider {
@@ -56,21 +92,57 @@
   .header-alert {
     background: $text-transparent;
     border: none;
-    font-size: $font-size-sm;
-    line-height: 19px;
+    font-size: $font-size-base;
+    line-height: 1.4;
     margin-bottom: 0;
-    padding: 3px 9px;
+    padding: 10px 18px;
     text-shadow: none;
-    border-radius: 10px;
+    border-radius: 20px;
     color: $text-color;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
 
-    .close {
-      margin-left: 1rem;
+    .header-alert-close {
+      background: transparent;
+      border: none;
+      color: $blue;
+      font-size: 1.25rem;
+      font-weight: bold;
+      padding: 0;
+      margin-left: 12px;
+      cursor: pointer;
+      line-height: 1;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     @media (max-width: breakpoint-max('lg')) {
       display: none;
     }
+  }
+
+  .bell-icon-wrapper {
+    position: relative;
+    display: inline-block;
+
+    .bell-notification-dot {
+      position: absolute;
+      top: -2px;
+      right: 0;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+  }
+
+  // Header icons
+  .nav-link > i,
+  .nav-link > .bell-icon-wrapper > i {
+    font-size: 1.4rem;
   }
 
   .navbar-nav-mobile {
@@ -87,8 +159,7 @@
       .nav-link {
         display: flex;
         align-items: center;
-        padding-right: $navbar-nav-link-padding-x;
-        padding-left: $navbar-nav-link-padding-x;
+        padding: 0.5rem 0.6rem;
         color: $text-color;
 
         &:hover {

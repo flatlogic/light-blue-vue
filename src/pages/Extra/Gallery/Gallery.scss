@@ -1,16 +1,6 @@
 @import '../../../styles/app';
 
 .gallery-page {
-  .tile {
-    display: inline-block;
-  }
-
-  .galleryControls {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: $spacer;
-  }
-
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -65,7 +55,7 @@
     opacity: 0;
   }
 
-  .flip-list-enter {
+  .flip-list-enter-from {
     transform: scale(.5);
     opacity: 0;
   }

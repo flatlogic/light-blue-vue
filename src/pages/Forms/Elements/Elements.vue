@@ -1,25 +1,38 @@
 <template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <div class="forms-elements">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item">YOU ARE HERE</li>
-      <li class="active breadcrumb-item">Form Elements</li>
+      <li class="breadcrumb-item">
+        YOU ARE HERE
+      </li>
+      <li class="active breadcrumb-item">
+        Form Elements
+      </li>
     </ol>
     <h1 class="page-title">
       Form - <span class="fw-semi-bold">Inputs & Controls</span>
     </h1>
     <b-row>
-      <b-col lg="6" md="12">
-        <Widget title="<h6> Inputs </h6>" customHeader settings refresh close>
+      <b-col
+        lg="6"
+        md="12"
+      >
+        <Widget
+          title="<h6> Inputs </h6>"
+          custom-header
+          settings
+          refresh
+          close
+        >
           <b-form>
             <legend><strong>Horizontal</strong> form</legend>
             <b-row class="mb-3">
               <label class="col-4 col-form-label text-end">Normal field</label>
               <b-col md="8">
                 <b-form-input
-                    class=""
-                    type="text"
-                    id="normal-field"
-                    placeholder="May have placeholder"
+                  id="normal-field"
+                  class=""
+                  type="text"
+                  placeholder="May have placeholder"
                 />
               </b-col>
             </b-row>
@@ -31,7 +44,11 @@
               </label>
 
               <b-col md="8">
-                <b-form-input class="form-floating" type="text" id="label-hint" />
+                <b-form-input
+                  id="label-hint"
+                  class="form-floating"
+                  type="text"
+                />
               </b-col>
             </b-row>
 
@@ -41,10 +58,10 @@
               </label>
               <b-col md="8">
                 <b-form-input
-                  class=""
-                  type="text"
                   id="tooltip-field"
                   v-b-tooltip.hover
+                  class=""
+                  type="text"
                   title="Some explanation text here"
                 />
               </b-col>
@@ -56,11 +73,11 @@
               </label>
               <b-col md="8">
                 <b-form-input
-                    class="input-transparent"
-                    type="text"
-                    id="disabled-field"
-                    disabled
-                    value="Default value"
+                  id="disabled-field"
+                  class="input-transparent"
+                  type="text"
+                  disabled
+                  value="Default value"
                 />
               </b-col>
             </b-row>
@@ -71,11 +88,11 @@
               </label>
               <b-col md="8">
                 <b-form-input
-                    class=""
-                    type="text"
-                    id="length-field"
-                    :formatter="(v) => (v.length <= 3 ? v : v.substring(0, 3))"
-                    placeholder="Max length 3 characters"
+                  id="length-field"
+                  class=""
+                  type="text"
+                  :formatter="(v: string) => (v.length <= 3 ? v : v.substring(0, 3))"
+                  placeholder="Max length 3 characters"
                 />
               </b-col>
             </b-row>
@@ -89,8 +106,8 @@
               breakpoint="md"
             >
               <b-input-group
-                class="input-group-transparent"
                 id="prepended-field"
+                class="input-group-transparent"
               >
                 <b-input-group-text>
                   <i class="la la-user" />
@@ -111,15 +128,15 @@
               breakpoint="md"
             >
               <b-input-group
-                class="input-group-transparent"
                 id="password-field"
+                class="input-group-transparent"
               >
                 <b-input-group-text>
                   <i class="la la-lock" />
                 </b-input-group-text>
                 <b-form-input
-                    type="password"
-                    value="password"
+                  type="password"
+                  value="password"
                 />
               </b-input-group>
             </b-form-group>
@@ -133,10 +150,10 @@
               breakpoint="md"
             >
               <b-input-group
-                class="input-group-transparent"
                 id="append-field"
+                class="input-group-transparent"
               >
-                <b-form-input class=""></b-form-input>
+                <b-form-input class="" />
                 <b-input-group-text>.00</b-input-group-text>
               </b-input-group>
             </b-form-group>
@@ -150,11 +167,11 @@
               breakpoint="md"
             >
               <b-input-group
-                class="input-group-transparent"
                 id="combined-field"
+                class="input-group-transparent"
               >
                 <b-input-group-text>$</b-input-group-text>
-                <b-form-input class=""></b-form-input>
+                <b-form-input class="" />
                 <b-input-group-text>.00</b-input-group-text>
               </b-input-group>
             </b-form-group>
@@ -166,18 +183,30 @@
               label-cols="4"
               breakpoint="md"
             >
-              <b-button variant="primary" type="submit" class="pull-right"
-                >Save Changes</b-button
+              <b-button
+                variant="primary"
+                type="submit"
+                class="pull-right"
               >
-              <b-button variant="inverse" class="pull-right me-3">Cancel</b-button>
+                Save Changes
+              </b-button>
+              <b-button
+                variant="dark"
+                class="pull-right me-3"
+              >
+                Cancel
+              </b-button>
             </b-form-group>
           </b-form>
         </Widget>
       </b-col>
-      <b-col lg="6" md="12">
+      <b-col
+        lg="6"
+        md="12"
+      >
         <Widget
           title="<h6> Prepended and appended inputs </h6>"
-          customHeader
+          custom-header
           settings
           refresh
           close
@@ -194,11 +223,13 @@
                     </label>
                     <b-input-group>
                       <b-form-input
-                        class=""
                         id="search-field"
+                        class=""
                         type="text"
-                      ></b-form-input>
-                      <b-btn variant="default">Search</b-btn>
+                      />
+                      <BButton variant="secondary">
+                        Search
+                      </BButton>
                     </b-input-group>
                   </b-col>
                 </b-row>
@@ -214,16 +245,20 @@
                       Whole bar appended
                     </label>
                     <b-input-group>
-                      <b-form-input id="bar-field" type="text"></b-form-input>
+                      <b-form-input
+                        id="bar-field"
+                        type="text"
+                      />
 
-                      <b-btn variant="danger"
-                        ><i class="la la-pencil"
-                      /></b-btn>
-                      <b-btn variant="warning"><i class="la la-plus"/></b-btn>
-                      <b-btn variant="success"
-                        ><i class="la la-refresh"
-                      /></b-btn>
-
+                      <BButton variant="danger">
+                        <i class="la la-pencil" />
+                      </BButton>
+                      <BButton variant="warning">
+                        <i class="la la-plus" />
+                      </BButton>
+                      <BButton variant="success">
+                        <i class="la la-refresh" />
+                      </BButton>
                     </b-input-group>
                   </b-col>
                 </b-row>
@@ -242,20 +277,25 @@
                       <b-form-input
                         id="actions-field"
                         type="text"
-                      ></b-form-input>
-                      <template v-slot:append>
-                        <b-dropdown text="Action" variant="success">
-                          <b-dropdown-item href="#">Action</b-dropdown-item>
-                          <b-dropdown-item href="#"
-                            >Another action</b-dropdown-item
-                          >
-                          <b-dropdown-item href="#"
-                            >Something else here</b-dropdown-item
-                          >
+                      />
+                      <template #append>
+                        <b-dropdown
+                          text="Action"
+                          variant="success"
+                        >
+                          <b-dropdown-item href="#">
+                            Action
+                          </b-dropdown-item>
+                          <b-dropdown-item href="#">
+                            Another action
+                          </b-dropdown-item>
+                          <b-dropdown-item href="#">
+                            Something else here
+                          </b-dropdown-item>
                           <b-dropdown-divider />
-                          <b-dropdown-item href="#"
-                            >Separated link</b-dropdown-item
-                          >
+                          <b-dropdown-item href="#">
+                            Separated link
+                          </b-dropdown-item>
                         </b-dropdown>
                       </template>
                     </b-input-group>
@@ -278,23 +318,26 @@
                       <b-form-input
                         id="segmented-field"
                         type="text"
-                      ></b-form-input>
+                      />
 
-                      <b-button variant="warning">Action</b-button>
+                      <b-button variant="warning">
+                        Action
+                      </b-button>
                       <b-dropdown variant="warning">
-                        <b-dropdown-item href="#">Action</b-dropdown-item>
-                        <b-dropdown-item href="#"
-                          >Another action</b-dropdown-item
-                        >
-                        <b-dropdown-item href="#"
-                          >Something else here</b-dropdown-item
-                        >
+                        <b-dropdown-item href="#">
+                          Action
+                        </b-dropdown-item>
+                        <b-dropdown-item href="#">
+                          Another action
+                        </b-dropdown-item>
+                        <b-dropdown-item href="#">
+                          Something else here
+                        </b-dropdown-item>
                         <b-dropdown-divider />
-                        <b-dropdown-item href="#"
-                          >Separated link</b-dropdown-item
-                        >
+                        <b-dropdown-item href="#">
+                          Separated link
+                        </b-dropdown-item>
                       </b-dropdown>
-
                     </b-input-group>
                   </b-col>
                 </b-row>
@@ -312,9 +355,15 @@
                       Types dropdown
                     </label>
                     <b-input-group>
-                      <b-form-input id="types-field" type="text"></b-form-input>
-                      <b-input-group-append>
-                        <b-dropdown variant="primary" :text="typesDropdown">
+                      <b-form-input
+                        id="types-field"
+                        type="text"
+                      />
+                      <template #append>
+                        <b-dropdown
+                          variant="primary"
+                          :text="typesDropdown"
+                        >
                           <b-dropdown-item-button
                             @click="changeTypesDropdown('Another type')"
                           >
@@ -331,7 +380,7 @@
                             Next type
                           </b-dropdown-item-button>
                         </b-dropdown>
-                      </b-input-group-append>
+                      </template>
                     </b-input-group>
                   </b-col>
                 </b-row>
@@ -353,16 +402,25 @@
                       class=""
                       type="text"
                       placeholder="Search Dashboard"
-                    ></b-form-input>
+                    />
                   </b-col>
                 </b-row>
               </b-form-group>
 
               <b-form-group class="form-action">
-                <b-button variant="primary" type="submit" class="float-end"
-                  >Save Changes</b-button
+                <b-button
+                  variant="primary"
+                  type="submit"
+                  class="float-end"
                 >
-                <b-button variant="inverse" class="float-end me-3">Cancel</b-button>
+                  Save Changes
+                </b-button>
+                <b-button
+                  variant="dark"
+                  class="float-end me-3"
+                >
+                  Cancel
+                </b-button>
               </b-form-group>
             </b-form>
           </b-form-group>
@@ -370,13 +428,16 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col lg="8" md="12">
+      <b-col
+        lg="8"
+        md="12"
+      >
         <Widget
           title="<h6> Form <span class='fw-semi-bold'>Options</span></h6>"
           settings
           refresh
           close
-          customHeader
+          custom-header
         >
           <b-form>
             <legend>Control sizing</legend>
@@ -389,24 +450,38 @@
             </p>
             <br />
             <b-form-group class="mb-3">
-              <b-form-input type="text" placeholder='size="lg"' size="lg" />
+              <b-form-input
+                type="text"
+                placeholder="size=&quot;lg&quot;"
+                size="lg"
+              />
             </b-form-group>
             <b-form-group class="mb-3">
-              <b-form-input type="text" placeholder="default input" />
+              <b-form-input
+                type="text"
+                placeholder="default input"
+              />
             </b-form-group>
             <b-form-group class="mb-3">
-              <b-form-input type="text" placeholder='size="sm"' size="sm" />
+              <b-form-input
+                type="text"
+                placeholder="size=&quot;sm&quot;"
+                size="sm"
+              />
             </b-form-group>
           </b-form>
         </Widget>
       </b-col>
-      <b-col lg="4" md="12">
+      <b-col
+        lg="4"
+        md="12"
+      >
         <Widget
           title="<h6> Form <span class='fw-semi-bold'>Options</span></h6>"
           settings
           refresh
           close
-          customHeader
+          custom-header
         >
           <b-form>
             <legend>Input Groups</legend>
@@ -424,12 +499,19 @@
                 >
                   <i class="la la-github-alt" />
                 </b-input-group-text>
-                <b-form-input type="text" placeholder="First Name" size="16" />
+                <b-form-input
+                  type="text"
+                  placeholder="First Name"
+                  size="sm"
+                />
               </b-input-group>
             </b-form-group>
 
             <b-form-group class="row mb-3">
-              <b-input-group class="input-group-transparent" size="lg">
+              <b-input-group
+                class="input-group-transparent"
+                size="lg"
+              >
                 <b-input-group-text class="header-color">
                   <i class="la la-star" />
                 </b-input-group-text>
@@ -437,18 +519,20 @@
                   class=""
                   type="text"
                   placeholder="Username"
-                  size="16"
+                  size="sm"
                 />
               </b-input-group>
             </b-form-group>
             <b-form-group>
               <b-input-group size="sm">
-                <b-form-input type="text" placeholder="City" />
+                <b-form-input
+                  type="text"
+                  placeholder="City"
+                />
 
                 <b-input-group-text class="bg-danger text-muted">
                   <i class="la la-code-fork" />
                 </b-input-group-text>
-
               </b-input-group>
             </b-form-group>
           </b-form>
@@ -456,10 +540,13 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col lg="7" md="12">
+      <b-col
+        lg="7"
+        md="12"
+      >
         <Widget
           title="<h6><i class='la la-font'></i>Textareas</h6>"
-          customHeader
+          custom-header
           settings
           refresh
           close
@@ -470,9 +557,9 @@
               <label class="col-3 col-form-label text-end">Default textarea</label>
               <b-col md="9">
                 <b-form-textarea
-                  :rows="3"
                   id="default-textarea"
                   v-model="textAreaContent"
+                  :rows="3"
                 />
               </b-col>
             </b-row>
@@ -480,11 +567,13 @@
             <b-row class="mb-3">
               <label class="col-3 col-form-label text-end">Auto-growing textarea</label>
               <b-col md="9">
-                <textarea-autosize
-                    placeholder="Try to add few new lines..."
-                    class="form-control"
-                    :min-height="75"
-                    id="autosize-textarea"
+                <b-form-textarea
+                  id="autosize-textarea"
+                  v-model="autosizeContent"
+                  placeholder="Try to add few new lines..."
+                  :rows="3"
+                  auto-size
+                  style="min-height: 75px"
                 />
               </b-col>
             </b-row>
@@ -495,10 +584,67 @@
                 <span class="help-block">With bottom toolbar appended</span>
               </label>
               <b-col md="9">
-                <ckeditor :editor="wygEditor" v-model="wygContent"></ckeditor>
+                <div class="wysiwyg-wrapper">
+                  <div class="wysiwyg-toolbar mb-2">
+                    <b-button-group size="sm">
+                      <b-button
+                        variant="outline-secondary"
+                        @click="execCommand('bold')"
+                      >
+                        <i class="fa fa-bold" />
+                      </b-button>
+                      <b-button
+                        variant="outline-secondary"
+                        @click="execCommand('italic')"
+                      >
+                        <i class="fa fa-italic" />
+                      </b-button>
+                      <b-button
+                        variant="outline-secondary"
+                        @click="execCommand('underline')"
+                      >
+                        <i class="fa fa-underline" />
+                      </b-button>
+                    </b-button-group>
+                    <b-button-group
+                      size="sm"
+                      class="ms-2"
+                    >
+                      <b-button
+                        variant="outline-secondary"
+                        @click="execCommand('insertUnorderedList')"
+                      >
+                        <i class="fa fa-list-ul" />
+                      </b-button>
+                      <b-button
+                        variant="outline-secondary"
+                        @click="execCommand('insertOrderedList')"
+                      >
+                        <i class="fa fa-list-ol" />
+                      </b-button>
+                    </b-button-group>
+                  </div>
+                  <div
+                    ref="wysiwygEditor"
+                    contenteditable="true"
+                    class="form-control wysiwyg-content"
+                    style="min-height: 150px"
+                    @input="updateWygContent"
+                  />
+                </div>
                 <div class="btn-toolbar float-end mt-sm">
-                  <b-button variant="danger" class="me-3">Save</b-button>
-                  <b-button variant="default">Clear</b-button>
+                  <b-button
+                    variant="danger"
+                    class="me-3"
+                  >
+                    Save
+                  </b-button>
+                  <b-button
+                    variant="secondary"
+                    @click="clearWysiwyg"
+                  >
+                    Clear
+                  </b-button>
                 </div>
               </b-col>
             </b-row>
@@ -508,16 +654,17 @@
                 Markdown Editor
               </label>
               <b-col md="9">
-                <mavon-editor
-                    id="markdown-editor"
-                    language="en"
-                    v-model="mdContent"
+                <MdEditor
+                  id="markdown-editor"
+                  v-model="mdContent"
+                  language="en-US"
+                  :theme="'dark'"
                 />
                 <a
-                    class="text-muted d-flex align-items-center mt-sm"
-                    href="http://commonmark.org/help/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  class="text-muted d-flex align-items-center mt-sm"
+                  href="http://commonmark.org/help/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <!-- eslint-disable -->
                   <svg
@@ -539,17 +686,19 @@
                 </a>
               </b-col>
             </b-row>
-
           </b-form>
         </Widget>
       </b-col>
-      <b-col lg="5" md="12">
+      <b-col
+        lg="5"
+        md="12"
+      >
         <Widget
           title="<h6><i class='la la-list-alt'></i> Selects </h6>"
           refresh
           close
           settings
-          customHeader
+          custom-header
         >
           <b-form class="form-label-left mb-3">
             <legend>Default form with labels on left</legend>
@@ -561,10 +710,10 @@
             >
               <b-row>
                 <b-col md="9">
-                  <v-select
+                  <Multiselect
                     id="default-select"
-                    class="mt-xs bg-transparent"
                     v-model="defaultSelect"
+                    class="mt-xs bg-transparent"
                     :options="[
                       'Large Magellanic Cloud',
                       'Andromeda Galaxy',
@@ -582,10 +731,11 @@
             >
               <b-row>
                 <b-col md="9">
-                  <v-select
-                    class="mt-xs"
+                  <Multiselect
                     id="search-select"
                     v-model="searchSelect"
+                    class="mt-xs"
+                    :searchable="true"
                     :options="[
                       'Dallas Cowboys',
                       'New York Giants',
@@ -606,54 +756,65 @@
               :label-cols="4"
             >
               <b-dropdown
-                class="me-2"
                 id="simple-select"
+                class="me-2"
                 :text="simpleDropdownVariant"
-                variant="default"
+                variant="secondary"
               >
                 <b-dropdown-item-button
                   @click="
                     changeSelectOption('simpleDropdownVariant', 'Option One')
                   "
-                  >Option One</b-dropdown-item-button
                 >
+                  Option One
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="
                     changeSelectOption('simpleDropdownVariant', 'Option Two')
                   "
-                  >Option Two</b-dropdown-item-button
                 >
+                  Option Two
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="
                     changeSelectOption('simpleDropdownVariant', 'Option Three')
                   "
-                  >Option Three</b-dropdown-item-button
                 >
+                  Option Three
+                </b-dropdown-item-button>
               </b-dropdown>
             </b-form-group>
-            <b-form-group label-for="danger-select" :label-cols="4">
-              <div slot="label">
-                Colored ones <br />
-                <span class="help">A bit of Japanese</span>
-              </div>
+            <b-form-group
+              label-for="danger-select"
+              :label-cols="4"
+            >
+              <template #label>
+                <div>
+                  Colored ones <br />
+                  <span class="help">A bit of Japanese</span>
+                </div>
+              </template>
               <b-dropdown
-                class="me-3"
                 id="danger-select"
+                class="me-3"
                 :text="dangerDropdownVariant"
                 variant="danger"
               >
                 <b-dropdown-item-button
                   @click="changeSelectOption('dangerDropdownVariant', 'Ichi')"
-                  >Ichi</b-dropdown-item-button
                 >
+                  Ichi
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="changeSelectOption('dangerDropdownVariant', 'Ni')"
-                  >Ni</b-dropdown-item-button
                 >
+                  Ni
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="changeSelectOption('dangerDropdownVariant', 'San')"
-                  >San</b-dropdown-item-button
                 >
+                  San
+                </b-dropdown-item-button>
               </b-dropdown>
               <b-dropdown
                 class="me-3"
@@ -662,68 +823,86 @@
               >
                 <b-dropdown-item-button
                   @click="changeSelectOption('warningDropdownVariant', 'Shi')"
-                  >Shi</b-dropdown-item-button
                 >
+                  Shi
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="changeSelectOption('warningDropdownVariant', 'Go')"
-                  >Go</b-dropdown-item-button
                 >
+                  Go
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="changeSelectOption('warningDropdownVariant', 'Roku')"
-                  >Roku</b-dropdown-item-button
                 >
+                  Roku
+                </b-dropdown-item-button>
               </b-dropdown>
-              <b-dropdown :text="successDropdownVariant" variant="success">
+              <b-dropdown
+                :text="successDropdownVariant"
+                variant="success"
+              >
                 <b-dropdown-item-button
                   @click="changeSelectOption('successDropdownVariant', 'Hichi')"
-                  >Hichi</b-dropdown-item-button
                 >
+                  Hichi
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="changeSelectOption('successDropdownVariant', 'Hachi')"
-                  >Hachi</b-dropdown-item-button
                 >
+                  Hachi
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="changeSelectOption('successDropdownVariant', 'Ku')"
-                  >Ku</b-dropdown-item-button
                 >
+                  Ku
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="changeSelectOption('successDropdownVariant', 'Ju')"
-                  >Ju</b-dropdown-item-button
                 >
+                  Ju
+                </b-dropdown-item-button>
               </b-dropdown>
             </b-form-group>
-            <b-form-group label-for="big-select" :label-cols="4">
-              <div slot="label">
-                Big one <br />
-                <span class="help-block">
-                  Size can be controlled with <code>size='lg'</code> &
-                  <code>size='sm'</code>
-                </span>
-              </div>
+            <b-form-group
+              label-for="big-select"
+              :label-cols="4"
+            >
+              <template #label>
+                <div>
+                  Big one <br />
+                  <span class="help-block">
+                    Size can be controlled with <code>size='lg'</code> &
+                    <code>size='sm'</code>
+                  </span>
+                </div>
+              </template>
               <b-dropdown
                 id="big-select"
                 size="lg"
                 :text="bigDropdownVariant"
-                variant="default"
+                variant="secondary"
               >
                 <b-dropdown-item-button
                   @click="
                     changeSelectOption('bigDropdownVariant', 'Fourth Item')
                   "
-                  >Fourth Item</b-dropdown-item-button
                 >
+                  Fourth Item
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="
                     changeSelectOption('bigDropdownVariant', 'Fifth Item')
                   "
-                  >Fifth Item</b-dropdown-item-button
                 >
+                  Fifth Item
+                </b-dropdown-item-button>
                 <b-dropdown-item-button
                   @click="
                     changeSelectOption('bigDropdownVariant', 'Sixth Item')
                   "
-                  >Sixth Item</b-dropdown-item-button
                 >
+                  Sixth Item
+                </b-dropdown-item-button>
               </b-dropdown>
             </b-form-group>
           </b-form>
@@ -737,7 +916,7 @@
           settings
           refresh
           lose
-          customHeader
+          custom-header
         >
           <b-row>
             <b-col lg="4">
@@ -752,35 +931,49 @@
                   no javascript. Let your checkboxes shine!
                 </p>
                 <b-form-group class="abc-checkbox abc-checkbox-default">
-                  <input type="checkbox" id="checkbox-default" />
+                  <input
+                    id="checkbox-default"
+                    type="checkbox"
+                  />
                   <label for="checkbox-default">Default</label>
                 </b-form-group>
                 <b-form-group class="abc-checkbox abc-checkbox-primary">
                   <input
-                    type="checkbox"
                     id="checkbox-primary"
+                    type="checkbox"
                     :checked="true"
                   />
                   <label for="checkbox-primary">Primary</label>
                 </b-form-group>
                 <b-form-group class="abc-checkbox abc-checkbox-success">
-                  <input type="checkbox" id="checkbox-success" />
+                  <input
+                    id="checkbox-success"
+                    type="checkbox"
+                  />
                   <label for="checkbox-success">Success</label>
                 </b-form-group>
                 <b-form-group class="abc-checkbox abc-checkbox-info">
-                  <input type="checkbox" id="checkbox-info" :checked="true" />
+                  <input
+                    id="checkbox-info"
+                    type="checkbox"
+                    :checked="true"
+                  />
                   <label for="checkbox-info">Info</label>
                 </b-form-group>
                 <b-form-group class="abc-checkbox abc-checkbox-warning">
                   <input
-                    type="checkbox"
                     id="checkbox-warning"
+                    type="checkbox"
                     :checked="true"
                   />
                   <label for="checkbox-warning">Warning</label>
                 </b-form-group>
                 <b-form-group class="abc-checkbox abc-checkbox-danger">
-                  <input type="checkbox" id="checkbox-danger" :checked="true" />
+                  <input
+                    id="checkbox-danger"
+                    type="checkbox"
+                    :checked="true"
+                  />
                   <label for="checkbox-danger">Check me out</label>
                 </b-form-group>
               </b-form>
@@ -797,15 +990,18 @@
                 <b-form-group
                   class="abc-checkbox abc-checkbox abc-checkbox-circle "
                 >
-                  <input type="checkbox" id="checkbox-circle" />
+                  <input
+                    id="checkbox-circle"
+                    type="checkbox"
+                  />
                   <label for="checkbox-circle">Simle Rounded</label>
                 </b-form-group>
                 <b-form-group
                   class="abc-checkbox abc-checkbox-info abc-checkbox-circle "
                 >
                   <input
-                    type="checkbox"
                     id="checkbox-circle-info"
+                    type="checkbox"
                     :checked="true"
                   />
                   <label for="checkbox-circle-info">Me too</label>
@@ -820,13 +1016,17 @@
                   functionality.
                 </p>
                 <b-form-group class="abc-checkbox">
-                  <input type="checkbox" id="checkbox-disabled" disabled />
+                  <input
+                    id="checkbox-disabled"
+                    type="checkbox"
+                    disabled
+                  />
                   <label for="checkbox-disabled">Can't check this</label>
                 </b-form-group>
                 <b-form-group class="abc-checkbox abc-checkbox-success">
                   <input
-                    type="checkbox"
                     id="checkbox-disabled-success"
+                    type="checkbox"
                     :checked="true"
                     disabled
                   />
@@ -834,8 +1034,8 @@
                 </b-form-group>
                 <b-form-group class="abc-checkbox abc-checkbox-warning">
                   <input
-                    type="checkbox"
                     id="checkbox-disabled-warning"
+                    type="checkbox"
                     :checked="true"
                     disabled
                   />
@@ -850,8 +1050,7 @@
               href="https://github.com/flatlogic/awesome-bootstrap-checkbox"
               rel="noopener noreferrer"
               target="_blank"
-              >awesome-bootstrap-checkbox</a
-            >.
+            >awesome-bootstrap-checkbox</a>.
           </p>
         </Widget>
       </b-col>
@@ -863,7 +1062,7 @@
           settings
           refresh
           lose
-          customHeader
+          custom-header
         >
           <b-row>
             <b-col lg="4">
@@ -879,28 +1078,36 @@
                   <b-col md="6">
                     <b-form-group class="radio abc-radio">
                       <input
+                        id="radio-small"
                         type="radio"
                         name="radio1"
-                        id="radio-small"
                         checked
                       />
                       <label for="radio-small">Small</label>
                     </b-form-group>
                     <b-form-group class="radio abc-radio">
-                      <input type="radio" name="radio1" id="radio-big" />
+                      <input
+                        id="radio-big"
+                        type="radio"
+                        name="radio1"
+                      />
                       <label for="radio-big">Big</label>
                     </b-form-group>
                   </b-col>
                   <b-col md="6">
                     <b-form-group class="radio abc-radio abc-radio-danger">
-                      <input type="radio" name="radio2" id="radio-next" />
+                      <input
+                        id="radio-next"
+                        type="radio"
+                        name="radio2"
+                      />
                       <label for="radio-next">Next</label>
                     </b-form-group>
                     <b-form-group class="radio abc-radio abc-radio-danger">
                       <input
+                        id="radio-one"
                         type="radio"
                         name="radio2"
-                        id="radio-one"
                         checked
                       />
                       <label for="radio-one">One</label>
@@ -919,18 +1126,18 @@
                 </p>
                 <b-form-group class="radio abc-radio">
                   <input
+                    id="radio-disabled-next"
                     type="radio"
                     name="radio3"
-                    id="radio-disabled-next"
                     disabled
                   />
                   <label for="radio-disabled-next">Next</label>
                 </b-form-group>
                 <b-form-group class="radio abc-radio abc-radio-warning">
                   <input
+                    id="radio-disabled-one"
                     type="radio"
                     name="radio3"
-                    id="radio-disabled-one"
                     disabled
                     checked
                   />
@@ -947,26 +1154,32 @@
                   few simple steps.
                 </p>
                 <b-form-group class="display-inline-block checkbox-ios me-3">
-                  <label for="checkbox-ios1" class="switch  form-control-label">
+                  <label
+                    for="checkbox-ios1"
+                    class="switch  form-control-label"
+                  >
                     <input
-                      type="checkbox"
                       id="checkbox-ios1"
+                      type="checkbox"
                       class="ios form-check-input"
                       value="off"
                     />
-                    <i></i>
+                    <i />
                   </label>
                 </b-form-group>
                 <b-form-group class="display-inline-block checkbox-ios">
-                  <label for="checkbox-ios2" class="switch  form-control-label">
+                  <label
+                    for="checkbox-ios2"
+                    class="switch  form-control-label"
+                  >
                     <input
-                      type="checkbox"
                       id="checkbox-ios2"
+                      type="checkbox"
                       class="ios form-check-input"
                       value="on"
-                      checked=""
+                      checked
                     />
-                    <i></i>
+                    <i />
                   </label>
                 </b-form-group>
               </b-form>
@@ -976,40 +1189,55 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col lg="6" md="12">
-        <Widget title="<h6>Pickers</h6>" customHeader close refresh settings>
+      <b-col
+        lg="6"
+        md="12"
+      >
+        <Widget
+          title="<h6>Pickers</h6>"
+          custom-header
+          close
+          refresh
+          settings
+        >
           <b-form>
             <legend>Date & Time</legend>
             <b-row>
-              <b-col md="6" xs="12">
+              <b-col
+                md="6"
+                xs="12"
+              >
                 <b-form-group>
-                  <label for="datetimepicker" class="me-3">Datepicker</label>
-                  <DatePicker
-                    lang="en"
-                    :placeholder="datepickerText"
-                    input-class="form-control"
-                    @change="selectDate"
+                  <label
+                    for="datetimepicker"
+                    class="me-3"
+                  >Datepicker</label>
+                  <VueDatePicker
                     id="datetimepicker"
-                  >
-                    <i class="glyphicon glyphicon-th" slot="calendar-icon" />
-                  </DatePicker>
+                    v-model="datepickerValue"
+                    :placeholder="datepickerText || 'Select date'"
+                    :dark="true"
+                    auto-apply
+                  />
                 </b-form-group>
               </b-col>
-              <b-col md="6" xs="12">
+              <b-col
+                md="6"
+                xs="12"
+              >
                 <b-form-group>
-                  <label for="datetimepicker_withtime" class="me-3"
-                    >With time</label
-                  >
-                  <DatePicker
-                    lang="en"
-                    type="datetime"
-                    :placeholder="datetimepickerText"
-                    input-class="form-control"
-                    @change="selectDatetime"
+                  <label
+                    for="datetimepicker_withtime"
+                    class="me-3"
+                  >With time</label>
+                  <VueDatePicker
                     id="datetimepicker_withtime"
-                  >
-                    <i class="la la-clock-o" slot="calendar-icon" />
-                  </DatePicker>
+                    v-model="datetimepickerValue"
+                    :placeholder="datetimepickerText || 'Select date and time'"
+                    :dark="true"
+                    enable-time-picker
+                    auto-apply
+                  />
                 </b-form-group>
               </b-col>
             </b-row>
@@ -1024,8 +1252,9 @@
                 </span>
                 <b-form-input
                   id="built-in-colorpicker"
+                  v-model="builtinColor"
                   type="color"
-                ></b-form-input>
+                />
               </label>
             </b-form-group>
             <b-form-group>
@@ -1036,50 +1265,67 @@
                   <a
                     href="https://github.com/xiaokaike/vue-color"
                     target="_blank"
-                    >vue-color</a
-                  >
+                  >vue-color</a>
                   plugin
                 </span>
                 <b-input-group class="colorpicker-wrapper">
-                  <input type="text" class="form-control" :value="color.hex" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    :value="color.hex"
+                  />
                   <Chrome
                     :class="{ colorpicker: true, 'd-none': !isPickerActive }"
-                    v-model="color"
+                    :model-value="(color as any)"
+                    @update:model-value="(val: any) => color = val"
                   />
-                  <b-input-group-text
-                    @click="isPickerActive = !isPickerActive"
-                    slot="append"
-                  >
-                    <div class="rect" :style="{ backgroundColor: color.hex }" />
-                  </b-input-group-text>
+                  <template #append>
+                    <b-input-group-text
+                      @click="isPickerActive = !isPickerActive"
+                    >
+                      <div
+                        class="rect"
+                        :style="{ backgroundColor: color.hex }"
+                      />
+                    </b-input-group-text>
+                  </template>
                 </b-input-group>
               </label>
             </b-form-group>
           </b-form>
         </Widget>
       </b-col>
-      <b-col lg="6" md="12">
+      <b-col
+        lg="6"
+        md="12"
+      >
         <Widget
           title="<h6> Input <strong>Masks</strong></h6>"
-          customHeader
+          custom-header
           close
           settings
           refresh
         >
           <b-form class="form-label-left">
             <legend>Masked inputs</legend>
-            <b-form-group label-for="phone-mask" label-cols="4" breakpoint="md">
-              <div slot="label">
-                Phone
-                <span class="help-block">(123) 456-7890</span>
-              </div>
+            <b-form-group
+              label-for="phone-mask"
+              label-cols="4"
+              breakpoint="md"
+            >
+              <template #label>
+                <div>
+                  Phone
+                  <span class="help-block">(123) 456-7890</span>
+                </div>
+              </template>
               <b-form-input
-                class=""
-                type="text"
                 id="phone-mask"
-                placeholder="(___) ___-____"
-                v-mask="'(###) ###-####'"
                 v-model="phoneModel"
+                class=""
+                type="tel"
+                placeholder="(123) 456-7890"
+                @input="formatPhone"
               />
             </b-form-group>
             <b-form-group
@@ -1087,45 +1333,56 @@
               breakpoint="md"
               label-for="int-phone-mask"
             >
-              <div slot="label">
-                International Phone
-                <span class="help-block">+375 123 456 789</span>
-              </div>
+              <template #label>
+                <div>
+                  International Phone
+                  <span class="help-block">+375 123 456 789</span>
+                </div>
+              </template>
               <b-form-input
-                class=""
-                type="text"
                 id="int-phone-mask"
-                placeholder="+___ ___ ___ ___"
-                v-mask="'+### ### ### ###'"
                 v-model="intPhoneModel"
+                class=""
+                type="tel"
+                placeholder="+375 123 456 789"
               />
             </b-form-group>
-            <b-form-group label-cols="4" breakpoint="md" label-for="date-mask">
-              <div slot="label">
-                Date Format
-                <span class="help-block">07-03-2013</span>
-              </div>
+            <b-form-group
+              label-cols="4"
+              breakpoint="md"
+              label-for="date-mask"
+            >
+              <template #label>
+                <div>
+                  Date Format
+                  <span class="help-block">07-03-2013</span>
+                </div>
+              </template>
               <b-form-input
-                class=""
-                type="text"
                 id="date-mask"
-                placeholder="+___ ___ ___ ___"
-                v-mask="'+### ### ### ###'"
-                v-model="intPhoneModel"
-              />
-            </b-form-group>
-            <b-form-group label-cols="4" breakpoint="md" label-for="time-mask">
-              <div slot="label">
-                Time
-                <span class="help-block">13:43</span>
-              </div>
-              <b-form-input
+                v-model="dateModel"
                 class=""
                 type="text"
+                placeholder="07-03-2013"
+              />
+            </b-form-group>
+            <b-form-group
+              label-cols="4"
+              breakpoint="md"
+              label-for="time-mask"
+            >
+              <template #label>
+                <div>
+                  Time
+                  <span class="help-block">13:43</span>
+                </div>
+              </template>
+              <b-form-input
                 id="time-mask"
-                placeholder="__:__"
-                v-mask="'##:##'"
                 v-model="timeModel"
+                class=""
+                type="time"
+                placeholder="13:43"
               />
             </b-form-group>
           </b-form>
@@ -1134,104 +1391,138 @@
     </b-row>
     <b-row>
       <b-col xs="12">
-        <Widget title="<h6>Sliders</h6>" customHeader settings close refresh>
+        <Widget
+          title="<h6>Sliders</h6>"
+          custom-header
+          settings
+          close
+          refresh
+        >
           <b-row>
             <b-col lg="4">
               <h4>Color Options</h4>
               <p>
-                Light Blue extends Vue Bootstrap Slider and provides different
-                color options:
+                Light Blue provides different color options for range sliders:
               </p>
               <b-form>
                 <div class="mb-sm">
-                  <b-form-slider :value="14" :max="20" />
+                  <input
+                    type="range"
+                    class="form-range"
+                    :value="14"
+                    :max="20"
+                  />
                 </div>
                 <div class="slider-danger mb-sm">
-                  <b-form-slider :value="18" :max="20" />
+                  <input
+                    type="range"
+                    class="form-range range-danger"
+                    :value="18"
+                    :max="20"
+                  />
                 </div>
                 <div class="slider-warning mb-sm">
-                  <b-form-slider :value="7" :max="20" />
+                  <input
+                    type="range"
+                    class="form-range range-warning"
+                    :value="7"
+                    :max="20"
+                  />
                 </div>
                 <div class="slider-success mb-sm">
-                  <b-form-slider :value="11" :max="20" />
+                  <input
+                    type="range"
+                    class="form-range range-success"
+                    :value="11"
+                    :max="20"
+                  />
                 </div>
                 <div class="slider-inverse mb-sm">
-                  <b-form-slider :value="4" :max="20" />
+                  <input
+                    type="range"
+                    class="form-range range-inverse"
+                    :value="4"
+                    :max="20"
+                  />
                 </div>
               </b-form>
             </b-col>
             <b-col lg="4">
               <h4>Slider Orientation</h4>
               <p>
-                Vertical orientation is also possible. Simply changing
-                <strong> orientation </strong>
-                attribute does the thing.
+                Vertical orientation is also possible using CSS transforms:
               </p>
               <b-row>
                 <b-col md="8">
-                  <span class="">
-                    <b-form-slider
+                  <div
+                    class="d-flex gap-4 align-items-end"
+                    style="height: 150px"
+                  >
+                    <input
+                      type="range"
+                      class="form-range vertical-slider"
                       :value="14"
                       :max="20"
-                      orientation="vertical"
                     />
-                  </span>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="slider-inverse">
-                    <b-form-slider
+                    <input
+                      type="range"
+                      class="form-range vertical-slider range-inverse"
                       :value="18"
                       :max="20"
-                      orientation="vertical"
                     />
-                  </span>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="">
-                    <b-form-slider
+                    <input
+                      type="range"
+                      class="form-range vertical-slider"
                       :value="7"
                       :max="20"
-                      orientation="vertical"
                     />
-                  </span>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="slider-inverse">
-                    <b-form-slider
+                    <input
+                      type="range"
+                      class="form-range vertical-slider range-inverse"
                       :value="11"
                       :max="20"
-                      orientation="vertical"
                     />
-                  </span>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="">
-                    <b-form-slider
+                    <input
+                      type="range"
+                      class="form-range vertical-slider"
                       :value="4"
                       :max="20"
-                      orientation="vertical"
                     />
-                  </span>
+                  </div>
                 </b-col>
               </b-row>
             </b-col>
             <b-col lg="4">
               <h4>Range Selector</h4>
               <p>
-                Range selector, options specified via
-                <strong>value</strong> attribute as an array. Price range
-                selector:
+                Use the native range input for value selection:
               </p>
-              <span class="slider-warning">
-                <b-form-slider :max="2000" :value="[200, 1547]" range />
-                &nbsp;
-              </span>
+              <div class="slider-warning">
+                <div class="d-flex align-items-center gap-2">
+                  <span>$200</span>
+                  <input
+                    type="range"
+                    class="form-range flex-grow-1 range-warning"
+                    min="0"
+                    :max="2000"
+                    :value="1547"
+                  />
+                  <span>$2000</span>
+                </div>
+              </div>
             </b-col>
           </b-row>
         </Widget>
       </b-col>
     </b-row>
     <b-row>
-      <b-col lg="6" md="{12}">
+      <b-col
+        lg="6"
+        md="12"
+      >
         <Widget
           title="<h6>Simple <strong>file uploads</strong></h6>"
-          customHeader
+          custom-header
           settings
           close
           refresh
@@ -1254,13 +1545,16 @@
             >
               <b-input-group class="fileinput fileinput-new">
                 <input
-                  @change="onChangeInputFiles"
                   id="fileupload1"
                   type="file"
                   name="file"
                   class="display-none"
+                  @change="onChangeInputFiles"
                 />
-                <label for="fileupload1" class="form-control">
+                <label
+                  for="fileupload1"
+                  class="form-control"
+                >
                   <div v-if="inputFiles.length > 0">
                     <span
                       v-for="file in inputFiles"
@@ -1271,19 +1565,32 @@
                   </div>
                   <span v-else />
                 </label>
-                <b-input-group-append v-if="inputFiles.length === 0">
-                  <b-button type="button" variant="default" class="btn-file">
-                    <label for="fileupload1">Select file</label>
-                  </b-button>
-                </b-input-group-append>
-                <b-input-group-append v-else>
-                  <b-button type="button" variant="default">
-                    <Label for="fileupload1">Change file</Label>
-                  </b-button>
-                  <b-button type="reset" variant="default" @click="removeFiles">
-                    <label>Remove file</label>
-                  </b-button>
-                </b-input-group-append>
+                <template #append>
+                  <template v-if="inputFiles.length === 0">
+                    <b-button
+                      type="button"
+                      variant="secondary"
+                      class="btn-file"
+                    >
+                      <label for="fileupload1">Select file</label>
+                    </b-button>
+                  </template>
+                  <template v-else>
+                    <b-button
+                      type="button"
+                      variant="secondary"
+                    >
+                      <label for="fileupload1">Change file</label>
+                    </b-button>
+                    <b-button
+                      type="reset"
+                      variant="secondary"
+                      @click="removeFiles"
+                    >
+                      <label>Remove file</label>
+                    </b-button>
+                  </template>
+                </template>
               </b-input-group>
               <span class="help-block">
                 Awesome file input plugin allows you to create a visually
@@ -1297,28 +1604,36 @@
               :label-cols="4"
             >
               <input
-                accept="image/*"
-                @change="onChangeInputImage"
                 id="fileupload2"
+                accept="image/*"
                 type="file"
                 name="file"
                 class="display-none"
+                @change="onChangeInputImage"
               />
               <div class="fileinput fileinput-new fileinput-fix">
                 <div class="fileinput-new thumbnail">
                   <div v-if="imageFiles.length > 0">
                     <div
-                      class="image-preview"
                       v-for="image in imageFiles"
                       :key="`img-id-${image.toString()}`"
+                      class="image-preview"
                       :style="{ backgroundImage: `url(${image.preview})` }"
                     />
                   </div>
-                  <img v-else alt="thumbnail" src="../../../assets/thumb.svg" />
+                  <img
+                    v-else
+                    alt="thumbnail"
+                    src="../../../assets/thumb.svg"
+                  />
                 </div>
               </div>
               <div>
-                <b-button type="button" variant="default" class="mt-sm">
+                <b-button
+                  type="button"
+                  variant="secondary"
+                  class="mt-sm"
+                >
                   <label for="fileupload2">
                     Select image
                   </label>
@@ -1332,16 +1647,47 @@
           </b-form>
         </Widget>
       </b-col>
-      <b-col lg="6" md="{12}">
+      <b-col
+        lg="6"
+        md="12"
+      >
         <Widget
           title="<h6><strong>Drop</strong> Zone</h6>"
-          customHeader
+          custom-header
           settings
           refresh
           close
         >
-          <div>
-            <vue-dropzone id="dropzone" :options="{ url: '/' }" />
+          <div
+            class="dropzone-area"
+            v-bind="getRootProps()"
+          >
+            <input v-bind="getInputProps()" />
+            <div class="dropzone-content text-center p-4">
+              <i class="la la-cloud-upload la-3x mb-2" />
+              <p v-if="isDragActive">
+                Drop the files here...
+              </p>
+              <p v-else>
+                Drag &amp; drop files here, or click to select files
+              </p>
+              <div
+                v-if="droppedFiles.length > 0"
+                class="mt-3"
+              >
+                <p class="mb-1">
+                  <strong>Files:</strong>
+                </p>
+                <ul class="list-unstyled">
+                  <li
+                    v-for="file in droppedFiles"
+                    :key="file.name"
+                  >
+                    {{ file.name }}
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </Widget>
       </b-col>
@@ -1349,97 +1695,146 @@
   </div>
 </template>
 
-<script>
-import Vue from "vue";
-import vSelect from "vue-select";
-import DatePicker from "vue2-datepicker";
-import vueDropzone from "vue2-dropzone";
-import { Chrome } from "vue-color";
-import Widget from "@/components/Widget/Widget";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+<script setup lang="ts">
+import { ref, useTemplateRef } from 'vue'
+import Multiselect from '@vueform/multiselect'
+import { Chrome } from '@ckpack/vue-color'
+import Widget from '@/components/Widget/Widget.vue'
+import { MdEditor } from 'md-editor-v3'
+import { VueDatePicker } from '@vuepic/vue-datepicker'
+import { useDropzone } from 'vue3-dropzone'
+import 'md-editor-v3/lib/style.css'
+import '@vuepic/vue-datepicker/dist/main.css'
 
-export default {
-  name: "FormElements",
-  components: {
-    Widget,
-    vSelect,
-    DatePicker,
-    vueDropzone,
-    Chrome,
-  },
-  data() {
-    return {
-      wygEditor: ClassicEditor,
-      typesDropdown: "Type one",
-      wygContent: "",
-      mdContent: "",
-      defaultSelect: "Andromeda Galaxy",
-      searchSelect: "Dallas Cowboys",
-      simpleDropdownVariant: "Option One",
-      dangerDropdownVariant: "Ichi",
-      warningDropdownVariant: "Shi",
-      successDropdownVariant: "Hichi",
-      bigDropdownVariant: "Fourth Item",
-      datepickerText: "",
-      datetimepickerText: "",
-      timeModel: null,
-      dateModel: null,
-      intPhoneModel: null,
-      phoneModel: null,
-      inputFiles: [],
-      imageFiles: [],
-      color: {
-        hex: "#cccccc",
-      },
-      isPickerActive: false,
-      textAreaContent: "",
-    };
-  },
-  methods: {
-    changeTypesDropdown(value) {
-      Vue.set(this, "typesDropdown", value);
-    },
-    changeSelectOption(field, value) {
-      Vue.set(this, field, value);
-    },
-    selectDate(val) {
-      Vue.set(this, "datepickerText", val.toLocaleDateString());
-    },
-    selectDatetime(val) {
-      Vue.set(
-        this,
-        "datetimepickerText",
-        new Date(Date.parse(val)).toLocaleString()
-      );
-    },
-    onChangeInputFiles(e) {
-      const files = [];
-      let i = 0;
-      for (i; i < e.target.files.length; i += 1) {
-        files.push(e.target.files[i]);
-      }
+interface ImageFile extends File {
+  preview?: string
+  toUpload?: boolean
+}
 
-      Vue.set(this, "inputFiles", files);
-    },
-    onChangeInputImage(e) {
-      const files = [];
-      const reader = new FileReader();
-      files.push(e.target.files[0]);
-      reader.onloadend = () => {
-        files[0].preview = reader.result;
-        files[0].toUpload = true;
-        Vue.set(this, "imageFiles", files);
-      };
-      reader.readAsDataURL(e.target.files[0]);
-    },
-    removeFiles() {
-      Vue.set(this, "inputFiles", []);
-    },
-    changeColor(e) {
-      Vue.set(this, "color", { hex: e.value });
-    },
-  },
-};
+interface ColorValue {
+  hex: string
+  [key: string]: unknown
+}
+
+const typesDropdown = ref('Type one')
+const wygContent = ref('')
+const wysiwygEditor = useTemplateRef<HTMLDivElement>('wysiwygEditor')
+const mdContent = ref('')
+const defaultSelect = ref('Andromeda Galaxy')
+const searchSelect = ref('Dallas Cowboys')
+const simpleDropdownVariant = ref('Option One')
+const dangerDropdownVariant = ref('Ichi')
+const warningDropdownVariant = ref('Shi')
+const successDropdownVariant = ref('Hichi')
+const bigDropdownVariant = ref('Fourth Item')
+const datepickerText = ref('')
+const datetimepickerText = ref('')
+const datepickerValue = ref<Date | null>(null)
+const datetimepickerValue = ref<Date | null>(null)
+const timeModel = ref<string | null>(null)
+const intPhoneModel = ref<string | null>(null)
+const phoneModel = ref<string | null>(null)
+const dateModel = ref<string | null>(null)
+const inputFiles = ref<File[]>([])
+const imageFiles = ref<ImageFile[]>([])
+const color = ref<ColorValue>({ hex: '#cccccc' })
+const builtinColor = ref('#3498db')
+const isPickerActive = ref(false)
+const textAreaContent = ref('')
+const autosizeContent = ref('')
+const droppedFiles = ref<File[]>([])
+
+// Dropzone setup
+function onDrop(acceptedFiles: File[]) {
+  droppedFiles.value = acceptedFiles
+}
+
+const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
+
+// Dropdown variant map for dynamic updates
+const dropdownVariants: Record<string, typeof simpleDropdownVariant> = {
+  simpleDropdownVariant,
+  dangerDropdownVariant,
+  warningDropdownVariant,
+  successDropdownVariant,
+  bigDropdownVariant,
+}
+
+function changeTypesDropdown(value: string) {
+  typesDropdown.value = value
+}
+
+function changeSelectOption(field: string, value: string) {
+  const targetRef = dropdownVariants[field]
+  if (targetRef) {
+    targetRef.value = value
+  }
+}
+
+function formatPhone(event: Event) {
+  const input = event.target as HTMLInputElement
+  let value = input.value.replace(/\D/g, '')
+  if (value.length > 10) value = value.substring(0, 10)
+  if (value.length >= 6) {
+    phoneModel.value = `(${value.substring(0, 3)}) ${value.substring(3, 6)}-${value.substring(6)}`
+  } else if (value.length >= 3) {
+    phoneModel.value = `(${value.substring(0, 3)}) ${value.substring(3)}`
+  } else {
+    phoneModel.value = value
+  }
+}
+
+function onChangeInputFiles(e: Event) {
+  const target = e.target as HTMLInputElement
+  const files: File[] = []
+
+  if (target.files) {
+    for (let i = 0; i < target.files.length; i += 1) {
+      files.push(target.files[i])
+    }
+  }
+
+  inputFiles.value = files
+}
+
+function onChangeInputImage(e: Event) {
+  const target = e.target as HTMLInputElement
+  if (!target.files || !target.files[0]) return
+
+  const files: ImageFile[] = []
+  const reader = new FileReader()
+  const file = target.files[0] as ImageFile
+  files.push(file)
+
+  reader.onloadend = () => {
+    files[0].preview = reader.result as string
+    files[0].toUpload = true
+    imageFiles.value = files
+  }
+
+  reader.readAsDataURL(target.files[0])
+}
+
+function removeFiles() {
+  inputFiles.value = []
+}
+
+// Wysiwyg editor functions
+function execCommand(command: string) {
+  document.execCommand(command, false)
+}
+
+function updateWygContent(event: Event) {
+  const target = event.target as HTMLDivElement
+  wygContent.value = target.innerHTML
+}
+
+function clearWysiwyg() {
+  if (wysiwygEditor.value) {
+    wysiwygEditor.value.innerHTML = ''
+    wygContent.value = ''
+  }
+}
 </script>
 
 <style src="./Elements.scss" lang="scss" />

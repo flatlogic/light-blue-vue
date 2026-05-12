@@ -1,185 +1,301 @@
+<script setup lang="ts">
+import { ref, computed, onMounted, useTemplateRef } from 'vue'
+import Loader from '../Loader/Loader.vue'
+
+interface Props {
+  customHeader?: boolean
+  tooltipPlacement?: string
+  showTooltip?: boolean
+  close?: boolean | string
+  fullscreen?: boolean | string
+  collapse?: boolean | string
+  settings?: boolean | string
+  settingsInverse?: boolean
+  refresh?: boolean | string
+  className?: string
+  title?: string
+  customControls?: string | null
+  bodyClass?: string
+  options?: Record<string, unknown>
+  fetchingData?: boolean
+  showLoader?: boolean
+  collapsed?: boolean
+  autoload?: boolean | number
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  customHeader: false,
+  tooltipPlacement: 'top',
+  showTooltip: false,
+  close: false,
+  fullscreen: false,
+  collapse: false,
+  settings: false,
+  settingsInverse: false,
+  refresh: false,
+  className: '',
+  title: '',
+  customControls: null,
+  bodyClass: '',
+  options: () => ({}),
+  fetchingData: false,
+  showLoader: true,
+  collapsed: false,
+  autoload: false,
+})
+
+const emit = defineEmits<{
+  load: []
+  close: [removeFunction: () => void]
+}>()
+
+const state = ref(props.collapsed ? 'collapse' : 'default')
+const widget = useTemplateRef<HTMLElement>('widget')
+const customControlsRef = useTemplateRef<HTMLElement>('customControlsRef')
+
+const randomId = computed(() => Math.floor(Math.random() * 100))
+
+const mainControls = computed(() => {
+  return !!(props.close || props.fullscreen || props.collapse ||
+    props.refresh || props.settings || props.settingsInverse)
+})
+
+function closeWidget(e?: Event) {
+  e?.preventDefault()
+  const parentEl = widget.value?.parentElement
+  if (!parentEl) return
+
+  const length = parentEl.classList.length
+  let parentToRemove = false
+
+  for (let i = 0; i < length; i++) {
+    if (/col.*/.test(parentEl.classList[i])) {
+      parentToRemove = true
+      break
+    }
+  }
+
+  const removeFunction = () => {
+    if (parentToRemove) {
+      parentEl.remove()
+    } else {
+      widget.value?.remove()
+    }
+  }
+
+  emit('close', removeFunction)
+}
+
+function changeState(e: Event | null, newState: string) {
+  e?.preventDefault()
+  state.value = newState
+}
+
+function loadWidgster(e?: Event) {
+  e?.preventDefault()
+  emit('load')
+}
+
+onMounted(() => {
+  if (props.autoload) {
+    loadWidgster()
+    if (typeof props.autoload === 'number') {
+      setInterval(() => loadWidgster(), props.autoload)
+    }
+  }
+
+  if (props.customControls && customControlsRef.value) {
+    const closeBtn = customControlsRef.value.querySelector('[control=close]')
+    closeBtn?.addEventListener('click', closeWidget)
+
+    const collapseBtn = customControlsRef.value.querySelector('[control=collapse]')
+    collapseBtn?.addEventListener('click', () => changeState(null, 'collapse'))
+
+    const expandBtn = customControlsRef.value.querySelector('[control=expand]')
+    expandBtn?.addEventListener('click', () => changeState(null, 'default'))
+
+    const fullscreenBtn = customControlsRef.value.querySelector('[control=fullscreen]')
+    fullscreenBtn?.addEventListener('click', () => changeState(null, 'fullscreen'))
+
+    const restoreBtn = customControlsRef.value.querySelector('[control=restore]')
+    restoreBtn?.addEventListener('click', () => changeState(null, 'default'))
+
+    const loadBtn = customControlsRef.value.querySelector('[control=load]')
+    loadBtn?.addEventListener('click', loadWidgster)
+  }
+})
+
+// Expose methods for parent components
+defineExpose({
+  changeState,
+})
+</script>
+
 <template>
-  <section :class="{
-    widget: true,
-    className,
-    collapsed: state === 'collapse',
-    fullscreened: state === 'fullscreen',
-    loading: fetchingData
-  }" ref="widget">
-    <h5 v-if="title && typeof title === 'string' && !customHeader" class="title">{{title}}</h5>
-    <header v-if="title && customHeader" class="title" v-html="title"></header>
-    <div v-if="!customControls && mainControls"
-      class="widgetControls widget-controls">
-      <a v-if="settings" href="#"><i class="la la-cog" /></a>
-      <a v-if="settingsInverse" href="#" class="bg-default mx-2">
-        <i class="la la-cog text-white"/>
+  <section
+    ref="widget"
+    :class="{
+      widget: true,
+      [className]: !!className,
+      collapsed: state === 'collapse',
+      fullscreened: state === 'fullscreen',
+      loading: fetchingData
+    }"
+  >
+    <h5
+      v-if="title && typeof title === 'string' && !customHeader"
+      class="title"
+    >
+      {{ title }}
+    </h5>
+    <header
+      v-if="title && customHeader"
+      v-safe-html="title"
+      class="title"
+    />
+
+    <div
+      v-if="!customControls && mainControls"
+      class="widgetControls widget-controls"
+    >
+      <a
+        v-if="settings"
+        href="#"
+      ><i class="la la-cog" /></a>
+      <a
+        v-if="settingsInverse"
+        href="#"
+        class="bg-default mx-2"
+      >
+        <i class="la la-cog text-white" />
       </a>
-      <a @click="loadWidgster($event)" v-if="refresh" href="#" :id="`reloadId-${randomId}`">
-        <strong v-if="typeof refresh === 'string'" class="text-gray-light">{{refresh}}</strong>
-        <i v-else class="la la-refresh"></i>
-          <b-tooltip
-            v-if="showTooltip"
-            :placement="tooltipPlacement"
-            :target="`reloadId-${randomId}`"
-          >Reload
-          </b-tooltip>
-      </a>
-      <a @click="changeState($event, 'fullscreen')" v-if="fullscreen && state !== 'fullscreen'" href="#" :id="`fullscreenId-${randomId}`">
-        <i class="la la-expand"></i>
-        <b-tooltip
+      <a
+        v-if="refresh"
+        :id="`reloadId-${randomId}`"
+        href="#"
+        @click="loadWidgster($event)"
+      >
+        <strong
+          v-if="typeof refresh === 'string'"
+          class="text-gray-light"
+        >{{ refresh }}</strong>
+        <i
+          v-else
+          class="la la-refresh"
+        />
+        <BTooltip
           v-if="showTooltip"
-          :placement="tooltipPlacement"
+          :placement="tooltipPlacement as any"
+          :target="`reloadId-${randomId}`"
+        >
+          Reload
+        </BTooltip>
+      </a>
+      <a
+        v-if="fullscreen && state !== 'fullscreen'"
+        :id="`fullscreenId-${randomId}`"
+        href="#"
+        @click="changeState($event, 'fullscreen')"
+      >
+        <i class="la la-expand" />
+        <BTooltip
+          v-if="showTooltip"
+          :placement="tooltipPlacement as any"
           :target="`fullscreenId-${randomId}`"
-        >Fullscreen
-        </b-tooltip>
+        >
+          Fullscreen
+        </BTooltip>
       </a>
-      <a @click="changeState($event, 'default')" v-if="fullscreen && state === 'fullscreen'" href="#" :id="`restoreId-${randomId}`">
-        <i class="la la-compress"></i>
-        <b-tooltip
+      <a
+        v-if="fullscreen && state === 'fullscreen'"
+        :id="`restoreId-${randomId}`"
+        href="#"
+        @click="changeState($event, 'default')"
+      >
+        <i class="la la-compress" />
+        <BTooltip
           v-if="showTooltip"
-          :placement="tooltipPlacement"
+          :placement="tooltipPlacement as any"
           :target="`restoreId-${randomId}`"
-        >Restore
-        </b-tooltip>
+        >
+          Restore
+        </BTooltip>
       </a>
       <span v-if="collapse && state !== 'collapse'">
-        <a href="#" @click="changeState($event, 'collapse')" :id="`collapseId-${randomId}`">
-          <i class="la la-angle-down"></i>
-          <b-tooltip
+        <a
+          :id="`collapseId-${randomId}`"
+          href="#"
+          @click="changeState($event, 'collapse')"
+        >
+          <i class="la la-angle-down" />
+          <BTooltip
             v-if="showTooltip"
-            :placement="tooltipPlacement"
+            :placement="tooltipPlacement as any"
             :target="`collapseId-${randomId}`"
-          >Collapse
-          </b-tooltip>
+          >
+            Collapse
+          </BTooltip>
         </a>
       </span>
       <span v-if="collapse && state === 'collapse'">
-        <a href="#" @click="changeState($event, 'default')" :id="`expandId-${randomId}`">
-          <i class="la la-angle-up"></i>
-          <b-tooltip
+        <a
+          :id="`expandId-${randomId}`"
+          href="#"
+          @click="changeState($event, 'default')"
+        >
+          <i class="la la-angle-up" />
+          <BTooltip
             v-if="showTooltip"
-            :placement="tooltipPlacement"
+            :placement="tooltipPlacement as any"
             :target="`expandId-${randomId}`"
-          >Expand
-          </b-tooltip>
+          >
+            Expand
+          </BTooltip>
         </a>
       </span>
-      <a v-if="close" href="#" @click="closeWidget($event)" :id="`closeId-${randomId}`">
-        <strong v-if="typeof refresh === 'string'" class="text-gray-light">{{close}}</strong>
-        <i v-else class="la la-remove"></i>
-        <b-tooltip
+      <a
+        v-if="close"
+        :id="`closeId-${randomId}`"
+        href="#"
+        @click="closeWidget($event)"
+      >
+        <strong
+          v-if="typeof close === 'string'"
+          class="text-gray-light"
+        >{{ close }}</strong>
+        <i
+          v-else
+          class="la la-remove"
+        />
+        <BTooltip
           v-if="showTooltip"
-          :placement="tooltipPlacement"
+          :placement="tooltipPlacement as any"
           :target="`closeId-${randomId}`"
-        >Close
-        </b-tooltip>
+        >
+          Close
+        </BTooltip>
       </a>
     </div>
-    <div v-if="customControls" v-html="customControls" ref="customControlsRef" class="widgetControls widget-controls"></div>
-    <div :class="`widgetBody widget-body ${bodyClass}`" ref="widgetBodyRef"
-          :style="{display: state === 'collapse' ? 'none' : ''}"
+
+    <div
+      v-if="customControls"
+      ref="customControlsRef"
+      v-safe-html="customControls"
+      class="widgetControls widget-controls"
+    />
+
+    <div
+      :class="`widgetBody widget-body ${bodyClass}`"
+      :style="{ display: state === 'collapse' ? 'none' : '' }"
     >
-      <Loader v-if="fetchingData && showLoader" :class="'widget-loader'" :size="40"></Loader>
-      <slot v-else></slot>
+      <Loader
+        v-if="fetchingData && showLoader"
+        class="widget-loader"
+        :size="40"
+      />
+      <slot v-else />
     </div>
   </section>
 </template>
-
-<script>
-import Loader from '../Loader/Loader';
-
-export default {
-  name: 'Widget',
-  data: function() {
-    return {
-      state: this.collapsed ? 'collapse' : 'default'
-    }
-  },
-  props: {
-    customHeader: { type: Boolean, default: false },
-    tooltipPlacement: { default: 'top' },
-    showTooltip: { type: Boolean, default: false },
-    close: { type: [Boolean, String], default: false },
-    fullscreen: { type: [Boolean, String], default: false },
-    collapse: { type: [Boolean, String], default: false },
-    settings: { type: [Boolean, String], default: false },
-    settingsInverse: { type: Boolean, default: false },
-    refresh: { type: [Boolean, String], default: false },
-    className: { default: '' },
-    title: { default: '' },
-    customControls: { default: null },
-    bodyClass: { default: '' },
-    options: { default: () => ({}) },
-    fetchingData: {type: Boolean, default: false},
-    showLoader: {type: Boolean, default: true},
-    collapsed: {type: Boolean, default: false},
-    autoload: {type: [Boolean, Number], default: false}
-  },
-  components: { Loader },
-  computed: {
-    randomId() {
-      return Math.floor(Math.random() * 100);
-    },
-    mainControls() {
-      return !!(this.close || this.fullscreen || this.collapse
-        || this.refresh || this.settings || this.settingsInverse);
-    },
-  },
-  mounted() {
-    if (this.autoload && this.$listeners && this.$listeners.load) {
-      this.loadWidgster();
-      if (typeof this.autoload === 'number') {
-        setInterval(() => {this.loadWidgster()}, this.autoload);
-      }
-    }
-    if (this.customControls) {
-      let close = this.$refs.customControlsRef.querySelector('[control=close]');
-      close && close.addEventListener('click', this.closeWidget);
-      let collapse = this.$refs.customControlsRef.querySelector('[control=collapse]');
-      collapse && collapse.addEventListener('click', this.changeState.bind(this, null, 'collapse'));
-      let expand = this.$refs.customControlsRef.querySelector('[control=expand]');
-      expand && expand.addEventListener('click', this.changeState.bind(this, null, 'default'));
-      let fullscreen = this.$refs.customControlsRef.querySelector('[control=fullscreen]');
-      fullscreen && fullscreen.addEventListener('click', this.changeState.bind(this, null, 'fullscreen'));
-      let restore = this.$refs.customControlsRef.querySelector('[control=restore]');
-      restore && restore.addEventListener('click', this.changeState.bind(this, null, 'default'));
-      let load = this.$refs.customControlsRef.querySelector('[control=load]');
-      load && load.addEventListener('click', this.loadWidgster);
-    }
-  },
-  methods: {
-    closeWidget(e) {
-      e && e.preventDefault();
-      let $parentEl = this.$el.parentElement;
-      let length = $parentEl.classList.length;
-      let parentToRemove = false;
-      for (let i = 0; i < length; i++) {
-        if (/col.*/.test($parentEl.classList[i])) {
-          parentToRemove = true;
-          break;
-        }
-      }
-
-      let removeFunction = () => {
-        parentToRemove ? $parentEl.remove() : this.$el.remove();
-      };
-
-      if (this.$listeners && this.$listeners.close) {
-        this.$listeners.close(removeFunction.bind(this));
-      } else {
-        removeFunction();
-      }
-    },
-    changeState(e, state) {
-      e && e.preventDefault();
-      this.state = state;
-    },
-    loadWidgster(e) {
-      e && e.preventDefault();
-      this.$emit('load');
-    }
-  }
-};
-</script>
 
 <style src="./Widget.scss" lang="scss" />

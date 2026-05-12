@@ -1,3 +1,5 @@
+@import '../../../styles/app';
+
 .product-management {
   .promo-alert {
     transition: 0.6s;
@@ -9,11 +11,75 @@
     transform: translateX(0);
   }
 
-  .image {
-    width: 100px;
+  .search-input {
+    max-width: 300px;
+    background-color: $body-bg;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: $text-color;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 
-  .table tbody td {
-    vertical-align: middle;
+  .products-table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #{$text-color};
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.03);
+    --bs-table-striped-color: #{$text-color};
+    --bs-table-hover-bg: rgba(255, 255, 255, 0.05);
+    --bs-table-hover-color: #{$text-color};
+    border-color: rgba(255, 255, 255, 0.1);
+
+    th {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: $text-color;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    td {
+      vertical-align: middle;
+      color: $text-color;
+      border-color: rgba(255, 255, 255, 0.1);
+      font-weight: 500;
+    }
+  }
+
+  .product-image {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .product-link {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .per-page-select {
+    width: 80px;
+    background-color: $body-bg;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: $text-color;
+  }
+
+  .pagination {
+    .page-link {
+      background-color: $body-bg;
+      border-color: rgba(255, 255, 255, 0.1);
+      color: $text-color;
+    }
+
+    .page-item.active .page-link {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
   }
 }

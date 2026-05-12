@@ -1,4 +1,4 @@
-@import '../../styles/app.scss';
+@import '../../styles/app';
 
 .root {
   height: 100%;
@@ -7,6 +7,22 @@
 
     @media print {
       margin-left: 0;
+    }
+  }
+
+  // Sidebar on the right
+  &.sidebar-right {
+    @include media-breakpoint-up('md') {
+      margin-left: 0;
+      margin-right: calc(#{$sidebar-width} + 30px);
+    }
+  }
+
+  // Sidebar hidden
+  &.sidebar-hidden {
+    @include media-breakpoint-up('md') {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -24,6 +40,45 @@
   // hammers disallows text selection, allowing it for large screens
   @media (min-width: breakpoint-min(sm)) {
     user-select: auto !important;
+  }
+}
+
+.content-breadcrumb {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  background: transparent;
+  font-size: $font-size-larger;
+
+  .breadcrumb-item {
+    color: $text-muted;
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten($link-color, 10%);
+        text-decoration: underline;
+      }
+    }
+
+    &:first-child {
+      color: $text-muted !important;
+
+      a {
+        color: $text-muted;
+        pointer-events: none;
+      }
+    }
+
+    &.active {
+      color: $text-color;
+    }
+
+    & + .breadcrumb-item::before {
+      content: '>';
+      color: $text-muted;
+    }
   }
 }
 

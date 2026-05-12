@@ -10,19 +10,112 @@
     margin-top: 10px;
   }
 
-  .table {
-    .table.table-sm {
-      td {
-        font-size: 1rem;
-        vertical-align: middle;
+  .progress-stats {
+    margin-bottom: $spacer;
+    display: flex;
+    align-items: center;
+
+    .col-3 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      font-size: 0.9rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      text-align: center;
+
+      .countup-wrap {
+        display: inline;
       }
     }
   }
 
-  .abc-checkbox {
-    label::before {
+  .widget-bottom-overflow .table.table-striped.table-sm {
+    --bs-table-bg: transparent;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.2);
+    --bs-table-border-color: transparent;
+    margin-bottom: 0;
+    border: none;
+
+    td, th {
+      font-size: 1rem;
+      font-weight: 400;
+      vertical-align: middle;
+      padding: 0.75rem;
+      border-width: 0;
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .checkbox.abc-checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      height: 100%;
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before,
+        &::after {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    thead tr {
       background-color: transparent;
-      border: 1px solid #c1ccd3;
+    }
+
+    tbody tr {
+      background-color: rgba(0, 0, 0, 0.2);
+
+      &:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    > :not(caption) > * > * {
+      border-bottom-width: 0;
+    }
+  }
+
+  .list-group-item {
+    border: none;
+  }
+
+  .calendar-events {
+    padding: 0 $widget-padding-horizontal $widget-padding-vertical;
+
+    .list-group-item {
+      background: transparent;
+      padding: 10px 0;
+      border: none;
+      color: $text-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:hover {
+        background: transparent;
+      }
+
+      .badge {
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 6px 12px;
+        margin-left: 10px;
+        order: 1;
+      }
     }
   }
 }

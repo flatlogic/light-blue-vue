@@ -14,7 +14,7 @@ $doc-sidebar-color: #6c757d;
       padding-top: calc(#{$doc-navbar-height} + #{2 * $spacer});
       min-height: 100vh;
 
-      & :global(.widget) {
+      .widget {
         box-shadow: none;
         background: transparent;
         padding-left: 0;
@@ -26,7 +26,7 @@ $doc-sidebar-color: #6c757d;
      }
 
      @include media-breakpoint-down(sm) {
-       padding-top: $doc-navbar-height / 2;
+       padding-top: calc($doc-navbar-height / 2);
      }
   }
 
@@ -219,5 +219,177 @@ $doc-sidebar-color: #6c757d;
   code {
     background-color: theme-color('danger-light');
     color: $pink;
+  }
+
+  /////// Component Documentation - Original Bootstrap Styles ////////
+
+  // Buttons - use standard Bootstrap colors
+  .btn {
+    &, &:hover, &.disabled, &:disabled {
+      color: #fff;
+    }
+
+    &.btn-secondary {
+      color: #212529;
+      background-color: #f4f4f5;
+      border-color: #f4f4f5;
+
+      &:hover {
+        background-color: #e2e2e3;
+        border-color: #dbdbdc;
+      }
+    }
+
+    &.btn-light {
+      color: #212529;
+    }
+  }
+
+  // Alerts - standard Bootstrap alert styling
+  .alert {
+    color: #212529;
+
+    &.alert-success {
+      background-color: #d1e7dd;
+      border-color: #badbcc;
+      color: #0f5132;
+    }
+
+    &.alert-info {
+      background-color: #cff4fc;
+      border-color: #b6effb;
+      color: #055160;
+    }
+
+    &.alert-warning {
+      background-color: #fff3cd;
+      border-color: #ffecb5;
+      color: #664d03;
+    }
+
+    &.alert-danger {
+      background-color: #f8d7da;
+      border-color: #f5c2c7;
+      color: #842029;
+    }
+
+    &.alert-transparent {
+      background-color: transparent;
+    }
+
+    .btn-close {
+      color: inherit;
+    }
+  }
+
+  // Modal - light background
+  .modal-content {
+    background-color: #fff;
+    color: #212529;
+
+    .modal-header {
+      border-color: #dee2e6;
+
+      .modal-title {
+        color: #212529;
+      }
+    }
+
+    .modal-footer {
+      border-color: #dee2e6;
+    }
+  }
+
+  // Progress bars
+  .progress {
+    background-color: #e9ecef;
+  }
+
+  // Forms
+  .form-control {
+    background-color: #fff;
+    border-color: #ced4da;
+    color: #212529;
+
+    &:focus {
+      background-color: #fff;
+      color: #212529;
+    }
+  }
+
+  // Cards
+  .card {
+    background-color: #fff;
+    color: #212529;
+
+    .card-header {
+      background-color: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.125);
+    }
+  }
+
+  // Nav tabs
+  .nav-tabs {
+    .nav-link {
+      color: #495057;
+
+      &:hover {
+        color: #495057;
+      }
+    }
+  }
+
+  // Badges
+  .badge {
+    &.bg-secondary {
+      color: #212529;
+    }
+  }
+
+  // Navbar
+  .navbar {
+    &.bg-light {
+      background-color: #f8f9fa !important;
+    }
+
+    &.bg-dark {
+      background-color: #212529 !important;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: inherit;
+    }
+  }
+
+  // Popovers
+  .popover {
+    background-color: #fff;
+
+    .popover-header {
+      background-color: #f0f0f0;
+      color: #212529;
+    }
+
+    .popover-body {
+      color: #212529;
+    }
+  }
+
+  // Carousel
+  .carousel {
+    background-color: #f8f9fa;
+  }
+
+  // List groups
+  .list-group-item {
+    background-color: #fff;
+    color: #212529;
+    border-color: rgba(0, 0, 0, 0.125);
+
+    &:hover {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
   }
 }

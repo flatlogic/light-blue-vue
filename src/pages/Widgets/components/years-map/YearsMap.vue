@@ -1,113 +1,149 @@
 <template>
   <div class="years-map">
-    <div class="map" ref="map"></div>
+    <div
+      ref="mapRef"
+      class="map"
+    />
     <div class="stats">
       <h6>YEARLY <span class="fw-semi-bold">DISTRIBUTIONS</span></h6>
       <span class="pull-left me-1">
-          <small><span class="circle bg-success">
-            <i class="fa fa-plus"/></span></small>
-        </span>
+        <small><span class="circle bg-success">
+          <i class="fa fa-plus" /></span></small>
+      </span>
       <p class="h4 m-0">
         <strong>17% last year</strong>
       </p>
     </div>
-    <b-button-group class="map-controls">
-      <b-button variant="default" @click="changeYear(2014)" :class="{'active': this.activeYear===2014}">2014</b-button>
-      <b-button variant="default" @click="changeYear(2015)" :class="{'active': this.activeYear===2015}">2015</b-button>
-      <b-button variant="default" @click="changeYear(2016)" :class="{'active': this.activeYear===2016}">2016</b-button>
-      <b-button variant="default" @click="changeYear(2017)" :class="{'active': this.activeYear===2017}">2017</b-button>
-      <b-button variant="default" @click="changeYear(2018)" :class="{'active': this.activeYear===2018}">2018</b-button>
-      <b-button variant="default" @click="changeYear(2019)" :class="{'active': this.activeYear===2019}">2019</b-button>
-    </b-button-group>
+    <BButtonGroup class="map-controls">
+      <BButton
+        variant="secondary"
+        :class="{'active': activeYear===2014}"
+        @click="changeYear(2014)"
+      >
+        2014
+      </BButton>
+      <BButton
+        variant="secondary"
+        :class="{'active': activeYear===2015}"
+        @click="changeYear(2015)"
+      >
+        2015
+      </BButton>
+      <BButton
+        variant="secondary"
+        :class="{'active': activeYear===2016}"
+        @click="changeYear(2016)"
+      >
+        2016
+      </BButton>
+      <BButton
+        variant="secondary"
+        :class="{'active': activeYear===2017}"
+        @click="changeYear(2017)"
+      >
+        2017
+      </BButton>
+      <BButton
+        variant="secondary"
+        :class="{'active': activeYear===2018}"
+        @click="changeYear(2018)"
+      >
+        2018
+      </BButton>
+      <BButton
+        variant="secondary"
+        :class="{'active': activeYear===2019}"
+        @click="changeYear(2019)"
+      >
+        2019
+      </BButton>
+    </BButtonGroup>
   </div>
 </template>
 
-<script>
-import Vue from 'vue';
-import fakeWorldData from './MapData';
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount, useTemplateRef } from 'vue'
+import fakeWorldData from './MapData'
 
-import * as am4core from "@amcharts/amcharts4/core";
-import * as am4maps from "@amcharts/amcharts4/maps";
-import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
-import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-am4core.useTheme(am4themes_animated);
+import * as am5 from '@amcharts/amcharts5'
+import * as am5map from '@amcharts/amcharts5/map'
+import am5geodata_worldLow from '@amcharts/amcharts5-geodata/worldLow'
+import am5themes_Animated from '@amcharts/amcharts5/themes/Animated'
 
-export default {
-  name: 'YearsMap',
-  data() {
-    return {
-      activeYear: 2018,
-    };
-  },
-  methods: {
-    changeYear(year) {
-      Vue.set(this, 'activeYear', year);
-      this.polygonSeries.data = fakeWorldData[year].areas;
-    },
-  },
-  mounted() {
-    let map = am4core.create(this.$refs.map, am4maps.MapChart);
-    map.geodata = am4geodata_worldLow;
-    map.projection = new am4maps.projections.Miller();
-    map.homeZoomLevel = 6;
-    map.homeGeoPoint = {
-      longitude: 8.863224,
-      latitude: 39.599254
-    };
-    this.polygonSeries = map.series.push(new am4maps.MapPolygonSeries());
-    this.polygonSeries.useGeodata = true;
-    this.polygonSeries.exclude = ["AQ"];
+const mapRef = useTemplateRef<HTMLDivElement>('mapRef')
+const activeYear = ref(2018)
+let root: am5.Root | null = null
+let polygonSeries: am5map.MapPolygonSeries | null = null
 
-    this.polygonSeries.data = fakeWorldData[this.activeYear].areas;
-
-    this.polygonSeries.tooltip.background.fill = am4core.color("#fff");
-    this.polygonSeries.tooltip.getFillFromObject = false;
-    this.polygonSeries.tooltip.label.fill = am4core.color("#495057");
-    this.polygonSeries.tooltip.autoTextColor = false;
-
-    map.zoomControl = new am4maps.ZoomControl();
-    map.zoomControl.align = 'left';
-    map.zoomControl.valign = 'bottom';
-    map.zoomControl.dx = 10;
-    map.zoomControl.dy = -30;
-    map.zoomControl.layout = 'horizontal';
-
-    map.zoomControl.minusButton.background.fill = am4core.color("#C7D0FF");
-    map.zoomControl.plusButton.background.fill = am4core.color("#C7D0FF");
-    map.zoomControl.minusButton.background.stroke = null;
-    map.zoomControl.plusButton.background.stroke = null;
-    map.zoomControl.plusButton.background.cornerRadius(16,16,16,16);
-    map.zoomControl.minusButton.background.cornerRadius(16,16,16,16);
-    map.zoomControl.plusButton.dx = 5;
-    let plusButtonHoverState = map.zoomControl.plusButton.background.states.create("hover");
-    plusButtonHoverState.properties.fill = am4core.color("#ccc");
-    let minusButtonHoverState = map.zoomControl.minusButton.background.states.create("hover");
-    minusButtonHoverState.properties.fill = am4core.color("#ccc");
-
-    let polygonTemplate = this.polygonSeries.mapPolygons.template;
-    polygonTemplate.tooltipHTML = "{tooltip}";
-    polygonTemplate.fill = am4core.color("#474D84");
-    polygonTemplate.fillOpacity = 1;
-    polygonTemplate.stroke = am4core.color("#6979C9");
-    // polygonTemplate.strokeWidth = ;
-    let hs = polygonTemplate.states.create("hover");
-    hs.properties.fillOpacity = 0.5;
-
-    this.polygonSeries.heatRules.push({
-      "property": "fill",
-      "target": polygonTemplate,
-      "min": am4core.color("#474D84"),
-      "max": am4core.color("#6979C9")
-    });
-
-    this.map = map;
-  },
-  beforeDestroy() {
-    if (this.map) {
-      this.map.dispose();
-    }
+function changeYear(year: number) {
+  activeYear.value = year
+  if (polygonSeries && fakeWorldData[year]) {
+    polygonSeries.data.setAll(fakeWorldData[year].areas)
   }
-};
+}
+
+onMounted(() => {
+  if (!mapRef.value) return
+
+  root = am5.Root.new(mapRef.value)
+  root.setThemes([am5themes_Animated.new(root)])
+
+  const chart = root.container.children.push(
+    am5map.MapChart.new(root, {
+      panX: 'rotateX',
+      panY: 'translateY',
+      projection: am5map.geoNaturalEarth1(),
+      homeZoomLevel: 6,
+      homeGeoPoint: { longitude: 8.863224, latitude: 39.599254 }
+    })
+  )
+
+  polygonSeries = chart.series.push(
+    am5map.MapPolygonSeries.new(root, {
+      geoJSON: am5geodata_worldLow,
+      exclude: ['AQ'],
+      fill: am5.color('#474D84'),
+      stroke: am5.color('#6979C9')
+    })
+  )
+
+  polygonSeries.mapPolygons.template.setAll({
+    tooltipHTML: '{tooltip}',
+    fill: am5.color('#474D84'),
+    fillOpacity: 1,
+    stroke: am5.color('#6979C9')
+  })
+
+  polygonSeries.mapPolygons.template.states.create('hover', {
+    fillOpacity: 0.5
+  })
+
+  if (fakeWorldData[activeYear.value]) {
+    polygonSeries.data.setAll(fakeWorldData[activeYear.value].areas)
+  }
+
+  chart.set('zoomControl', am5map.ZoomControl.new(root, {
+    x: am5.percent(0),
+    centerX: am5.percent(0),
+    y: am5.percent(100),
+    centerY: am5.percent(100),
+    layout: root.horizontalLayout
+  }))
+
+  ;(polygonSeries as unknown as am5.Series).set('heatRules' as keyof am5.ISeriesSettings, [{
+    target: polygonSeries.mapPolygons.template,
+    dataField: 'value',
+    min: am5.color('#474D84'),
+    max: am5.color('#6979C9'),
+    key: 'fill'
+  }] as unknown)
+})
+
+onBeforeUnmount(() => {
+  if (root) {
+    root.dispose()
+  }
+})
 </script>
 
 <style src="./YearsMap.scss" lang="scss" />
