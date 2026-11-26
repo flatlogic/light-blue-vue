@@ -39,8 +39,10 @@ class HttpClient {
     // Request interceptor - add auth token
     this.instance.interceptors.request.use(
       (config: InternalAxiosRequestConfig) => {
+        const target = new URL(this.instance.getUri(config), window.location.origin)
+        const api = new URL(this.instance.defaults.baseURL!, window.location.origin)
         const token = localStorage.getItem('token')
-        if (token && config.headers) {
+        if (token && target.origin === api.origin) {
           config.headers.Authorization = `Bearer ${token}`
         }
         return config
@@ -52,10 +54,12 @@ class HttpClient {
     this.instance.interceptors.response.use(
       (response: AxiosResponse) => response,
       (error) => {
-        if (error.response?.status === 401) {
+        if (error.response?.status === 401 && localStorage.getItem('token')) {
           // Clear token and redirect to login
           localStorage.removeItem('token')
-          window.location.href = '/login'
+          localStorage.removeItem('user')
+          const path = import.meta.env.VITE_ROUTER_MODE === 'hash' ? '#/login' : 'login'
+          window.location.assign(import.meta.env.BASE_URL + path)
         }
 
         const apiError: ApiError = {

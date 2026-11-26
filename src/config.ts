@@ -1,7 +1,8 @@
-const hostApi = import.meta.env.DEV ? "http://localhost" : "https://sing-generator-node.herokuapp.com"
-const portApi = import.meta.env.DEV ? 8080 : ""
-const baseURLApi = `${hostApi}${portApi ? `:${portApi}` : ``}/api`
-const redirectUrl = import.meta.env.DEV ? "http://localhost:3000/light-blue-vue" : "https://demo.flatlogic.com/light-blue-vue/"
+const baseURLApi = (import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8080/api' : '/api')).replace(/\/$/, '')
+const apiLocation = new URL(baseURLApi, window.location.origin)
+const hostApi = apiLocation.origin
+const portApi = apiLocation.port
+const redirectUrl = new URL(import.meta.env.BASE_URL, window.location.origin).href
 
 export const colors = {
   blue: '#3979f6',

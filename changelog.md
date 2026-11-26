@@ -1,5 +1,15 @@
 # Changelog
 
+## [4.1.0] - 26/11/2026
+
+### Updated
+- Updated Axios to 1.21.1 and refreshed the locked Vue, editor, chart, validation and build dependencies.
+- Added an API session regression test and verified both the demo and API builds in Chromium.
+
+### Fixed
+- Limit automatic bearer headers to the configured API origin. Failed sign-in now displays the API error without redirecting away from the form.
+- Support production API URLs and hash-based deployments under a subdirectory.
+
 ## [4.0.0] - 12/05/2026
 
 ### Breaking Changes

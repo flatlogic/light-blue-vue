@@ -21,6 +21,18 @@ Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web
 
 ---
 
+## Release 4.1
+
+Use Node.js 22.13+ on the 22.x line or Node.js 24+ and the committed npm lockfile. The dashboard uses Vue 3.5, Axios 1.21 and ECharts 6.
+
+The default build uses local demo data. Set `VITE_BACKEND=true` to sign in with your API. The development default is `http://localhost:8080/api`; the production default is `/api` on the dashboard origin. Set `VITE_API_URL` before building for a separate API. For a static host with the existing hash-based demo links, run:
+
+```sh
+VITE_ROUTER_MODE=hash npm run build -- --base=/light-blue-vue/
+```
+
+Deploy the contents of `dist/` at that base path. Regular builds use history routing and require a fallback to `index.html` for dashboard URLs.
+
 ## Quick Start
 
 1. **Clone the repo**
@@ -31,7 +43,7 @@ Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web
 
 2. **Install dependencies**
    ```bash
-   npm install
+   npm ci
    ```
 
 3. **Run the development server**
@@ -69,7 +81,7 @@ Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web
 
 - Vue 3.5+ with Composition API and `<script setup>`
 - TypeScript with strict mode
-- Vite 6 for fast development and builds
+- Vite 7 for fast development and builds
 - Pinia for state management
 - Vue Router 4 with type-safe routing
 - Bootstrap 5 with Bootstrap Vue Next
@@ -88,7 +100,7 @@ Looking for a perfect codebase generator for your Startup? Try [Flatlogic AI Web
 |----------|------------|
 | Framework | Vue 3.5+ |
 | Language | TypeScript |
-| Build Tool | Vite 6 |
+| Build Tool | Vite 7 |
 | State Management | Pinia |
 | Routing | Vue Router 4 |
 | UI Framework | Bootstrap 5 / Bootstrap Vue Next |

@@ -141,10 +141,10 @@
         <p>Examples of <code>ProductCard</code> component:</p>
         <b-row>
           <b-col md="6">
-            <ProductCard :product="products[0]" />
+            <ProductCard :product="examples[0]" />
           </b-col>
           <b-col md="6">
-            <ProductCard :product="products[2]" />
+            <ProductCard :product="examples[1]" />
           </b-col>
         </b-row>
         <p>
@@ -182,9 +182,10 @@
 </template>
 
 <script setup lang="ts">
+import { shallowRef } from 'vue'
 import ProductCard from '../../pages/Ecommerce/ProductsGrid/components/ProductCard/ProductCard.vue'
 import mock from '../../pages/Ecommerce/mock'
 import Scrollspy from '@/documentation/Scrollspy.vue'
 
-const products = mock
+const examples = shallowRef([mock[0], mock[2]])
 </script>

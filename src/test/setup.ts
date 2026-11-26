@@ -1,4 +1,3 @@
-import { config } from '@vue/test-utils'
 import { vi } from 'vitest'
 
 // Mock localStorage
@@ -24,11 +23,6 @@ Object.defineProperty(window, 'matchMedia', {
     dispatchEvent: vi.fn(),
   })),
 })
-
-// Global stubs for Bootstrap Vue Next components
-config.global.stubs = {
-  // Add common stubs if needed
-}
 
 // Reset mocks before each test
 beforeEach(() => {
